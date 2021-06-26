@@ -1,19 +1,10 @@
-use nom::{
-    branch::alt,
-    bytes::complete::{tag, take, take_until},
-    combinator::{eof, map, value},
-    multi::many_till,
-    sequence::{pair, separated_pair},
-    IResult,
-};
+use nom::{IResult, branch::alt, bytes::{complete::{tag, take, take_till, take_until}, streaming::is_not}, character::{complete::{char, one_of}, is_newline}, combinator::{eof, map, value}, multi::{many_till, separated_list1}, sequence::{pair, separated_pair}};
 
 // Note: requires newline before eof
 // Otherwise silently ignores the last line
 
-const NEWLINE: &[u8] = &[0x0A];
-const SEPARATOR: &[u8] = &[0x20, 0x3A, 0x20];
-const POUND: &[u8] = &[0x23];
-const SPACE: &[u8] = &[0x20];
+const SEPARATOR: &[u8] = " : ".as_bytes();
+const POUND: &[u8] = "#".as_bytes();
 
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone)]
@@ -40,15 +31,11 @@ fn kanji_line(b: &[u8]) -> IResult<&[u8], KanjiParts> {
 }
 
 fn radicals(b: &[u8]) -> IResult<&[u8], Vec<&[u8]>> {
-    let (i, o) = pair(many_till(radical, tag(NEWLINE)), take(1u8))(b)?;
-    let ((radicals, _), _newline) = o;
-    Ok((i, radicals))
+    separated_list1(char(' '), radical)(b)
 }
 
 fn radical(b: &[u8]) -> IResult<&[u8], &[u8]> {
-    let (i, o) = pair(take_until(SPACE), take(1u8))(b)?;
-    let (radical, _space) = o;
-    Ok((i, radical))
+    is_not(" \n")(b)
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
@@ -57,9 +44,7 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 }
 
 fn end_of_line(b: &[u8]) -> IResult<&[u8], &[u8]> {
-    let (i, o) = pair(take_until(NEWLINE), take(1u8))(b)?;
-    let (line, _newline) = o;
-    Ok((i, line))
+    alt((is_not("\n"), eof))(b)
 }
 
 #[cfg(test)]
@@ -72,6 +57,23 @@ mod tests {
         let (_i, o) = comment("# September 2007\n".as_bytes())?;
         assert_eq!(o, ());
         Ok(())
+    }
+
+    #[test]
+    fn is_comment_with_eof() -> Result<()> {
+        let (_i, o) = comment("# September 2007".as_bytes())?;
+        assert_eq!(o, ());
+        Ok(())
+    }
+
+    #[test]
+    fn is_not_comment() {
+        let res = comment("��� : �� �� ��".as_bytes());
+        match res {
+            Ok(_) => {},
+            // Todo: I'm sure there's a better way of writing this
+            Err(_) => assert_eq!(true, false),
+        }
     }
 
     #[test]
