@@ -8,6 +8,7 @@ use nom::{
 };
 
 // Note: requires newline before eof
+// Otherwise silently ignores the last line
 
 const NEWLINE: &[u8] = &[0x0A];
 const SEPARATOR: &[u8] = &[0x20, 0x3A, 0x20];
@@ -70,6 +71,13 @@ mod tests {
     fn is_comment() -> Result<()> {
         let (_i, o) = comment("# September 2007\n".as_bytes())?;
         assert_eq!(o, ());
+        Ok(())
+    }
+
+    #[test]
+    fn takes_entire_line() -> Result<()> {
+        let res = end_of_line("# September 2007\n".as_bytes())?;
+        assert_eq!(res, ("".as_bytes(), "# September 2007".as_bytes()));
         Ok(())
     }
 }
