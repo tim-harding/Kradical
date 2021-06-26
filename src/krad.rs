@@ -27,9 +27,7 @@ pub struct KanjiParts<'a> {
 }
 
 pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<Option<KanjiParts>>> {
-    let (i, o) = many_till(line, eof)(b)?;
-    let (lines, _end) = o;
-    Ok((i, lines))
+    separated_list1(char('\n'), line)(b)
 }
 
 fn line(b: &[u8]) -> IResult<&[u8], Option<KanjiParts>> {
@@ -147,6 +145,31 @@ mod tests {
     fn parses_line_as_comment() -> Result<()> {
         let res = line("# September 2007\n".as_bytes())?;
         assert_eq!(res, ("\n".as_bytes(), None));
+        Ok(())
+    }
+
+    #[test]
+    fn parses_lines() -> Result<()> {
+        let res = lines("��� : �� �� �� �� ��\n# September 2007\n".as_bytes())?;
+        assert_eq!(
+            res,
+            (
+                "\n".as_bytes(),
+                vec![
+                    Some(KanjiParts {
+                        kanji: "���".as_bytes(),
+                        radicals: vec![
+                            "��".as_bytes(),
+                            "��".as_bytes(),
+                            "��".as_bytes(),
+                            "��".as_bytes(),
+                            "��".as_bytes(),
+                        ],
+                    }),
+                    None,
+                ],
+            )
+        );
         Ok(())
     }
 }
