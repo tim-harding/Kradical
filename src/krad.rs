@@ -1,4 +1,18 @@
-use nom::{IResult, branch::alt, bytes::{complete::{tag, take, take_till, take_until}, streaming::is_not}, character::{complete::{char, one_of}, is_newline}, combinator::{complete, eof, map, value}, multi::{many_till, separated_list1}, sequence::{pair, separated_pair}};
+use nom::{
+    branch::alt,
+    bytes::{
+        complete::{tag, take, take_till, take_until},
+        streaming::is_not,
+    },
+    character::{
+        complete::{char, one_of},
+        is_newline,
+    },
+    combinator::{complete, eof, map, value},
+    multi::{many_till, separated_list1},
+    sequence::{pair, separated_pair},
+    IResult,
+};
 
 // Note: requires newline before eof
 // Otherwise silently ignores the last line
@@ -64,7 +78,7 @@ mod tests {
         match res {
             // Todo: I'm sure there's a better way of writing this
             Ok(_) => assert_eq!(true, false),
-            Err(_) => {},
+            Err(_) => {}
         }
     }
 
@@ -79,6 +93,19 @@ mod tests {
     fn parses_radical() -> Result<()> {
         let res = radical("�� �� ��\n".as_bytes())?;
         assert_eq!(res, (" �� ��\n".as_bytes(), "��".as_bytes()));
+        Ok(())
+    }
+
+    #[test]
+    fn parses_radicals() -> Result<()> {
+        let res = radicals("�� �� ��\n".as_bytes())?;
+        assert_eq!(
+            res,
+            (
+                "\n".as_bytes(),
+                vec!["��".as_bytes(), "��".as_bytes(), "��".as_bytes()]
+            )
+        );
         Ok(())
     }
 }
