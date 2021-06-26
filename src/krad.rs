@@ -4,6 +4,7 @@ use nom::{
         streaming::is_not,
     },
     character::complete::char,
+    combinator::opt,
     multi::{separated_list0, separated_list1},
     sequence::{pair, separated_pair},
     IResult,
@@ -25,7 +26,11 @@ pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
 }
 
 fn next_kanji(b: &[u8]) -> IResult<&[u8], KanjiParts> {
-    let (i, o) = pair(separated_list0(char('\n'), comment), kanji_line)(b)?;
+    let (i, o) = separated_pair(
+        separated_list0(char('\n'), comment),
+        opt(char('\n')),
+        kanji_line,
+    )(b)?;
     let (_comments, kanji) = o;
     Ok((i, kanji))
 }
