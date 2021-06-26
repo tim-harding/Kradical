@@ -50,12 +50,8 @@ fn radical(b: &[u8]) -> IResult<&[u8], &[u8]> {
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
-    let (i, _o) = pair(char('#'), end_of_line)(b)?;
+    let (i, _o) = pair(char('#'), is_not("\n"))(b)?;
     Ok((i, ()))
-}
-
-fn end_of_line(b: &[u8]) -> IResult<&[u8], &[u8]> {
-    alt((is_not("\n"), eof))(b)
 }
 
 #[cfg(test)]
@@ -67,13 +63,6 @@ mod tests {
     fn is_comment() -> Result<()> {
         let (_i, o) = comment("# September 2007\n".as_bytes())?;
         assert_eq!(o, ());
-        Ok(())
-    }
-
-    #[test]
-    fn takes_entire_line() -> Result<()> {
-        let res = end_of_line("# September 2007\n".as_bytes())?;
-        assert_eq!(res, ("\n".as_bytes(), "# September 2007".as_bytes()));
         Ok(())
     }
 
