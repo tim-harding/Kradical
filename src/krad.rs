@@ -1,10 +1,9 @@
-use nom::{IResult, branch::alt, bytes::{complete::{tag, take, take_till, take_until}, streaming::is_not}, character::{complete::{char, one_of}, is_newline}, combinator::{eof, map, value}, multi::{many_till, separated_list1}, sequence::{pair, separated_pair}};
+use nom::{IResult, branch::alt, bytes::{complete::{tag, take, take_till, take_until}, streaming::is_not}, character::{complete::{char, one_of}, is_newline}, combinator::{complete, eof, map, value}, multi::{many_till, separated_list1}, sequence::{pair, separated_pair}};
 
 // Note: requires newline before eof
 // Otherwise silently ignores the last line
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
-const POUND: &[u8] = "#".as_bytes();
 
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone)]
@@ -39,7 +38,7 @@ fn radical(b: &[u8]) -> IResult<&[u8], &[u8]> {
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
-    let (i, _o) = pair(tag(POUND), end_of_line)(b)?;
+    let (i, _o) = pair(char('#'), end_of_line)(b)?;
     Ok((i, ()))
 }
 
@@ -60,33 +59,26 @@ mod tests {
     }
 
     #[test]
-    fn is_comment_with_eof() -> Result<()> {
-        let (_i, o) = comment("# September 2007".as_bytes())?;
-        assert_eq!(o, ());
-        Ok(())
-    }
-
-    #[test]
     fn is_not_comment() {
-        let res = comment("��� : �� �� ��".as_bytes());
+        let res = comment("��� : �� �� ��\n".as_bytes());
         match res {
-            Ok(_) => {},
             // Todo: I'm sure there's a better way of writing this
-            Err(_) => assert_eq!(true, false),
+            Ok(_) => assert_eq!(true, false),
+            Err(_) => {},
         }
     }
 
     #[test]
     fn takes_entire_line() -> Result<()> {
         let res = end_of_line("# September 2007\n".as_bytes())?;
-        assert_eq!(res, ("".as_bytes(), "# September 2007".as_bytes()));
+        assert_eq!(res, ("\n".as_bytes(), "# September 2007".as_bytes()));
         Ok(())
     }
 
     #[test]
     fn parses_radical() -> Result<()> {
-        let res = radical("�� �� ��".as_bytes())?;
-        assert_eq!(res, ("�� ��".as_bytes(), "��".as_bytes()));
+        let res = radical("�� �� ��\n".as_bytes())?;
+        assert_eq!(res, (" �� ��\n".as_bytes(), "��".as_bytes()));
         Ok(())
     }
 }
