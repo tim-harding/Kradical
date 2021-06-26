@@ -1,0 +1,18 @@
+[package]
+name = "kanji-api"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "kanji_api"
+path = "src/lib.rs"
+
+[[bin]]
+name = "kanji_api_bin"
+path = "src/bin.rs"
+
+[dependencies]
+anyhow = "1.0"
+encoding = "0.2"
+encoding-index-japanese = "1.20141219.5"
+nom = "6.2.1"
