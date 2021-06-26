@@ -55,9 +55,26 @@ mod tests {
     use super::*;
     use anyhow::Result;
 
+    const KANJI_LINE: &[u8] = "��� : �� �� �� �� ��\n".as_bytes();
+    const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
+    const NEWLINE: &[u8] = "\n".as_bytes();
+
+    fn parsed_kanji() -> KanjiParts<'static> {
+        KanjiParts {
+            kanji: "���".as_bytes(),
+            radicals: vec![
+                "��".as_bytes(),
+                "��".as_bytes(),
+                "��".as_bytes(),
+                "��".as_bytes(),
+                "��".as_bytes(),
+            ],
+        }
+    }
+
     #[test]
     fn is_comment() -> Result<()> {
-        let (_i, o) = comment("# September 2007\n".as_bytes())?;
+        let (_i, o) = comment(COMMENT_LINE)?;
         assert_eq!(o, ());
         Ok(())
     }
@@ -75,7 +92,7 @@ mod tests {
         assert_eq!(
             res,
             (
-                "\n".as_bytes(),
+                NEWLINE,
                 vec!["��".as_bytes(), "��".as_bytes(), "��".as_bytes()]
             )
         );
@@ -84,77 +101,30 @@ mod tests {
 
     #[test]
     fn parses_kanji() -> Result<()> {
-        let res = kanji_line("��� : �� �� �� �� ��\n".as_bytes())?;
-        assert_eq!(
-            res,
-            (
-                "\n".as_bytes(),
-                KanjiParts {
-                    kanji: "���".as_bytes(),
-                    radicals: vec![
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                    ],
-                }
-            )
-        );
+        let res = kanji_line(KANJI_LINE)?;
+        assert_eq!(res, (NEWLINE, parsed_kanji()));
         Ok(())
     }
 
     #[test]
     fn parses_line_as_kanji() -> Result<()> {
-        let res = line("��� : �� �� �� �� ��\n".as_bytes())?;
-        assert_eq!(
-            res,
-            (
-                "\n".as_bytes(),
-                Some(KanjiParts {
-                    kanji: "���".as_bytes(),
-                    radicals: vec![
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                        "��".as_bytes(),
-                    ],
-                })
-            )
-        );
+        let res = next_kanji("��� : �� �� �� �� ��\n".as_bytes())?;
+        assert_eq!(res, (NEWLINE, parsed_kanji()));
         Ok(())
     }
 
     #[test]
-    fn parses_line_as_comment() -> Result<()> {
-        let res = line("# September 2007\n".as_bytes())?;
-        assert_eq!(res, ("\n".as_bytes(), None));
+    fn ignores_comment() -> Result<()> {
+        let res = next_kanji("# September 2007\n��� : �� �� �� �� ��\n".as_bytes())?;
+        assert_eq!(res, (NEWLINE, parsed_kanji()));
         Ok(())
     }
 
     #[test]
     fn parses_lines() -> Result<()> {
-        let res = lines("��� : �� �� �� �� ��\n# September 2007\n".as_bytes())?;
-        assert_eq!(
-            res,
-            (
-                "\n".as_bytes(),
-                vec![
-                    Some(KanjiParts {
-                        kanji: "���".as_bytes(),
-                        radicals: vec![
-                            "��".as_bytes(),
-                            "��".as_bytes(),
-                            "��".as_bytes(),
-                            "��".as_bytes(),
-                            "��".as_bytes(),
-                        ],
-                    }),
-                    None,
-                ],
-            )
-        );
+        let res =
+            lines("��� : �� �� �� �� ��\n# September 2007\n��� : �� �� �� �� ��\n".as_bytes())?;
+        assert_eq!(res, (NEWLINE, vec![parsed_kanji(), parsed_kanji()],));
         Ok(())
     }
 }
