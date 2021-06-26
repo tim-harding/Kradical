@@ -1,3 +1,5 @@
+mod jis213;
+
 use nom::{
     bytes::{
         complete::{tag, take_until},
@@ -9,8 +11,8 @@ use nom::{
     sequence::{pair, separated_pair},
     IResult,
 };
-
-// Note: requires newline before eof
+use anyhow::Result;
+use thiserror::Error;
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
 
@@ -19,6 +21,14 @@ const SEPARATOR: &[u8] = " : ".as_bytes();
 pub struct KanjiParts<'a> {
     kanji: &'a [u8],
     radicals: Vec<&'a [u8]>,
+}
+
+#[derive(Error, Debug)]
+pub enum KradError {
+    #[error("Invalid JIS0208 or JIS0212 codepoint")]
+    Jis,
+    #[error("JIS0212 not yet implemented")]
+    NotImplemented,
 }
 
 pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
@@ -54,6 +64,32 @@ fn comments(b: &[u8]) -> IResult<&[u8], ()> {
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
     let (i, _o) = pair(char('#'), is_not("\n"))(b)?;
     Ok((i, ()))
+}
+
+pub fn decode_kanji(b: &[u8]) -> Result<&'static str> {
+    match b.len() {
+        2 => {
+            let code = bytes_to_u32(b);
+            println!("{:#6X}", code);
+            jis213::decode(code).ok_or(KradError::Jis.into())
+        },
+        3 =>{
+            Err(KradError::NotImplemented.into())
+        },
+        n => {
+            println!("{}", n);
+            println!("{:?}", b);
+            Err(KradError::Jis.into())
+        }
+    }
+}
+
+fn bytes_to_u32(b: &[u8]) -> u32 {
+    let mut out = 0u32;
+    for (i, byte) in b.iter().rev().enumerate() {
+        out += (*byte as u32) << 8u32 * (i as u32);
+    }
+    out
 }
 
 #[cfg(test)]

@@ -1,11 +1,24 @@
 extern crate kanji_api;
 
 use anyhow::Result;
-use kanji_api::krad::lines;
+use kanji_api::krad::{lines, decode_kanji};
 use std::fs;
 
 fn main() -> Result<()> {
-    match fs::read("./dictionary-files/downloads/kradfile2") {
+    let stuff = [
+        [0xB0u8, 0xA1u8],
+        [0xA1u8, 0xC3u8],
+        [0xB0u8, 0xECu8],
+    ];
+    for thing in stuff {
+        let res = decode_kanji(&thing);
+        println!("{:?}", res);
+    }
+    Ok(())
+}
+
+fn parse_kradfile2() -> Result<()> {
+    match fs::read("./dictionary-files/downloads/kradfile") {
         Ok(text) => match lines(&text) {
             Ok(parsed) => {
                 let (_, results) = parsed;
