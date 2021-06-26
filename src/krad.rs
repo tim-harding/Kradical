@@ -73,16 +73,6 @@ mod tests {
     }
 
     #[test]
-    fn is_not_comment() {
-        let res = comment("��� : �� �� ��\n".as_bytes());
-        match res {
-            // Todo: I'm sure there's a better way of writing this
-            Ok(_) => assert_eq!(true, false),
-            Err(_) => {}
-        }
-    }
-
-    #[test]
     fn takes_entire_line() -> Result<()> {
         let res = end_of_line("# September 2007\n".as_bytes())?;
         assert_eq!(res, ("\n".as_bytes(), "# September 2007".as_bytes()));
@@ -128,6 +118,35 @@ mod tests {
                 }
             )
         );
+        Ok(())
+    }
+
+    #[test]
+    fn parses_line_as_kanji() -> Result<()> {
+        let res = line("��� : �� �� �� �� ��\n".as_bytes())?;
+        assert_eq!(
+            res,
+            (
+                "\n".as_bytes(),
+                Some(KanjiParts {
+                    kanji: "���".as_bytes(),
+                    radicals: vec![
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                    ],
+                })
+            )
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn parses_line_as_comment() -> Result<()> {
+        let res = line("# September 2007\n".as_bytes())?;
+        assert_eq!(res, ("\n".as_bytes(), None));
         Ok(())
     }
 }
