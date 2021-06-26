@@ -108,23 +108,22 @@ mod tests {
 
     #[test]
     fn parses_line_as_kanji() -> Result<()> {
-        let res = next_kanji("��� : �� �� �� �� ��\n".as_bytes())?;
+        let res = next_kanji(KANJI_LINE)?;
         assert_eq!(res, (NEWLINE, parsed_kanji()));
         Ok(())
     }
 
     #[test]
-    fn ignores_comment() -> Result<()> {
-        let res = next_kanji("# September 2007\n��� : �� �� �� �� ��\n".as_bytes())?;
-        assert_eq!(res, (NEWLINE, parsed_kanji()));
-        Ok(())
+    fn ignores_comment() {
+        let line = vec![COMMENT_LINE, KANJI_LINE].join("".as_bytes());
+        let res = next_kanji(&line);
+        assert_eq!(res, Ok((NEWLINE, parsed_kanji())));
     }
 
     #[test]
-    fn parses_lines() -> Result<()> {
-        let res =
-            lines("��� : �� �� �� �� ��\n# September 2007\n��� : �� �� �� �� ��\n".as_bytes())?;
-        assert_eq!(res, (NEWLINE, vec![parsed_kanji(), parsed_kanji()],));
-        Ok(())
+    fn parses_lines() {
+        let line = vec![KANJI_LINE, COMMENT_LINE, KANJI_LINE].join("".as_bytes());
+        let res = lines(&line);
+        assert_eq!(res, Ok((NEWLINE, vec![parsed_kanji(), parsed_kanji()])));
     }
 }
