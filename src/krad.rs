@@ -20,7 +20,7 @@ use nom::{
 const SEPARATOR: &[u8] = " : ".as_bytes();
 
 // Todo: Shouldn't need to clone this
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct KanjiParts<'a> {
     kanji: &'a [u8],
     radicals: Vec<&'a [u8]>,
@@ -104,6 +104,28 @@ mod tests {
             (
                 "\n".as_bytes(),
                 vec!["��".as_bytes(), "��".as_bytes(), "��".as_bytes()]
+            )
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn parses_kanji() -> Result<()> {
+        let res = kanji_line("��� : �� �� �� �� ��\n".as_bytes())?;
+        assert_eq!(
+            res,
+            (
+                "\n".as_bytes(),
+                KanjiParts {
+                    kanji: "���".as_bytes(),
+                    radicals: vec![
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                        "��".as_bytes(),
+                    ],
+                }
             )
         );
         Ok(())
