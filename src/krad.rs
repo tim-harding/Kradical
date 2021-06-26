@@ -80,4 +80,11 @@ mod tests {
         assert_eq!(res, ("".as_bytes(), "# September 2007".as_bytes()));
         Ok(())
     }
+
+    #[test]
+    fn parses_radical() -> Result<()> {
+        let res = radical("�� �� ��".as_bytes())?;
+        assert_eq!(res, ("�� ��".as_bytes(), "��".as_bytes()));
+        Ok(())
+    }
 }
