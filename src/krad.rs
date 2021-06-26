@@ -1,21 +1,17 @@
 use nom::{
     branch::alt,
     bytes::{
-        complete::{tag, take, take_till, take_until},
+        complete::{tag, take_until},
         streaming::is_not,
     },
-    character::{
-        complete::{char, one_of},
-        is_newline,
-    },
-    combinator::{complete, eof, map, value},
-    multi::{many_till, separated_list1},
+    character::complete::char,
+    combinator::{map, value},
+    multi::separated_list1,
     sequence::{pair, separated_pair},
     IResult,
 };
 
 // Note: requires newline before eof
-// Otherwise silently ignores the last line
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
 
@@ -26,8 +22,10 @@ pub struct KanjiParts<'a> {
     radicals: Vec<&'a [u8]>,
 }
 
-pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<Option<KanjiParts>>> {
-    separated_list1(char('\n'), line)(b)
+pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
+    let (i, o) = separated_list1(char('\n'), line)(b)?;
+    let kanji: Vec<_> = o.into_iter().filter_map(|e| e).collect();
+    Ok((i, kanji))
 }
 
 fn line(b: &[u8]) -> IResult<&[u8], Option<KanjiParts>> {
