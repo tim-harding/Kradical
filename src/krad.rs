@@ -1,4 +1,13 @@
-use nom::{IResult, branch::alt, bytes::complete::{tag, take, take_until}, combinator::{eof, map, map_opt, value}, multi::many_till, sequence::{pair, separated_pair, terminated}};
+use nom::{
+    branch::alt,
+    bytes::complete::{tag, take, take_until},
+    combinator::{eof, map, value},
+    multi::many_till,
+    sequence::{pair, separated_pair},
+    IResult,
+};
+
+// Note: requires newline before eof
 
 const NEWLINE: &[u8] = &[0x0A];
 const SEPARATOR: &[u8] = &[0x20, 0x3A, 0x20];
@@ -8,8 +17,8 @@ const SPACE: &[u8] = &[0x20];
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone)]
 pub struct KanjiParts<'a> {
-    kanji: &'a[u8],
-    radicals: Vec<&'a[u8]>,
+    kanji: &'a [u8],
+    radicals: Vec<&'a [u8]>,
 }
 
 pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<Option<KanjiParts>>> {
@@ -25,10 +34,7 @@ fn line(b: &[u8]) -> IResult<&[u8], Option<KanjiParts>> {
 fn kanji_line(b: &[u8]) -> IResult<&[u8], KanjiParts> {
     let (i, o) = separated_pair(take_until(SEPARATOR), tag(SEPARATOR), radicals)(b)?;
     let (kanji, radicals) = o;
-    let parts = KanjiParts{
-        kanji,
-        radicals,
-    };
+    let parts = KanjiParts { kanji, radicals };
     Ok((i, parts))
 }
 
@@ -57,8 +63,13 @@ fn end_of_line(b: &[u8]) -> IResult<&[u8], &[u8]> {
 
 #[cfg(test)]
 mod tests {
+    use super::*;
+    use anyhow::Result;
+
     #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+    fn is_comment() -> Result<()> {
+        let (_i, o) = comment("# September 2007\n".as_bytes())?;
+        assert_eq!(o, ());
+        Ok(())
     }
 }
