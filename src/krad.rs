@@ -26,11 +26,7 @@ pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
 }
 
 fn next_kanji(b: &[u8]) -> IResult<&[u8], KanjiParts> {
-    let (i, o) = separated_pair(
-        separated_list0(char('\n'), comment),
-        opt(char('\n')),
-        kanji_line,
-    )(b)?;
+    let (i, o) = separated_pair(comments, opt(char('\n')), kanji_line)(b)?;
     let (_comments, kanji) = o;
     Ok((i, kanji))
 }
@@ -48,6 +44,11 @@ fn radicals(b: &[u8]) -> IResult<&[u8], Vec<&[u8]>> {
 
 fn radical(b: &[u8]) -> IResult<&[u8], &[u8]> {
     is_not(" \n")(b)
+}
+
+fn comments(b: &[u8]) -> IResult<&[u8], ()> {
+    let (i, _o) = separated_list0(char('\n'), comment)(b)?;
+    Ok((i, ()))
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
@@ -81,6 +82,14 @@ mod tests {
     fn is_comment() -> Result<()> {
         let (_i, o) = comment(COMMENT_LINE)?;
         assert_eq!(o, ());
+        Ok(())
+    }
+
+    #[test]
+    fn multiple_comment_lines() -> Result<()> {
+        let line = vec![COMMENT_LINE, COMMENT_LINE].join("".as_bytes());
+        let res = comments(&line);
+        assert_eq!(res, Ok((NEWLINE, ())));
         Ok(())
     }
 
