@@ -1,12 +1,10 @@
 use nom::{
-    branch::alt,
     bytes::{
         complete::{tag, take_until},
         streaming::is_not,
     },
     character::complete::char,
-    combinator::{map, value},
-    multi::separated_list1,
+    multi::{separated_list0, separated_list1},
     sequence::{pair, separated_pair},
     IResult,
 };
@@ -23,13 +21,13 @@ pub struct KanjiParts<'a> {
 }
 
 pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
-    let (i, o) = separated_list1(char('\n'), line)(b)?;
-    let kanji: Vec<_> = o.into_iter().filter_map(|e| e).collect();
-    Ok((i, kanji))
+    separated_list1(char('\n'), next_kanji)(b)
 }
 
-fn line(b: &[u8]) -> IResult<&[u8], Option<KanjiParts>> {
-    alt((value(None, comment), map(kanji_line, |k| Some(k))))(b)
+fn next_kanji(b: &[u8]) -> IResult<&[u8], KanjiParts> {
+    let (i, o) = pair(separated_list0(char('\n'), comment), kanji_line)(b)?;
+    let (_comments, kanji) = o;
+    Ok((i, kanji))
 }
 
 fn kanji_line(b: &[u8]) -> IResult<&[u8], KanjiParts> {
