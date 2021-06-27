@@ -1,4 +1,4 @@
-pub fn jis_codepoint_to_unicode(code: u32) -> Option<&'static str> {
+pub fn decode(code: u32) -> Option<&'static str> {
 	match code {
 		0x000000 => Some("\u{0000}"),
 		0x000001 => Some("\u{0001}"),
