@@ -5,6 +5,7 @@ mod kradfile2_hex;
 mod kradfile_hex;
 
 use anyhow::Result;
+use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     bytes::{
         complete::{tag, take_until},
@@ -22,15 +23,17 @@ const SEPARATOR: &[u8] = " : ".as_bytes();
 
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub struct KanjiParts<'a> {
-    kanji: &'a str,
-    radicals: Vec<&'a str>,
+pub struct KanjiParts {
+    kanji: String,
+    radicals: Vec<String>,
 }
 
 #[derive(Error, Debug)]
 pub enum KradError {
-    #[error("Invalid JIS0208 or JIS0212 codepoint")]
+    #[error("Invalid JIS0213 codepoint")]
     Jis,
+    #[error("Invalid EUC-JP codepoint")]
+    EucJp,
 }
 
 pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
@@ -51,15 +54,15 @@ fn kanji_line(b: &[u8]) -> IResult<&[u8], KanjiParts> {
     )(b)
 }
 
-fn kanji(b: &[u8]) -> IResult<&[u8], &'static str> {
+fn kanji(b: &[u8]) -> IResult<&[u8], String> {
     map_res(take_until(SEPARATOR), decode_jis)(b)
 }
 
-fn radicals(b: &[u8]) -> IResult<&[u8], Vec<&'static str>> {
+fn radicals(b: &[u8]) -> IResult<&[u8], Vec<String>> {
     separated_list1(char(' '), radical)(b)
 }
 
-fn radical(b: &[u8]) -> IResult<&[u8], &'static str> {
+fn radical(b: &[u8]) -> IResult<&[u8], String> {
     map_res(is_not(" \n"), decode_jis)(b)
 }
 
@@ -71,13 +74,17 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
     value((), pair(char('#'), take_until("\n")))(b)
 }
 
-pub fn decode_jis(b: &[u8]) -> Result<&'static str> {
-    println!("{:?}", b);
+pub fn decode_jis(b: &[u8]) -> Result<String> {
     match b.len() {
-        2 | 3 => {
+        2 => {
             let code = bytes_to_u32(b);
-            jis213::decode(code).ok_or(KradError::Jis.into())
+            jis213::decode(code)
+                .map(|unicode| unicode.to_string())
+                .ok_or(KradError::Jis.into())
         }
+        3 => EUCJPEncoding
+            .decode(b, DecoderTrap::Strict)
+            .map_err(|_| KradError::EucJp.into()),
         _ => Err(KradError::Jis.into()),
     }
 }
@@ -92,10 +99,7 @@ fn bytes_to_u32(b: &[u8]) -> u32 {
 
 #[cfg(test)]
 mod tests {
-    // use super::kradfile2_hex::KRADFILE2_HEX;
-    use super::kradfile_hex::KRADFILE_HEX;
     use super::*;
-    use anyhow::Result;
 
     // JIS213
     // "亜 : ｜ 一 口\n"
@@ -103,13 +107,10 @@ mod tests {
         0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A,
     ];
 
-    const KANJI_3B_AND_SEP: &[u8] = &[
-        0x8F, 0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xB0, 0xEC, 0x20, 0xD2, 0xB1, 0x0A,
-    ];
-
+    // EUC-JP, JIS213
+    // "丂 : 一 勹\n"
     const KANJI_LINE2: &[u8] = &[
-        0xEF, 0xBF, 0xBD, 0xEF, 0xBF, 0xBD, 0xEF, 0xBF, 0xBD, 0x20, 0x3A, 0x20, 0xEF, 0xBF, 0xBD,
-        0xEF, 0xBF, 0xBD, 0x20, 0xD2, 0xB1, 0x0A,
+        0x8F, 0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xB0, 0xEC, 0x20, 0xD2, 0xB1, 0x0A,
     ];
 
     // JIS213
@@ -119,99 +120,98 @@ mod tests {
     const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
     const NEWLINE: &[u8] = "\n".as_bytes();
 
-    fn parsed_kanji() -> KanjiParts<'static> {
+    fn parsed_kanji() -> KanjiParts {
         KanjiParts {
-            kanji: "亜",
-            radicals: vec!["｜", "一", "口"],
+            kanji: "亜".to_string(),
+            radicals: vec!["｜".to_string(), "一".to_string(), "口".to_string()],
+        }
+    }
+
+    fn parsed_kanji_2() -> KanjiParts {
+        KanjiParts {
+            kanji: "丂".to_string(),
+            radicals: vec!["一".to_string(), "勹".to_string()],
         }
     }
 
     #[test]
-    fn is_comment() -> Result<()> {
-        let (_i, o) = comment(COMMENT_LINE)?;
-        assert_eq!(o, ());
-        Ok(())
+    fn is_comment() {
+        let res = comment(COMMENT_LINE);
+        assert_eq!(res, Ok((NEWLINE, ())));
     }
 
     #[test]
-    fn is_comment_short() -> Result<()> {
-        let (_i, o) = comment("#\n".as_bytes())?;
-        assert_eq!(o, ());
-        Ok(())
+    fn is_comment_short() {
+        let res = comment("#\n".as_bytes());
+        assert_eq!(res, Ok((NEWLINE, ())));
     }
 
     #[test]
-    fn multiple_comment_lines() -> Result<()> {
+    fn multiple_comment_lines() {
         let line = vec![COMMENT_LINE, COMMENT_LINE].join("".as_bytes());
-        let (_i, o) = comments(&line)?;
-        assert_eq!(o, ());
-        Ok(())
+        let res = comments(&line);
+        assert_eq!(res, Ok((NEWLINE, ())));
     }
 
     #[test]
-    fn parses_radical() -> Result<()> {
-        let res = radical(RADICALS)?;
-        assert_eq!(res, (&RADICALS[2..], "｜"));
-        Ok(())
+    fn parses_radical() {
+        let res = radical(RADICALS);
+        assert_eq!(res, Ok((&RADICALS[2..], "｜".to_string())));
     }
 
     #[test]
-    fn parses_radicals() -> Result<()> {
-        let res = radicals(RADICALS)?;
-        assert_eq!(res, (NEWLINE, parsed_kanji().radicals));
-        Ok(())
+    fn parses_radicals() {
+        let res = radicals(RADICALS);
+        assert_eq!(res, Ok((NEWLINE, parsed_kanji().radicals)));
     }
 
     #[test]
-    fn parses_kanji() -> Result<()> {
-        let res = kanji_line(KANJI_LINE)?;
-        assert_eq!(res, (NEWLINE, parsed_kanji()));
-        Ok(())
+    fn parses_kanji() {
+        let res = kanji_line(KANJI_LINE);
+        assert_eq!(res, Ok((NEWLINE, parsed_kanji())));
     }
 
     #[test]
-    fn parses_kanji_3b() -> Result<()> {
-        let (_i, o) = kanji(KANJI_3B_AND_SEP)?;
-        assert_eq!(o, parsed_kanji());
-        Ok(())
+    fn parses_kanji_2() {
+        let res = kanji_line(KANJI_LINE2);
+        assert_eq!(res, Ok((NEWLINE, parsed_kanji_2())));
     }
 
     #[test]
-    fn parses_line_as_kanji() -> Result<()> {
-        let res = next_kanji(KANJI_LINE)?;
-        assert_eq!(res, (NEWLINE, parsed_kanji()));
-        Ok(())
+    fn parses_line_as_kanji() {
+        let res = next_kanji(KANJI_LINE);
+        assert_eq!(res, Ok((NEWLINE, parsed_kanji())));
     }
 
     #[test]
-    fn ignores_comment() -> Result<()> {
+    fn ignores_comment() {
         let line = vec![COMMENT_LINE, KANJI_LINE].join("".as_bytes());
-        let (_i, o) = next_kanji(&line)?;
-        assert_eq!(o, parsed_kanji());
-        Ok(())
+        let res = next_kanji(&line);
+        assert_eq!(res, Ok((NEWLINE, parsed_kanji())));
     }
 
     #[test]
-    fn parses_lines() -> Result<()> {
+    fn parses_lines() {
         let line = vec![KANJI_LINE, COMMENT_LINE, KANJI_LINE].join("".as_bytes());
-        let (_i, o) = lines(&line)?;
-        assert_eq!(o, vec![parsed_kanji(), parsed_kanji()]);
-        Ok(())
+        let res = lines(&line);
+        assert_eq!(res, Ok((NEWLINE, vec![parsed_kanji(), parsed_kanji()])));
     }
 
     #[test]
-    fn works_on_actual_file() -> Result<()> {
-        let (i, o) = lines(KRADFILE_HEX)?;
-        assert_eq!(i, NEWLINE);
-        Ok(())
+    fn works_on_actual_file() {
+        use super::kradfile_hex::KRADFILE_HEX;
+
+        let res = lines(KRADFILE_HEX);
+        assert_eq!(res.is_ok(), true);
+        assert_eq!(res.unwrap().1.len(), 6_355);
     }
 
-    /*
     #[test]
-    fn works_on_actual_file_2() -> Result<()> {
-        let (i, o) = lines(KRADFILE2_HEX)?;
-        assert_eq!(i, NEWLINE);
-        Ok(())
+    fn works_on_actual_file_2() {
+        use super::kradfile2_hex::KRADFILE2_HEX;
+
+        let res = lines(KRADFILE2_HEX);
+        assert_eq!(res.is_ok(), true);
+        assert_eq!(res.unwrap().1.len(), 5_801);
     }
-    */
 }
