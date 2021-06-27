@@ -1,6 +1,5 @@
 use std::path::Path;
 
-pub use crate::shared::KradError;
 use crate::shared::{comments, decode_jis};
 use nom::{
     bytes::{
@@ -13,6 +12,19 @@ use nom::{
     sequence::separated_pair,
     IResult,
 };
+use thiserror::Error;
+
+/// Enumerates the modules's possible errors
+#[derive(Error, Debug)]
+pub enum KradError {
+    /// Error while parsing kradfile
+    #[error("Error while parsing kradfile")]
+    Parse,
+
+    /// Error while reading kradfile
+    #[error("Error while reading kradfile")]
+    Io(#[from] std::io::Error),
+}
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
 

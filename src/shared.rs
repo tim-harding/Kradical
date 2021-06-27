@@ -7,9 +7,8 @@ use nom::{
 };
 use thiserror::Error;
 
-/// Enumerates the modules's possible errors
-#[derive(Error, Debug)]
-pub enum KradError {
+#[derive(Debug, Error)]
+pub enum SharedError {
     /// Invalid JIS X 0213 codepoint
     #[error("Invalid JIS X 0213 codepoint")]
     Jis,
@@ -17,14 +16,10 @@ pub enum KradError {
     /// Invalid EUC-JP codepoint
     #[error("Invalid EUC-JP codepoint")]
     EucJp,
-
-    /// Error while parsing kradfile
-    #[error("Error while parsing kradfile")]
-    Parse,
-
-    /// Error while reading kradfile
-    #[error("Error while reading kradfile")]
-    Io(#[from] std::io::Error),
+    
+    /// Incorrect number of bytes for JIS or EUC-JP
+    #[error("Incorrect number of bytes for JIS or EUC-JP")]
+    Unknown,
 }
 
 pub fn comments(b: &[u8]) -> IResult<&[u8], ()> {
@@ -36,23 +31,22 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 }
 
 // Todo: Write tests
-pub fn decode_jis(b: &[u8]) -> Result<String, KradError> {
+pub fn decode_jis(b: &[u8]) -> Result<String, SharedError> {
     match b.len() {
         2 => {
             let code = bytes_to_u32(b);
             jis_to_utf8(code)
                 .map(|unicode| unicode.to_string())
-                .ok_or(KradError::Jis.into())
+                .ok_or(SharedError::Jis)
         }
         3 => EUCJPEncoding
             .decode(b, DecoderTrap::Strict)
-            .map_err(|_| KradError::EucJp.into()),
-        _ => Err(KradError::Jis.into()),
+            .map_err(|_| SharedError::EucJp),
+        _ => Err(SharedError::Unknown),
     }
 }
 
-// Todo: Handle overflow
-pub fn bytes_to_u32(b: &[u8]) -> u32 {
+fn bytes_to_u32(b: &[u8]) -> u32 {
     let mut out = 0u32;
     for (i, byte) in b.iter().rev().enumerate() {
         out += (*byte as u32) << 8u32 * (i as u32);
