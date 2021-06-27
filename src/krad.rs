@@ -1,3 +1,5 @@
+use std::path::Path;
+
 use super::jis213::jis_to_utf8;
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
@@ -15,41 +17,63 @@ use thiserror::Error;
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
 
-// Todo: Shouldn't need to clone this
+/// A decomposition of a kanji into its constituent radicals
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Decomposition {
+    /// The kanji character
     pub kanji: String,
+
+    /// A list of characters representing the radicals in the kanji
     pub radicals: Vec<String>,
 }
 
+/// Enumerates the modules's possible errors
 #[derive(Error, Debug)]
 pub enum KradError {
-    #[error("Invalid JIS0213 codepoint")]
+    /// Invalid JIS X 0213 codepoint
+    #[error("Invalid JIS X 0213 codepoint")]
     Jis,
+
+    /// Invalid EUC-JP codepoint
     #[error("Invalid EUC-JP codepoint")]
     EucJp,
+
+    /// Error while parsing kradfile
     #[error("Error while parsing kradfile")]
     Parse,
+
+    /// Error while reading kradfile
     #[error("Error while reading kradfile")]
     Io(#[from] std::io::Error),
 }
 
-pub fn parse_kradfile() -> Result<Vec<Decomposition>, KradError> {
-    parse_file("./edrdg_files/kradfile")
+type KradResult = Result<Vec<Decomposition>, KradError>;
+
+/// Parses a kradfile or kradfile2 and returns
+/// the list of kanji radical decompositions
+///
+/// # Arguments
+///
+/// * `path` - A path to the kradfile
+pub fn parse_file<P: AsRef<Path>>(path: P) -> KradResult {
+    parse_file_implementation(path.as_ref())
 }
 
-pub fn parse_kradfile2() -> Result<Vec<Decomposition>, KradError> {
-    parse_file("./edrdg_files/kradfile2")
-}
-
-fn parse_file(filename: &str) -> Result<Vec<Decomposition>, KradError> {
-    std::fs::read(filename)
+// Monomorphisation bloat avoidal splitting
+fn parse_file_implementation(path: &Path) -> KradResult {
+    std::fs::read(path)
         .map_err(|err| err.into())
-        .and_then(|text| {
-            lines(&text)
-                .map(|(_i, o)| o)
-                .map_err(|_err| KradError::Parse)
-        })
+        .and_then(|b| parse_bytes(&b))
+}
+
+/// Parses the contents of a kradfile or kradfile2 and returns
+/// the list of kanji radical decompositions
+///
+/// # Arguments
+///
+/// * `path` - A path to the kradfile
+pub fn parse_bytes(b: &[u8]) -> KradResult {
+    lines(b).map(|(_i, o)| o).map_err(|_err| KradError::Parse)
 }
 
 fn lines(b: &[u8]) -> IResult<&[u8], Vec<Decomposition>> {
@@ -71,7 +95,7 @@ fn kanji_line(b: &[u8]) -> IResult<&[u8], Decomposition> {
 }
 
 fn kanji(b: &[u8]) -> IResult<&[u8], String> {
-    map_res(take_until(SEPARATOR), decode_jis)(b)
+    map_res(take_until(" "), decode_jis)(b)
 }
 
 fn radicals(b: &[u8]) -> IResult<&[u8], Vec<String>> {
@@ -215,14 +239,14 @@ mod tests {
 
     #[test]
     fn works_on_actual_file() {
-        let res = parse_kradfile();
+        let res = parse_file("./edrdg_files/kradfile2");
         assert_eq!(res.is_ok(), true);
         assert_eq!(res.unwrap().len(), 6_355);
     }
 
     #[test]
     fn works_on_actual_file_2() {
-        let res = parse_kradfile2();
+        let res = parse_file("./edrdg_files/kradfile2");
         assert_eq!(res.is_ok(), true);
         assert_eq!(res.unwrap().len(), 5_801);
     }

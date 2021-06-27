@@ -1,4 +1,4 @@
-use krad::{parse_kradfile, parse_kradfile2, KradError};
+use krad::{Decomposition, KradError, parse_file};
 use std::{fs::File, io::Write};
 
 fn main() -> Result<(), KradError> {
@@ -15,4 +15,12 @@ fn main() -> Result<(), KradError> {
         Ok(())
     })?;
     Ok(())
+}
+
+fn parse_kradfile() -> Result<Vec<Decomposition>, KradError> {
+    parse_file("./edrdg_files/kradfile")
+}
+
+fn parse_kradfile2() -> Result<Vec<Decomposition>, KradError> {
+    parse_file("./edrdg_files/kradfile2")
 }
