@@ -1,18 +1,18 @@
 [package]
-name = "kanji-api"
+name = "krad"
 version = "0.1.0"
 edition = "2018"
 
 [lib]
-name = "kanji_api"
+name = "krad"
 path = "src/lib.rs"
 
 [[bin]]
-name = "kanji_api_bin"
+name = "radkatinate"
 path = "src/bin.rs"
 
 [dependencies]
 anyhow = "1"
 thiserror = "1"
 nom = "6"
-encoding = "0.2"
+encoding = "0"

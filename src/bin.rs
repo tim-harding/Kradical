@@ -1,7 +1,5 @@
-extern crate kanji_api;
-
 use anyhow::Result;
-use kanji_api::{parse_kradfile, parse_kradfile2, KradError};
+use krad::{parse_kradfile, parse_kradfile2, KradError};
 use std::{fs::File, io::Write};
 
 fn main() -> Result<(), KradError> {
