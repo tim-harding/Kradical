@@ -1,7 +1,7 @@
 extern crate kanji_api;
 
 use anyhow::Result;
-use kanji_api::krad::{lines, decode_kanji};
+use kanji_api::krad::{lines, decode_jis};
 use std::fs;
 
 fn main() -> Result<()> {
@@ -11,7 +11,7 @@ fn main() -> Result<()> {
         [0xB0u8, 0xECu8],
     ];
     for thing in stuff {
-        let res = decode_kanji(&thing);
+        let res = decode_jis(&thing);
         println!("{:?}", res);
     }
     Ok(())

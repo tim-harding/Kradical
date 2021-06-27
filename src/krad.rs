@@ -1,17 +1,17 @@
 mod jis213;
 
+use anyhow::Result;
 use nom::{
     bytes::{
         complete::{tag, take_until},
         streaming::is_not,
     },
     character::complete::char,
-    combinator::opt,
+    combinator::{map, map_res, opt, value},
     multi::{separated_list0, separated_list1},
     sequence::{pair, separated_pair},
     IResult,
 };
-use anyhow::Result;
 use thiserror::Error;
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
@@ -19,16 +19,14 @@ const SEPARATOR: &[u8] = " : ".as_bytes();
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct KanjiParts<'a> {
-    kanji: &'a [u8],
-    radicals: Vec<&'a [u8]>,
+    kanji: &'a str,
+    radicals: Vec<&'a str>,
 }
 
 #[derive(Error, Debug)]
 pub enum KradError {
     #[error("Invalid JIS0208 or JIS0212 codepoint")]
     Jis,
-    #[error("JIS0212 not yet implemented")]
-    NotImplemented,
 }
 
 pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
@@ -36,51 +34,44 @@ pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
 }
 
 fn next_kanji(b: &[u8]) -> IResult<&[u8], KanjiParts> {
-    let (i, o) = separated_pair(comments, opt(char('\n')), kanji_line)(b)?;
-    let (_comments, kanji) = o;
-    Ok((i, kanji))
+    map(
+        separated_pair(comments, opt(char('\n')), kanji_line),
+        |(_comments, kanji)| kanji,
+    )(b)
 }
 
 fn kanji_line(b: &[u8]) -> IResult<&[u8], KanjiParts> {
-    let (i, o) = separated_pair(take_until(SEPARATOR), tag(SEPARATOR), radicals)(b)?;
-    let (kanji, radicals) = o;
-    let parts = KanjiParts { kanji, radicals };
-    Ok((i, parts))
+    map(
+        separated_pair(kanji, tag(SEPARATOR), radicals),
+        |(kanji, radicals)| KanjiParts { kanji, radicals },
+    )(b)
 }
 
-fn radicals(b: &[u8]) -> IResult<&[u8], Vec<&[u8]>> {
+fn kanji(b: &[u8]) -> IResult<&[u8], &'static str> {
+    map_res(take_until(SEPARATOR), decode_jis)(b)
+}
+
+fn radicals(b: &[u8]) -> IResult<&[u8], Vec<&'static str>> {
     separated_list1(char(' '), radical)(b)
 }
 
-fn radical(b: &[u8]) -> IResult<&[u8], &[u8]> {
-    is_not(" \n")(b)
+fn radical(b: &[u8]) -> IResult<&[u8], &'static str> {
+    map_res(is_not(" \n"), decode_jis)(b)
 }
 
 fn comments(b: &[u8]) -> IResult<&[u8], ()> {
-    let (i, _o) = separated_list0(char('\n'), comment)(b)?;
-    Ok((i, ()))
+    value((), separated_list0(char('\n'), comment))(b)
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
-    let (i, _o) = pair(char('#'), is_not("\n"))(b)?;
-    Ok((i, ()))
+    value((), pair(char('#'), is_not("\n")))(b)
 }
 
-pub fn decode_kanji(b: &[u8]) -> Result<&'static str> {
+pub fn decode_jis(b: &[u8]) -> Result<&'static str> {
+    let code = bytes_to_u32(b);
     match b.len() {
-        2 => {
-            let code = bytes_to_u32(b);
-            println!("{:#6X}", code);
-            jis213::decode(code).ok_or(KradError::Jis.into())
-        },
-        3 =>{
-            Err(KradError::NotImplemented.into())
-        },
-        n => {
-            println!("{}", n);
-            println!("{:?}", b);
-            Err(KradError::Jis.into())
-        }
+        2 | 3 => jis213::decode(code).ok_or(KradError::Jis.into()),
+        _ => Err(KradError::Jis.into()),
     }
 }
 
@@ -97,20 +88,17 @@ mod tests {
     use super::*;
     use anyhow::Result;
 
+    // Todo: Test cases aren't real JIS213,
+    // probably because it isn't valid UTF8
+
     const KANJI_LINE: &[u8] = "��� : �� �� �� �� ��\n".as_bytes();
     const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
     const NEWLINE: &[u8] = "\n".as_bytes();
 
     fn parsed_kanji() -> KanjiParts<'static> {
         KanjiParts {
-            kanji: "���".as_bytes(),
-            radicals: vec![
-                "��".as_bytes(),
-                "��".as_bytes(),
-                "��".as_bytes(),
-                "��".as_bytes(),
-                "��".as_bytes(),
-            ],
+            kanji: "���",
+            radicals: vec!["��", "��", "��", "��", "��"],
         }
     }
 
@@ -132,20 +120,14 @@ mod tests {
     #[test]
     fn parses_radical() -> Result<()> {
         let res = radical("�� �� ��\n".as_bytes())?;
-        assert_eq!(res, (" �� ��\n".as_bytes(), "��".as_bytes()));
+        assert_eq!(res, (" �� ��\n".as_bytes(), "��"));
         Ok(())
     }
 
     #[test]
     fn parses_radicals() -> Result<()> {
         let res = radicals("�� �� ��\n".as_bytes())?;
-        assert_eq!(
-            res,
-            (
-                NEWLINE,
-                vec!["��".as_bytes(), "��".as_bytes(), "��".as_bytes()]
-            )
-        );
+        assert_eq!(res, (NEWLINE, vec!["��", "��", "��"]));
         Ok(())
     }
 
