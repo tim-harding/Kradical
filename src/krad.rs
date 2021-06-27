@@ -68,9 +68,11 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 }
 
 pub fn decode_jis(b: &[u8]) -> Result<&'static str> {
-    let code = bytes_to_u32(b);
     match b.len() {
-        2 | 3 => jis213::decode(code).ok_or(KradError::Jis.into()),
+        2 | 3 => {
+            let code = bytes_to_u32(b);
+            jis213::decode(code).ok_or(KradError::Jis.into())
+        }
         _ => Err(KradError::Jis.into()),
     }
 }
@@ -88,17 +90,25 @@ mod tests {
     use super::*;
     use anyhow::Result;
 
-    // Todo: Test cases aren't real JIS213,
-    // probably because it isn't valid UTF8
+    // JIS213
+    // "亜 : ｜ 一 口"
+    const KANJI_LINE: &[u8] = &[
+        0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A,
+    ];
 
-    const KANJI_LINE: &[u8] = "��� : �� �� �� �� ��\n".as_bytes();
+    // JIS213
+    // "｜ 一 口"
+    const RADICALS: &[u8] = &[
+        0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A
+    ];
+
     const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
     const NEWLINE: &[u8] = "\n".as_bytes();
 
     fn parsed_kanji() -> KanjiParts<'static> {
         KanjiParts {
-            kanji: "���",
-            radicals: vec!["��", "��", "��", "��", "��"],
+            kanji: "亜",
+            radicals: vec!["｜", "一", "口"],
         }
     }
 
@@ -119,15 +129,15 @@ mod tests {
 
     #[test]
     fn parses_radical() -> Result<()> {
-        let res = radical("�� �� ��\n".as_bytes())?;
-        assert_eq!(res, (" �� ��\n".as_bytes(), "��"));
+        let res = radical(RADICALS)?;
+        assert_eq!(res, (&RADICALS[2..], "｜"));
         Ok(())
     }
 
     #[test]
     fn parses_radicals() -> Result<()> {
-        let res = radicals("�� �� ��\n".as_bytes())?;
-        assert_eq!(res, (NEWLINE, vec!["��", "��", "��"]));
+        let res = radicals(RADICALS)?;
+        assert_eq!(res, (NEWLINE, parsed_kanji().radicals));
         Ok(())
     }
 

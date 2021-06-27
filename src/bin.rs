@@ -5,10 +5,15 @@ use kanji_api::krad::{lines, decode_jis};
 use std::fs;
 
 fn main() -> Result<()> {
+    kanji_parse_playground()
+}
+
+fn kanji_parse_playground() -> Result<()> {
     let stuff = [
-        [0xB0u8, 0xA1u8],
-        [0xA1u8, 0xC3u8],
-        [0xB0u8, 0xECu8],
+        [0xB0, 0xA1],
+        [0xA1, 0xC3],
+        [0xB0, 0xEC],
+        [0xB8, 0xFD],
     ];
     for thing in stuff {
         let res = decode_jis(&thing);
@@ -26,7 +31,7 @@ fn parse_kradfile2() -> Result<()> {
             }
             Err(err) => match err {
                 nom::Err::Incomplete(needed) => println!("Incomplete: {:?}", needed),
-                nom::Err::Error(err) => println!("Error: {:?}", err.input.len()),
+                nom::Err::Error(err) => println!("Error: {:?}", err.code),
                 nom::Err::Failure(err) => println!("Failure: {:?}", err.code),
             },
         },
