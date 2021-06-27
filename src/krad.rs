@@ -1,17 +1,11 @@
 mod jis213;
+mod kradfile_hex;
 
 use anyhow::Result;
-use nom::{
-    bytes::{
+use nom::{IResult, branch::alt, bytes::{
         complete::{tag, take_until},
         streaming::is_not,
-    },
-    character::complete::char,
-    combinator::{map, map_res, opt, value},
-    multi::{separated_list0, separated_list1},
-    sequence::{pair, separated_pair},
-    IResult,
-};
+    }, character::complete::char, combinator::{map, map_res, opt, success, value}, multi::{separated_list0, separated_list1}, sequence::{pair, separated_pair}};
 use thiserror::Error;
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
@@ -64,7 +58,7 @@ fn comments(b: &[u8]) -> IResult<&[u8], ()> {
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
-    value((), pair(char('#'), is_not("\n")))(b)
+    value((), pair(char('#'), take_until("\n")))(b)
 }
 
 pub fn decode_jis(b: &[u8]) -> Result<&'static str> {
@@ -90,6 +84,7 @@ fn bytes_to_u32(b: &[u8]) -> u32 {
 mod tests {
     use super::*;
     use anyhow::Result;
+    use super::kradfile_hex::KRADFILE_HEX;
 
     // JIS213
     // "亜 : ｜ 一 口\n"
@@ -116,6 +111,13 @@ mod tests {
     #[test]
     fn is_comment() -> Result<()> {
         let (_i, o) = comment(COMMENT_LINE)?;
+        assert_eq!(o, ());
+        Ok(())
+    }
+
+    #[test]
+    fn is_comment_short() -> Result<()> {
+        let (_i, o) = comment("#\n".as_bytes())?;
         assert_eq!(o, ());
         Ok(())
     }
@@ -168,5 +170,12 @@ mod tests {
         let line = vec![KANJI_LINE, COMMENT_LINE, KANJI_LINE].join("".as_bytes());
         let res = lines(&line);
         assert_eq!(res, Ok((NEWLINE, vec![parsed_kanji(), parsed_kanji()])));
+    }
+    
+    #[test]
+    fn works_on_actual_file() -> Result<()> {
+        let (i, o) = lines(KRADFILE_HEX)?;
+        assert_eq!(i, NEWLINE);
+        Ok(())
     }
 }
