@@ -5,18 +5,17 @@ use kanji_api::krad::{lines, decode_jis};
 use std::fs;
 
 fn main() -> Result<()> {
-    // kanji_parse_playground()
-    parse_kradfile2()
+    kanji_parse_playground()
+    // parse_kradfile2()
 }
 
 fn kanji_parse_playground() -> Result<()> {
-    let stuff = [
-        [0xB0, 0xA1],
-        [0xA1, 0xC3],
-        [0xB0, 0xEC],
-        [0xB8, 0xFD],
+    const STUFF: &[&[u8]] = &[
+        &[0x8F, 0xB0, 0xA1], 
+        &[0xB0, 0xEC], 
+        &[0xD2, 0xB1],
     ];
-    for thing in stuff {
+    for thing in STUFF {
         let res = decode_jis(&thing);
         println!("{:?}", res);
     }
