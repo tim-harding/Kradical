@@ -68,6 +68,7 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 }
 
 pub fn decode_jis(b: &[u8]) -> Result<&'static str> {
+    println!("{:?}", b);
     match b.len() {
         2 | 3 => {
             let code = bytes_to_u32(b);
@@ -91,15 +92,15 @@ mod tests {
     use anyhow::Result;
 
     // JIS213
-    // "亜 : ｜ 一 口"
+    // "亜 : ｜ 一 口\n"
     const KANJI_LINE: &[u8] = &[
         0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A,
     ];
 
     // JIS213
-    // "｜ 一 口"
+    // "｜ 一 口\n"
     const RADICALS: &[u8] = &[
-        0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A
+        0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A,
     ];
 
     const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();

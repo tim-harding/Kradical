@@ -5,7 +5,8 @@ use kanji_api::krad::{lines, decode_jis};
 use std::fs;
 
 fn main() -> Result<()> {
-    kanji_parse_playground()
+    // kanji_parse_playground()
+    parse_kradfile2()
 }
 
 fn kanji_parse_playground() -> Result<()> {
