@@ -1,41 +1,43 @@
 extern crate kanji_api;
 
 use anyhow::Result;
-use kanji_api::krad::{lines, decode_jis};
-use std::fs;
+use kanji_api::krad::{lines, KanjiParts};
+use std::{fs, io::Write};
+use thiserror::Error;
+
+#[derive(Error, Debug)]
+enum AppError {
+    #[error("Error while parsing kradfile")]
+    Parse,
+    #[error("Error while reading kradfile")]
+    Io(#[from] std::io::Error),
+}
 
 fn main() -> Result<()> {
-    kanji_parse_playground()
-    // parse_kradfile2()
-}
-
-fn kanji_parse_playground() -> Result<()> {
-    const STUFF: &[&[u8]] = &[
-        &[0x8F, 0xB0, 0xA1], 
-        &[0xB0, 0xEC], 
-        &[0xD2, 0xB1],
-    ];
-    for thing in STUFF {
-        let res = decode_jis(&thing);
-        println!("{:?}", res);
-    }
-    Ok(())
-}
-
-fn parse_kradfile2() -> Result<()> {
-    match fs::read("./dictionary-files/downloads/kradfile") {
-        Ok(text) => match lines(&text) {
-            Ok(parsed) => {
-                let (_, results) = parsed;
-                println!("{:?}", results.len());
+    let mut kanji = vec![];
+    append_file("./dictionary-files/downloads/kradfile", &mut kanji)?;
+    append_file("./dictionary-files/downloads/kradfile2", &mut kanji)?;
+    std::fs::File::create("./dictionary-files/outputs/kradfile_unicode.txt").and_then(
+        |mut file| {
+            for kanji in kanji {
+                let s = format!("{} : {}\n", kanji.kanji, kanji.radicals.join(" "));
+                file.write(s.as_bytes())?;
             }
-            Err(err) => match err {
-                nom::Err::Incomplete(needed) => println!("Incomplete: {:?}", needed),
-                nom::Err::Error(err) => println!("Error: {:?}", err.code),
-                nom::Err::Failure(err) => println!("Failure: {:?}", err.code),
-            },
+            Ok(())
         },
-        Err(err) => println!("{}", err),
-    }
+    )?;
     Ok(())
+}
+
+fn append_file(filename: &str, kanji: &mut Vec<KanjiParts>) -> Result<()> {
+    fs::read(filename)
+        .map_err(|err| AppError::Io(err))
+        .and_then(|text| {
+            lines(&text)
+                .map(|(_, mut results)| {
+                    kanji.append(&mut results);
+                })
+                .map_err(|_err| AppError::Parse)
+        })
+        .map_err(|err| err.into())
 }

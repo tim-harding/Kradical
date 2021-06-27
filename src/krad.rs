@@ -24,8 +24,8 @@ const SEPARATOR: &[u8] = " : ".as_bytes();
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct KanjiParts {
-    kanji: String,
-    radicals: Vec<String>,
+    pub kanji: String,
+    pub radicals: Vec<String>,
 }
 
 #[derive(Error, Debug)]
