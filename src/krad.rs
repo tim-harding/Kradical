@@ -239,7 +239,7 @@ mod tests {
 
     #[test]
     fn works_on_actual_file() {
-        let res = parse_file("./edrdg_files/kradfile2");
+        let res = parse_file("./edrdg_files/kradfile");
         assert_eq!(res.is_ok(), true);
         assert_eq!(res.unwrap().len(), 6_355);
     }
