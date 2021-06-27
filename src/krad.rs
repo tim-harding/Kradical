@@ -1,5 +1,4 @@
-mod jis213;
-
+use super::jis213::jis_codepoint_to_unicode;
 use anyhow::Result;
 use nom::{
     bytes::{
@@ -72,7 +71,7 @@ pub fn decode_jis(b: &[u8]) -> Result<&'static str> {
     match b.len() {
         2 | 3 => {
             let code = bytes_to_u32(b);
-            jis213::decode(code).ok_or(KradError::Jis.into())
+            jis_codepoint_to_unicode(code).ok_or(KradError::Jis.into())
         }
         _ => Err(KradError::Jis.into()),
     }
@@ -99,9 +98,7 @@ mod tests {
 
     // JIS213
     // "｜ 一 口\n"
-    const RADICALS: &[u8] = &[
-        0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A,
-    ];
+    const RADICALS: &[u8] = &[0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A];
 
     const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
     const NEWLINE: &[u8] = "\n".as_bytes();
