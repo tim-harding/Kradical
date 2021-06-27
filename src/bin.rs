@@ -1,6 +1,7 @@
-use kradical::krad::{Decomposition, KradError, parse_file};
+use kradical::krad::{parse_file, Decomposition, KradError};
 use std::{fs::File, io::Write};
 
+// Todo: Take files to parse and output location as arguments
 fn main() -> Result<(), KradError> {
     let mut decompositions = vec![];
     decompositions.extend(parse_kradfile()?);

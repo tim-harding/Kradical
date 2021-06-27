@@ -1,19 +1,18 @@
 use std::path::Path;
 
-use super::jis213::jis_to_utf8;
-use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
+pub use crate::shared::KradError;
+use crate::shared::{comments, decode_jis};
 use nom::{
     bytes::{
         complete::{tag, take_until},
         streaming::is_not,
     },
     character::complete::char,
-    combinator::{map, map_res, opt, value},
-    multi::{separated_list0, separated_list1},
-    sequence::{pair, separated_pair},
+    combinator::{map, map_res, opt},
+    multi::separated_list1,
+    sequence::separated_pair,
     IResult,
 };
-use thiserror::Error;
 
 const SEPARATOR: &[u8] = " : ".as_bytes();
 
@@ -25,26 +24,6 @@ pub struct Decomposition {
 
     /// A list of characters representing the radicals in the kanji
     pub radicals: Vec<String>,
-}
-
-/// Enumerates the modules's possible errors
-#[derive(Error, Debug)]
-pub enum KradError {
-    /// Invalid JIS X 0213 codepoint
-    #[error("Invalid JIS X 0213 codepoint")]
-    Jis,
-
-    /// Invalid EUC-JP codepoint
-    #[error("Invalid EUC-JP codepoint")]
-    EucJp,
-
-    /// Error while parsing kradfile
-    #[error("Error while parsing kradfile")]
-    Parse,
-
-    /// Error while reading kradfile
-    #[error("Error while reading kradfile")]
-    Io(#[from] std::io::Error),
 }
 
 type KradResult = Result<Vec<Decomposition>, KradError>;
@@ -106,40 +85,10 @@ fn radical(b: &[u8]) -> IResult<&[u8], String> {
     map_res(is_not(" \n"), decode_jis)(b)
 }
 
-fn comments(b: &[u8]) -> IResult<&[u8], ()> {
-    value((), separated_list0(char('\n'), comment))(b)
-}
-
-fn comment(b: &[u8]) -> IResult<&[u8], ()> {
-    value((), pair(char('#'), take_until("\n")))(b)
-}
-
-fn decode_jis(b: &[u8]) -> Result<String, KradError> {
-    match b.len() {
-        2 => {
-            let code = bytes_to_u32(b);
-            jis_to_utf8(code)
-                .map(|unicode| unicode.to_string())
-                .ok_or(KradError::Jis.into())
-        }
-        3 => EUCJPEncoding
-            .decode(b, DecoderTrap::Strict)
-            .map_err(|_| KradError::EucJp.into()),
-        _ => Err(KradError::Jis.into()),
-    }
-}
-
-fn bytes_to_u32(b: &[u8]) -> u32 {
-    let mut out = 0u32;
-    for (i, byte) in b.iter().rev().enumerate() {
-        out += (*byte as u32) << 8u32 * (i as u32);
-    }
-    out
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::test_constants::*;
 
     // JIS213
     // "亜 : ｜ 一 口\n"
@@ -157,7 +106,6 @@ mod tests {
     // "｜ 一 口\n"
     const RADICALS: &[u8] = &[0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A];
 
-    const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
     const NEWLINE: &[u8] = "\n".as_bytes();
 
     fn parsed_kanji() -> Decomposition {
@@ -172,25 +120,6 @@ mod tests {
             kanji: "丂".to_string(),
             radicals: vec!["一".to_string(), "勹".to_string()],
         }
-    }
-
-    #[test]
-    fn is_comment() {
-        let res = comment(COMMENT_LINE);
-        assert_eq!(res, Ok((NEWLINE, ())));
-    }
-
-    #[test]
-    fn is_comment_short() {
-        let res = comment("#\n".as_bytes());
-        assert_eq!(res, Ok((NEWLINE, ())));
-    }
-
-    #[test]
-    fn multiple_comment_lines() {
-        let line = vec![COMMENT_LINE, COMMENT_LINE].join("".as_bytes());
-        let res = comments(&line);
-        assert_eq!(res, Ok((NEWLINE, ())));
     }
 
     #[test]
