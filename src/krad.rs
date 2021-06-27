@@ -1,10 +1,4 @@
-mod jis213;
-#[cfg(test)]
-mod kradfile2_hex;
-#[cfg(test)]
-mod kradfile_hex;
-
-use anyhow::Result;
+use super::jis213::jis_to_utf8;
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     bytes::{
@@ -23,7 +17,7 @@ const SEPARATOR: &[u8] = " : ".as_bytes();
 
 // Todo: Shouldn't need to clone this
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub struct KanjiParts {
+pub struct Decomposition {
     pub kanji: String,
     pub radicals: Vec<String>,
 }
@@ -34,23 +28,45 @@ pub enum KradError {
     Jis,
     #[error("Invalid EUC-JP codepoint")]
     EucJp,
+    #[error("Error while parsing kradfile")]
+    Parse,
+    #[error("Error while reading kradfile")]
+    Io(#[from] std::io::Error),
 }
 
-pub fn lines(b: &[u8]) -> IResult<&[u8], Vec<KanjiParts>> {
+pub fn parse_kradfile() -> Result<Vec<Decomposition>, KradError> {
+    parse_file("./edrdg_files/kradfile")
+}
+
+pub fn parse_kradfile2() -> Result<Vec<Decomposition>, KradError> {
+    parse_file("./edrdg_files/kradfile2")
+}
+
+fn parse_file(filename: &str) -> Result<Vec<Decomposition>, KradError> {
+    std::fs::read(filename)
+        .map_err(|err| err.into())
+        .and_then(|text| {
+            lines(&text)
+                .map(|(_i, o)| o)
+                .map_err(|_err| KradError::Parse)
+        })
+}
+
+fn lines(b: &[u8]) -> IResult<&[u8], Vec<Decomposition>> {
     separated_list1(char('\n'), next_kanji)(b)
 }
 
-fn next_kanji(b: &[u8]) -> IResult<&[u8], KanjiParts> {
+fn next_kanji(b: &[u8]) -> IResult<&[u8], Decomposition> {
     map(
         separated_pair(comments, opt(char('\n')), kanji_line),
         |(_comments, kanji)| kanji,
     )(b)
 }
 
-fn kanji_line(b: &[u8]) -> IResult<&[u8], KanjiParts> {
+fn kanji_line(b: &[u8]) -> IResult<&[u8], Decomposition> {
     map(
         separated_pair(kanji, tag(SEPARATOR), radicals),
-        |(kanji, radicals)| KanjiParts { kanji, radicals },
+        |(kanji, radicals)| Decomposition { kanji, radicals },
     )(b)
 }
 
@@ -74,11 +90,11 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
     value((), pair(char('#'), take_until("\n")))(b)
 }
 
-pub fn decode_jis(b: &[u8]) -> Result<String> {
+fn decode_jis(b: &[u8]) -> Result<String, KradError> {
     match b.len() {
         2 => {
             let code = bytes_to_u32(b);
-            jis213::decode(code)
+            jis_to_utf8(code)
                 .map(|unicode| unicode.to_string())
                 .ok_or(KradError::Jis.into())
         }
@@ -107,7 +123,7 @@ mod tests {
         0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A,
     ];
 
-    // EUC-JP, JIS213
+    // First kanji EUC-JP, radicals JIS213
     // "丂 : 一 勹\n"
     const KANJI_LINE2: &[u8] = &[
         0x8F, 0xB0, 0xA1, 0x20, 0x3A, 0x20, 0xB0, 0xEC, 0x20, 0xD2, 0xB1, 0x0A,
@@ -120,15 +136,15 @@ mod tests {
     const COMMENT_LINE: &[u8] = "# September 2007\n".as_bytes();
     const NEWLINE: &[u8] = "\n".as_bytes();
 
-    fn parsed_kanji() -> KanjiParts {
-        KanjiParts {
+    fn parsed_kanji() -> Decomposition {
+        Decomposition {
             kanji: "亜".to_string(),
             radicals: vec!["｜".to_string(), "一".to_string(), "口".to_string()],
         }
     }
 
-    fn parsed_kanji_2() -> KanjiParts {
-        KanjiParts {
+    fn parsed_kanji_2() -> Decomposition {
+        Decomposition {
             kanji: "丂".to_string(),
             radicals: vec!["一".to_string(), "勹".to_string()],
         }
@@ -199,19 +215,15 @@ mod tests {
 
     #[test]
     fn works_on_actual_file() {
-        use super::kradfile_hex::KRADFILE_HEX;
-
-        let res = lines(KRADFILE_HEX);
+        let res = parse_kradfile();
         assert_eq!(res.is_ok(), true);
-        assert_eq!(res.unwrap().1.len(), 6_355);
+        assert_eq!(res.unwrap().len(), 6_355);
     }
 
     #[test]
     fn works_on_actual_file_2() {
-        use super::kradfile2_hex::KRADFILE2_HEX;
-
-        let res = lines(KRADFILE2_HEX);
+        let res = parse_kradfile2();
         assert_eq!(res.is_ok(), true);
-        assert_eq!(res.unwrap().1.len(), 5_801);
+        assert_eq!(res.unwrap().len(), 5_801);
     }
 }
