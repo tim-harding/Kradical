@@ -118,8 +118,6 @@ mod tests {
     // "｜ 一 口\n"
     const RADICALS: &[u8] = &[0xA1, 0xC3, 0x20, 0xB0, 0xEC, 0x20, 0xB8, 0xFD, 0x0A];
 
-    const NEWLINE: &[u8] = "\n".as_bytes();
-
     fn parsed_kanji() -> Decomposition {
         Decomposition {
             kanji: "亜".to_string(),
@@ -166,14 +164,14 @@ mod tests {
 
     #[test]
     fn ignores_comment() {
-        let line = vec![COMMENT_LINE, KANJI_LINE].join("".as_bytes());
+        let line = vec![COMMENT_LINE, KANJI_LINE].join(EMPTY);
         let res = next_kanji(&line);
         assert_eq!(res, Ok((NEWLINE, parsed_kanji())));
     }
 
     #[test]
     fn parses_lines() {
-        let line = vec![KANJI_LINE, COMMENT_LINE, KANJI_LINE].join("".as_bytes());
+        let line = vec![KANJI_LINE, COMMENT_LINE, KANJI_LINE].join(EMPTY);
         let res = lines(&line);
         assert_eq!(res, Ok((NEWLINE, vec![parsed_kanji(), parsed_kanji()])));
     }
