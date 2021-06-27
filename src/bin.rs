@@ -1,4 +1,3 @@
-use anyhow::Result;
 use krad::{parse_kradfile, parse_kradfile2, KradError};
 use std::{fs::File, io::Write};
 

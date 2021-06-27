@@ -12,7 +12,6 @@ name = "radkatinate"
 path = "src/bin.rs"
 
 [dependencies]
-anyhow = "1"
 thiserror = "1"
 nom = "6"
 encoding = "0"
