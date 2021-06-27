@@ -1,4 +1,4 @@
-# Krad
+# Kradical
 
 This repository contains the following:
 
@@ -7,6 +7,6 @@ This repository contains the following:
     - `kradfile2`
     - `radkfile`
     - `radkfile2`
-- A binary, `radkatinate`,  for converting the original JIS-encoded files to UTF-8 equivalents. The outputs of this binary are available under the `outputs` directory.
+- A binary for converting the original JIS-encoded files to UTF-8 equivalents. The outputs of this binary are available under the `outputs` directory.
 
 In accordance with the [EDRDG license statement](http://www.edrdg.org/edrdg/licence.html), this project is distributed under the [Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/legalcode) license. The files included under `edrdg_files` were downloaded from the [Monash Nihongo FTP Archive](http://ftp.edrdg.org/pub/Nihongo/00INDEX.html#dic_fil) and are the property of EDRDG.

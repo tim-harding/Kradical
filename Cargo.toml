@@ -1,14 +1,14 @@
 [package]
-name = "krad"
+name = "kradical"
 version = "0.1.0"
 edition = "2018"
 
 [lib]
-name = "krad"
+name = "kradical"
 path = "src/lib.rs"
 
 [[bin]]
-name = "radkatinate"
+name = "jis_to_utf8"
 path = "src/bin.rs"
 
 [dependencies]

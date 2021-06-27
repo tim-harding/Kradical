@@ -1,4 +1,4 @@
-use krad::{Decomposition, KradError, parse_file};
+use kradical::krad::{Decomposition, KradError, parse_file};
 use std::{fs::File, io::Write};
 
 fn main() -> Result<(), KradError> {
