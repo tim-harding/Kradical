@@ -1,11 +1,5 @@
 use crate::{jis212::jis212_to_utf8, shared::decode_jis};
-use nom::{
-    bytes::complete::{tag, take_until, take_while, take_while_m_n},
-    character::is_digit,
-    combinator::{map, map_res, value},
-    sequence::{pair, separated_pair},
-    IResult,
-};
+use nom::{IResult, bytes::complete::{tag, take_until, take_while, take_while_m_n}, character::{is_alphanumeric, is_digit}, combinator::{map, map_res, value}, sequence::{pair, separated_pair}};
 use thiserror::Error;
 
 #[derive(Debug, Error)]
@@ -37,6 +31,10 @@ fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
         strokes: 0,
         alternate: Alternate::None,
     })(b)
+}
+
+fn image(b: &[u8]) -> IResult<&[u8], &str> {
+    map_res(take_while(is_alphanumeric), std::str::from_utf8)(b)
 }
 
 fn hex(b: &[u8]) -> IResult<&[u8], String> {
@@ -150,6 +148,12 @@ mod tests {
     fn radk_hex() {
         let res = hex("6134".as_bytes());
         assert_eq!(res, Ok((EMPTY, "辶".to_string())));
+    }
+    
+    #[test]
+    fn radk_image() {
+        let res = image("js02".as_bytes());
+        assert_eq!(res, Ok((EMPTY, "js02")));
     }
 
     /*

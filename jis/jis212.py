@@ -3,6 +3,9 @@ import re
 # Written with Python 3.8
 # Run from the project root to generate the JIS-to-unicode mappings file
 
+# Mappings file comes from here:
+# https://github.com/unicode-org/icu/blob/main/icu4c/source/data/mappings/jisx-212.ucm
+
 pattern = re.compile(r"<U([\dA-F]{4})> \\x([\dA-F]{2})\\x([\dA-F]{2})")
 with open("./jis/jisx-212.ucm", "r") as input:
     with open("./src/jis212.rs", "w") as output:
