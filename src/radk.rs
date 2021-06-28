@@ -1,17 +1,18 @@
 use std::{borrow::Cow, string::FromUtf8Error};
-
 use crate::{jis212::jis212_to_utf8, shared::decode_jis};
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
-    bitvec::view::AsBits,
     branch::alt,
     bytes::complete::{tag, take_until, take_while, take_while1, take_while_m_n},
     character::{is_alphanumeric, is_digit},
-    combinator::{map, map_opt, map_res, opt, success, value},
+    combinator::{map, map_res, success, value},
     sequence::{pair, separated_pair},
     IResult,
 };
 use thiserror::Error;
+
+// Todo: Grapheme clusters
+// https://crates.io/crates/unicode-segmentation
 
 #[derive(Debug, Error)]
 pub enum RadkError {
