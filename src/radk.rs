@@ -1,6 +1,7 @@
-use std::string::FromUtf8Error;
+use std::{borrow::Cow, string::FromUtf8Error};
 
 use crate::{jis212::jis212_to_utf8, shared::decode_jis};
+use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     bitvec::view::AsBits,
     branch::alt,
@@ -33,6 +34,14 @@ enum Alternate {
     Image(String),
     Glyph(String),
     None,
+}
+
+fn kanji_line(b: &[u8]) -> IResult<&[u8], String> {
+    map_res(take_until("\n"), from_kanji_line)(b)
+}
+
+fn from_kanji_line(b: &[u8]) -> Result<String, Cow<'static, str>> {
+    EUCJPEncoding.decode(b, DecoderTrap::Replace)
 }
 
 fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
@@ -115,7 +124,7 @@ fn parse_number(b: &[u8]) -> Result<u8, RadkError> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::test_constants::EMPTY;
+    use crate::test_constants::{EMPTY, NEWLINE};
 
     // JIS X 0213
     // $ 一 1
@@ -129,6 +138,15 @@ mod tests {
     // $ ˻ 3 3D38
     const IDENT_LINE_FULL_JIS: &[u8] = &[
         0x24, 0x20, 0xCB, 0xBB, 0x20, 0x33, 0x20, 0x33, 0x44, 0x33, 0x38,
+    ];
+
+    // Radkfile line 548
+    const KANJI_LINE: &[u8] = &[
+        0xB0, 0xD4, 0xB1, 0xD9, 0xB2, 0xB1, 0xB2, 0xF7, 0xB2, 0xF8, 0xB2, 0xF9, 0xB2, 0xFA, 0xB2,
+        0xFB, 0xB3, 0xB4, 0xB3, 0xE6, 0xB4, 0xB7, 0xB4, 0xB8, 0xB6, 0xB1, 0xB8, 0xE7, 0xB9, 0xB1,
+        0xB9, 0xB2, 0xB9, 0xFB, 0xBA, 0xA8, 0xBB, 0xB4, 0xBE, 0xF0, 0xBF, 0xB5, 0xC0, 0xAD, 0xC0,
+        0xCB, 0xC1, 0xFE, 0xC2, 0xC6, 0xC4, 0xF0, 0xC5, 0xE9, 0xC6, 0xB4, 0xC6, 0xD7, 0xC7, 0xBA,
+        0xC9, 0xDD, 0xCA, 0xB0, 0xCB, 0xBB, 0xCB, 0xFD, 0xCC, 0xFB, 0xCE, 0xE7, 0x0A,
     ];
 
     fn parsed_radical_simple() -> Ident {
@@ -232,6 +250,13 @@ mod tests {
                 }
             ))
         )
+    }
+
+    #[test]
+    fn radk_kanji_line() {
+        let expected = "惟悦憶快怪悔恢懐慨恰慣憾怯悟恒慌惚恨惨情慎性惜憎惰悌悼憧惇悩怖憤忙慢愉怜";
+        let res = kanji_line(KANJI_LINE);
+        assert_eq!(res, Ok((NEWLINE, expected.to_string())));
     }
 
     /*
