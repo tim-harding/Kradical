@@ -2,8 +2,12 @@ use super::jis213::jis213_to_utf8;
 
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
-    bytes::complete::take_until, character::complete::char, combinator::value,
-    multi::separated_list0, sequence::pair, IResult,
+    bytes::complete::take_until,
+    character::complete::{char, multispace0},
+    combinator::value,
+    multi::separated_list0,
+    sequence::{delimited, pair},
+    IResult,
 };
 use thiserror::Error;
 
@@ -16,14 +20,21 @@ pub enum SharedError {
     /// Invalid EUC-JP codepoint
     #[error("Invalid EUC-JP codepoint")]
     EucJp,
-    
+
     /// Incorrect number of bytes for JIS or EUC-JP
     #[error("Incorrect number of bytes for JIS or EUC-JP")]
     Unknown,
 }
 
 pub fn comments(b: &[u8]) -> IResult<&[u8], ()> {
-    value((), separated_list0(char('\n'), comment))(b)
+    value(
+        (),
+        delimited(
+            multispace0,
+            separated_list0(char('\n'), comment),
+            multispace0,
+        ),
+    )(b)
 }
 
 fn comment(b: &[u8]) -> IResult<&[u8], ()> {
@@ -75,6 +86,6 @@ mod tests {
     fn multiple_comment_lines() {
         let line = vec![COMMENT_LINE, COMMENT_LINE].join("".as_bytes());
         let res = comments(&line);
-        assert_eq!(res, Ok((NEWLINE, ())));
+        assert_eq!(res, Ok((EMPTY, ())));
     }
 }

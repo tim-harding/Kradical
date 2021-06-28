@@ -1,4 +1,7 @@
-use crate::{jis212::jis212_to_utf8, shared::decode_jis};
+use crate::{
+    jis212::jis212_to_utf8,
+    shared::{comments, decode_jis},
+};
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     branch::alt,
@@ -49,8 +52,8 @@ enum Alternate {
 
 fn kanji(b: &[u8]) -> IResult<&[u8], Inclusion> {
     map(
-        separated_pair(ident_line, tag("\n"), kanji_lines),
-        |(ident, kanji)| Inclusion { ident, kanji },
+        pair(comments, separated_pair(ident_line, tag("\n"), kanji_lines)),
+        |(_, (ident, kanji))| Inclusion { ident, kanji },
     )(b)
 }
 
@@ -139,7 +142,7 @@ fn parse_number(b: &[u8]) -> Result<u8, RadkError> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::test_constants::{EMPTY, NEWLINE};
+    use crate::test_constants::{COMMENT_LINE, EMPTY, NEWLINE};
 
     // JIS X 0213
     // $ 一 1
@@ -307,8 +310,7 @@ mod tests {
         assert_eq!(res, Ok((EMPTY, expected)));
     }
 
-    #[test]
-    fn radk_inclusion() {
+    fn inclusion_expected() -> Inclusion {
         let inc: Vec<String> = [
             "郁", "廓", "郭", "郷", "響", "饗", "郡", "祁", "郊", "蔀", "邪", "邸", "鄭", "都",
             "那", "部", "邦", "爺", "耶", "郵", "廊", "榔", "郎", "嚮", "娜", "揶", "擲", "梛",
@@ -318,15 +320,26 @@ mod tests {
         .iter()
         .map(|&s| s.into())
         .collect();
-        let expected = Inclusion {
+        Inclusion {
             ident: Ident {
                 radical: "邦".to_string(),
                 strokes: 3,
                 alternate: Alternate::Image("kozatoR".to_string()),
             },
             kanji: inc,
-        };
+        }
+    }
+
+    #[test]
+    fn radk_inclusion() {
         let res = kanji(FULL_KANJI);
-        assert_eq!(res, Ok((EMPTY, expected)));
+        assert_eq!(res, Ok((EMPTY, inclusion_expected())));
+    }
+
+    #[test]
+    fn radk_inclusion_with_comment() {
+        let lines = [COMMENT_LINE, FULL_KANJI].join("".as_bytes());
+        let res = kanji(&lines);
+        assert_eq!(res, Ok((EMPTY, inclusion_expected())));
     }
 }
