@@ -5,7 +5,7 @@ use nom::{
     bytes::complete::{tag, take, take_until, take_while, take_while1, take_while_m_n},
     character::{complete::space0, is_alphanumeric, is_digit},
     combinator::{map, map_res, success, value},
-    sequence::{pair, terminated, tuple},
+    sequence::{pair, separated_pair, terminated, tuple},
     IResult,
 };
 use std::{borrow::Cow, string::FromUtf8Error};
@@ -35,13 +35,26 @@ struct Ident {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+struct Inclusion {
+    ident: Ident,
+    kanji: Vec<String>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 enum Alternate {
     Image(String),
     Glyph(String),
     None,
 }
 
-fn kanji_line(b: &[u8]) -> IResult<&[u8], Vec<String>> {
+fn kanji(b: &[u8]) -> IResult<&[u8], Inclusion> {
+    map(
+        separated_pair(ident_line, tag("\n"), kanji_lines),
+        |(ident, kanji)| Inclusion { ident, kanji },
+    )(b)
+}
+
+fn kanji_lines(b: &[u8]) -> IResult<&[u8], Vec<String>> {
     map_res(take_while(is_eucjp_or_space), from_kanji_line)(b)
 }
 
@@ -163,6 +176,18 @@ mod tests {
         0xD8, 0xE0, 0xDA, 0xE0, 0xDC, 0xE9, 0xA4, 0xEB, 0xD4, 0xED, 0xF8, 0x0A,
     ];
 
+    // 588 - 590
+    const FULL_KANJI: &[u8] = &[
+        0x24, 0x20, 0xCB, 0xAE, 0x20, 0x33, 0x20, 0x6B, 0x6F, 0x7A, 0x61, 0x74, 0x6F, 0x52, 0x0A,
+        0xB0, 0xEA, 0xB3, 0xC7, 0xB3, 0xD4, 0xB6, 0xBF, 0xB6, 0xC1, 0xB6, 0xC2, 0xB7, 0xB4, 0xB7,
+        0xB7, 0xB9, 0xD9, 0xBC, 0xC3, 0xBC, 0xD9, 0xC5, 0xA1, 0xC5, 0xA2, 0xC5, 0xD4, 0xC6, 0xE1,
+        0xC9, 0xF4, 0xCB, 0xAE, 0xCC, 0xEC, 0xCC, 0xED, 0xCD, 0xB9, 0xCF, 0xAD, 0xCF, 0xB1, 0xCF,
+        0xBA, 0xD3, 0xEC, 0xD5, 0xB1, 0xD9, 0xE8, 0xDA, 0xB3, 0xDB, 0xEB, 0xDC, 0xBF, 0xDC, 0xDA,
+        0xE0, 0xE7, 0xEA, 0xA7, 0xED, 0xB6, 0xEE, 0xB7, 0xEE, 0xB8, 0xEE, 0xB9, 0x0A, 0xEE, 0xBA,
+        0xEE, 0xBB, 0xEE, 0xBC, 0xEE, 0xBD, 0xEE, 0xBE, 0xEE, 0xBF, 0xEE, 0xC0, 0xEE, 0xC1, 0xEE,
+        0xC2, 0xEE, 0xC3, 0x0A,
+    ];
+
     fn parsed_radical_simple() -> Ident {
         Ident {
             radical: "一".to_string(),
@@ -262,7 +287,7 @@ mod tests {
         .iter()
         .map(|&s| s.into())
         .collect();
-        let res = kanji_line(KANJI_LINE);
+        let res = kanji_lines(KANJI_LINE);
         assert_eq!(res, Ok((EMPTY, expected)));
     }
 
@@ -278,7 +303,30 @@ mod tests {
         .iter()
         .map(|&s| s.into())
         .collect();
-        let res = kanji_line(KANJI_MULTILINE);
+        let res = kanji_lines(KANJI_MULTILINE);
+        assert_eq!(res, Ok((EMPTY, expected)));
+    }
+
+    #[test]
+    fn radk_inclusion() {
+        let inc: Vec<String> = [
+            "郁", "廓", "郭", "郷", "響", "饗", "郡", "祁", "郊", "蔀", "邪", "邸", "鄭", "都",
+            "那", "部", "邦", "爺", "耶", "郵", "廊", "榔", "郎", "嚮", "娜", "揶", "擲", "梛",
+            "椰", "槨", "瑯", "螂", "躑", "邨", "邯", "邱", "邵", "郢", "郤", "扈", "郛", "鄂",
+            "鄒", "鄙", "鄲", "鄰",
+        ]
+        .iter()
+        .map(|&s| s.into())
+        .collect();
+        let expected = Inclusion {
+            ident: Ident {
+                radical: "邦".to_string(),
+                strokes: 3,
+                alternate: Alternate::Image("kozatoR".to_string()),
+            },
+            kanji: inc,
+        };
+        let res = kanji(FULL_KANJI);
         assert_eq!(res, Ok((EMPTY, expected)));
     }
 }
