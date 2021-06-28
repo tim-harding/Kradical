@@ -10,6 +10,7 @@ use nom::{
 };
 use std::{borrow::Cow, string::FromUtf8Error};
 use thiserror::Error;
+use unicode_segmentation::UnicodeSegmentation;
 
 // Todo: Grapheme clusters
 // https://crates.io/crates/unicode-segmentation
@@ -21,6 +22,9 @@ pub enum RadkError {
 
     #[error("Could not parse alternate representation as a glyph")]
     NotGlyph,
+
+    #[error("Invalid kanji line")]
+    EucJp,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -37,12 +41,17 @@ enum Alternate {
     None,
 }
 
-fn kanji_line(b: &[u8]) -> IResult<&[u8], String> {
+fn kanji_line(b: &[u8]) -> IResult<&[u8], Vec<String>> {
     map_res(take_until("\n"), from_kanji_line)(b)
 }
 
-fn from_kanji_line(b: &[u8]) -> Result<String, Cow<'static, str>> {
-    EUCJPEncoding.decode(b, DecoderTrap::Replace)
+fn from_kanji_line(b: &[u8]) -> Result<Vec<String>, RadkError> {
+    Ok(EUCJPEncoding
+        .decode(b, DecoderTrap::Replace)
+        .map_err(|_err| RadkError::EucJp)?
+        .graphemes(true)
+        .map(|s| s.into())
+        .collect())
 }
 
 fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
@@ -223,8 +232,15 @@ mod tests {
 
     #[test]
     fn radk_kanji_line() {
-        let expected = "惟悦憶快怪悔恢懐慨恰慣憾怯悟恒慌惚恨惨情慎性惜憎惰悌悼憧惇悩怖憤忙慢愉怜";
+        let expected: Vec<String> = [
+            "惟", "悦", "憶", "快", "怪", "悔", "恢", "懐", "慨", "恰", "慣", "憾", "怯", "悟",
+            "恒", "慌", "惚", "恨", "惨", "情", "慎", "性", "惜", "憎", "惰", "悌", "悼", "憧",
+            "惇", "悩", "怖", "憤", "忙", "慢", "愉", "怜",
+        ]
+        .iter()
+        .map(|&s| s.into())
+        .collect();
         let res = kanji_line(KANJI_LINE);
-        assert_eq!(res, Ok((NEWLINE, expected.to_string())));
+        assert_eq!(res, Ok((NEWLINE, expected)));
     }
 }
