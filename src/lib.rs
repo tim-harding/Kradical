@@ -1,4 +1,5 @@
 mod jis213;
+mod jis212;
 mod shared;
 
 #[cfg(test)]

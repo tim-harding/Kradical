@@ -1,4 +1,4 @@
-use super::jis213::jis_to_utf8;
+use super::jis213::jis213_to_utf8;
 
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
@@ -35,7 +35,7 @@ pub fn decode_jis(b: &[u8]) -> Result<String, SharedError> {
     match b.len() {
         2 => {
             let code = bytes_to_u32(b);
-            jis_to_utf8(code)
+            jis213_to_utf8(code)
                 .map(|unicode| unicode.to_string())
                 .ok_or(SharedError::Jis)
         }
