@@ -1,7 +1,15 @@
 use std::string::FromUtf8Error;
 
 use crate::{jis212::jis212_to_utf8, shared::decode_jis};
-use nom::{IResult, bitvec::view::AsBits, branch::alt, bytes::complete::{tag, take_until, take_while, take_while1, take_while_m_n}, character::{is_alphanumeric, is_digit}, combinator::{map, map_opt, map_res, opt, success, value}, sequence::{pair, separated_pair}};
+use nom::{
+    bitvec::view::AsBits,
+    branch::alt,
+    bytes::complete::{tag, take_until, take_while, take_while1, take_while_m_n},
+    character::{is_alphanumeric, is_digit},
+    combinator::{map, map_opt, map_res, opt, success, value},
+    sequence::{pair, separated_pair},
+    IResult,
+};
 use thiserror::Error;
 
 #[derive(Debug, Error)]
@@ -29,7 +37,7 @@ enum Alternate {
 
 fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
     map(
-        separated_pair(token_radical_strokes, tag(" "), alternate),
+        pair(token_radical_strokes, alternate),
         |((radical, strokes), alternate)| Ident {
             radical,
             strokes,
@@ -39,13 +47,13 @@ fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
 }
 
 fn alternate(b: &[u8]) -> IResult<&[u8], Alternate> {
+    alt((alternate_some, success(Alternate::None)))(b)
+}
+
+fn alternate_some(b: &[u8]) -> IResult<&[u8], Alternate> {
     map(
-        // Todo: Can this be done more cleanly?
-        opt(alt((hex, image))),
-        |maybe_alt: Option<Alternate>| match maybe_alt {
-            Some(alternate) => alternate,
-            None => Alternate::None,
-        },
+        pair(tag(" ".as_bytes()), alt((hex, image))),
+        |(_, alternate)| alternate,
     )(b)
 }
 
@@ -178,13 +186,13 @@ mod tests {
 
     #[test]
     fn radk_alt_is_hex() {
-        let res = alternate("6134".as_bytes());
+        let res = alternate(" 6134".as_bytes());
         assert_eq!(res, Ok((EMPTY, Alternate::Glyph("辶".to_string()))));
     }
 
     #[test]
     fn radk_alt_is_image() {
-        let res = alternate("js02".as_bytes());
+        let res = alternate(" js02".as_bytes());
         assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
     }
 
