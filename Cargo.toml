@@ -3,5 +3,6 @@
 members = [
     "kradical_parsing",
     "kradical_converter",
+    "kradical_static",
     "jis",
 ]

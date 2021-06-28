@@ -54,23 +54,44 @@ fn main() -> Result<(), ConvertError> {
 }
 
 fn parse_krad(inputs: &[String], format: OutputFormat) -> Result<String, KradError> {
-    let formatter = krad_formatter(format);
     let parsed: Result<Vec<_>, _> = inputs.iter().map(|input| krad::parse_file(input)).collect();
-    let decompositions: Vec<String> = parsed?
-        .iter()
-        .flat_map(|file| file.into_iter().map(formatter))
+    let parsed: Vec<_> = parsed?
+        .into_iter()
+        .flat_map(|file| file.into_iter())
         .collect();
-    Ok(decompositions.join("\n"))
+    Ok(krad_formatter(format)(&parsed))
 }
 
-fn krad_formatter(format: OutputFormat) -> fn(&Decomposition) -> String {
+fn krad_formatter(format: OutputFormat) -> fn(&[Decomposition]) -> String {
     match format {
         OutputFormat::Unicode => krad_to_unicode,
-        OutputFormat::Rust => todo!(),
+        OutputFormat::Rust => krad_to_rust,
     }
 }
 
-fn krad_to_unicode(decomposition: &Decomposition) -> String {
-    let radicals = decomposition.radicals.join(" ");
-    format!("{} : {}", decomposition.kanji, &radicals)
+fn krad_to_unicode(decompositions: &[Decomposition]) -> String {
+    let lines: Vec<String> = decompositions
+        .iter()
+        .map(|decomposition| {
+            let radicals = decomposition.radicals.join(" ");
+            format!("{} : {}", decomposition.kanji, &radicals)
+        })
+        .collect();
+    lines.join("\n")
+}
+
+fn krad_to_rust(decompositions: &[Decomposition]) -> String {
+    let mut lines = vec!["const DECOMPOSITIONS: &[Decomposition] = &[".to_string()];
+    for decomposition in decompositions {
+        lines.push("\t Decomposition {".to_string());
+        lines.push(format!("\t\tkanji: \"{}\",", decomposition.kanji));
+        lines.push("\t\tradicals: &[".to_string());
+        for radical in decomposition.radicals.iter() {
+            lines.push(format!("\t\t\t\"{}\",", radical));
+        }
+        lines.push("\t\t],".to_string());
+        lines.push("\t},".to_string());
+    }
+    lines.push("];".to_string());
+    lines.join("\n")
 }

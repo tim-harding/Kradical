@@ -1,0 +1,4 @@
+[package]
+name = "kradical_static"
+version = "0.1.0"
+edition = "2018"
