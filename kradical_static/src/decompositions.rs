@@ -1,3 +1,5 @@
+use super::Decomposition;
+
 const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "亜",

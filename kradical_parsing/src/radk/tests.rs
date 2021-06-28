@@ -1,9 +1,9 @@
-use super::{Alternate, Ident, Inclusion};
+use super::{Alternate, Expansion, Radical};
 use crate::test_constants::{COMMENT_LINE, EMPTY};
 
-fn parsed_radical_simple() -> Ident {
-    Ident {
-        radical: "一".to_string(),
+fn parsed_radical_simple() -> Radical {
+    Radical {
+        glyph: "一".to_string(),
         strokes: 1,
         alternate: Alternate::None,
     }
@@ -73,8 +73,8 @@ fn image_ident_line() {
         res,
         Ok((
             EMPTY,
-            Ident {
-                radical: "个".to_string(),
+            Radical {
+                glyph: "个".to_string(),
                 strokes: 2,
                 alternate: Alternate::Image("js02".to_string()),
             }
@@ -93,8 +93,8 @@ fn glyph_ident_line() {
         res,
         Ok((
             EMPTY,
-            Ident {
-                radical: "忙".to_string(),
+            Radical {
+                glyph: "忙".to_string(),
                 strokes: 3,
                 alternate: Alternate::Glyph("\u{5FC4}".to_string()),
             }
@@ -150,7 +150,7 @@ fn kanji_multiline() {
     assert_eq!(res, Ok((EMPTY, expected)));
 }
 
-fn inclusion_expected() -> Inclusion {
+fn inclusion_expected() -> Expansion {
     let inc: Vec<String> = [
         "郁", "廓", "郭", "郷", "響", "饗", "郡", "祁", "郊", "蔀", "邪", "邸", "鄭", "都", "那",
         "部", "邦", "爺", "耶", "郵", "廊", "榔", "郎", "嚮", "娜", "揶", "擲", "梛", "椰", "槨",
@@ -160,9 +160,9 @@ fn inclusion_expected() -> Inclusion {
     .iter()
     .map(|&s| s.into())
     .collect();
-    Inclusion {
-        ident: Ident {
-            radical: "邦".to_string(),
+    Expansion {
+        ident: Radical {
+            glyph: "邦".to_string(),
             strokes: 3,
             alternate: Alternate::Image("kozatoR".to_string()),
         },

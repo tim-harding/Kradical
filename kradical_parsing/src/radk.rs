@@ -36,15 +36,15 @@ pub enum RadkError {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub struct Ident {
-    pub radical: String,
+pub struct Radical {
+    pub glyph: String,
     pub strokes: u8,
     pub alternate: Alternate,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub struct Inclusion {
-    pub ident: Ident,
+pub struct Expansion {
+    pub ident: Radical,
     pub kanji: Vec<String>,
 }
 
@@ -55,7 +55,7 @@ pub enum Alternate {
     None,
 }
 
-type RadkResult = Result<Vec<Inclusion>, RadkError>;
+type RadkResult = Result<Vec<Expansion>, RadkError>;
 
 /// Parses a kradfile or kradfile2 and returns
 /// the list of kanji radical decompositions
@@ -84,14 +84,14 @@ pub fn parse_bytes(b: &[u8]) -> RadkResult {
     lines(b).map(|(_i, o)| o).map_err(|_err| RadkError::Parse)
 }
 
-fn lines(b: &[u8]) -> IResult<&[u8], Vec<Inclusion>> {
+fn lines(b: &[u8]) -> IResult<&[u8], Vec<Expansion>> {
     map(many_till(kanji, eof), |(kanji, _)| kanji)(b)
 }
 
-fn kanji(b: &[u8]) -> IResult<&[u8], Inclusion> {
+fn kanji(b: &[u8]) -> IResult<&[u8], Expansion> {
     map(
         pair(comments, separated_pair(ident_line, tag("\n"), kanji_lines)),
-        |(_, (ident, kanji))| Inclusion { ident, kanji },
+        |(_, (ident, kanji))| Expansion { ident, kanji },
     )(b)
 }
 
@@ -118,11 +118,11 @@ fn from_kanji_line(b: &[u8]) -> Result<Vec<String>, RadkError> {
         .collect())
 }
 
-fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
+fn ident_line(b: &[u8]) -> IResult<&[u8], Radical> {
     map(
         tuple((ident_line_token, radical, strokes, alternate)),
-        |(_, radical, strokes, alternate)| Ident {
-            radical,
+        |(_, radical, strokes, alternate)| Radical {
+            glyph: radical,
             strokes,
             alternate,
         },

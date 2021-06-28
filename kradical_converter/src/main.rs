@@ -81,7 +81,11 @@ fn krad_to_unicode(decompositions: &[Decomposition]) -> String {
 }
 
 fn krad_to_rust(decompositions: &[Decomposition]) -> String {
-    let mut lines = vec!["const DECOMPOSITIONS: &[Decomposition] = &[".to_string()];
+    let mut lines = vec![
+        "use super::Decomposition;".to_string(),
+        "".to_string(),
+        "const DECOMPOSITIONS: &[Decomposition] = &[".to_string(),
+    ];
     for decomposition in decompositions {
         lines.push("\t Decomposition {".to_string());
         lines.push(format!("\t\tkanji: \"{}\",", decomposition.kanji));
