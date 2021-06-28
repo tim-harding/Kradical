@@ -1,6 +1,7 @@
 use clap::{AppSettings, Clap};
-use kradical_parsing::krad::{parse_file, Decomposition, KradError};
+use kradical_parsing::krad::{self, Decomposition, KradError};
 use std::{fs::File, io::Write};
+use thiserror::Error;
 
 #[derive(Clap, Clone, PartialEq, Eq, Debug)]
 #[clap(setting = AppSettings::ColoredHelp)]
@@ -30,32 +31,46 @@ enum OutputFormat {
     Rust,
 }
 
-fn main() {
-    let opts = Opts::parse();
-    println!("{:?}", opts);
+#[derive(Debug, Error)]
+enum ConvertError {
+    #[error("Error during krad parsing")]
+    Krad(#[from] KradError),
+
+    #[error("IO error")]
+    Io(#[from] std::io::Error),
 }
 
-// Todo: Take files to parse and output location as arguments
-fn krad_stuff() -> Result<(), KradError> {
-    let mut decompositions = vec![];
-    decompositions.extend(parse_kradfile()?);
-    decompositions.extend(parse_kradfile2()?);
-    File::create("./assets/outputs/krad_utf8.txt").and_then(|mut file| {
-        for decomposition in decompositions {
-            let radicals = decomposition.radicals.join(" ");
-            let kanji = decomposition.kanji;
-            let s = format!("{} : {}\n", kanji, &radicals);
-            file.write(s.as_bytes())?;
-        }
-        Ok(())
-    })?;
+fn main() -> Result<(), ConvertError> {
+    let opts = Opts::parse();
+
+    let text = match opts.input_format {
+        InputFormat::Radk => todo!(),
+        InputFormat::Krad => parse_krad(&opts.inputs, opts.output_format)?,
+    };
+
+    File::create(opts.output).and_then(|mut file| file.write(text.as_bytes()))?;
+
     Ok(())
 }
 
-fn parse_kradfile() -> Result<Vec<Decomposition>, KradError> {
-    parse_file("./assets/edrdg_files/kradfile")
+fn parse_krad(inputs: &[String], format: OutputFormat) -> Result<String, KradError> {
+    let formatter = krad_formatter(format);
+    let parsed: Result<Vec<_>, _> = inputs.iter().map(|input| krad::parse_file(input)).collect();
+    let decompositions: Vec<String> = parsed?
+        .iter()
+        .flat_map(|file| file.into_iter().map(formatter))
+        .collect();
+    Ok(decompositions.join("\n"))
 }
 
-fn parse_kradfile2() -> Result<Vec<Decomposition>, KradError> {
-    parse_file("./assets/edrdg_files/kradfile2")
+fn krad_formatter(format: OutputFormat) -> fn(&Decomposition) -> String {
+    match format {
+        OutputFormat::Unicode => krad_to_unicode,
+        OutputFormat::Rust => todo!(),
+    }
+}
+
+fn krad_to_unicode(decomposition: &Decomposition) -> String {
+    let radicals = decomposition.radicals.join(" ");
+    format!("{} : {}", decomposition.kanji, &radicals)
 }
