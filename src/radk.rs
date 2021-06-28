@@ -5,18 +5,16 @@ use crate::{
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     branch::alt,
-    bytes::complete::{tag, take, take_until, take_while, take_while1, take_while_m_n},
+    bytes::complete::{tag, take, take_while, take_while1, take_while_m_n},
     character::{complete::space0, is_alphanumeric, is_digit},
-    combinator::{map, map_res, success, value},
+    combinator::{eof, map, map_res, success, value},
+    multi::many_till,
     sequence::{pair, separated_pair, terminated, tuple},
     IResult,
 };
-use std::{borrow::Cow, string::FromUtf8Error};
+use std::{path::Path, string::FromUtf8Error};
 use thiserror::Error;
 use unicode_segmentation::UnicodeSegmentation;
-
-// Todo: Grapheme clusters
-// https://crates.io/crates/unicode-segmentation
 
 #[derive(Debug, Error)]
 pub enum RadkError {
@@ -28,26 +26,65 @@ pub enum RadkError {
 
     #[error("Invalid kanji line")]
     EucJp,
+
+    #[error("Error while parsing kradfile")]
+    Parse,
+
+    #[error("Error while reading kradfile")]
+    Io(#[from] std::io::Error),
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-struct Ident {
-    radical: String,
-    strokes: u8,
-    alternate: Alternate,
+pub struct Ident {
+    pub radical: String,
+    pub strokes: u8,
+    pub alternate: Alternate,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-struct Inclusion {
-    ident: Ident,
-    kanji: Vec<String>,
+pub struct Inclusion {
+    pub ident: Ident,
+    pub kanji: Vec<String>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-enum Alternate {
+pub enum Alternate {
     Image(String),
     Glyph(String),
     None,
+}
+
+type RadkResult = Result<Vec<Inclusion>, RadkError>;
+
+/// Parses a kradfile or kradfile2 and returns
+/// the list of kanji radical decompositions
+///
+/// # Arguments
+///
+/// * `path` - A path to the kradfile
+pub fn parse_file<P: AsRef<Path>>(path: P) -> RadkResult {
+    parse_file_implementation(path.as_ref())
+}
+
+// Monomorphisation bloat avoidal splitting
+fn parse_file_implementation(path: &Path) -> RadkResult {
+    std::fs::read(path)
+        .map_err(|err| err.into())
+        .and_then(|b| parse_bytes(&b))
+}
+
+/// Parses the contents of a kradfile or kradfile2 and returns
+/// the list of kanji radical decompositions
+///
+/// # Arguments
+///
+/// * `path` - A path to the kradfile
+pub fn parse_bytes(b: &[u8]) -> RadkResult {
+    lines(b).map(|(_i, o)| o).map_err(|_err| RadkError::Parse)
+}
+
+fn lines(b: &[u8]) -> IResult<&[u8], Vec<Inclusion>> {
+    map(many_till(kanji, eof), |(kanji, _)| kanji)(b)
 }
 
 fn kanji(b: &[u8]) -> IResult<&[u8], Inclusion> {
@@ -141,8 +178,8 @@ fn parse_number(b: &[u8]) -> Result<u8, RadkError> {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-    use crate::test_constants::{COMMENT_LINE, EMPTY, NEWLINE};
+    use crate::test_constants::{COMMENT_LINE, EMPTY};
+    use super::{Inclusion, Ident, Alternate};
 
     // JIS X 0213
     // $ 一 1
@@ -200,57 +237,57 @@ mod tests {
     }
 
     #[test]
-    fn radk_strokes() {
-        let res = strokes(b"12");
+    fn strokes() {
+        let res = super::strokes(b"12");
         assert_eq!(res, Ok((EMPTY, 12)));
     }
 
     #[test]
-    fn radk_radical() {
+    fn radical() {
         let radical_and_space = &IDENT_LINE_SIMPLE[2..];
-        let res = radical(radical_and_space);
+        let res = super::radical(radical_and_space);
         assert_eq!(res, Ok((&IDENT_LINE_SIMPLE[5..], "一".to_string())))
     }
 
     #[test]
-    fn radk_simple_ident_line() {
-        let res = ident_line(IDENT_LINE_SIMPLE);
+    fn simple_ident_line() {
+        let res = super::ident_line(IDENT_LINE_SIMPLE);
         assert_eq!(res, Ok((EMPTY, parsed_radical_simple())));
     }
 
     #[test]
-    fn radk_hex() {
-        let res = hex(b"6134");
+    fn hex() {
+        let res = super::hex(b"6134");
         assert_eq!(res, Ok((EMPTY, Alternate::Glyph("辶".to_string()))));
     }
 
     #[test]
-    fn radk_image() {
-        let res = image(b"js02");
+    fn image() {
+        let res = super::image(b"js02");
         assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
     }
 
     #[test]
-    fn radk_alt_is_hex() {
-        let res = alternate(b"6134");
+    fn alt_is_hex() {
+        let res = super::alternate(b"6134");
         assert_eq!(res, Ok((EMPTY, Alternate::Glyph("辶".to_string()))));
     }
 
     #[test]
-    fn radk_alt_is_image() {
-        let res = alternate(b"js02");
+    fn alt_is_image() {
+        let res = super::alternate(b"js02");
         assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
     }
 
     #[test]
-    fn radk_alt_is_none() {
-        let res = alternate(EMPTY);
+    fn alt_is_none() {
+        let res = super::alternate(EMPTY);
         assert_eq!(res, Ok((EMPTY, Alternate::None)));
     }
 
     #[test]
-    fn radk_image_ident_line() {
-        let res = ident_line(IDENT_LINE_FULL_IMG);
+    fn image_ident_line() {
+        let res = super::ident_line(IDENT_LINE_FULL_IMG);
         assert_eq!(
             res,
             Ok((
@@ -265,8 +302,8 @@ mod tests {
     }
 
     #[test]
-    fn radk_glyph_ident_line() {
-        let res = ident_line(IDENT_LINE_FULL_JIS);
+    fn glyph_ident_line() {
+        let res = super::ident_line(IDENT_LINE_FULL_JIS);
         assert_eq!(
             res,
             Ok((
@@ -281,7 +318,7 @@ mod tests {
     }
 
     #[test]
-    fn radk_kanji_line() {
+    fn kanji_line() {
         let expected: Vec<String> = [
             "惟", "悦", "憶", "快", "怪", "悔", "恢", "懐", "慨", "恰", "慣", "憾", "怯", "悟",
             "恒", "慌", "惚", "恨", "惨", "情", "慎", "性", "惜", "憎", "惰", "悌", "悼", "憧",
@@ -290,12 +327,12 @@ mod tests {
         .iter()
         .map(|&s| s.into())
         .collect();
-        let res = kanji_lines(KANJI_LINE);
+        let res = super::kanji_lines(KANJI_LINE);
         assert_eq!(res, Ok((EMPTY, expected)));
     }
 
     #[test]
-    fn radk_kanji_multiline() {
+    fn kanji_multiline() {
         let expected: Vec<String> = [
             "猿", "荻", "獲", "狂", "狭", "狗", "狐", "獄", "狛", "墾", "懇", "獅", "狩", "狙",
             "狸", "猪", "独", "猫", "狽", "犯", "猛", "猶", "猟", "狼", "潴", "犹", "犲", "狃",
@@ -306,7 +343,7 @@ mod tests {
         .iter()
         .map(|&s| s.into())
         .collect();
-        let res = kanji_lines(KANJI_MULTILINE);
+        let res = super::kanji_lines(KANJI_MULTILINE);
         assert_eq!(res, Ok((EMPTY, expected)));
     }
 
@@ -331,15 +368,37 @@ mod tests {
     }
 
     #[test]
-    fn radk_inclusion() {
-        let res = kanji(FULL_KANJI);
+    fn inclusion() {
+        let res = super::kanji(FULL_KANJI);
         assert_eq!(res, Ok((EMPTY, inclusion_expected())));
     }
 
     #[test]
-    fn radk_inclusion_with_comment() {
+    fn inclusion_with_comment() {
         let lines = [COMMENT_LINE, FULL_KANJI].join("".as_bytes());
-        let res = kanji(&lines);
+        let res = super::kanji(&lines);
         assert_eq!(res, Ok((EMPTY, inclusion_expected())));
+    }
+
+    #[test]
+    fn works_on_actual_file() {
+        let res = super::parse_file("./edrdg_files/radkfile");
+        if let Ok(inclusions) = res {
+            assert_eq!(inclusions.len(), 253);
+        } else {
+            println!("{:?}", res);
+            assert_eq!(true, res.is_ok());
+        }
+    }
+
+    #[test]
+    fn works_on_actual_file_2() {
+        let res = super::parse_file("./edrdg_files/radkfile2");
+        if let Ok(inclusions) = res {
+            assert_eq!(inclusions.len(), 253);
+        } else {
+            println!("{:?}", res);
+            assert_eq!(true, res.is_ok());
+        }
     }
 }
