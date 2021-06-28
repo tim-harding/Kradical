@@ -1,18 +1,6 @@
-[package]
-name = "kradical"
-version = "0.1.0"
-edition = "2018"
+[workspace]
 
-[lib]
-name = "kradical"
-path = "src/lib.rs"
-
-[[bin]]
-name = "jis_to_utf8"
-path = "src/bin.rs"
-
-[dependencies]
-thiserror = "1"
-nom = "6"
-encoding = "0"
-unicode-segmentation = "1"
+members = [
+    "kradical_parsing",
+    "kradical_converter",
+]

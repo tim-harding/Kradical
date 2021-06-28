@@ -1,0 +1,10 @@
+[package]
+name = "kradical_parsing"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+thiserror = "1"
+nom = "6"
+encoding = "0"
+unicode-segmentation = "1"

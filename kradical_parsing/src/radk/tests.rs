@@ -196,7 +196,7 @@ fn inclusion_with_comment() {
 
 #[test]
 fn works_on_actual_file() {
-    let res = super::parse_file("./edrdg_files/radkfile");
+    let res = super::parse_file("../assets/edrdg_files/radkfile");
     if let Ok(inclusions) = res {
         assert_eq!(inclusions.len(), 253);
     } else {
@@ -207,7 +207,7 @@ fn works_on_actual_file() {
 
 #[test]
 fn works_on_actual_file_2() {
-    let res = super::parse_file("./edrdg_files/radkfile2");
+    let res = super::parse_file("../assets/edrdg_files/radkfile2");
     if let Ok(inclusions) = res {
         assert_eq!(inclusions.len(), 253);
     } else {

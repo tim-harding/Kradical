@@ -5,8 +5,8 @@ import regex
 
 hex_pattern = regex.compile("0x([0-9a-fA-F]+)")
 unicode_pattern = regex.compile("U(\+[0-9a-fA-F]+)+")
-with open("jis/euc-jis-2004-std.txt", "r") as input:
-    with open("src/jis213.rs", "w") as output:
+with open("./assets/jis/euc-jis-2004-std.txt", "r") as input:
+    with open("./kradical_parsing/src/jis213.rs", "w") as output:
         output.write("pub fn jis213_to_utf8(code: u32) -> Option<&'static str> {\n")
         output.write("\tmatch code {\n")
 
