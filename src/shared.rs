@@ -1,5 +1,4 @@
 use super::jis213::jis213_to_utf8;
-
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     bytes::complete::take_until,
@@ -41,7 +40,6 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
     value((), pair(char('#'), take_until("\n")))(b)
 }
 
-// Todo: Write tests
 pub fn decode_jis(b: &[u8]) -> Result<String, SharedError> {
     match b.len() {
         2 => {
