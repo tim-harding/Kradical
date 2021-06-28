@@ -1,14 +1,7 @@
 use std::string::FromUtf8Error;
 
 use crate::{jis212::jis212_to_utf8, shared::decode_jis};
-use nom::{
-    branch::alt,
-    bytes::complete::{tag, take_until, take_while, take_while1, take_while_m_n},
-    character::{is_alphanumeric, is_digit},
-    combinator::{map, map_opt, map_res, opt, success, value},
-    sequence::{pair, separated_pair},
-    IResult,
-};
+use nom::{IResult, bitvec::view::AsBits, branch::alt, bytes::complete::{tag, take_until, take_while, take_while1, take_while_m_n}, character::{is_alphanumeric, is_digit}, combinator::{map, map_opt, map_res, opt, success, value}, sequence::{pair, separated_pair}};
 use thiserror::Error;
 
 #[derive(Debug, Error)]
@@ -36,7 +29,7 @@ enum Alternate {
 
 fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
     map(
-        pair(token_radical_strokes, alternate),
+        separated_pair(token_radical_strokes, tag(" "), alternate),
         |((radical, strokes), alternate)| Ident {
             radical,
             strokes,
@@ -114,7 +107,7 @@ fn parse_number(b: &[u8]) -> Result<u8, RadkError> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::test_constants::{EMPTY};
+    use crate::test_constants::EMPTY;
 
     // JIS X 0213
     // $ 一 1
@@ -199,6 +192,38 @@ mod tests {
     fn radk_alt_is_none() {
         let res = alternate(EMPTY);
         assert_eq!(res, Ok((EMPTY, Alternate::None)));
+    }
+
+    #[test]
+    fn radk_image_ident_line() {
+        let res = ident_line(IDENT_LINE_FULL_IMG);
+        assert_eq!(
+            res,
+            Ok((
+                EMPTY,
+                Ident {
+                    radical: "个".to_string(),
+                    strokes: 2,
+                    alternate: Alternate::Image("js02".to_string()),
+                }
+            ))
+        )
+    }
+
+    #[test]
+    fn radk_glyph_ident_line() {
+        let res = ident_line(IDENT_LINE_FULL_JIS);
+        assert_eq!(
+            res,
+            Ok((
+                EMPTY,
+                Ident {
+                    radical: "忙".to_string(),
+                    strokes: 3,
+                    alternate: Alternate::Glyph("\u{5FC4}".to_string()),
+                }
+            ))
+        )
     }
 
     /*
