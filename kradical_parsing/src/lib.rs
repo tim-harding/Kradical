@@ -1,9 +1,7 @@
-mod jis212;
-mod jis213;
-mod shared;
-
 #[cfg(test)]
 mod test_constants;
 
-pub mod radk;
+mod shared;
+
 pub mod krad;
+pub mod radk;

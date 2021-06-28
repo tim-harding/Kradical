@@ -1,5 +1,5 @@
-use super::jis213::jis213_to_utf8;
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
+use jis::jis213_to_utf8;
 use nom::{
     bytes::complete::take_until,
     character::complete::{char, multispace0},

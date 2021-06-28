@@ -1,8 +1,6 @@
-use crate::{
-    jis212::jis212_to_utf8,
-    shared::{comments, decode_jis},
-};
+use crate::shared::{comments, decode_jis};
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
+use jis::jis212_to_utf8;
 use nom::{
     branch::alt,
     bytes::complete::{tag, take, take_while, take_while1, take_while_m_n},

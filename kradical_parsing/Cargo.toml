@@ -8,3 +8,4 @@ thiserror = "1"
 nom = "6"
 encoding = "0"
 unicode-segmentation = "1"
+jis = { path = "../jis" }
