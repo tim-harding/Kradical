@@ -183,6 +183,24 @@ mod tests {
         assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
     }
 
+    #[test]
+    fn radk_alt_is_hex() {
+        let res = alternate("6134".as_bytes());
+        assert_eq!(res, Ok((EMPTY, Alternate::Glyph("辶".to_string()))));
+    }
+
+    #[test]
+    fn radk_alt_is_image() {
+        let res = alternate("js02".as_bytes());
+        assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
+    }
+
+    #[test]
+    fn radk_alt_is_none() {
+        let res = alternate(EMPTY);
+        assert_eq!(res, Ok((EMPTY, Alternate::None)));
+    }
+
     /*
     #[test]
     fn radk_ident_line() {
