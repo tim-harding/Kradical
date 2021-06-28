@@ -1,14 +1,14 @@
-use std::{borrow::Cow, string::FromUtf8Error};
 use crate::{jis212::jis212_to_utf8, shared::decode_jis};
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use nom::{
     branch::alt,
-    bytes::complete::{tag, take_until, take_while, take_while1, take_while_m_n},
-    character::{is_alphanumeric, is_digit},
+    bytes::complete::{tag, take, take_until, take_while, take_while1, take_while_m_n},
+    character::{complete::space0, is_alphanumeric, is_digit},
     combinator::{map, map_res, success, value},
-    sequence::{pair, separated_pair},
+    sequence::{pair, terminated, tuple},
     IResult,
 };
+use std::{borrow::Cow, string::FromUtf8Error};
 use thiserror::Error;
 
 // Todo: Grapheme clusters
@@ -47,8 +47,8 @@ fn from_kanji_line(b: &[u8]) -> Result<String, Cow<'static, str>> {
 
 fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
     map(
-        pair(token_radical_strokes, alternate),
-        |((radical, strokes), alternate)| Ident {
+        tuple((ident_line_token, radical, strokes, alternate)),
+        |(_, radical, strokes, alternate)| Ident {
             radical,
             strokes,
             alternate,
@@ -57,14 +57,7 @@ fn ident_line(b: &[u8]) -> IResult<&[u8], Ident> {
 }
 
 fn alternate(b: &[u8]) -> IResult<&[u8], Alternate> {
-    alt((alternate_some, success(Alternate::None)))(b)
-}
-
-fn alternate_some(b: &[u8]) -> IResult<&[u8], Alternate> {
-    map(
-        pair(tag(" ".as_bytes()), alt((hex, image))),
-        |(_, alternate)| alternate,
-    )(b)
+    alt((hex, image, success(Alternate::None)))(b)
 }
 
 fn image(b: &[u8]) -> IResult<&[u8], Alternate> {
@@ -92,27 +85,16 @@ fn is_hex_digit(b: u8) -> bool {
     (c.is_ascii_uppercase() || c.is_ascii_digit()) && c.is_digit(16)
 }
 
-fn token_radical_strokes(b: &[u8]) -> IResult<&[u8], (String, u8)> {
-    separated_pair(token_radical, tag(" "), strokes)(b)
-}
-
-fn token_radical(b: &[u8]) -> IResult<&[u8], String> {
-    map(
-        separated_pair(ident_line_token, tag(" "), radical),
-        |(_, radical)| radical,
-    )(b)
-}
-
 fn ident_line_token(b: &[u8]) -> IResult<&[u8], ()> {
-    value((), tag("$"))(b)
+    terminated(value((), tag("$")), space0)(b)
 }
 
 fn radical(b: &[u8]) -> IResult<&[u8], String> {
-    map_res(take_until(" "), decode_jis)(b)
+    terminated(map_res(take(2u8), decode_jis), space0)(b)
 }
 
 fn strokes(b: &[u8]) -> IResult<&[u8], u8> {
-    map_res(take_while(is_digit), parse_number)(b)
+    terminated(map_res(take_while(is_digit), parse_number), space0)(b)
 }
 
 fn parse_number(b: &[u8]) -> Result<u8, RadkError> {
@@ -160,7 +142,7 @@ mod tests {
 
     #[test]
     fn radk_strokes() {
-        let res = strokes("12".as_bytes());
+        let res = strokes(b"12");
         assert_eq!(res, Ok((EMPTY, 12)));
     }
 
@@ -168,21 +150,7 @@ mod tests {
     fn radk_radical() {
         let radical_and_space = &IDENT_LINE_SIMPLE[2..];
         let res = radical(radical_and_space);
-        assert_eq!(res, Ok((&IDENT_LINE_SIMPLE[4..], "一".to_string())))
-    }
-
-    #[test]
-    fn radk_ident_radical() {
-        let res = token_radical(IDENT_LINE_SIMPLE);
-        assert_eq!(res, Ok((&IDENT_LINE_SIMPLE[4..], "一".to_string())));
-    }
-
-    #[test]
-    fn radk_ident_radical_strokes() {
-        let radical_and_space = &IDENT_LINE_SIMPLE;
-        let res = token_radical_strokes(radical_and_space);
-        let k = parsed_radical_simple();
-        assert_eq!(res, Ok((EMPTY, (k.radical, k.strokes))));
+        assert_eq!(res, Ok((&IDENT_LINE_SIMPLE[5..], "一".to_string())))
     }
 
     #[test]
@@ -193,25 +161,25 @@ mod tests {
 
     #[test]
     fn radk_hex() {
-        let res = hex("6134".as_bytes());
+        let res = hex(b"6134");
         assert_eq!(res, Ok((EMPTY, Alternate::Glyph("辶".to_string()))));
     }
 
     #[test]
     fn radk_image() {
-        let res = image("js02".as_bytes());
+        let res = image(b"js02");
         assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
     }
 
     #[test]
     fn radk_alt_is_hex() {
-        let res = alternate(" 6134".as_bytes());
+        let res = alternate(b"6134");
         assert_eq!(res, Ok((EMPTY, Alternate::Glyph("辶".to_string()))));
     }
 
     #[test]
     fn radk_alt_is_image() {
-        let res = alternate(" js02".as_bytes());
+        let res = alternate(b"js02");
         assert_eq!(res, Ok((EMPTY, Alternate::Image("js02".to_string()))));
     }
 
@@ -259,12 +227,4 @@ mod tests {
         let res = kanji_line(KANJI_LINE);
         assert_eq!(res, Ok((NEWLINE, expected.to_string())));
     }
-
-    /*
-    #[test]
-    fn radk_ident_line() {
-        let res = ident_line(IDENT_LINE_FULL);
-        assert_eq!(res, Ok((EMPTY, parsed_radical())));
-    }
-    */
 }
