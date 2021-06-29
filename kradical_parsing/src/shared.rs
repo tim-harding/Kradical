@@ -58,7 +58,8 @@ pub fn decode_jis(b: &[u8]) -> Result<String, SharedError> {
 fn bytes_to_u32(b: &[u8]) -> u32 {
     let mut out = 0u32;
     for (i, byte) in b.iter().rev().enumerate() {
-        out += (*byte as u32) << 8u32 * (i as u32);
+        let byte = *byte as u32;
+        out += byte << (8 * i);
     }
     out
 }

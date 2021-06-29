@@ -1,6 +1,5 @@
 //! Parser for `kradfile` and `kradfile2`.
 
-use std::path::Path;
 use crate::shared::{comments, decode_jis};
 use nom::{
     bytes::{
@@ -13,6 +12,7 @@ use nom::{
     sequence::separated_pair,
     IResult,
 };
+use std::path::Path;
 use thiserror::Error;
 
 #[cfg(test)]

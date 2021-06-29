@@ -1,13 +1,10 @@
-use std::{
-    collections::{HashMap, HashSet},
-    iter::FromIterator,
-};
+use std::collections::{HashMap, HashSet};
 
 use crate::opts::OutputFormat;
 use kradical_parsing::radk::{self, Membership, Radical, RadkError};
 
 pub fn parse(inputs: &[String], format: OutputFormat) -> Result<String, RadkError> {
-    let parsed: Result<Vec<_>, _> = inputs.iter().map(|input| radk::parse_file(input)).collect();
+    let parsed: Result<Vec<_>, _> = inputs.iter().map(radk::parse_file).collect();
     let parsed: Vec<_> = parsed?
         .into_iter()
         .flat_map(|file| file.into_iter())
@@ -77,7 +74,7 @@ fn consolidate(expansions: Vec<Membership>) -> Vec<Membership> {
                 entry.get_mut().extend(expansion.kanji);
             }
             std::collections::hash_map::Entry::Vacant(entry) => {
-                entry.insert(HashSet::from_iter(expansion.kanji.into_iter()));
+                entry.insert(expansion.kanji.into_iter().collect());
             }
         }
     }

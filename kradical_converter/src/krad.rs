@@ -2,7 +2,7 @@ use crate::opts::OutputFormat;
 use kradical_parsing::krad::{self, Decomposition, KradError};
 
 pub fn parse(inputs: &[String], format: OutputFormat) -> Result<String, KradError> {
-    let parsed: Result<Vec<_>, _> = inputs.iter().map(|input| krad::parse_file(input)).collect();
+    let parsed: Result<Vec<_>, _> = inputs.iter().map(krad::parse_file).collect();
     let parsed: Vec<_> = parsed?
         .into_iter()
         .flat_map(|file| file.into_iter())

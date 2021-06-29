@@ -165,7 +165,7 @@ fn image(b: &[u8]) -> IResult<&[u8], Alternate> {
 }
 
 fn from_image(b: &[u8]) -> Result<Alternate, FromUtf8Error> {
-    String::from_utf8(b.into()).map(|s| Alternate::Image(s))
+    String::from_utf8(b.into()).map(Alternate::Image)
 }
 
 fn hex(b: &[u8]) -> IResult<&[u8], Alternate> {
