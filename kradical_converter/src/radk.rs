@@ -4,7 +4,7 @@ use std::{
 };
 
 use crate::opts::OutputFormat;
-use kradical_parsing::radk::{self, Expansion, Radical, RadkError};
+use kradical_parsing::radk::{self, Membership, Radical, RadkError};
 
 pub fn parse(inputs: &[String], format: OutputFormat) -> Result<String, RadkError> {
     let parsed: Result<Vec<_>, _> = inputs.iter().map(|input| radk::parse_file(input)).collect();
@@ -16,14 +16,14 @@ pub fn parse(inputs: &[String], format: OutputFormat) -> Result<String, RadkErro
     Ok(formatter(format)(&parsed))
 }
 
-fn formatter(format: OutputFormat) -> fn(&[Expansion]) -> String {
+fn formatter(format: OutputFormat) -> fn(&[Membership]) -> String {
     match format {
         OutputFormat::Unicode => to_unicode,
         OutputFormat::Rust => to_rust,
     }
 }
 
-fn to_unicode(expansions: &[Expansion]) -> String {
+fn to_unicode(expansions: &[Membership]) -> String {
     let lines: Vec<_> = expansions
         .iter()
         .map(|expansion| {
@@ -40,14 +40,15 @@ fn to_unicode(expansions: &[Expansion]) -> String {
     lines.join("\n")
 }
 
-fn to_rust(expansions: &[Expansion]) -> String {
+fn to_rust(expansions: &[Membership]) -> String {
     let mut lines = vec![
-        "use super::{Expansion, Alternate};".to_string(),
+        "use super::{Membership, Alternate};".to_string(),
         "".to_string(),
-        "pub const EXPANSIONS: &[Expansion] = &[".to_string(),
+        "/// For each radical, a list of which kanji contain it from the `radkfile`".to_string(),
+        "pub const MEMBERSHIPS: &[Membership] = &[".to_string(),
     ];
     for expansion in expansions {
-        lines.push("\tExpansion {".to_string());
+        lines.push("\tMembership {".to_string());
         let radical = &expansion.radical;
         let alt = match &radical.alternate {
             radk::Alternate::Image(image) => format!("Image(\"{}\")", image),
@@ -68,7 +69,7 @@ fn to_rust(expansions: &[Expansion]) -> String {
     lines.join("\n")
 }
 
-fn consolidate(expansions: Vec<Expansion>) -> Vec<Expansion> {
+fn consolidate(expansions: Vec<Membership>) -> Vec<Membership> {
     let mut consolidation: HashMap<Radical, HashSet<String>> = HashMap::new();
     for expansion in expansions.into_iter() {
         match consolidation.entry(expansion.radical) {
@@ -84,7 +85,7 @@ fn consolidate(expansions: Vec<Expansion>) -> Vec<Expansion> {
         .into_iter()
         .map(|(radical, kanji)| {
             let kanji: Vec<_> = kanji.into_iter().collect();
-            Expansion { radical, kanji }
+            Membership { radical, kanji }
         })
         .collect();
 

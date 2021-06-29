@@ -1,4 +1,4 @@
-use super::{Alternate, Expansion, Radical};
+use super::{Alternate, Membership, Radical};
 use crate::test_constants::{COMMENT_LINE, EMPTY};
 
 fn parsed_radical_simple() -> Radical {
@@ -150,7 +150,7 @@ fn kanji_multiline() {
     assert_eq!(res, Ok((EMPTY, expected)));
 }
 
-fn inclusion_expected() -> Expansion {
+fn inclusion_expected() -> Membership {
     let inc: Vec<String> = [
         "郁", "廓", "郭", "郷", "響", "饗", "郡", "祁", "郊", "蔀", "邪", "邸", "鄭", "都", "那",
         "部", "邦", "爺", "耶", "郵", "廊", "榔", "郎", "嚮", "娜", "揶", "擲", "梛", "椰", "槨",
@@ -160,7 +160,7 @@ fn inclusion_expected() -> Expansion {
     .iter()
     .map(|&s| s.into())
     .collect();
-    Expansion {
+    Membership {
         radical: Radical {
             glyph: "邦".to_string(),
             strokes: 3,

@@ -65,7 +65,7 @@ fn parse_file_implementation(path: &Path) -> KradResult {
 ///
 /// # Arguments
 ///
-/// * `path` - A path to the kradfile
+/// * `b` - The bytes to parse
 pub fn parse_bytes(b: &[u8]) -> KradResult {
     lines(b).map(|(_i, o)| o).map_err(|_err| KradError::Parse)
 }

@@ -1,6 +1,6 @@
 # Kradical
 
-This project contains utilities for working with the [Electronic Dictionary Research and Development Group](https://www.edrdg.org/) (EDRDG) [radical decomposition](https://www.edrdg.org/krad/kradinf.html) files.
+Utilities for working with the [Electronic Dictionary Research and Development Group](https://www.edrdg.org/) (EDRDG) [radical decomposition](https://www.edrdg.org/krad/kradinf.html) files.
 
 
 ## Crates
@@ -12,14 +12,17 @@ Lookup tables for converting JIS X 0212 and JIS X 0213 characters into UTF-8. Th
 
 ### kradical_parsing
 
-Parsers for the following file types:
+Parsers for the following file types. For each, the first provides mappings for the set of characters in the JIS X 0208 standard, the second provides mappings for the additional characters in the JIS X 0212 standard. The contents is converted from the original mixed JIS X 0208, JIS X 0212, and EUC-JP encoding into UTF-8. 
 
-- `kradfile`
-- `kradfile2`
-- `radkfile`
-- `radkfile2`
 
-The contents is converted from the original mixed JIS X 0208, JIS X 0212, and EUC-JP encoding into UTF-8. 
+#### `kradfile` and `kradfile2`
+
+Gives the consituent radicals for a given kanji. 
+
+
+#### `radkfile` and `radkfile2`
+
+Lists the kanji that include a given radical. This is an inverted mapping from the `kradfile`. 
 
 
 ### kradical_converter    

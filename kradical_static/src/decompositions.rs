@@ -1,5 +1,6 @@
 use super::Decomposition;
 
+/// The list of radical decompositions from the `kradfile`
 pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "亜",

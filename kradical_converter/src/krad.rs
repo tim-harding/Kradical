@@ -32,6 +32,7 @@ fn to_rust(decompositions: &[Decomposition]) -> String {
     let mut lines = vec![
         "use super::Decomposition;".to_string(),
         "".to_string(),
+        "/// The list of radical decompositions from the `kradfile`".to_string(),
         "pub const DECOMPOSITIONS: &[Decomposition] = &[".to_string(),
     ];
     for decomposition in decompositions {
