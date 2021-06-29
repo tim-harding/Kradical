@@ -1,4 +1,9 @@
 [workspace]
+license = "CC-BY-NC-SA-3.0"
+description = "Utilities for EDRDG radical decomposition files"
+repository = "https://github.com/tim-harding/Kradical"
+keywords = ["parser", "japanese", "kanji", "radical", "EDRDG"]
+categories = ["encoding", "parsing"]
 
 members = [
     "kradical_parsing",

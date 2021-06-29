@@ -2,6 +2,7 @@
 name = "kradical_converter"
 version = "0.1.0"
 edition = "2018"
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = "3.0.0-beta.2"
