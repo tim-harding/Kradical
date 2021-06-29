@@ -18,7 +18,17 @@ fn formatter(format: OutputFormat) -> fn(&[Expansion]) -> String {
 }
 
 fn to_unicode(expansions: &[Expansion]) -> String {
-    todo!()
+    let lines: Vec<_> = expansions.iter().map(|expansion| {
+        let kanji = expansion.kanji.join(" ");
+        let radical = &expansion.radical;
+        let alt = match &radical.alternate {
+            radk::Alternate::Image(image) => format!(" alt_image({})", image),
+            radk::Alternate::Glyph(glyph) => format!(" alt_glyph({})", glyph),
+            radk::Alternate::None => "".to_string(),
+        };
+        format!("{} {}{} : {}", radical.glyph, radical.strokes, alt, kanji)
+    }).collect();
+    lines.join("\n")
 }
 
 fn to_rust(expansions: &[Expansion]) -> String {

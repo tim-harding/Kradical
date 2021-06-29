@@ -44,7 +44,7 @@ pub struct Radical {
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Expansion {
-    pub ident: Radical,
+    pub radical: Radical,
     pub kanji: Vec<String>,
 }
 
@@ -91,7 +91,7 @@ fn lines(b: &[u8]) -> IResult<&[u8], Vec<Expansion>> {
 fn kanji(b: &[u8]) -> IResult<&[u8], Expansion> {
     map(
         pair(comments, separated_pair(ident_line, tag("\n"), kanji_lines)),
-        |(_, (ident, kanji))| Expansion { ident, kanji },
+        |(_, (ident, kanji))| Expansion { radical: ident, kanji },
     )(b)
 }
 

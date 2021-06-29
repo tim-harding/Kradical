@@ -161,7 +161,7 @@ fn inclusion_expected() -> Expansion {
     .map(|&s| s.into())
     .collect();
     Expansion {
-        ident: Radical {
+        radical: Radical {
             glyph: "邦".to_string(),
             strokes: 3,
             alternate: Alternate::Image("kozatoR".to_string()),

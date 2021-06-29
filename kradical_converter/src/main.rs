@@ -1,6 +1,6 @@
 use clap::Clap;
 use error::ConvertError;
-use std::{fs::File, io::Write};
+use std::{fs::OpenOptions, io::Write};
 
 use crate::opts::{InputFormat, Opts};
 
@@ -15,6 +15,11 @@ fn main() -> Result<(), ConvertError> {
         InputFormat::Radk => radk::parse(&opts.inputs, opts.output_format)?,
         InputFormat::Krad => krad::parse(&opts.inputs, opts.output_format)?,
     };
-    File::create(opts.output).and_then(|mut file| file.write(text.as_bytes()))?;
+    OpenOptions::new()
+        .write(true)
+        .create(true)
+        .truncate(true)
+        .open(opts.output)
+        .and_then(|mut file| file.write_all(text.as_bytes()))?;
     Ok(())
 }
