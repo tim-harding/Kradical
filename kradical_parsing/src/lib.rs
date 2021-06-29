@@ -1,3 +1,5 @@
+//! Contains parsers for `kradfile` and `radkfile`
+
 #[cfg(test)]
 mod test_constants;
 

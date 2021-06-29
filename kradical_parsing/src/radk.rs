@@ -1,3 +1,5 @@
+//! Parser for `radkfile` and `radkfile2`.
+
 use crate::shared::{comments, decode_jis};
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use jis::jis212_to_utf8;

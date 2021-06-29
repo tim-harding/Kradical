@@ -1,5 +1,6 @@
-use std::path::Path;
+//! Parser for `kradfile` and `kradfile2`.
 
+use std::path::Path;
 use crate::shared::{comments, decode_jis};
 use nom::{
     bytes::{
