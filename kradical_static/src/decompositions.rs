@@ -1,6 +1,6 @@
 use super::Decomposition;
 
-const DECOMPOSITIONS: &[Decomposition] = &[
+pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "亜",
         radicals: &["｜", "一", "口"],

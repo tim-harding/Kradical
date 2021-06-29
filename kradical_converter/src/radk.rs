@@ -41,7 +41,31 @@ fn to_unicode(expansions: &[Expansion]) -> String {
 }
 
 fn to_rust(expansions: &[Expansion]) -> String {
-    todo!()
+    let mut lines = vec![
+        "use super::{Expansion, Alternate};".to_string(),
+        "".to_string(),
+        "pub const EXPANSIONS: &[Expansion] = &[".to_string(),
+    ];
+    for expansion in expansions {
+        lines.push("\tExpansion {".to_string());
+        let radical = &expansion.radical;
+        let alt = match &radical.alternate {
+            radk::Alternate::Image(image) => format!("Image(\"{}\")", image),
+            radk::Alternate::Glyph(glyph) => format!("Glyph(\"{}\")", glyph),
+            radk::Alternate::None => "None".to_string(),
+        };
+        lines.push(format!("\t\tradical: \"{}\",", radical.glyph));
+        lines.push(format!("\t\tstrokes: {},", radical.strokes));
+        lines.push(format!("\t\talternate: Alternate::{},", alt));
+        lines.push("\t\tkanji: &[".to_string());
+        for glyph in &expansion.kanji {
+            lines.push(format!("\t\t\t\"{}\",", glyph));
+        }
+        lines.push("\t\t],".to_string());
+        lines.push("\t},".to_string());
+    }
+    lines.push("];".to_string());
+    lines.join("\n")
 }
 
 fn consolidate(expansions: Vec<Expansion>) -> Vec<Expansion> {
