@@ -35,20 +35,20 @@ pub enum RadkError {
     Io(#[from] std::io::Error),
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Radical {
     pub glyph: String,
     pub strokes: u8,
     pub alternate: Alternate,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Expansion {
     pub radical: Radical,
     pub kanji: Vec<String>,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub enum Alternate {
     Image(String),
     Glyph(String),
