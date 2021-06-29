@@ -1,10 +1,9 @@
 # Kradical
 
+This project contains utilities for working with the [Electronic Dictionary Research and Development Group](https://www.edrdg.org/) (EDRDG) [radical decomposition](https://www.edrdg.org/krad/kradinf.html) files.
+
 
 ## Crates
-
-This repository contains the following Cargo workspaces:
-
 
 ### jis
 
@@ -13,12 +12,14 @@ Lookup tables for converting JIS X 0212 and JIS X 0213 characters into UTF-8. Th
 
 ### kradical_parsing
 
-Parsers for the [Electronic Dictionary Research and Development Group](https://www.edrdg.org/) (EDRDG) [radical decomposition](https://www.edrdg.org/krad/kradinf.html) files:
+Parsers for the following file types:
 
 - `kradfile`
 - `kradfile2`
 - `radkfile`
 - `radkfile2`
+
+The contents is converted from the original mixed JIS X 0208, JIS X 0212, and EUC-JP encoding into UTF-8. 
 
 
 ### kradical_converter    
@@ -27,16 +28,20 @@ A binary for converting the original JIS-encoded files to other formats. It is a
 
 - UTF-8 variants of the original formats are available under `assets/outputs`. 
     - `krad_utf8.txt` follows the same format as the original `kradfile`. Each line contains the following:
-        1. The kanji
-        2. A colon
-        3. Each of constituent radicals separated by spaces
+        - The kanji
+        - A colon
+        - Each of constituent radicals separated by spaces
     - `radk_utf8.txt` is adapted from the original format at my discretion for ease of use. Each line contains the following:
-        1. The radical
-        2. The number of strokes in the radical
-        3. Optionally, one of the following:
+        - The radical
+        - The number of strokes in the radical
+        - Optionally, one of the following:
             - The tag `alt_image(NAME)`, where `NAME` is the name of an image file used by the [WWWJDIC](http://nihongo.monash.edu/cgi-bin/wwwjdic?1C) server as a better representation of the radical. This is likely of limited utility but included for completeness. 
             - The tag `alt_glyph(GLYPH)`, where `GLYPH` is an alternative glyph for the radical. In general, this should be used wherever available. The original authors where limited to what was available in the JIS X 0208 character set to represent each radical, but with UTF-8 we can do much better. 
 - Rust variants, available in the `kradical_static` crate.
+
+Below is an example invocation. For more information, use `cargo run -- --help`. 
+
+`cargo run -- radk unicode --inputs .\assets\edrdg_files\radkfile .\assets\edrdg_files\radkfile2 --output .\assets\outputs\radk_utf8.txt`
 
 
 ### kradical_static
