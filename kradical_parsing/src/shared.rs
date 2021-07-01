@@ -46,9 +46,8 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 // https://unicode-table.com/en/blocks/cjk-unified-ideographs/
 // https://shapecatcher.com/
 
-
 // Notes on image remappings
-// 
+//
 // Kept the left part
 // Better alternative: ⺅
 // 化 -> http://nihongo.monash.edu/gif212/js01.png
@@ -93,8 +92,7 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 // Better alternative: 耂
 // 老 -> http://nihongo.monash.edu/gif212/js05.png
 
-
-// These are different characters: 
+// These are different characters:
 // ⻖ left  (2ED6)
 // ⻏ right (2ECF)
 
@@ -122,8 +120,8 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
         // The authors suggest a vertically-flipped ハ
         // like the Wanikani horns radical
         // https://www.wanikani.com/radicals/horns
-        // I found an alternate glyph that isn't 
-        // semantically a Japanese radical 
+        // I found an alternate glyph that isn't
+        // semantically a Japanese radical
         // (it's a kwukyel ideograph)
         // but it looks correct.
         // 并 -> 丷
@@ -134,7 +132,7 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
 
         // 込 -> ⻌
         0xB9FE => Some("\u{2ECC}"),
-        
+
         // 尚 -> ⺌
         0xBEB0 => Some("\u{2E8C}"),
 
@@ -145,7 +143,7 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
         // anything even close.
         // 扎 -> ⺗
         // 0xD9A9 => Some("\u{2E97}"),
-        // Unless they actually meant 心? 
+        // Unless they actually meant 心?
         // That's what appears on the WWWJDIC server.
         0xD9A9 => Some("\u{5FC3}"),
 
