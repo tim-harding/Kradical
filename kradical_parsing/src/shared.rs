@@ -96,6 +96,7 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 // ⻖ left  (2ED6)
 // ⻏ right (2ECF)
 
+// Todo: These should ONLY be applied to radicals, _not_ kanji.
 pub fn remap_radical(code: u32) -> Option<&'static str> {
     // Remappings taken from kradfile lines 45-65
     match code {
@@ -206,7 +207,6 @@ pub fn decode_jis(b: &[u8]) -> Result<String, SharedError> {
                 .map(|unicode| unicode.to_string())
                 .ok_or(SharedError::Jis)
         }
-        // Todo: Does the JIS212 lookup work here too?
         3 => EUCJPEncoding
             .decode(b, DecoderTrap::Strict)
             .map_err(|_| SharedError::EucJp),
