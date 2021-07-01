@@ -74,7 +74,7 @@ fn image_ident_line() {
         Ok((
             EMPTY,
             Radical {
-                glyph: "个".to_string(),
+                glyph: "ㅅ".to_string(),
                 strokes: 2,
                 alternate: Alternate::Image("js02".to_string()),
             }
@@ -94,7 +94,7 @@ fn glyph_ident_line() {
         Ok((
             EMPTY,
             Radical {
-                glyph: "忙".to_string(),
+                glyph: "⺖".to_string(),
                 strokes: 3,
                 alternate: Alternate::Glyph("\u{5FC4}".to_string()),
             }
@@ -162,7 +162,7 @@ fn inclusion_expected() -> Membership {
     .collect();
     Membership {
         radical: Radical {
-            glyph: "邦".to_string(),
+            glyph: "⻏".to_string(),
             strokes: 3,
             alternate: Alternate::Image("kozatoR".to_string()),
         },
