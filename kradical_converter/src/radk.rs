@@ -26,12 +26,7 @@ fn to_unicode(expansions: &[Membership]) -> String {
         .map(|expansion| {
             let kanji = expansion.kanji.join(" ");
             let radical = &expansion.radical;
-            let alt = match &radical.alternate {
-                radk::Alternate::Image(image) => format!(" alt_image({})", image),
-                radk::Alternate::Glyph(glyph) => format!(" alt_glyph({})", glyph),
-                radk::Alternate::None => "".to_string(),
-            };
-            format!("{} {}{} : {}", radical.glyph, radical.strokes, alt, kanji)
+            format!("{} {} : {}", radical.glyph, radical.strokes, kanji)
         })
         .collect();
     lines.join("\n")
