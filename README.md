@@ -52,6 +52,33 @@ Below is an example invocation. For more information, use `cargo run -- --help`.
 Rust files containing the parsed contents of the radical decompositions. If you need to work with the radical decompositions but don't specifically need to do any parsing work, these can simply be imported as-is. The source radical decompositions are updated infrequently so it is unlikely that these are out of date, but please submit a PR if you notice there are fresh edits available. 
 
 
+## Notes on the original formats
+
+Working out how to convert the original files to something more usable was more difficult than I would have anticipated, so I just want to take this space to document the formats for anyone else who might need to work with these files in the future. 
+
+### Encoding
+
+In general, ASCII characters can be treated as-is when they appear in comments, colon delimiters, and whitespace. This is true of any of the JIS encodings, each of whose Japanese characters occupy a range of bytes that doesn't conflict with ASCII. However, I found that simply applying an encoding conversion to these files was unsuccessful. None of the Japanese codecs offered in Rust's [encoding](https://docs.rs/encoding/0.2.33/encoding/codec/japanese/index.html) crate could translate a file to UTF-8 without errors. The characters being decomposed also come from different JIS character sets depending on the file, and the radicals may be in a different encoding from the kanji. This makes things a bit annoying to deal with. I've broken out below what encodings worked for me in different parts of each file. For characters in JIS X 0208, I personally used JIS X 0213 because it seems to be compatible and it was easier to find a conversion reference for it. 
+
+
+### `kradfile`
+
+Each pair of two bytes is in JIS X 0208. 
+
+```text
+�� : �� �� ��
+```
+
+
+### `kradfile2`
+
+The first the bytes, the radical, are 
+
+```text
+��� : �� �� ��
+```
+
+
 ## License
 
 In accordance with the [EDRDG license statement](http://www.edrdg.org/edrdg/licence.html), this project is distributed under the [Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/legalcode) license. The files included under `assets/edrdg_files` were downloaded from the [Monash Nihongo FTP Archive](http://ftp.edrdg.org/pub/Nihongo/00INDEX.html#dic_fil) and are the property of EDRDG.
