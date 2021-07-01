@@ -67,6 +67,7 @@ fn consolidate(expansions: Vec<Membership>) -> Vec<Membership> {
             }
         }
     }
+
     let mut consolidation: Vec<_> = consolidation
         .into_iter()
         .map(|(radical, kanji)| {
@@ -75,7 +76,19 @@ fn consolidate(expansions: Vec<Membership>) -> Vec<Membership> {
         })
         .collect();
 
-    consolidation.sort_unstable_by(|l, r| l.radical.strokes.cmp(&r.radical.strokes));
+    for membership in consolidation.iter_mut() {
+        membership.kanji.sort();
+    }
+
+    consolidation.sort_by(|l, r| {
+        if l.radical.strokes != r.radical.strokes {
+            l.radical.strokes.cmp(&r.radical.strokes)
+        } else if l.kanji.len() != r.kanji.len() {
+            l.kanji.len().cmp(&r.kanji.len()).reverse()
+        } else {
+            l.radical.glyph.cmp(&r.radical.glyph)
+        }
+    });
 
     consolidation
 }
