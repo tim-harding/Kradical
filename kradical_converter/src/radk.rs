@@ -34,7 +34,7 @@ fn to_unicode(expansions: &[Membership]) -> String {
 
 fn to_rust(expansions: &[Membership]) -> String {
     let mut lines = vec![
-        "use super::{Membership, Alternate};".to_string(),
+        "use super::Membership;".to_string(),
         "".to_string(),
         "/// For each radical, a list of which kanji contain it from the `radkfile`".to_string(),
         "pub const MEMBERSHIPS: &[Membership] = &[".to_string(),
@@ -42,14 +42,8 @@ fn to_rust(expansions: &[Membership]) -> String {
     for expansion in expansions {
         lines.push("\tMembership {".to_string());
         let radical = &expansion.radical;
-        let alt = match &radical.alternate {
-            radk::Alternate::Image(image) => format!("Image(\"{}\")", image),
-            radk::Alternate::Glyph(glyph) => format!("Glyph(\"{}\")", glyph),
-            radk::Alternate::None => "None".to_string(),
-        };
         lines.push(format!("\t\tradical: \"{}\",", radical.glyph));
         lines.push(format!("\t\tstrokes: {},", radical.strokes));
-        lines.push(format!("\t\talternate: Alternate::{},", alt));
         lines.push("\t\tkanji: &[".to_string());
         for glyph in &expansion.kanji {
             lines.push(format!("\t\t\t\"{}\",", glyph));
