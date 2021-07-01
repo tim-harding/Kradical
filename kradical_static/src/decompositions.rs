@@ -28,11 +28,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "挨",
-        radicals: &["矢", "厶", "心", "乞"],
+        radicals: &["矢", "厶", "扌", "𠂉"],
     },
     Decomposition {
         kanji: "姶",
-        radicals: &["一", "口", "女", "ㅅ"],
+        radicals: &["一", "口", "女", "𠆢"],
     },
     Decomposition {
         kanji: "逢",
@@ -56,7 +56,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "握",
-        radicals: &["至", "土", "厶", "尸", "心"],
+        radicals: &["至", "土", "厶", "尸", "扌"],
     },
     Decomposition {
         kanji: "渥",
@@ -88,11 +88,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "斡",
-        radicals: &["十", "斗", "日", "ㅅ"],
+        radicals: &["十", "斗", "日", "𠆢"],
     },
     Decomposition {
         kanji: "扱",
-        radicals: &["心", "及"],
+        radicals: &["扌", "及"],
     },
     Decomposition {
         kanji: "宛",
@@ -132,7 +132,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "袷",
-        radicals: &["口", "⻂", "ㅅ", "一"],
+        radicals: &["口", "⻂", "𠆢", "一"],
     },
     Decomposition {
         kanji: "安",
@@ -144,7 +144,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "按",
-        radicals: &["女", "宀", "心"],
+        radicals: &["女", "宀", "扌"],
     },
     Decomposition {
         kanji: "暗",
@@ -276,7 +276,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "医",
-        radicals: &["矢", "匚", "乞"],
+        radicals: &["矢", "匚", "𠂉"],
     },
     Decomposition {
         kanji: "井",
@@ -376,7 +376,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蔭",
-        radicals: &["二", "ㅅ", "厶", "⺾", "⻖", "一"],
+        radicals: &["二", "𠆢", "厶", "⺾", "⻖", "一"],
     },
     Decomposition {
         kanji: "院",
@@ -384,7 +384,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "陰",
-        radicals: &["二", "ㅅ", "厶", "⻖", "一"],
+        radicals: &["二", "𠆢", "厶", "⻖", "一"],
     },
     Decomposition {
         kanji: "隠",
@@ -584,11 +584,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鋭",
-        radicals: &["金", "口", "丷", "ㅅ", "儿"],
+        radicals: &["金", "口", "丷", "𠆢", "儿"],
     },
     Decomposition {
         kanji: "液",
-        radicals: &["⺅", "⺡", "亠", "攵", "夕", "乞"],
+        radicals: &["⺅", "⺡", "亠", "攵", "夕", "𠂉"],
     },
     Decomposition {
         kanji: "疫",
@@ -656,11 +656,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掩",
-        radicals: &["乙", "大", "日", "心", "奄"],
+        radicals: &["乙", "大", "日", "扌", "奄"],
     },
     Decomposition {
         kanji: "援",
-        radicals: &["ノ", "一", "爪", "又", "心"],
+        radicals: &["ノ", "一", "爪", "又", "扌"],
     },
     Decomposition {
         kanji: "沿",
@@ -720,11 +720,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "塩",
-        radicals: &["口", "皿", "土", "ノ", "一", "人", "乞"],
+        radicals: &["口", "皿", "土", "ノ", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "於",
-        radicals: &["方", "ㅅ"],
+        radicals: &["方", "𠆢"],
     },
     Decomposition {
         kanji: "汚",
@@ -756,7 +756,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "押",
-        radicals: &["｜", "日", "心", "田"],
+        radicals: &["｜", "日", "扌", "田"],
     },
     Decomposition {
         kanji: "旺",
@@ -844,7 +844,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "卸",
-        radicals: &["ノ", "止", "卩", "乞"],
+        radicals: &["ノ", "止", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "恩",
@@ -964,7 +964,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箇",
-        radicals: &["口", "十", "竹", "囗", "乞"],
+        radicals: &["口", "十", "竹", "囗", "𠂉"],
     },
     Decomposition {
         kanji: "花",
@@ -1072,11 +1072,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "介",
-        radicals: &["ハ", "ㅅ"],
+        radicals: &["ハ", "𠆢"],
     },
     Decomposition {
         kanji: "会",
-        radicals: &["二", "ㅅ", "厶"],
+        radicals: &["二", "𠆢", "厶"],
     },
     Decomposition {
         kanji: "解",
@@ -1108,7 +1108,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "悔",
-        radicals: &["母", "⺖", "毋", "ノ", "一", "人", "乞"],
+        radicals: &["母", "⺖", "毋", "ノ", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "恢",
@@ -1124,11 +1124,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拐",
-        radicals: &["口", "刀", "心"],
+        radicals: &["口", "刀", "扌"],
     },
     Decomposition {
         kanji: "改",
-        radicals: &["已", "攵", "乞"],
+        radicals: &["已", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "魁",
@@ -1136,7 +1136,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "晦",
-        radicals: &["日", "母", "毋", "乞"],
+        radicals: &["日", "母", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "械",
@@ -1144,7 +1144,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "海",
-        radicals: &["⺡", "母", "毋", "乞"],
+        radicals: &["⺡", "母", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "灰",
@@ -1152,7 +1152,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "界",
-        radicals: &["田", "ㅅ", "儿"],
+        radicals: &["田", "𠆢", "儿"],
     },
     Decomposition {
         kanji: "皆",
@@ -1160,11 +1160,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "絵",
-        radicals: &["糸", "幺", "小", "二", "ㅅ", "厶"],
+        radicals: &["糸", "幺", "小", "二", "𠆢", "厶"],
     },
     Decomposition {
         kanji: "芥",
-        radicals: &["ㅅ", "⺾", "儿"],
+        radicals: &["𠆢", "⺾", "儿"],
     },
     Decomposition {
         kanji: "蟹",
@@ -1288,11 +1288,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拡",
-        radicals: &["厶", "广", "心"],
+        radicals: &["厶", "广", "扌"],
     },
     Decomposition {
         kanji: "撹",
-        radicals: &["見", "⺌", "冖", "心"],
+        radicals: &["見", "⺌", "冖", "扌"],
     },
     Decomposition {
         kanji: "格",
@@ -1372,11 +1372,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掛",
-        radicals: &["土", "卜", "心"],
+        radicals: &["土", "卜", "扌"],
     },
     Decomposition {
         kanji: "笠",
-        radicals: &["竹", "立", "乞"],
+        radicals: &["竹", "立", "𠂉"],
     },
     Decomposition {
         kanji: "樫",
@@ -1408,11 +1408,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "恰",
-        radicals: &["口", "⺖", "ㅅ", "一"],
+        radicals: &["口", "⺖", "𠆢", "一"],
     },
     Decomposition {
         kanji: "括",
-        radicals: &["ノ", "口", "十", "舌", "心"],
+        radicals: &["ノ", "口", "十", "舌", "扌"],
     },
     Decomposition {
         kanji: "活",
@@ -1524,7 +1524,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "乾",
-        radicals: &["乙", "十", "日", "ノ", "一", "人", "乞"],
+        radicals: &["乙", "十", "日", "ノ", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "侃",
@@ -1548,7 +1548,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "勧",
-        radicals: &["ノ", "力", "隹", "矢", "乞"],
+        radicals: &["ノ", "力", "隹", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "巻",
@@ -1584,7 +1584,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "幹",
-        radicals: &["干", "十", "日", "ㅅ"],
+        radicals: &["干", "十", "日", "𠆢"],
     },
     Decomposition {
         kanji: "患",
@@ -1604,11 +1604,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "換",
-        radicals: &["大", "儿", "冂", "勹", "心"],
+        radicals: &["大", "儿", "冂", "勹", "扌"],
     },
     Decomposition {
         kanji: "敢",
-        radicals: &["耳", "攵", "乞"],
+        radicals: &["耳", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "柑",
@@ -1628,7 +1628,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "歓",
-        radicals: &["欠", "隹", "矢", "乞"],
+        radicals: &["欠", "隹", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "汗",
@@ -1644,7 +1644,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "潅",
-        radicals: &["⺡", "隹", "矢", "乞"],
+        radicals: &["⺡", "隹", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "環",
@@ -1656,7 +1656,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "監",
-        radicals: &["皿", "臣", "二", "乞"],
+        radicals: &["皿", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "看",
@@ -1664,15 +1664,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "竿",
-        radicals: &["干", "竹", "乞"],
+        radicals: &["干", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "管",
-        radicals: &["口", "竹", "宀", "｜", "乞"],
+        radicals: &["口", "竹", "宀", "｜", "𠂉"],
     },
     Decomposition {
         kanji: "簡",
-        radicals: &["竹", "日", "門", "乞"],
+        radicals: &["竹", "日", "門", "𠂉"],
     },
     Decomposition {
         kanji: "緩",
@@ -1684,7 +1684,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "翰",
-        radicals: &["羽", "十", "日", "ㅅ", "冫"],
+        radicals: &["羽", "十", "日", "𠆢", "冫"],
     },
     Decomposition {
         kanji: "肝",
@@ -1692,7 +1692,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "艦",
-        radicals: &["皿", "舟", "臣", "二", "乞"],
+        radicals: &["皿", "舟", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "莞",
@@ -1700,7 +1700,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "観",
-        radicals: &["見", "隹", "矢", "乞"],
+        radicals: &["見", "隹", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "諌",
@@ -1716,7 +1716,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鑑",
-        radicals: &["金", "皿", "臣", "二", "乞"],
+        radicals: &["金", "皿", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "間",
@@ -1744,7 +1744,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舘",
-        radicals: &["干", "口", "ㅅ", "宀", "｜"],
+        radicals: &["干", "口", "𠆢", "宀", "｜"],
     },
     Decomposition {
         kanji: "丸",
@@ -1752,7 +1752,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "含",
-        radicals: &["口", "ㅅ", "一"],
+        radicals: &["口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "岸",
@@ -1760,7 +1760,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "巌",
-        radicals: &["山", "耳", "⺌", "厂", "攵", "乞"],
+        radicals: &["山", "耳", "⺌", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "玩",
@@ -1804,7 +1804,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "企",
-        radicals: &["止", "ㅅ"],
+        radicals: &["止", "𠆢"],
     },
     Decomposition {
         kanji: "伎",
@@ -1856,7 +1856,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "揮",
-        radicals: &["車", "冖", "心"],
+        radicals: &["車", "冖", "扌"],
     },
     Decomposition {
         kanji: "机",
@@ -1864,7 +1864,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "旗",
-        radicals: &["甘", "ハ", "方", "乞"],
+        radicals: &["甘", "ハ", "方", "𠂉"],
     },
     Decomposition {
         kanji: "既",
@@ -1896,11 +1896,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "気",
-        radicals: &["气", "丶", "ノ", "乞"],
+        radicals: &["气", "丶", "ノ", "𠂉"],
     },
     Decomposition {
         kanji: "汽",
-        radicals: &["⺡", "气", "乞"],
+        radicals: &["⺡", "气", "𠂉"],
     },
     Decomposition {
         kanji: "畿",
@@ -1988,11 +1988,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "技",
-        radicals: &["支", "心", "又", "十"],
+        radicals: &["支", "扌", "又", "十"],
     },
     Decomposition {
         kanji: "擬",
-        radicals: &["疋", "矢", "匕", "心", "マ", "乞"],
+        radicals: &["疋", "矢", "匕", "扌", "マ", "𠂉"],
     },
     Decomposition {
         kanji: "欺",
@@ -2004,7 +2004,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "疑",
-        radicals: &["疋", "矢", "匕", "マ", "乞"],
+        radicals: &["疋", "矢", "匕", "マ", "𠂉"],
     },
     Decomposition {
         kanji: "祇",
@@ -2028,7 +2028,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掬",
-        radicals: &["米", "勹", "心"],
+        radicals: &["米", "勹", "扌"],
     },
     Decomposition {
         kanji: "菊",
@@ -2044,7 +2044,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "吃",
-        radicals: &["乙", "口", "乞", "乞"],
+        radicals: &["乙", "口", "𠂉", "𠂉"],
     },
     Decomposition {
         kanji: "喫",
@@ -2068,7 +2068,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "杵",
-        radicals: &["ノ", "干", "木", "十", "乞"],
+        radicals: &["ノ", "干", "木", "十", "𠂉"],
     },
     Decomposition {
         kanji: "黍",
@@ -2132,7 +2132,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "救",
-        radicals: &["水", "丶", "攵", "乞"],
+        radicals: &["水", "丶", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "朽",
@@ -2168,7 +2168,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笈",
-        radicals: &["ノ", "竹", "及", "乞"],
+        radicals: &["ノ", "竹", "及", "𠂉"],
     },
     Decomposition {
         kanji: "級",
@@ -2180,7 +2180,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "給",
-        radicals: &["口", "糸", "幺", "小", "ㅅ", "一"],
+        radicals: &["口", "糸", "幺", "小", "𠆢", "一"],
     },
     Decomposition {
         kanji: "旧",
@@ -2204,11 +2204,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拒",
-        radicals: &["匚", "心", "巨"],
+        radicals: &["匚", "扌", "巨"],
     },
     Decomposition {
         kanji: "拠",
-        radicals: &["几", "夂", "心"],
+        radicals: &["几", "夂", "扌"],
     },
     Decomposition {
         kanji: "挙",
@@ -2224,7 +2224,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "許",
-        radicals: &["ノ", "干", "言", "十", "乞"],
+        radicals: &["ノ", "干", "言", "十", "𠂉"],
     },
     Decomposition {
         kanji: "距",
@@ -2240,7 +2240,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "禦",
-        radicals: &["止", "示", "二", "小", "卩", "彳", "乞"],
+        radicals: &["止", "示", "二", "小", "卩", "彳", "𠂉"],
     },
     Decomposition {
         kanji: "魚",
@@ -2336,11 +2336,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "挟",
-        radicals: &["人", "大", "二", "丷", "丶", "亠", "心"],
+        radicals: &["人", "大", "二", "丷", "丶", "亠", "扌"],
     },
     Decomposition {
         kanji: "教",
-        radicals: &["子", "⺹", "攵", "乞"],
+        radicals: &["子", "⺹", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "橋",
@@ -2360,7 +2360,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "矯",
-        radicals: &["ノ", "口", "矢", "冂", "大", "乞"],
+        radicals: &["ノ", "口", "矢", "冂", "大", "𠂉"],
     },
     Decomposition {
         kanji: "胸",
@@ -2396,7 +2396,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "驚",
-        radicals: &["口", "馬", "勹", "夂", "⺾", "攵", "⺣", "乞"],
+        radicals: &["口", "馬", "勹", "夂", "⺾", "攵", "⺣", "𠂉"],
     },
     Decomposition {
         kanji: "仰",
@@ -2404,7 +2404,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "凝",
-        radicals: &["矢", "冫", "匕", "マ", "疋", "乞"],
+        radicals: &["矢", "冫", "匕", "マ", "疋", "𠂉"],
     },
     Decomposition {
         kanji: "尭",
@@ -2476,7 +2476,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "琴",
-        radicals: &["王", "ㅅ", "一"],
+        radicals: &["王", "𠆢", "一"],
     },
     Decomposition {
         kanji: "禁",
@@ -2484,11 +2484,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "禽",
-        radicals: &["ㅅ", "亠", "冂", "凵", "厶", "⽱", "丶", "ノ"],
+        radicals: &["𠆢", "亠", "冂", "凵", "厶", "⽱", "丶", "ノ"],
     },
     Decomposition {
         kanji: "筋",
-        radicals: &["月", "竹", "力", "乞"],
+        radicals: &["月", "竹", "力", "𠂉"],
     },
     Decomposition {
         kanji: "緊",
@@ -2504,7 +2504,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "衿",
-        radicals: &["⻂", "ㅅ", "一"],
+        radicals: &["⻂", "𠆢", "一"],
     },
     Decomposition {
         kanji: "襟",
@@ -2520,11 +2520,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "金",
-        radicals: &["金", "王", "ハ", "ㅅ", "丷"],
+        radicals: &["金", "王", "ハ", "𠆢", "丷"],
     },
     Decomposition {
         kanji: "吟",
-        radicals: &["口", "ㅅ", "一"],
+        radicals: &["口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "銀",
@@ -2556,7 +2556,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "矩",
-        radicals: &["矢", "巨", "乞"],
+        radicals: &["矢", "巨", "𠂉"],
     },
     Decomposition {
         kanji: "苦",
@@ -2620,7 +2620,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "櫛",
-        radicals: &["艮", "竹", "木", "卩", "乞"],
+        radicals: &["艮", "竹", "木", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "釧",
@@ -2636,7 +2636,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掘",
-        radicals: &["｜", "山", "尸", "心"],
+        radicals: &["｜", "山", "尸", "扌"],
     },
     Decomposition {
         kanji: "窟",
@@ -2744,7 +2744,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "啓",
-        radicals: &["戸", "口", "攵", "一", "尸", "乞"],
+        radicals: &["戸", "口", "攵", "一", "尸", "𠂉"],
     },
     Decomposition {
         kanji: "圭",
@@ -2788,15 +2788,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掲",
-        radicals: &["日", "勹", "匕", "心"],
+        radicals: &["日", "勹", "匕", "扌"],
     },
     Decomposition {
         kanji: "携",
-        radicals: &["ノ", "心", "隹", "乃"],
+        radicals: &["ノ", "扌", "隹", "乃"],
     },
     Decomposition {
         kanji: "敬",
-        radicals: &["口", "勹", "攵", "⺾", "乞"],
+        radicals: &["口", "勹", "攵", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "景",
@@ -2860,7 +2860,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "警",
-        radicals: &["言", "口", "勹", "夂", "⺾", "攵", "乞"],
+        radicals: &["言", "口", "勹", "夂", "⺾", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "軽",
@@ -2900,7 +2900,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "激",
-        radicals: &["⺡", "白", "方", "攵", "乞"],
+        radicals: &["⺡", "白", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "隙",
@@ -2952,7 +2952,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "倹",
-        radicals: &["⺅", "口", "人", "ㅅ", "一"],
+        radicals: &["⺅", "口", "人", "𠆢", "一"],
     },
     Decomposition {
         kanji: "倦",
@@ -2972,7 +2972,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "剣",
-        radicals: &["⺉", "口", "人", "ㅅ"],
+        radicals: &["⺉", "口", "人", "𠆢"],
     },
     Decomposition {
         kanji: "喧",
@@ -3008,15 +3008,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捲",
-        radicals: &["一", "丷", "已", "心", "大", "二"],
+        radicals: &["一", "丷", "已", "扌", "大", "二"],
     },
     Decomposition {
         kanji: "検",
-        radicals: &["口", "人", "木", "ㅅ"],
+        radicals: &["口", "人", "木", "𠆢"],
     },
     Decomposition {
         kanji: "権",
-        radicals: &["矢", "木", "隹", "乞"],
+        radicals: &["矢", "木", "隹", "𠂉"],
     },
     Decomposition {
         kanji: "牽",
@@ -3076,7 +3076,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "険",
-        radicals: &["口", "人", "ㅅ", "⻖"],
+        radicals: &["口", "人", "𠆢", "⻖"],
     },
     Decomposition {
         kanji: "顕",
@@ -3084,11 +3084,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "験",
-        radicals: &["口", "人", "馬", "ㅅ", "⺣"],
+        radicals: &["口", "人", "馬", "𠆢", "⺣"],
     },
     Decomposition {
         kanji: "鹸",
-        radicals: &["口", "十", "人", "ㅅ", "囗", "鹵"],
+        radicals: &["口", "十", "人", "𠆢", "囗", "鹵"],
     },
     Decomposition {
         kanji: "元",
@@ -3100,7 +3100,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "厳",
-        radicals: &["耳", "⺌", "厂", "攵", "乞"],
+        radicals: &["耳", "⺌", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "幻",
@@ -3192,7 +3192,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "故",
-        radicals: &["口", "十", "攵", "乞"],
+        radicals: &["口", "十", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "枯",
@@ -3268,7 +3268,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "午",
-        radicals: &["ノ", "干", "十", "乞"],
+        radicals: &["ノ", "干", "十", "𠂉"],
     },
     Decomposition {
         kanji: "呉",
@@ -3288,7 +3288,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "御",
-        radicals: &["ノ", "止", "卩", "彳", "乞"],
+        radicals: &["ノ", "止", "卩", "彳", "𠂉"],
     },
     Decomposition {
         kanji: "悟",
@@ -3300,7 +3300,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "檎",
-        radicals: &["木", "ㅅ", "亠", "冂", "厶", "⽱"],
+        radicals: &["木", "𠆢", "亠", "冂", "厶", "⽱"],
     },
     Decomposition {
         kanji: "瑚",
@@ -3327,8 +3327,8 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
         radicals: &["月", "口", "十", "酉"],
     },
     Decomposition {
-        kanji: "乞",
-        radicals: &["ノ", "一", "乙", "人", "乞"],
+        kanji: "𠂉",
+        radicals: &["ノ", "一", "乙", "人", "𠂉"],
     },
     Decomposition {
         kanji: "鯉",
@@ -3344,11 +3344,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "侯",
-        radicals: &["⺅", "矢", "ユ", "乞"],
+        radicals: &["⺅", "矢", "ユ", "𠂉"],
     },
     Decomposition {
         kanji: "候",
-        radicals: &["｜", "⺅", "矢", "ユ", "乞"],
+        radicals: &["｜", "⺅", "矢", "ユ", "𠂉"],
     },
     Decomposition {
         kanji: "倖",
@@ -3392,7 +3392,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "喉",
-        radicals: &["⺅", "口", "矢", "乞"],
+        radicals: &["⺅", "口", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "坑",
@@ -3460,19 +3460,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抗",
-        radicals: &["亠", "几", "心"],
+        radicals: &["亠", "几", "扌"],
     },
     Decomposition {
         kanji: "拘",
-        radicals: &["口", "勹", "心"],
+        radicals: &["口", "勹", "扌"],
     },
     Decomposition {
         kanji: "控",
-        radicals: &["穴", "工", "儿", "宀", "心"],
+        radicals: &["穴", "工", "儿", "宀", "扌"],
     },
     Decomposition {
         kanji: "攻",
-        radicals: &["工", "攵", "乞"],
+        radicals: &["工", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "昂",
@@ -3632,7 +3632,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "閤",
-        radicals: &["口", "門", "ㅅ", "一"],
+        radicals: &["口", "門", "𠆢", "一"],
     },
     Decomposition {
         kanji: "降",
@@ -3668,7 +3668,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "合",
-        radicals: &["口", "ㅅ", "一"],
+        radicals: &["口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "壕",
@@ -3676,7 +3676,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拷",
-        radicals: &["⺹", "心"],
+        radicals: &["⺹", "扌"],
     },
     Decomposition {
         kanji: "濠",
@@ -3772,7 +3772,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "今",
-        radicals: &["ㅅ", "一"],
+        radicals: &["𠆢", "一"],
     },
     Decomposition {
         kanji: "困",
@@ -3900,7 +3900,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "挫",
-        radicals: &["｜", "土", "人", "心"],
+        radicals: &["｜", "土", "人", "扌"],
     },
     Decomposition {
         kanji: "債",
@@ -3944,7 +3944,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "採",
-        radicals: &["爪", "木", "心"],
+        radicals: &["爪", "木", "扌"],
     },
     Decomposition {
         kanji: "栽",
@@ -3980,7 +3980,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "祭",
-        radicals: &["示", "二", "小", "ㅅ", "癶"],
+        radicals: &["示", "二", "小", "𠆢", "癶"],
     },
     Decomposition {
         kanji: "斎",
@@ -4072,7 +4072,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "作",
-        radicals: &["｜", "ノ", "⺅", "一", "乞"],
+        radicals: &["｜", "ノ", "⺅", "一", "𠂉"],
     },
     Decomposition {
         kanji: "削",
@@ -4084,7 +4084,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "搾",
-        radicals: &["｜", "ノ", "穴", "儿", "宀", "心"],
+        radicals: &["｜", "ノ", "穴", "儿", "宀", "扌"],
     },
     Decomposition {
         kanji: "昨",
@@ -4104,7 +4104,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "策",
-        radicals: &["｜", "巾", "竹", "ハ", "木", "亅", "冂", "乞"],
+        radicals: &["｜", "巾", "竹", "ハ", "木", "亅", "冂", "𠂉"],
     },
     Decomposition {
         kanji: "索",
@@ -4124,7 +4124,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笹",
-        radicals: &["世", "竹", "乞"],
+        radicals: &["世", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "匙",
@@ -4144,15 +4144,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拶",
-        radicals: &["巛", "夕", "心"],
+        radicals: &["巛", "夕", "扌"],
     },
     Decomposition {
         kanji: "撮",
-        radicals: &["耳", "日", "又", "心"],
+        radicals: &["耳", "日", "又", "扌"],
     },
     Decomposition {
         kanji: "擦",
-        radicals: &["ノ", "示", "二", "小", "宀", "心", "癶"],
+        radicals: &["ノ", "示", "二", "小", "宀", "扌", "癶"],
     },
     Decomposition {
         kanji: "札",
@@ -4180,7 +4180,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捌",
-        radicals: &["⺉", "口", "力", "心", "勹"],
+        radicals: &["⺉", "口", "力", "扌", "勹"],
     },
     Decomposition {
         kanji: "錆",
@@ -4204,7 +4204,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "傘",
-        radicals: &["十", "人", "ㅅ"],
+        radicals: &["十", "人", "𠆢"],
     },
     Decomposition {
         kanji: "参",
@@ -4220,11 +4220,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "撒",
-        radicals: &["｜", "月", "夂", "心", "攵", "廾", "二", "乞"],
+        radicals: &["｜", "月", "夂", "扌", "攵", "廾", "二", "𠂉"],
     },
     Decomposition {
         kanji: "散",
-        radicals: &["月", "攵", "廾", "二", "乞"],
+        radicals: &["月", "攵", "廾", "二", "𠂉"],
     },
     Decomposition {
         kanji: "桟",
@@ -4244,11 +4244,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "算",
-        radicals: &["竹", "目", "廾", "乞"],
+        radicals: &["竹", "目", "廾", "𠂉"],
     },
     Decomposition {
         kanji: "纂",
-        radicals: &["糸", "幺", "小", "竹", "目", "乞"],
+        radicals: &["糸", "幺", "小", "竹", "目", "𠂉"],
     },
     Decomposition {
         kanji: "蚕",
@@ -4360,7 +4360,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "指",
-        radicals: &["日", "匕", "心"],
+        radicals: &["日", "匕", "扌"],
     },
     Decomposition {
         kanji: "支",
@@ -4368,7 +4368,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "孜",
-        radicals: &["子", "攵", "乞"],
+        radicals: &["子", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "斯",
@@ -4376,7 +4376,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "施",
-        radicals: &["ノ", "方", "一", "也", "乞"],
+        radicals: &["ノ", "方", "一", "也", "𠂉"],
     },
     Decomposition {
         kanji: "旨",
@@ -4472,7 +4472,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "飼",
-        radicals: &["口", "艮", "亅", "ㅅ", "食"],
+        radicals: &["口", "艮", "亅", "𠆢", "食"],
     },
     Decomposition {
         kanji: "歯",
@@ -4508,7 +4508,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "持",
-        radicals: &["寸", "土", "心"],
+        radicals: &["寸", "土", "扌"],
     },
     Decomposition {
         kanji: "時",
@@ -4588,7 +4588,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "竺",
-        radicals: &["竹", "二", "乞"],
+        radicals: &["竹", "二", "𠂉"],
     },
     Decomposition {
         kanji: "軸",
@@ -4620,7 +4620,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嫉",
-        radicals: &["女", "矢", "⽧", "乞"],
+        radicals: &["女", "矢", "⽧", "𠂉"],
     },
     Decomposition {
         kanji: "室",
@@ -4636,11 +4636,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "漆",
-        radicals: &["⺡", "水", "木", "ㅅ"],
+        radicals: &["⺡", "水", "木", "𠆢"],
     },
     Decomposition {
         kanji: "疾",
-        radicals: &["矢", "⽧", "乞"],
+        radicals: &["矢", "⽧", "𠂉"],
     },
     Decomposition {
         kanji: "質",
@@ -4656,7 +4656,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篠",
-        radicals: &["｜", "⺅", "竹", "木", "攵", "乞"],
+        radicals: &["｜", "⺅", "竹", "木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "偲",
@@ -4684,7 +4684,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舎",
-        radicals: &["口", "土", "ㅅ"],
+        radicals: &["口", "土", "𠆢"],
     },
     Decomposition {
         kanji: "写",
@@ -4696,15 +4696,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捨",
-        radicals: &["口", "土", "ㅅ", "心"],
+        radicals: &["口", "土", "𠆢", "扌"],
     },
     Decomposition {
         kanji: "赦",
-        radicals: &["赤", "土", "攵", "乞"],
+        radicals: &["赤", "土", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "斜",
-        radicals: &["禾", "斗", "ㅅ", "一"],
+        radicals: &["禾", "斗", "𠆢", "一"],
     },
     Decomposition {
         kanji: "煮",
@@ -4864,7 +4864,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "授",
-        radicals: &["爪", "又", "冖", "心"],
+        radicals: &["爪", "又", "冖", "扌"],
     },
     Decomposition {
         kanji: "樹",
@@ -4904,7 +4904,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "修",
-        radicals: &["｜", "⺅", "彡", "攵", "乞"],
+        radicals: &["｜", "⺅", "彡", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "愁",
@@ -4912,7 +4912,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拾",
-        radicals: &["口", "ㅅ", "心", "一"],
+        radicals: &["口", "𠆢", "扌", "一"],
     },
     Decomposition {
         kanji: "洲",
@@ -5232,7 +5232,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "叙",
-        radicals: &["禾", "又", "ㅅ", "一"],
+        radicals: &["禾", "又", "𠆢", "一"],
     },
     Decomposition {
         kanji: "女",
@@ -5244,7 +5244,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "徐",
-        radicals: &["禾", "ㅅ", "彳", "一"],
+        radicals: &["禾", "𠆢", "彳", "一"],
     },
     Decomposition {
         kanji: "恕",
@@ -5256,11 +5256,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "除",
-        radicals: &["示", "ㅅ", "⻖", "一"],
+        radicals: &["示", "𠆢", "⻖", "一"],
     },
     Decomposition {
         kanji: "傷",
-        radicals: &["ノ", "⺅", "日", "勿", "一", "人", "勹", "乞"],
+        radicals: &["ノ", "⺅", "日", "勿", "一", "人", "勹", "𠂉"],
     },
     Decomposition {
         kanji: "償",
@@ -5340,7 +5340,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "廠",
-        radicals: &["口", "⺌", "冂", "广", "攵", "乞"],
+        radicals: &["口", "⺌", "冂", "广", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "彰",
@@ -5352,11 +5352,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抄",
-        radicals: &["ノ", "小", "心"],
+        radicals: &["ノ", "小", "扌"],
     },
     Decomposition {
         kanji: "招",
-        radicals: &["口", "刀", "心"],
+        radicals: &["口", "刀", "扌"],
     },
     Decomposition {
         kanji: "掌",
@@ -5364,7 +5364,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捷",
-        radicals: &["疋", "心", "ヨ"],
+        radicals: &["疋", "扌", "ヨ"],
     },
     Decomposition {
         kanji: "昇",
@@ -5448,7 +5448,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "称",
-        radicals: &["ノ", "禾", "小", "一", "乞"],
+        radicals: &["ノ", "禾", "小", "一", "𠂉"],
     },
     Decomposition {
         kanji: "章",
@@ -5456,7 +5456,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笑",
-        radicals: &["禾", "竹", "大", "乞"],
+        radicals: &["禾", "竹", "大", "𠂉"],
     },
     Decomposition {
         kanji: "粧",
@@ -5588,7 +5588,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擾",
-        radicals: &["一", "心", "白", "冖", "夂", "心", "自"],
+        radicals: &["一", "心", "白", "冖", "夂", "扌", "自"],
     },
     Decomposition {
         kanji: "条",
@@ -5640,11 +5640,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "飾",
-        radicals: &["ノ", "巾", "食", "一", "人", "乞"],
+        radicals: &["ノ", "巾", "食", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "拭",
-        radicals: &["工", "弋", "心"],
+        radicals: &["工", "弋", "扌"],
     },
     Decomposition {
         kanji: "植",
@@ -5728,7 +5728,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "振",
-        radicals: &["衣", "辰", "厂", "心"],
+        radicals: &["衣", "辰", "厂", "扌"],
     },
     Decomposition {
         kanji: "新",
@@ -5760,7 +5760,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "疹",
-        radicals: &["ㅅ", "彡", "⽧"],
+        radicals: &["𠆢", "彡", "⽧"],
     },
     Decomposition {
         kanji: "真",
@@ -5796,7 +5796,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "診",
-        radicals: &["言", "ㅅ", "彡"],
+        radicals: &["言", "𠆢", "彡"],
     },
     Decomposition {
         kanji: "身",
@@ -5872,7 +5872,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笥",
-        radicals: &["一", "口", "竹", "亅", "乞"],
+        radicals: &["一", "口", "竹", "亅", "𠂉"],
     },
     Decomposition {
         kanji: "諏",
@@ -5912,7 +5912,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "推",
-        radicals: &["心", "隹"],
+        radicals: &["扌", "隹"],
     },
     Decomposition {
         kanji: "水",
@@ -5976,7 +5976,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "数",
-        radicals: &["女", "米", "攵", "夂", "乞"],
+        radicals: &["女", "米", "攵", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "枢",
@@ -5992,7 +5992,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "据",
-        radicals: &["口", "十", "尸", "心"],
+        radicals: &["口", "十", "尸", "扌"],
     },
     Decomposition {
         kanji: "杉",
@@ -6024,7 +6024,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "摺",
-        radicals: &["羽", "白", "冫", "心"],
+        radicals: &["羽", "白", "冫", "扌"],
     },
     Decomposition {
         kanji: "寸",
@@ -6076,11 +6076,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "政",
-        radicals: &["一", "止", "攵", "乞"],
+        radicals: &["一", "止", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "整",
-        radicals: &["｜", "一", "口", "止", "木", "攵", "乞"],
+        radicals: &["｜", "一", "口", "止", "木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "星",
@@ -6144,7 +6144,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "誓",
-        radicals: &["斤", "言", "心"],
+        radicals: &["斤", "言", "扌"],
     },
     Decomposition {
         kanji: "請",
@@ -6152,7 +6152,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "逝",
-        radicals: &["斤", "⻌", "心"],
+        radicals: &["斤", "⻌", "扌"],
     },
     Decomposition {
         kanji: "醒",
@@ -6217,7 +6217,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "籍",
         radicals: &[
-            "｜", "一", "竹", "土", "日", "ハ", "木", "亠", "耒", "二", "ノ", "乞",
+            "｜", "一", "竹", "土", "日", "ハ", "木", "亠", "耒", "二", "ノ", "𠂉",
         ],
     },
     Decomposition {
@@ -6254,19 +6254,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拙",
-        radicals: &["｜", "山", "心"],
+        radicals: &["｜", "山", "扌"],
     },
     Decomposition {
         kanji: "接",
-        radicals: &["女", "立", "心"],
+        radicals: &["女", "立", "扌"],
     },
     Decomposition {
         kanji: "摂",
-        radicals: &["耳", "冫", "心"],
+        radicals: &["耳", "冫", "扌"],
     },
     Decomposition {
         kanji: "折",
-        radicals: &["斤", "心"],
+        radicals: &["斤", "扌"],
     },
     Decomposition {
         kanji: "設",
@@ -6278,7 +6278,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "節",
-        radicals: &["艮", "竹", "卩", "乞"],
+        radicals: &["艮", "竹", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "説",
@@ -6342,15 +6342,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "撰",
-        radicals: &["｜", "二", "ハ", "已", "心"],
+        radicals: &["｜", "二", "ハ", "已", "扌"],
     },
     Decomposition {
         kanji: "栓",
-        radicals: &["王", "木", "ㅅ"],
+        radicals: &["王", "木", "𠆢"],
     },
     Decomposition {
         kanji: "栴",
-        radicals: &["ノ", "木", "冂", "乞"],
+        radicals: &["ノ", "木", "冂", "𠂉"],
     },
     Decomposition {
         kanji: "泉",
@@ -6382,7 +6382,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "旋",
-        radicals: &["疋", "方", "乞"],
+        radicals: &["疋", "方", "𠂉"],
     },
     Decomposition {
         kanji: "穿",
@@ -6390,7 +6390,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箭",
-        radicals: &["一", "⺉", "月", "竹", "丷", "乞"],
+        radicals: &["一", "⺉", "月", "竹", "丷", "𠂉"],
     },
     Decomposition {
         kanji: "線",
@@ -6422,7 +6422,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "詮",
-        radicals: &["王", "言", "ㅅ", "ハ"],
+        radicals: &["王", "言", "𠆢", "ハ"],
     },
     Decomposition {
         kanji: "賎",
@@ -6474,7 +6474,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "全",
-        radicals: &["王", "ハ", "ㅅ"],
+        radicals: &["王", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "禅",
@@ -6506,7 +6506,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "措",
-        radicals: &["｜", "一", "二", "日", "心"],
+        radicals: &["｜", "一", "二", "日", "扌"],
     },
     Decomposition {
         kanji: "曾",
@@ -6582,7 +6582,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "創",
-        radicals: &["⺉", "口", "ㅅ", "一"],
+        radicals: &["⺉", "口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "双",
@@ -6594,7 +6594,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "倉",
-        radicals: &["ノ", "口", "ㅅ", "尸", "一"],
+        radicals: &["ノ", "口", "𠆢", "尸", "一"],
     },
     Decomposition {
         kanji: "喪",
@@ -6634,23 +6634,23 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捜",
-        radicals: &["｜", "日", "又", "心", "田"],
+        radicals: &["｜", "日", "又", "扌", "田"],
     },
     Decomposition {
         kanji: "掃",
-        radicals: &["ヨ", "巾", "冖", "心"],
+        radicals: &["ヨ", "巾", "冖", "扌"],
     },
     Decomposition {
         kanji: "挿",
-        radicals: &["｜", "ノ", "十", "日", "心", "田"],
+        radicals: &["｜", "ノ", "十", "日", "扌", "田"],
     },
     Decomposition {
         kanji: "掻",
-        radicals: &["虫", "又", "心"],
+        radicals: &["虫", "又", "扌"],
     },
     Decomposition {
         kanji: "操",
-        radicals: &["口", "木", "心", "品"],
+        radicals: &["口", "木", "扌", "品"],
     },
     Decomposition {
         kanji: "早",
@@ -6666,7 +6666,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "槍",
-        radicals: &["口", "木", "ㅅ", "一"],
+        radicals: &["口", "木", "𠆢", "一"],
     },
     Decomposition {
         kanji: "槽",
@@ -6726,7 +6726,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蒼",
-        radicals: &["ノ", "口", "ㅅ", "⺾", "一"],
+        radicals: &["ノ", "口", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "藻",
@@ -6750,7 +6750,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鎗",
-        radicals: &["ノ", "金", "口", "ㅅ", "一"],
+        radicals: &["ノ", "金", "口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "霜",
@@ -6810,7 +6810,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捉",
-        radicals: &["口", "足", "心", "止"],
+        radicals: &["口", "足", "扌", "止"],
     },
     Decomposition {
         kanji: "束",
@@ -6830,7 +6830,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "俗",
-        radicals: &["⺅", "口", "谷", "ハ", "ㅅ"],
+        radicals: &["⺅", "口", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "属",
@@ -6842,7 +6842,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "族",
-        radicals: &["方", "矢", "乞"],
+        radicals: &["方", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "続",
@@ -6862,7 +6862,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "揃",
-        radicals: &["一", "⺉", "月", "丷", "心"],
+        radicals: &["一", "⺉", "月", "丷", "扌"],
     },
     Decomposition {
         kanji: "存",
@@ -6878,7 +6878,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "損",
-        radicals: &["貝", "目", "ハ", "口", "心"],
+        radicals: &["貝", "目", "ハ", "口", "扌"],
     },
     Decomposition {
         kanji: "村",
@@ -6926,7 +6926,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "打",
-        radicals: &["亅", "心"],
+        radicals: &["亅", "扌"],
     },
     Decomposition {
         kanji: "柁",
@@ -7058,7 +7058,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "第",
-        radicals: &["弓", "竹", "乞"],
+        radicals: &["弓", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "醍",
@@ -7094,15 +7094,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "托",
-        radicals: &["ノ", "一", "乙", "心"],
+        radicals: &["ノ", "一", "乙", "扌"],
     },
     Decomposition {
         kanji: "択",
-        radicals: &["尸", "心", "丶"],
+        radicals: &["尸", "扌", "丶"],
     },
     Decomposition {
         kanji: "拓",
-        radicals: &["口", "石", "心"],
+        radicals: &["口", "石", "扌"],
     },
     Decomposition {
         kanji: "沢",
@@ -7190,7 +7190,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "谷",
-        radicals: &["口", "谷", "ハ", "ㅅ"],
+        radicals: &["口", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "狸",
@@ -7226,11 +7226,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "担",
-        radicals: &["一", "日", "心"],
+        radicals: &["一", "日", "扌"],
     },
     Decomposition {
         kanji: "探",
-        radicals: &["木", "儿", "冖", "心"],
+        radicals: &["木", "儿", "冖", "扌"],
     },
     Decomposition {
         kanji: "旦",
@@ -7254,7 +7254,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "短",
-        radicals: &["口", "豆", "丷", "矢", "乞"],
+        radicals: &["口", "豆", "丷", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "端",
@@ -7262,7 +7262,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箪",
-        radicals: &["十", "⺌", "竹", "田", "乞"],
+        radicals: &["十", "⺌", "竹", "田", "𠂉"],
     },
     Decomposition {
         kanji: "綻",
@@ -7330,7 +7330,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "知",
-        radicals: &["口", "矢", "乞"],
+        radicals: &["口", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "地",
@@ -7346,7 +7346,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "智",
-        radicals: &["口", "日", "矢", "乞"],
+        radicals: &["口", "日", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "池",
@@ -7354,7 +7354,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "痴",
-        radicals: &["口", "矢", "⽧", "乞"],
+        radicals: &["口", "矢", "⽧", "𠂉"],
     },
     Decomposition {
         kanji: "稚",
@@ -7366,11 +7366,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "致",
-        radicals: &["至", "土", "厶", "攵", "乞"],
+        radicals: &["至", "土", "厶", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "蜘",
-        radicals: &["口", "虫", "矢", "乞"],
+        radicals: &["口", "虫", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "遅",
@@ -7390,11 +7390,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "竹",
-        radicals: &["竹", "乞"],
+        radicals: &["竹", "𠂉"],
     },
     Decomposition {
         kanji: "筑",
-        radicals: &["工", "竹", "丶", "几", "乞"],
+        radicals: &["工", "竹", "丶", "几", "𠂉"],
     },
     Decomposition {
         kanji: "蓄",
@@ -7414,7 +7414,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "茶",
-        radicals: &["ㅅ", "⺾", "木"],
+        radicals: &["𠆢", "⺾", "木"],
     },
     Decomposition {
         kanji: "嫡",
@@ -7442,7 +7442,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抽",
-        radicals: &["｜", "日", "心", "田"],
+        radicals: &["｜", "日", "扌", "田"],
     },
     Decomposition {
         kanji: "昼",
@@ -7550,15 +7550,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "徴",
-        radicals: &["王", "山", "彳", "攵", "乞"],
+        radicals: &["王", "山", "彳", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "懲",
-        radicals: &["王", "山", "心", "彳", "攵", "乞"],
+        radicals: &["王", "山", "心", "彳", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "挑",
-        radicals: &["儿", "冫", "心"],
+        radicals: &["儿", "冫", "扌"],
     },
     Decomposition {
         kanji: "暢",
@@ -7638,7 +7638,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捗",
-        radicals: &["ノ", "止", "小", "心"],
+        radicals: &["ノ", "止", "小", "扌"],
     },
     Decomposition {
         kanji: "直",
@@ -7654,7 +7654,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "珍",
-        radicals: &["王", "ㅅ", "彡"],
+        radicals: &["王", "𠆢", "彡"],
     },
     Decomposition {
         kanji: "賃",
@@ -7710,7 +7710,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掴",
-        radicals: &["王", "囗", "心", "丶"],
+        radicals: &["王", "囗", "扌", "丶"],
     },
     Decomposition {
         kanji: "槻",
@@ -7846,15 +7846,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抵",
-        radicals: &["氏", "心"],
+        radicals: &["氏", "扌"],
     },
     Decomposition {
         kanji: "挺",
-        radicals: &["王", "廴", "心"],
+        radicals: &["王", "廴", "扌"],
     },
     Decomposition {
         kanji: "提",
-        radicals: &["日", "疋", "心"],
+        radicals: &["日", "疋", "扌"],
     },
     Decomposition {
         kanji: "梯",
@@ -7922,15 +7922,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "摘",
-        radicals: &["口", "十", "丷", "立", "亠", "冂", "心", "啇"],
+        radicals: &["口", "十", "丷", "立", "亠", "冂", "扌", "啇"],
     },
     Decomposition {
         kanji: "擢",
-        radicals: &["ヨ", "心", "隹"],
+        radicals: &["ヨ", "扌", "隹"],
     },
     Decomposition {
         kanji: "敵",
-        radicals: &["口", "十", "丷", "立", "亠", "冂", "攵", "啇", "乞"],
+        radicals: &["口", "十", "丷", "立", "亠", "冂", "攵", "啇", "𠂉"],
     },
     Decomposition {
         kanji: "啇",
@@ -7942,7 +7942,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笛",
-        radicals: &["｜", "竹", "日", "田", "乞"],
+        radicals: &["｜", "竹", "日", "田", "𠂉"],
     },
     Decomposition {
         kanji: "適",
@@ -7958,27 +7958,27 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "哲",
-        radicals: &["斤", "口", "心"],
+        radicals: &["斤", "口", "扌"],
     },
     Decomposition {
         kanji: "徹",
-        radicals: &["月", "亠", "厶", "彳", "攵", "乞"],
+        radicals: &["月", "亠", "厶", "彳", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "撤",
-        radicals: &["月", "亠", "厶", "心", "攵", "乞"],
+        radicals: &["月", "亠", "厶", "扌", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "轍",
-        radicals: &["月", "車", "亠", "厶", "攵", "乞"],
+        radicals: &["月", "車", "亠", "厶", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "迭",
-        radicals: &["｜", "ノ", "一", "牛", "⻌", "矢", "大", "二", "乞"],
+        radicals: &["｜", "ノ", "一", "牛", "⻌", "矢", "大", "二", "𠂉"],
     },
     Decomposition {
         kanji: "鉄",
-        radicals: &["ノ", "金", "二", "矢", "大", "乞"],
+        radicals: &["ノ", "金", "二", "矢", "大", "𠂉"],
     },
     Decomposition {
         kanji: "典",
@@ -8062,7 +8062,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "塗",
-        radicals: &["⺡", "土", "ハ", "ㅅ", "亅", "木", "一"],
+        radicals: &["⺡", "土", "ハ", "𠆢", "亅", "木", "一"],
     },
     Decomposition {
         kanji: "妬",
@@ -8102,7 +8102,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "途",
-        radicals: &["⻌", "ハ", "ㅅ", "亅", "木", "一"],
+        radicals: &["⻌", "ハ", "𠆢", "亅", "木", "一"],
     },
     Decomposition {
         kanji: "都",
@@ -8166,7 +8166,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "塔",
-        radicals: &["口", "土", "ㅅ", "⺾", "一"],
+        radicals: &["口", "土", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "塘",
@@ -8194,11 +8194,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "投",
-        radicals: &["心", "殳", "几", "又"],
+        radicals: &["扌", "殳", "几", "又"],
     },
     Decomposition {
         kanji: "搭",
-        radicals: &["口", "ㅅ", "心", "⺾", "一"],
+        radicals: &["口", "𠆢", "扌", "⺾", "一"],
     },
     Decomposition {
         kanji: "東",
@@ -8254,15 +8254,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "等",
-        radicals: &["寸", "竹", "土", "乞"],
+        radicals: &["寸", "竹", "土", "𠂉"],
     },
     Decomposition {
         kanji: "答",
-        radicals: &["口", "竹", "ㅅ", "一", "乞"],
+        radicals: &["口", "竹", "𠆢", "一", "𠂉"],
     },
     Decomposition {
         kanji: "筒",
-        radicals: &["口", "竹", "冂", "乞", "一"],
+        radicals: &["口", "竹", "冂", "𠂉", "一"],
     },
     Decomposition {
         kanji: "糖",
@@ -8358,7 +8358,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "撞",
-        radicals: &["里", "立", "心"],
+        radicals: &["里", "立", "扌"],
     },
     Decomposition {
         kanji: "洞",
@@ -8426,7 +8426,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篤",
-        radicals: &["竹", "⺣", "馬", "乞"],
+        radicals: &["竹", "⺣", "馬", "𠂉"],
     },
     Decomposition {
         kanji: "毒",
@@ -8498,7 +8498,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "敦",
-        radicals: &["口", "子", "亠", "攵", "乞"],
+        radicals: &["口", "子", "亠", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "沌",
@@ -8542,7 +8542,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "乍",
-        radicals: &["｜", "ノ", "一", "乞"],
+        radicals: &["｜", "ノ", "一", "𠂉"],
     },
     Decomposition {
         kanji: "凪",
@@ -8550,7 +8550,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "薙",
-        radicals: &["矢", "⺾", "隹", "乞"],
+        radicals: &["矢", "⺾", "隹", "𠂉"],
     },
     Decomposition {
         kanji: "謎",
@@ -8562,7 +8562,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捺",
-        radicals: &["示", "二", "小", "大", "心"],
+        radicals: &["示", "二", "小", "大", "扌"],
     },
     Decomposition {
         kanji: "鍋",
@@ -8618,7 +8618,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "迩",
-        radicals: &["ノ", "⻌", "小", "乞"],
+        radicals: &["ノ", "⻌", "小", "𠂉"],
     },
     Decomposition {
         kanji: "匂",
@@ -8710,19 +8710,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "年",
-        radicals: &["ノ", "一", "干", "乞"],
+        radicals: &["ノ", "一", "干", "𠂉"],
     },
     Decomposition {
         kanji: "念",
-        radicals: &["｜", "一", "心", "ㅅ"],
+        radicals: &["｜", "一", "心", "𠆢"],
     },
     Decomposition {
         kanji: "捻",
-        radicals: &["｜", "一", "心", "ㅅ", "心"],
+        radicals: &["｜", "一", "心", "𠆢", "扌"],
     },
     Decomposition {
         kanji: "撚",
-        radicals: &["犬", "夕", "心", "⺣"],
+        radicals: &["犬", "夕", "扌", "⺣"],
     },
     Decomposition {
         kanji: "燃",
@@ -8794,11 +8794,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "把",
-        radicals: &["巴", "心"],
+        radicals: &["巴", "扌"],
     },
     Decomposition {
         kanji: "播",
-        radicals: &["田", "釆", "米", "心"],
+        radicals: &["田", "釆", "米", "扌"],
     },
     Decomposition {
         kanji: "覇",
@@ -8850,15 +8850,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拝",
-        radicals: &["｜", "一", "干", "心"],
+        radicals: &["｜", "一", "干", "扌"],
     },
     Decomposition {
         kanji: "排",
-        radicals: &["非", "心"],
+        radicals: &["非", "扌"],
     },
     Decomposition {
         kanji: "敗",
-        radicals: &["貝", "目", "ハ", "攵", "乞"],
+        radicals: &["貝", "目", "ハ", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "杯",
@@ -8902,7 +8902,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "梅",
-        radicals: &["母", "木", "毋", "乞"],
+        radicals: &["母", "木", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "楳",
@@ -8946,7 +8946,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "矧",
-        radicals: &["｜", "弓", "矢", "乞"],
+        radicals: &["｜", "弓", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "萩",
@@ -8966,7 +8966,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拍",
-        radicals: &["白", "心"],
+        radicals: &["白", "扌"],
     },
     Decomposition {
         kanji: "柏",
@@ -8982,7 +8982,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箔",
-        radicals: &["⺡", "竹", "白", "乞"],
+        radicals: &["⺡", "竹", "白", "𠂉"],
     },
     Decomposition {
         kanji: "粕",
@@ -9034,23 +9034,23 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箱",
-        radicals: &["竹", "木", "目", "乞"],
+        radicals: &["竹", "木", "目", "𠂉"],
     },
     Decomposition {
         kanji: "硲",
-        radicals: &["口", "石", "谷", "ハ", "ㅅ"],
+        radicals: &["口", "石", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "箸",
-        radicals: &["竹", "日", "⺹", "乞"],
+        radicals: &["竹", "日", "⺹", "𠂉"],
     },
     Decomposition {
         kanji: "肇",
-        radicals: &["戸", "攵", "聿", "一", "尸", "乞"],
+        radicals: &["戸", "攵", "聿", "一", "尸", "𠂉"],
     },
     Decomposition {
         kanji: "筈",
-        radicals: &["口", "舌", "竹", "乞"],
+        radicals: &["口", "舌", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "櫨",
@@ -9106,11 +9106,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抜",
-        radicals: &["夂", "亠", "心", "又"],
+        radicals: &["夂", "亠", "扌", "又"],
     },
     Decomposition {
         kanji: "筏",
-        radicals: &["⺅", "竹", "戈", "乞"],
+        radicals: &["⺅", "竹", "戈", "𠂉"],
     },
     Decomposition {
         kanji: "閥",
@@ -9130,7 +9130,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蛤",
-        radicals: &["口", "虫", "ㅅ", "一"],
+        radicals: &["口", "虫", "𠆢", "一"],
     },
     Decomposition {
         kanji: "隼",
@@ -9162,7 +9162,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "搬",
-        radicals: &["舟", "心", "殳", "几", "又"],
+        radicals: &["舟", "扌", "殳", "几", "又"],
     },
     Decomposition {
         kanji: "斑",
@@ -9198,7 +9198,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "繁",
-        radicals: &["糸", "幺", "小", "母", "攵", "毋", "乞"],
+        radicals: &["糸", "幺", "小", "母", "攵", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "般",
@@ -9214,7 +9214,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "範",
-        radicals: &["乙", "車", "竹", "卩", "乞"],
+        radicals: &["乙", "車", "竹", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "釆",
@@ -9234,7 +9234,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "挽",
-        radicals: &["｜", "一", "免", "儿", "心", "勹"],
+        radicals: &["｜", "一", "免", "儿", "扌", "勹"],
     },
     Decomposition {
         kanji: "晩",
@@ -9294,11 +9294,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "批",
-        radicals: &["比", "心"],
+        radicals: &["比", "扌"],
     },
     Decomposition {
         kanji: "披",
-        radicals: &["皮", "又", "心"],
+        radicals: &["皮", "又", "扌"],
     },
     Decomposition {
         kanji: "斐",
@@ -9370,7 +9370,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "簸",
-        radicals: &["甘", "竹", "皮", "又", "乞"],
+        radicals: &["甘", "竹", "皮", "又", "𠂉"],
     },
     Decomposition {
         kanji: "備",
@@ -9382,7 +9382,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "微",
-        radicals: &["山", "彳", "攵", "乞"],
+        radicals: &["山", "彳", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "枇",
@@ -9434,7 +9434,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "膝",
-        radicals: &["月", "水", "木", "ㅅ"],
+        radicals: &["月", "水", "木", "𠆢"],
     },
     Decomposition {
         kanji: "菱",
@@ -9458,7 +9458,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "筆",
-        radicals: &["竹", "聿", "乞"],
+        radicals: &["竹", "聿", "𠂉"],
     },
     Decomposition {
         kanji: "逼",
@@ -9466,7 +9466,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "桧",
-        radicals: &["二", "木", "ㅅ", "厶"],
+        radicals: &["二", "木", "𠆢", "厶"],
     },
     Decomposition {
         kanji: "姫",
@@ -9486,7 +9486,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "謬",
-        radicals: &["羽", "言", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "言", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "俵",
@@ -9534,7 +9534,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "描",
-        radicals: &["田", "心", "⺾"],
+        radicals: &["田", "扌", "⺾"],
     },
     Decomposition {
         kanji: "病",
@@ -9602,7 +9602,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "敏",
-        radicals: &["母", "攵", "毋", "乞"],
+        radicals: &["母", "攵", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "瓶",
@@ -9650,11 +9650,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "扶",
-        radicals: &["人", "二", "心", "大"],
+        radicals: &["人", "二", "扌", "大"],
     },
     Decomposition {
         kanji: "敷",
-        radicals: &["十", "田", "方", "丶", "攵", "乞"],
+        radicals: &["十", "田", "方", "丶", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "斧",
@@ -9674,7 +9674,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "符",
-        radicals: &["⺅", "寸", "竹", "乞"],
+        radicals: &["⺅", "寸", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "腐",
@@ -9714,11 +9714,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "侮",
-        radicals: &["⺅", "母", "毋", "乞"],
+        radicals: &["⺅", "母", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "撫",
-        radicals: &["｜", "ノ", "一", "心", "⺣", "無", "乞"],
+        radicals: &["｜", "ノ", "一", "扌", "⺣", "無", "𠂉"],
     },
     Decomposition {
         kanji: "武",
@@ -9726,7 +9726,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舞",
-        radicals: &["｜", "ノ", "一", "舛", "二", "夕", "無", "乞"],
+        radicals: &["｜", "ノ", "一", "舛", "二", "夕", "無", "𠂉"],
     },
     Decomposition {
         kanji: "葡",
@@ -9734,7 +9734,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蕪",
-        radicals: &["｜", "ノ", "一", "⺣", "⺾", "無", "乞"],
+        radicals: &["｜", "ノ", "一", "⺣", "⺾", "無", "𠂉"],
     },
     Decomposition {
         kanji: "部",
@@ -9770,7 +9770,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "復",
-        radicals: &["日", "夂", "彳", "ノ", "一", "人", "乞"],
+        radicals: &["日", "夂", "彳", "ノ", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "幅",
@@ -9786,15 +9786,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "腹",
-        radicals: &["月", "日", "夂", "ノ", "一", "人", "乞"],
+        radicals: &["月", "日", "夂", "ノ", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "複",
-        radicals: &["⻂", "日", "夂", "乞"],
+        radicals: &["⻂", "日", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "覆",
-        radicals: &["西", "日", "夂", "彳", "乞"],
+        radicals: &["西", "日", "夂", "彳", "𠂉"],
     },
     Decomposition {
         kanji: "淵",
@@ -9806,7 +9806,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "払",
-        radicals: &["厶", "心"],
+        radicals: &["厶", "扌"],
     },
     Decomposition {
         kanji: "沸",
@@ -9846,7 +9846,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "扮",
-        radicals: &["刀", "ハ", "心"],
+        radicals: &["刀", "ハ", "扌"],
     },
     Decomposition {
         kanji: "焚",
@@ -9898,7 +9898,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "幣",
-        radicals: &["巾", "丷", "冂", "攵", "乞"],
+        radicals: &["巾", "丷", "冂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "平",
@@ -9906,7 +9906,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "弊",
-        radicals: &["｜", "巾", "⺌", "丷", "冂", "廾", "攵", "乞"],
+        radicals: &["｜", "巾", "⺌", "丷", "冂", "廾", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "柄",
@@ -9918,7 +9918,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蔽",
-        radicals: &["｜", "巾", "⺌", "丷", "冂", "攵", "⺾", "乞"],
+        radicals: &["｜", "巾", "⺌", "丷", "冂", "攵", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "閉",
@@ -9958,7 +9958,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瞥",
-        radicals: &["｜", "巾", "⺌", "丷", "目", "冂", "攵", "乞"],
+        radicals: &["｜", "巾", "⺌", "丷", "目", "冂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "蔑",
@@ -9966,7 +9966,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箆",
-        radicals: &["竹", "比", "冂", "乞"],
+        radicals: &["竹", "比", "冂", "𠂉"],
     },
     Decomposition {
         kanji: "偏",
@@ -9982,7 +9982,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篇",
-        radicals: &["｜", "一", "戸", "竹", "冂", "冊", "尸", "廾", "乞"],
+        radicals: &["｜", "一", "戸", "竹", "冂", "冊", "尸", "廾", "𠂉"],
     },
     Decomposition {
         kanji: "編",
@@ -10026,7 +10026,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舗",
-        radicals: &["口", "十", "土", "用", "ㅅ", "丶"],
+        radicals: &["口", "十", "土", "用", "𠆢", "丶"],
     },
     Decomposition {
         kanji: "鋪",
@@ -10038,7 +10038,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "捕",
-        radicals: &["十", "用", "丶", "心"],
+        radicals: &["十", "用", "丶", "扌"],
     },
     Decomposition {
         kanji: "歩",
@@ -10086,7 +10086,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "簿",
-        radicals: &["十", "⺡", "寸", "竹", "田", "丶", "乞"],
+        radicals: &["十", "⺡", "寸", "竹", "田", "丶", "𠂉"],
     },
     Decomposition {
         kanji: "菩",
@@ -10094,7 +10094,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "倣",
-        radicals: &["⺅", "方", "攵", "乞"],
+        radicals: &["⺅", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "俸",
@@ -10138,15 +10138,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抱",
-        radicals: &["勹", "已", "心"],
+        radicals: &["勹", "已", "扌"],
     },
     Decomposition {
         kanji: "捧",
-        radicals: &["｜", "一", "人", "大", "二", "心"],
+        radicals: &["｜", "一", "人", "大", "二", "扌"],
     },
     Decomposition {
         kanji: "放",
-        radicals: &["方", "攵", "乞"],
+        radicals: &["方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "方",
@@ -10346,7 +10346,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "撲",
-        radicals: &["王", "人", "丷", "羊", "心", "二", "大"],
+        radicals: &["王", "人", "丷", "羊", "扌", "二", "大"],
     },
     Decomposition {
         kanji: "朴",
@@ -10354,7 +10354,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "牧",
-        radicals: &["牛", "攵", "乞"],
+        radicals: &["牛", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "睦",
@@ -10438,11 +10438,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "枚",
-        radicals: &["木", "攵", "乞"],
+        radicals: &["木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "毎",
-        radicals: &["母", "毋", "乞"],
+        radicals: &["母", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "哩",
@@ -10494,7 +10494,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "抹",
-        radicals: &["｜", "一", "ハ", "木", "亠", "心"],
+        radicals: &["｜", "一", "ハ", "木", "亠", "扌"],
     },
     Decomposition {
         kanji: "末",
@@ -10506,7 +10506,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "迄",
-        radicals: &["乙", "⻌", "乞"],
+        radicals: &["乙", "⻌", "𠂉"],
     },
     Decomposition {
         kanji: "侭",
@@ -10558,7 +10558,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箕",
-        radicals: &["甘", "竹", "ハ", "乞"],
+        radicals: &["甘", "竹", "ハ", "𠂉"],
     },
     Decomposition {
         kanji: "岬",
@@ -10582,7 +10582,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "稔",
-        radicals: &["禾", "心", "ㅅ", "一"],
+        radicals: &["禾", "心", "𠆢", "一"],
     },
     Decomposition {
         kanji: "脈",
@@ -10614,7 +10614,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "無",
-        radicals: &["｜", "ノ", "一", "⺣", "無", "乞"],
+        radicals: &["｜", "ノ", "一", "⺣", "無", "𠂉"],
     },
     Decomposition {
         kanji: "牟",
@@ -10654,7 +10654,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "命",
-        radicals: &["口", "ㅅ", "卩", "一"],
+        radicals: &["口", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "明",
@@ -10714,7 +10714,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "摸",
-        radicals: &["大", "日", "心", "⺾"],
+        radicals: &["大", "日", "扌", "⺾"],
     },
     Decomposition {
         kanji: "模",
@@ -10846,11 +10846,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "弥",
-        radicals: &["ノ", "弓", "亅", "小", "乞"],
+        radicals: &["ノ", "弓", "亅", "小", "𠂉"],
     },
     Decomposition {
         kanji: "矢",
-        radicals: &["ノ", "大", "一", "矢", "乞"],
+        radicals: &["ノ", "大", "一", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "厄",
@@ -10886,7 +10886,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "薮",
-        radicals: &["女", "米", "夂", "⺾", "攵", "乞"],
+        radicals: &["女", "米", "夂", "⺾", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "鑓",
@@ -10894,11 +10894,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "愉",
-        radicals: &["⺉", "月", "⺖", "ㅅ", "一"],
+        radicals: &["⺉", "月", "⺖", "𠆢", "一"],
     },
     Decomposition {
         kanji: "愈",
-        radicals: &["⺉", "月", "心", "ㅅ", "一"],
+        radicals: &["⺉", "月", "心", "𠆢", "一"],
     },
     Decomposition {
         kanji: "油",
@@ -10906,15 +10906,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "癒",
-        radicals: &["⺉", "月", "心", "ㅅ", "⽧"],
+        radicals: &["⺉", "月", "心", "𠆢", "⽧"],
     },
     Decomposition {
         kanji: "諭",
-        radicals: &["⺉", "月", "言", "ㅅ", "一"],
+        radicals: &["⺉", "月", "言", "𠆢", "一"],
     },
     Decomposition {
         kanji: "輸",
-        radicals: &["⺉", "月", "車", "ㅅ", "一"],
+        radicals: &["⺉", "月", "車", "𠆢", "一"],
     },
     Decomposition {
         kanji: "唯",
@@ -10946,7 +10946,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "悠",
-        radicals: &["｜", "⺅", "心", "夂", "攵", "乞"],
+        radicals: &["｜", "⺅", "心", "夂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "憂",
@@ -10954,7 +10954,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "揖",
-        radicals: &["口", "耳", "心"],
+        radicals: &["口", "耳", "扌"],
     },
     Decomposition {
         kanji: "有",
@@ -10990,7 +10990,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "裕",
-        radicals: &["口", "⻂", "谷", "ハ", "ㅅ"],
+        radicals: &["口", "⻂", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "誘",
@@ -10998,7 +10998,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "遊",
-        radicals: &["⻌", "子", "方", "乞"],
+        radicals: &["⻌", "子", "方", "𠂉"],
     },
     Decomposition {
         kanji: "邑",
@@ -11026,7 +11026,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "余",
-        radicals: &["一", "二", "ハ", "ㅅ", "亅", "示", "小"],
+        radicals: &["一", "二", "ハ", "𠆢", "亅", "示", "小"],
     },
     Decomposition {
         kanji: "与",
@@ -11058,7 +11058,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "容",
-        radicals: &["穴", "口", "谷", "ハ", "ㅅ", "宀"],
+        radicals: &["穴", "口", "谷", "ハ", "𠆢", "宀"],
     },
     Decomposition {
         kanji: "庸",
@@ -11066,15 +11066,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "揚",
-        radicals: &["一", "日", "心", "勿", "勿"],
+        radicals: &["一", "日", "扌", "勿", "勿"],
     },
     Decomposition {
         kanji: "揺",
-        radicals: &["干", "爪", "凵", "心"],
+        radicals: &["干", "爪", "凵", "扌"],
     },
     Decomposition {
         kanji: "擁",
-        radicals: &["亠", "心", "隹", "幺"],
+        radicals: &["亠", "扌", "隹", "幺"],
     },
     Decomposition {
         kanji: "曜",
@@ -11094,11 +11094,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "溶",
-        radicals: &["穴", "口", "⺡", "谷", "ハ", "ㅅ", "宀"],
+        radicals: &["穴", "口", "⺡", "谷", "ハ", "𠆢", "宀"],
     },
     Decomposition {
         kanji: "熔",
-        radicals: &["火", "穴", "口", "谷", "ハ", "ㅅ", "宀"],
+        radicals: &["火", "穴", "口", "谷", "ハ", "𠆢", "宀"],
     },
     Decomposition {
         kanji: "用",
@@ -11122,7 +11122,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蓉",
-        radicals: &["穴", "口", "谷", "ハ", "ㅅ", "宀", "⺾"],
+        radicals: &["穴", "口", "谷", "ハ", "𠆢", "宀", "⺾"],
     },
     Decomposition {
         kanji: "要",
@@ -11150,15 +11150,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "慾",
-        radicals: &["欠", "口", "心", "谷", "ハ", "ㅅ"],
+        radicals: &["欠", "口", "心", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "抑",
-        radicals: &["卩", "心"],
+        radicals: &["卩", "扌"],
     },
     Decomposition {
         kanji: "欲",
-        radicals: &["欠", "口", "谷", "ハ", "ㅅ"],
+        radicals: &["欠", "口", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "沃",
@@ -11166,7 +11166,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "浴",
-        radicals: &["口", "⺡", "谷", "ハ", "ㅅ"],
+        radicals: &["口", "⺡", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "翌",
@@ -11242,11 +11242,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "濫",
-        radicals: &["ノ", "皿", "⺡", "臣", "二", "乞"],
+        radicals: &["ノ", "皿", "⺡", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "藍",
-        radicals: &["ノ", "皿", "臣", "二", "⺾", "乞"],
+        radicals: &["ノ", "皿", "臣", "二", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "蘭",
@@ -11254,7 +11254,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "覧",
-        radicals: &["ノ", "見", "臣", "二", "乞"],
+        radicals: &["ノ", "見", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "利",
@@ -11266,7 +11266,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "履",
-        radicals: &["日", "夂", "尸", "彳", "乞"],
+        radicals: &["日", "夂", "尸", "彳", "𠂉"],
     },
     Decomposition {
         kanji: "李",
@@ -11326,7 +11326,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掠",
-        radicals: &["口", "小", "亠", "心"],
+        radicals: &["口", "小", "亠", "扌"],
     },
     Decomposition {
         kanji: "略",
@@ -11382,7 +11382,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "旅",
-        radicals: &["ノ", "方", "乞"],
+        radicals: &["ノ", "方", "𠂉"],
     },
     Decomposition {
         kanji: "虜",
@@ -11466,7 +11466,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "領",
-        radicals: &["貝", "目", "ハ", "頁", "ㅅ", "卩", "一"],
+        radicals: &["貝", "目", "ハ", "頁", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "力",
@@ -11478,7 +11478,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "倫",
-        radicals: &["｜", "一", "⺅", "ㅅ", "亅", "冊", "廾"],
+        radicals: &["｜", "一", "⺅", "𠆢", "亅", "冊", "廾"],
     },
     Decomposition {
         kanji: "厘",
@@ -11502,11 +11502,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "臨",
-        radicals: &["ノ", "口", "臣", "品", "一", "人", "乞"],
+        radicals: &["ノ", "口", "臣", "品", "一", "人", "𠂉"],
     },
     Decomposition {
         kanji: "輪",
-        radicals: &["｜", "一", "車", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "車", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "隣",
@@ -11542,11 +11542,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "令",
-        radicals: &["ㅅ", "卩", "一"],
+        radicals: &["𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "伶",
-        radicals: &["ㅅ", "卩", "一", "⺅"],
+        radicals: &["𠆢", "卩", "一", "⺅"],
     },
     Decomposition {
         kanji: "例",
@@ -11554,7 +11554,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "冷",
-        radicals: &["ㅅ", "冫", "卩", "一"],
+        radicals: &["𠆢", "冫", "卩", "一"],
     },
     Decomposition {
         kanji: "励",
@@ -11562,15 +11562,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嶺",
-        radicals: &["貝", "目", "ハ", "山", "頁", "ㅅ", "卩", "一"],
+        radicals: &["貝", "目", "ハ", "山", "頁", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "怜",
-        radicals: &["⺖", "ㅅ", "卩", "一"],
+        radicals: &["⺖", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "玲",
-        radicals: &["王", "ㅅ", "卩", "一"],
+        radicals: &["王", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "⺭",
@@ -11578,11 +11578,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "苓",
-        radicals: &["ㅅ", "卩", "⺾", "一"],
+        radicals: &["𠆢", "卩", "⺾", "一"],
     },
     Decomposition {
         kanji: "鈴",
-        radicals: &["金", "ㅅ", "卩", "一"],
+        radicals: &["金", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "隷",
@@ -11590,7 +11590,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "零",
-        radicals: &["雨", "ㅅ", "卩", "一"],
+        radicals: &["雨", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "霊",
@@ -11602,7 +11602,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "齢",
-        radicals: &["止", "歯", "米", "ㅅ", "凵", "卩", "一"],
+        radicals: &["止", "歯", "米", "𠆢", "凵", "卩", "一"],
     },
     Decomposition {
         kanji: "暦",
@@ -11650,7 +11650,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "簾",
-        radicals: &["｜", "ヨ", "竹", "ハ", "广", "乞"],
+        radicals: &["｜", "ヨ", "竹", "ハ", "广", "𠂉"],
     },
     Decomposition {
         kanji: "練",
@@ -11746,7 +11746,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篭",
-        radicals: &["竹", "立", "竜", "乞"],
+        radicals: &["竹", "立", "竜", "𠂉"],
     },
     Decomposition {
         kanji: "⺹",
@@ -11786,7 +11786,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "論",
-        radicals: &["｜", "一", "言", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "言", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "倭",
@@ -11877,8 +11877,8 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
         radicals: &["｜", "ノ", "一", "丶"],
     },
     Decomposition {
-        kanji: "ㅅ",
-        radicals: &["｜", "ㅅ"],
+        kanji: "𠆢",
+        radicals: &["｜", "𠆢"],
     },
     Decomposition {
         kanji: "丱",
@@ -11926,7 +11926,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舒",
-        radicals: &["干", "口", "舌", "矛", "ㅅ", "亅", "マ"],
+        radicals: &["干", "口", "舌", "矛", "𠆢", "亅", "マ"],
     },
     Decomposition {
         kanji: "弍",
@@ -12002,7 +12002,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "价",
-        radicals: &["儿", "⺅", "ㅅ"],
+        radicals: &["儿", "⺅", "𠆢"],
     },
     Decomposition {
         kanji: "伉",
@@ -12074,7 +12074,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "侖",
-        radicals: &["ㅅ", "冂", "廾", "冊", "廾", "一"],
+        radicals: &["𠆢", "冂", "廾", "冊", "廾", "一"],
     },
     Decomposition {
         kanji: "儘",
@@ -12086,7 +12086,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "俟",
-        radicals: &["⺅", "矢", "厶", "乞"],
+        radicals: &["⺅", "矢", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "俎",
@@ -12190,7 +12190,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "會",
-        radicals: &["日", "⺲", "ㅅ", "一"],
+        radicals: &["日", "⺲", "𠆢", "一"],
     },
     Decomposition {
         kanji: "偕",
@@ -12206,7 +12206,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "做",
-        radicals: &["⺅", "口", "十", "攵", "乞"],
+        radicals: &["⺅", "口", "十", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "偖",
@@ -12218,7 +12218,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "偸",
-        radicals: &["⺅", "⺉", "月", "ㅅ", "一"],
+        radicals: &["⺅", "⺉", "月", "𠆢", "一"],
     },
     Decomposition {
         kanji: "傀",
@@ -12226,7 +12226,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "傚",
-        radicals: &["⺅", "父", "亠", "攵", "乞"],
+        radicals: &["⺅", "父", "亠", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "傅",
@@ -12238,11 +12238,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "傲",
-        radicals: &["⺅", "土", "方", "攵", "亠", "二", "乞"],
+        radicals: &["⺅", "土", "方", "攵", "亠", "二", "𠂉"],
     },
     Decomposition {
         kanji: "僉",
-        radicals: &["口", "人", "ㅅ", "一"],
+        radicals: &["口", "人", "𠆢", "一"],
     },
     Decomposition {
         kanji: "僊",
@@ -12290,7 +12290,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "儉",
-        radicals: &["⺅", "口", "人", "ㅅ", "一"],
+        radicals: &["⺅", "口", "人", "𠆢", "一"],
     },
     Decomposition {
         kanji: "儁",
@@ -12302,7 +12302,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "儖",
-        radicals: &["⺅", "皿", "臣", "二", "乞"],
+        radicals: &["⺅", "皿", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "儕",
@@ -12330,7 +12330,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "儼",
-        radicals: &["⺅", "口", "耳", "厂", "攵", "乞"],
+        radicals: &["⺅", "口", "耳", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "儻",
@@ -12370,7 +12370,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "兪",
-        radicals: &["月", "入", "ㅅ", "一"],
+        radicals: &["月", "入", "𠆢", "一"],
     },
     Decomposition {
         kanji: "兮",
@@ -12578,7 +12578,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "剳",
-        radicals: &["⺉", "口", "ㅅ", "⺾", "一"],
+        radicals: &["⺉", "口", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "剿",
@@ -12590,19 +12590,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "劍",
-        radicals: &["⺉", "口", "人", "ㅅ", "一"],
+        radicals: &["⺉", "口", "人", "𠆢", "一"],
     },
     Decomposition {
         kanji: "劔",
-        radicals: &["口", "人", "刀", "ㅅ", "丶", "一"],
+        radicals: &["口", "人", "刀", "𠆢", "丶", "一"],
     },
     Decomposition {
         kanji: "劒",
-        radicals: &["口", "人", "ㅅ", "丶", "刀", "一"],
+        radicals: &["口", "人", "𠆢", "丶", "刀", "一"],
     },
     Decomposition {
         kanji: "剱",
-        radicals: &["口", "人", "刀", "ㅅ", "丶"],
+        radicals: &["口", "人", "刀", "𠆢", "丶"],
     },
     Decomposition {
         kanji: "劈",
@@ -12662,11 +12662,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "飭",
-        radicals: &["食", "力", "乞"],
+        radicals: &["食", "力", "𠂉"],
     },
     Decomposition {
         kanji: "勠",
-        radicals: &["羽", "力", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "力", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "勳",
@@ -12730,7 +12730,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "匳",
-        radicals: &["口", "人", "ㅅ", "匚", "一"],
+        radicals: &["口", "人", "𠆢", "匚", "一"],
     },
     Decomposition {
         kanji: "匸",
@@ -12814,7 +12814,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "厰",
-        radicals: &["口", "⺌", "冂", "厂", "攵", "乞"],
+        radicals: &["口", "⺌", "冂", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "厶",
@@ -12822,11 +12822,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "參",
-        radicals: &["ㅅ", "厶", "彡"],
+        radicals: &["𠆢", "厶", "彡"],
     },
     Decomposition {
         kanji: "簒",
-        radicals: &["大", "竹", "目", "厶", "乞"],
+        radicals: &["大", "竹", "目", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "雙",
@@ -12986,7 +12986,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "哈",
-        radicals: &["口", "ㅅ", "一"],
+        radicals: &["口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "咨",
@@ -13054,7 +13054,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "唹",
-        radicals: &["口", "方", "ㅅ", "冫"],
+        radicals: &["口", "方", "𠆢", "冫"],
     },
     Decomposition {
         kanji: "啀",
@@ -13062,7 +13062,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "啣",
-        radicals: &["口", "止", "凵", "卩", "乞"],
+        radicals: &["口", "止", "凵", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "啌",
@@ -13090,7 +13090,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "唸",
-        radicals: &["口", "心", "ㅅ", "一"],
+        radicals: &["口", "心", "𠆢", "一"],
     },
     Decomposition {
         kanji: "唳",
@@ -13150,7 +13150,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "喩",
-        radicals: &["⺉", "月", "口", "ㅅ", "一"],
+        radicals: &["⺉", "月", "口", "𠆢", "一"],
     },
     Decomposition {
         kanji: "喇",
@@ -13194,7 +13194,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嗷",
-        radicals: &["口", "土", "方", "攵", "乞"],
+        radicals: &["口", "土", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "嘖",
@@ -13202,7 +13202,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嗾",
-        radicals: &["口", "方", "矢", "乞"],
+        radicals: &["口", "方", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "嗽",
@@ -13242,7 +13242,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嘸",
-        radicals: &["｜", "ノ", "一", "口", "⺣", "無", "乞"],
+        radicals: &["｜", "ノ", "一", "口", "⺣", "無", "𠂉"],
     },
     Decomposition {
         kanji: "噫",
@@ -13258,7 +13258,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "噬",
-        radicals: &["口", "工", "人", "竹", "乞"],
+        radicals: &["口", "工", "人", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "噪",
@@ -13302,7 +13302,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嚴",
-        radicals: &["口", "耳", "厂", "攵", "乞"],
+        radicals: &["口", "耳", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "囂",
@@ -13350,7 +13350,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "囹",
-        radicals: &["刀", "ㅅ", "囗", "一"],
+        radicals: &["刀", "𠆢", "囗", "一"],
     },
     Decomposition {
         kanji: "圀",
@@ -13478,7 +13478,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "埃",
-        radicals: &["土", "矢", "厶", "乞"],
+        radicals: &["土", "矢", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "埆",
@@ -13522,7 +13522,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "塲",
-        radicals: &["土", "日", "勿", "一", "乞"],
+        radicals: &["土", "日", "勿", "一", "𠂉"],
     },
     Decomposition {
         kanji: "堡",
@@ -13538,7 +13538,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "塰",
-        radicals: &["⺡", "土", "母", "毋", "乞"],
+        radicals: &["⺡", "土", "母", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "毀",
@@ -13602,7 +13602,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "壑",
-        radicals: &["口", "土", "ハ", "卜", "又", "ㅅ", "冖", "谷"],
+        radicals: &["口", "土", "ハ", "卜", "又", "𠆢", "冖", "谷"],
     },
     Decomposition {
         kanji: "壗",
@@ -13886,7 +13886,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嫩",
-        radicals: &["｜", "口", "女", "ハ", "木", "攵", "乞"],
+        radicals: &["｜", "口", "女", "ハ", "木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "嫖",
@@ -14046,7 +14046,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "寥",
-        radicals: &["羽", "ㅅ", "冫", "宀", "彡"],
+        radicals: &["羽", "𠆢", "冫", "宀", "彡"],
     },
     Decomposition {
         kanji: "寫",
@@ -14062,7 +14062,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "寳",
-        radicals: &["王", "貝", "目", "ハ", "小", "宀", "乞"],
+        radicals: &["王", "貝", "目", "ハ", "小", "宀", "𠂉"],
     },
     Decomposition {
         kanji: "尅",
@@ -14082,7 +14082,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "尓",
-        radicals: &["ノ", "小", "乞"],
+        radicals: &["ノ", "小", "𠂉"],
     },
     Decomposition {
         kanji: "尠",
@@ -14150,7 +14150,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "屹",
-        radicals: &["ノ", "乙", "山", "乞"],
+        radicals: &["ノ", "乙", "山", "𠂉"],
     },
     Decomposition {
         kanji: "岌",
@@ -14158,7 +14158,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "岑",
-        radicals: &["山", "ㅅ", "一"],
+        radicals: &["山", "𠆢", "一"],
     },
     Decomposition {
         kanji: "岔",
@@ -14198,7 +14198,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "峇",
-        radicals: &["口", "山", "ㅅ", "一"],
+        radicals: &["口", "山", "𠆢", "一"],
     },
     Decomposition {
         kanji: "峙",
@@ -14226,7 +14226,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "峪",
-        radicals: &["口", "山", "ハ", "ㅅ", "谷"],
+        radicals: &["口", "山", "ハ", "𠆢", "谷"],
     },
     Decomposition {
         kanji: "崋",
@@ -14270,11 +14270,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "崙",
-        radicals: &["｜", "一", "山", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "山", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "崘",
-        radicals: &["｜", "一", "山", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "山", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "嵌",
@@ -14330,7 +14330,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嶮",
-        radicals: &["口", "山", "人", "ㅅ", "一"],
+        radicals: &["口", "山", "人", "𠆢", "一"],
     },
     Decomposition {
         kanji: "嶽",
@@ -14342,7 +14342,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嶷",
-        radicals: &["山", "疋", "矢", "匕", "乞"],
+        radicals: &["山", "疋", "矢", "匕", "𠂉"],
     },
     Decomposition {
         kanji: "嶼",
@@ -14366,7 +14366,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "巖",
-        radicals: &["口", "山", "耳", "厂", "攵", "乞"],
+        radicals: &["口", "山", "耳", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "巛",
@@ -14446,7 +14446,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "幤",
-        radicals: &["巾", "口", "⺌", "冂", "攵", "乞"],
+        radicals: &["巾", "口", "⺌", "冂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "幇",
@@ -14498,7 +14498,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "廖",
-        radicals: &["羽", "ㅅ", "冫", "广", "彡"],
+        radicals: &["羽", "𠆢", "冫", "广", "彡"],
     },
     Decomposition {
         kanji: "廣",
@@ -14522,7 +14522,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "廡",
-        radicals: &["｜", "一", "广", "⺣", "無", "ノ", "乞"],
+        radicals: &["｜", "一", "广", "⺣", "無", "ノ", "𠂉"],
     },
     Decomposition {
         kanji: "廨",
@@ -14718,7 +14718,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "忤",
-        radicals: &["ノ", "干", "⺖", "十", "乞"],
+        radicals: &["ノ", "干", "⺖", "十", "𠂉"],
     },
     Decomposition {
         kanji: "忸",
@@ -14762,7 +14762,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "怎",
-        radicals: &["｜", "ノ", "一", "心", "乞"],
+        radicals: &["｜", "ノ", "一", "心", "𠂉"],
     },
     Decomposition {
         kanji: "怱",
@@ -14990,11 +14990,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "愍",
-        radicals: &["口", "氏", "心", "攵", "尸", "乞"],
+        radicals: &["口", "氏", "心", "攵", "尸", "𠂉"],
     },
     Decomposition {
         kanji: "愎",
-        radicals: &["日", "⺖", "夂", "乞"],
+        radicals: &["日", "⺖", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "慇",
@@ -15002,7 +15002,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "愾",
-        radicals: &["米", "⺖", "气", "乞"],
+        radicals: &["米", "⺖", "气", "𠂉"],
     },
     Decomposition {
         kanji: "愨",
@@ -15054,7 +15054,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "慘",
-        radicals: &["⺖", "ㅅ", "厶", "彡"],
+        radicals: &["⺖", "𠆢", "厶", "彡"],
     },
     Decomposition {
         kanji: "慙",
@@ -15074,7 +15074,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "慯",
-        radicals: &["ノ", "一", "日", "⺖", "勹", "勿", "乞"],
+        radicals: &["ノ", "一", "日", "⺖", "勹", "勿", "𠂉"],
     },
     Decomposition {
         kanji: "慥",
@@ -15138,7 +15138,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "憮",
-        radicals: &["⺖", "⺣", "無", "一", "｜", "ノ", "乞"],
+        radicals: &["⺖", "⺣", "無", "一", "｜", "ノ", "𠂉"],
     },
     Decomposition {
         kanji: "懌",
@@ -15262,7 +15262,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "戮",
-        radicals: &["羽", "ㅅ", "冫", "彡", "戈"],
+        radicals: &["羽", "𠆢", "冫", "彡", "戈"],
     },
     Decomposition {
         kanji: "戰",
@@ -15281,80 +15281,80 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
         radicals: &["｜", "一", "戸", "冂", "冊", "尸", "廾"],
     },
     Decomposition {
-        kanji: "心",
-        radicals: &["乙", "心"],
+        kanji: "扌",
+        radicals: &["乙", "扌"],
     },
     Decomposition {
         kanji: "扞",
-        radicals: &["干", "心"],
+        radicals: &["干", "扌"],
     },
     Decomposition {
         kanji: "扣",
-        radicals: &["口", "心"],
+        radicals: &["口", "扌"],
     },
     Decomposition {
         kanji: "扛",
-        radicals: &["工", "心"],
+        radicals: &["工", "扌"],
     },
     Decomposition {
         kanji: "扠",
-        radicals: &["又", "丶", "心"],
+        radicals: &["又", "丶", "扌"],
     },
     Decomposition {
         kanji: "扨",
-        radicals: &["刀", "心", "丶"],
+        radicals: &["刀", "扌", "丶"],
     },
     Decomposition {
         kanji: "扼",
-        radicals: &["卩", "厂", "心"],
+        radicals: &["卩", "厂", "扌"],
     },
     Decomposition {
         kanji: "抂",
-        radicals: &["王", "心"],
+        radicals: &["王", "扌"],
     },
     Decomposition {
         kanji: "抉",
-        radicals: &["人", "大", "二", "心", "ユ"],
+        radicals: &["人", "大", "二", "扌", "ユ"],
     },
     Decomposition {
         kanji: "找",
-        radicals: &["戈", "心"],
+        radicals: &["戈", "扌"],
     },
     Decomposition {
         kanji: "抒",
-        radicals: &["矛", "亅", "心", "マ"],
+        radicals: &["矛", "亅", "扌", "マ"],
     },
     Decomposition {
         kanji: "抓",
-        radicals: &["爪", "心"],
+        radicals: &["爪", "扌"],
     },
     Decomposition {
         kanji: "抖",
-        radicals: &["斗", "心"],
+        radicals: &["斗", "扌"],
     },
     Decomposition {
         kanji: "拔",
-        radicals: &["ノ", "一", "丶", "心"],
+        radicals: &["ノ", "一", "丶", "扌"],
     },
     Decomposition {
         kanji: "抃",
-        radicals: &["卜", "亠", "心"],
+        radicals: &["卜", "亠", "扌"],
     },
     Decomposition {
         kanji: "抔",
-        radicals: &["｜", "ノ", "一", "丶", "心"],
+        radicals: &["｜", "ノ", "一", "丶", "扌"],
     },
     Decomposition {
         kanji: "拗",
-        radicals: &["力", "幺", "心"],
+        radicals: &["力", "幺", "扌"],
     },
     Decomposition {
         kanji: "拑",
-        radicals: &["甘", "心"],
+        radicals: &["甘", "扌"],
     },
     Decomposition {
         kanji: "抻",
-        radicals: &["｜", "日", "心", "田"],
+        radicals: &["｜", "日", "扌", "田"],
     },
     Decomposition {
         kanji: "拏",
@@ -15362,67 +15362,67 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拿",
-        radicals: &["口", "手", "ㅅ", "一"],
+        radicals: &["口", "手", "𠆢", "一"],
     },
     Decomposition {
         kanji: "拆",
-        radicals: &["斤", "丶", "心"],
+        radicals: &["斤", "丶", "扌"],
     },
     Decomposition {
         kanji: "擔",
-        radicals: &["言", "儿", "厂", "心", "勹"],
+        radicals: &["言", "儿", "厂", "扌", "勹"],
     },
     Decomposition {
         kanji: "拈",
-        radicals: &["口", "卜", "心"],
+        radicals: &["口", "卜", "扌"],
     },
     Decomposition {
         kanji: "拜",
-        radicals: &["ノ", "干", "心"],
+        radicals: &["ノ", "干", "扌"],
     },
     Decomposition {
         kanji: "拌",
-        radicals: &["｜", "干", "二", "ハ", "心", "十"],
+        radicals: &["｜", "干", "二", "ハ", "扌", "十"],
     },
     Decomposition {
         kanji: "拊",
-        radicals: &["⺅", "寸", "心"],
+        radicals: &["⺅", "寸", "扌"],
     },
     Decomposition {
         kanji: "拂",
-        radicals: &["｜", "ノ", "弓", "心"],
+        radicals: &["｜", "ノ", "弓", "扌"],
     },
     Decomposition {
         kanji: "拇",
-        radicals: &["母", "心", "毋"],
+        radicals: &["母", "扌", "毋"],
     },
     Decomposition {
         kanji: "抛",
-        radicals: &["ノ", "九", "心", "力"],
+        radicals: &["ノ", "九", "扌", "力"],
     },
     Decomposition {
         kanji: "拉",
-        radicals: &["立", "心"],
+        radicals: &["立", "扌"],
     },
     Decomposition {
         kanji: "挌",
-        radicals: &["口", "夂", "心"],
+        radicals: &["口", "夂", "扌"],
     },
     Decomposition {
         kanji: "拮",
-        radicals: &["口", "士", "心"],
+        radicals: &["口", "士", "扌"],
     },
     Decomposition {
         kanji: "拱",
-        radicals: &["｜", "一", "二", "ハ", "心"],
+        radicals: &["｜", "一", "二", "ハ", "扌"],
     },
     Decomposition {
         kanji: "挧",
-        radicals: &["羽", "冫", "心"],
+        radicals: &["羽", "冫", "扌"],
     },
     Decomposition {
         kanji: "挂",
-        radicals: &["土", "心"],
+        radicals: &["土", "扌"],
     },
     Decomposition {
         kanji: "挈",
@@ -15430,51 +15430,51 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拯",
-        radicals: &["水", "心"],
+        radicals: &["水", "扌"],
     },
     Decomposition {
         kanji: "拵",
-        radicals: &["ノ", "一", "子", "心"],
+        radicals: &["ノ", "一", "子", "扌"],
     },
     Decomposition {
         kanji: "捐",
-        radicals: &["月", "口", "心"],
+        radicals: &["月", "口", "扌"],
     },
     Decomposition {
         kanji: "挾",
-        radicals: &["人", "大", "心"],
+        radicals: &["人", "大", "扌"],
     },
     Decomposition {
         kanji: "捍",
-        radicals: &["干", "日", "心"],
+        radicals: &["干", "日", "扌"],
     },
     Decomposition {
         kanji: "搜",
-        radicals: &["｜", "臼", "支", "又", "心", "十"],
+        radicals: &["｜", "臼", "支", "又", "扌", "十"],
     },
     Decomposition {
         kanji: "捏",
-        radicals: &["土", "日", "心"],
+        radicals: &["土", "日", "扌"],
     },
     Decomposition {
         kanji: "掖",
-        radicals: &["⺅", "丶", "亠", "夂", "心", "夕"],
+        radicals: &["⺅", "丶", "亠", "夂", "扌", "夕"],
     },
     Decomposition {
         kanji: "掎",
-        radicals: &["口", "大", "亅", "心", "一"],
+        radicals: &["口", "大", "亅", "扌", "一"],
     },
     Decomposition {
         kanji: "掀",
-        radicals: &["斤", "欠", "心"],
+        radicals: &["斤", "欠", "扌"],
     },
     Decomposition {
         kanji: "掫",
-        radicals: &["耳", "又", "心"],
+        radicals: &["耳", "又", "扌"],
     },
     Decomposition {
         kanji: "捶",
-        radicals: &["｜", "ノ", "二", "心"],
+        radicals: &["｜", "ノ", "二", "扌"],
     },
     Decomposition {
         kanji: "掣",
@@ -15482,67 +15482,67 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掏",
-        radicals: &["缶", "凵", "勹", "心"],
+        radicals: &["缶", "凵", "勹", "扌"],
     },
     Decomposition {
         kanji: "掉",
-        radicals: &["十", "日", "卜", "心", "曰"],
+        radicals: &["十", "日", "卜", "扌", "曰"],
     },
     Decomposition {
         kanji: "掟",
-        radicals: &["疋", "宀", "心"],
+        radicals: &["疋", "宀", "扌"],
     },
     Decomposition {
         kanji: "掵",
-        radicals: &["口", "ㅅ", "卩", "心", "一"],
+        radicals: &["口", "𠆢", "卩", "扌", "一"],
     },
     Decomposition {
         kanji: "捫",
-        radicals: &["門", "心"],
+        radicals: &["門", "扌"],
     },
     Decomposition {
         kanji: "捩",
-        radicals: &["戸", "大", "心", "一", "尸"],
+        radicals: &["戸", "大", "扌", "一", "尸"],
     },
     Decomposition {
         kanji: "掾",
-        radicals: &["ヨ", "心", "豕"],
+        radicals: &["ヨ", "扌", "豕"],
     },
     Decomposition {
         kanji: "揩",
-        radicals: &["白", "比", "心"],
+        radicals: &["白", "比", "扌"],
     },
     Decomposition {
         kanji: "揀",
-        radicals: &["｜", "日", "ハ", "木", "心"],
+        radicals: &["｜", "日", "ハ", "木", "扌"],
     },
     Decomposition {
         kanji: "揆",
-        radicals: &["人", "大", "二", "心", "癶"],
+        radicals: &["人", "大", "二", "扌", "癶"],
     },
     Decomposition {
         kanji: "揣",
-        radicals: &["山", "而", "心"],
+        radicals: &["山", "而", "扌"],
     },
     Decomposition {
         kanji: "揉",
-        radicals: &["矛", "木", "心", "マ"],
+        radicals: &["矛", "木", "扌", "マ"],
     },
     Decomposition {
         kanji: "插",
-        radicals: &["ノ", "臼", "十", "心"],
+        radicals: &["ノ", "臼", "十", "扌"],
     },
     Decomposition {
         kanji: "揶",
-        radicals: &["耳", "⻏", "心"],
+        radicals: &["耳", "⻏", "扌"],
     },
     Decomposition {
         kanji: "揄",
-        radicals: &["⺉", "月", "ㅅ", "心", "一"],
+        radicals: &["⺉", "月", "𠆢", "扌", "一"],
     },
     Decomposition {
         kanji: "搖",
-        radicals: &["缶", "夕", "凵", "心"],
+        radicals: &["缶", "夕", "凵", "扌"],
     },
     Decomposition {
         kanji: "搴",
@@ -15550,39 +15550,39 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "搆",
-        radicals: &["｜", "一", "黄", "冂", "心", "十"],
+        radicals: &["｜", "一", "黄", "冂", "扌", "十"],
     },
     Decomposition {
         kanji: "搓",
-        radicals: &["王", "工", "丷", "羊", "心"],
+        radicals: &["王", "工", "丷", "羊", "扌"],
     },
     Decomposition {
         kanji: "搦",
-        radicals: &["弓", "冫", "心"],
+        radicals: &["弓", "冫", "扌"],
     },
     Decomposition {
         kanji: "搶",
-        radicals: &["戸", "口", "ㅅ", "心", "一", "尸"],
+        radicals: &["戸", "口", "𠆢", "扌", "一", "尸"],
     },
     Decomposition {
         kanji: "攝",
-        radicals: &["耳", "心"],
+        radicals: &["耳", "扌"],
     },
     Decomposition {
         kanji: "搗",
-        radicals: &["山", "鳥", "心"],
+        radicals: &["山", "鳥", "扌"],
     },
     Decomposition {
         kanji: "搨",
-        radicals: &["羽", "日", "冫", "心"],
+        radicals: &["羽", "日", "冫", "扌"],
     },
     Decomposition {
         kanji: "搏",
-        radicals: &["十", "寸", "田", "丶", "心"],
+        radicals: &["十", "寸", "田", "丶", "扌"],
     },
     Decomposition {
         kanji: "摧",
-        radicals: &["山", "心", "隹"],
+        radicals: &["山", "扌", "隹"],
     },
     Decomposition {
         kanji: "摯",
@@ -15590,59 +15590,59 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "摶",
-        radicals: &["十", "寸", "虫", "田", "厶", "心"],
+        radicals: &["十", "寸", "虫", "田", "厶", "扌"],
     },
     Decomposition {
         kanji: "摎",
-        radicals: &["羽", "ㅅ", "冫", "彡", "心"],
+        radicals: &["羽", "𠆢", "冫", "彡", "扌"],
     },
     Decomposition {
         kanji: "攪",
-        radicals: &["臼", "見", "心"],
+        radicals: &["臼", "見", "扌"],
     },
     Decomposition {
         kanji: "撕",
-        radicals: &["甘", "斤", "ハ", "心"],
+        radicals: &["甘", "斤", "ハ", "扌"],
     },
     Decomposition {
         kanji: "撓",
-        radicals: &["土", "儿", "心"],
+        radicals: &["土", "儿", "扌"],
     },
     Decomposition {
         kanji: "撥",
-        radicals: &["二", "儿", "心", "癶"],
+        radicals: &["二", "儿", "扌", "癶"],
     },
     Decomposition {
         kanji: "撩",
-        radicals: &["小", "人", "大", "日", "丷", "亠", "心"],
+        radicals: &["小", "人", "大", "日", "丷", "亠", "扌"],
     },
     Decomposition {
         kanji: "撈",
-        radicals: &["火", "力", "冖", "心"],
+        radicals: &["火", "力", "冖", "扌"],
     },
     Decomposition {
         kanji: "撼",
-        radicals: &["ノ", "口", "心", "戈", "心"],
+        radicals: &["ノ", "口", "心", "戈", "扌"],
     },
     Decomposition {
         kanji: "據",
-        radicals: &["卜", "匕", "厂", "心", "虍", "豕"],
+        radicals: &["卜", "匕", "厂", "扌", "虍", "豕"],
     },
     Decomposition {
         kanji: "擒",
-        radicals: &["ㅅ", "亠", "凵", "心", "⽱"],
+        radicals: &["𠆢", "亠", "凵", "扌", "⽱"],
     },
     Decomposition {
         kanji: "擅",
-        radicals: &["口", "日", "亠", "囗", "心", "一"],
+        radicals: &["口", "日", "亠", "囗", "扌", "一"],
     },
     Decomposition {
         kanji: "擇",
-        radicals: &["十", "辛", "土", "⺲", "立", "亠", "心"],
+        radicals: &["十", "辛", "土", "⺲", "立", "亠", "扌"],
     },
     Decomposition {
         kanji: "撻",
-        radicals: &["王", "⻌", "十", "辛", "土", "羊", "立", "亠", "心"],
+        radicals: &["王", "⻌", "十", "辛", "土", "羊", "立", "亠", "扌"],
     },
     Decomposition {
         kanji: "擘",
@@ -15650,11 +15650,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擂",
-        radicals: &["雨", "田", "心"],
+        radicals: &["雨", "田", "扌"],
     },
     Decomposition {
         kanji: "擱",
-        radicals: &["口", "門", "夂", "心"],
+        radicals: &["口", "門", "夂", "扌"],
     },
     Decomposition {
         kanji: "擧",
@@ -15666,43 +15666,43 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擠",
-        radicals: &["亠", "心", "齊", "刀", "氏", "廾"],
+        radicals: &["亠", "扌", "齊", "刀", "氏", "廾"],
     },
     Decomposition {
         kanji: "擡",
-        radicals: &["口", "士", "至", "土", "冖", "厶", "心"],
+        radicals: &["口", "士", "至", "土", "冖", "厶", "扌"],
     },
     Decomposition {
         kanji: "抬",
-        radicals: &["口", "厶", "心"],
+        radicals: &["口", "厶", "扌"],
     },
     Decomposition {
         kanji: "擣",
-        radicals: &["口", "工", "士", "寸", "心"],
+        radicals: &["口", "工", "士", "寸", "扌"],
     },
     Decomposition {
         kanji: "擯",
-        radicals: &["ノ", "貝", "目", "ハ", "小", "宀", "心"],
+        radicals: &["ノ", "貝", "目", "ハ", "小", "宀", "扌"],
     },
     Decomposition {
         kanji: "攬",
-        radicals: &["見", "臣", "心", "乞"],
+        radicals: &["見", "臣", "扌", "𠂉"],
     },
     Decomposition {
         kanji: "擶",
-        radicals: &["⺉", "月", "竹", "丷", "心"],
+        radicals: &["⺉", "月", "竹", "丷", "扌"],
     },
     Decomposition {
         kanji: "擴",
-        radicals: &["黄", "田", "ハ", "广", "心"],
+        radicals: &["黄", "田", "ハ", "广", "扌"],
     },
     Decomposition {
         kanji: "擲",
-        radicals: &["大", "酉", "丷", "⻏", "心"],
+        radicals: &["大", "酉", "丷", "⻏", "扌"],
     },
     Decomposition {
         kanji: "擺",
-        radicals: &["月", "⺲", "匕", "厶", "心"],
+        radicals: &["月", "⺲", "匕", "厶", "扌"],
     },
     Decomposition {
         kanji: "攀",
@@ -15710,23 +15710,23 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擽",
-        radicals: &["白", "木", "冫", "心", "幺"],
+        radicals: &["白", "木", "冫", "扌", "幺"],
     },
     Decomposition {
         kanji: "攘",
-        radicals: &["衣", "二", "ハ", "亠", "心", "口"],
+        radicals: &["衣", "二", "ハ", "亠", "扌", "口"],
     },
     Decomposition {
         kanji: "攜",
-        radicals: &["口", "山", "儿", "冂", "心", "隹"],
+        radicals: &["口", "山", "儿", "冂", "扌", "隹"],
     },
     Decomposition {
         kanji: "攅",
-        radicals: &["貝", "目", "ハ", "人", "大", "土", "亠", "心", "二"],
+        radicals: &["貝", "目", "ハ", "人", "大", "土", "亠", "扌", "二"],
     },
     Decomposition {
         kanji: "攤",
-        radicals: &["二", "心", "⺾", "隹", "井"],
+        radicals: &["二", "扌", "⺾", "隹", "井"],
     },
     Decomposition {
         kanji: "攣",
@@ -15734,7 +15734,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "攫",
-        radicals: &["又", "目", "心", "隹"],
+        radicals: &["又", "目", "扌", "隹"],
     },
     Decomposition {
         kanji: "攴",
@@ -15742,51 +15742,51 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "攵",
-        radicals: &["攵", "乞"],
+        radicals: &["攵", "𠂉"],
     },
     Decomposition {
         kanji: "攷",
-        radicals: &["攵", "乞"],
+        radicals: &["攵", "𠂉"],
     },
     Decomposition {
         kanji: "收",
-        radicals: &["｜", "攵", "乞"],
+        radicals: &["｜", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "攸",
-        radicals: &["｜", "ノ", "攵", "乞"],
+        radicals: &["｜", "ノ", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "畋",
-        radicals: &["田", "攵", "乞"],
+        radicals: &["田", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "效",
-        radicals: &["父", "亠", "攵", "乞"],
+        radicals: &["父", "亠", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "敖",
-        radicals: &["土", "方", "攵", "亠", "二", "乞"],
+        radicals: &["土", "方", "攵", "亠", "二", "𠂉"],
     },
     Decomposition {
         kanji: "敕",
-        radicals: &["｜", "口", "ハ", "木", "攵", "乞"],
+        radicals: &["｜", "口", "ハ", "木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "敍",
-        radicals: &["干", "小", "ㅅ", "攵", "一"],
+        radicals: &["干", "小", "𠆢", "攵", "一"],
     },
     Decomposition {
         kanji: "敘",
-        radicals: &["干", "小", "ㅅ", "攵", "一", "乞"],
+        radicals: &["干", "小", "𠆢", "攵", "一", "𠂉"],
     },
     Decomposition {
         kanji: "敞",
-        radicals: &["口", "⺌", "冂", "攵", "乞"],
+        radicals: &["口", "⺌", "冂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "敝",
-        radicals: &["｜", "巾", "⺌", "丷", "冂", "攵", "乞"],
+        radicals: &["｜", "巾", "⺌", "丷", "冂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "敲",
@@ -15794,19 +15794,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "數",
-        radicals: &["｜", "一", "口", "女", "攵", "乞"],
+        radicals: &["｜", "一", "口", "女", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "斂",
-        radicals: &["口", "人", "ㅅ", "攵", "一", "乞"],
+        radicals: &["口", "人", "𠆢", "攵", "一", "𠂉"],
     },
     Decomposition {
         kanji: "斃",
-        radicals: &["巾", "小", "⺌", "丷", "夕", "冂", "匕", "攵", "乞"],
+        radicals: &["巾", "小", "⺌", "丷", "夕", "冂", "匕", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "變",
-        radicals: &["言", "糸", "幺", "小", "攵", "乞"],
+        radicals: &["言", "糸", "幺", "小", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "斛",
@@ -15826,11 +15826,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "旃",
-        radicals: &["方", "冂", "乞"],
+        radicals: &["方", "冂", "𠂉"],
     },
     Decomposition {
         kanji: "旆",
-        radicals: &["干", "缶", "巾", "方", "凵", "乞"],
+        radicals: &["干", "缶", "巾", "方", "凵", "𠂉"],
     },
     Decomposition {
         kanji: "旁",
@@ -15838,19 +15838,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "旄",
-        radicals: &["方", "毛", "乞"],
+        radicals: &["方", "毛", "𠂉"],
     },
     Decomposition {
         kanji: "旌",
-        radicals: &["生", "方", "乞"],
+        radicals: &["生", "方", "𠂉"],
     },
     Decomposition {
         kanji: "旒",
-        radicals: &["川", "方", "亠", "厶", "乞"],
+        radicals: &["川", "方", "亠", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "旛",
-        radicals: &["田", "釆", "米", "方", "乞"],
+        radicals: &["田", "釆", "米", "方", "𠂉"],
     },
     Decomposition {
         kanji: "旙",
@@ -15946,7 +15946,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "晢",
-        radicals: &["斤", "日", "心"],
+        radicals: &["斤", "日", "扌"],
     },
     Decomposition {
         kanji: "晰",
@@ -15994,11 +15994,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "暾",
-        radicals: &["口", "子", "日", "亠", "攵", "乞"],
+        radicals: &["口", "子", "日", "亠", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "暼",
-        radicals: &["巾", "小", "⺌", "日", "丷", "冂", "攵", "乞"],
+        radicals: &["巾", "小", "⺌", "日", "丷", "冂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "曄",
@@ -16222,7 +16222,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "檜",
-        radicals: &["日", "⺲", "木", "ㅅ", "一"],
+        radicals: &["日", "⺲", "木", "𠆢", "一"],
     },
     Decomposition {
         kanji: "栞",
@@ -16294,7 +16294,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "條",
-        radicals: &["⺅", "木", "攵", "乞", "｜"],
+        radicals: &["⺅", "木", "攵", "𠂉", "｜"],
     },
     Decomposition {
         kanji: "梛",
@@ -16410,7 +16410,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "椥",
-        radicals: &["口", "木", "矢", "乞"],
+        radicals: &["口", "木", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "棹",
@@ -16422,7 +16422,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "棯",
-        radicals: &["心", "木", "ㅅ", "一"],
+        radicals: &["心", "木", "𠆢", "一"],
     },
     Decomposition {
         kanji: "椨",
@@ -16446,7 +16446,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "棆",
-        radicals: &["｜", "一", "木", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "木", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "楹",
@@ -16502,7 +16502,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "楡",
-        radicals: &["⺉", "月", "木", "ㅅ", "一"],
+        radicals: &["⺉", "月", "木", "𠆢", "一"],
     },
     Decomposition {
         kanji: "楞",
@@ -16594,7 +16594,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "榕",
-        radicals: &["穴", "口", "ハ", "木", "ㅅ", "宀", "谷"],
+        radicals: &["穴", "口", "ハ", "木", "𠆢", "宀", "谷"],
     },
     Decomposition {
         kanji: "榴",
@@ -16614,7 +16614,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "樛",
-        radicals: &["羽", "木", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "木", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "槿",
@@ -16682,7 +16682,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "橄",
-        radicals: &["耳", "木", "攵", "乞"],
+        radicals: &["耳", "木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "樌",
@@ -16738,15 +16738,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "檠",
-        radicals: &["口", "木", "勹", "攵", "⺾", "乞"],
+        radicals: &["口", "木", "勹", "攵", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "檄",
-        radicals: &["白", "方", "木", "攵", "乞"],
+        radicals: &["白", "方", "木", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "檢",
-        radicals: &["口", "人", "木", "ㅅ", "一"],
+        radicals: &["口", "人", "木", "𠆢", "一"],
     },
     Decomposition {
         kanji: "檣",
@@ -16762,7 +16762,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "檻",
-        radicals: &["皿", "臣", "二", "木", "乞"],
+        radicals: &["皿", "臣", "二", "木", "𠂉"],
     },
     Decomposition {
         kanji: "櫃",
@@ -16830,7 +16830,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "欖",
-        radicals: &["見", "臣", "二", "木", "乞"],
+        radicals: &["見", "臣", "二", "木", "𠂉"],
     },
     Decomposition {
         kanji: "鬱",
@@ -16842,7 +16842,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "欸",
-        radicals: &["欠", "矢", "厶", "乞"],
+        radicals: &["欠", "矢", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "欷",
@@ -16858,7 +16858,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "飮",
-        radicals: &["｜", "欠", "ㅅ", "食"],
+        radicals: &["｜", "欠", "𠆢", "食"],
     },
     Decomposition {
         kanji: "歇",
@@ -16878,7 +16878,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "歙",
-        radicals: &["羽", "欠", "口", "ㅅ", "冫"],
+        radicals: &["羽", "欠", "口", "𠆢", "冫"],
     },
     Decomposition {
         kanji: "歔",
@@ -16886,7 +16886,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "歛",
-        radicals: &["欠", "口", "人", "ㅅ", "一"],
+        radicals: &["欠", "口", "人", "𠆢", "一"],
     },
     Decomposition {
         kanji: "歟",
@@ -16914,7 +16914,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "殄",
-        radicals: &["ㅅ", "彡", "歹"],
+        radicals: &["𠆢", "彡", "歹"],
     },
     Decomposition {
         kanji: "殃",
@@ -16938,7 +16938,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "殤",
-        radicals: &["ノ", "一", "日", "勿", "歹", "勹", "乞"],
+        radicals: &["ノ", "一", "日", "勿", "歹", "勹", "𠂉"],
     },
     Decomposition {
         kanji: "殪",
@@ -16982,7 +16982,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "毓",
-        radicals: &["川", "母", "亠", "厶", "毋", "乞"],
+        radicals: &["川", "母", "亠", "厶", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "毟",
@@ -17018,19 +17018,19 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "气",
-        radicals: &["气", "乞"],
+        radicals: &["气", "𠂉"],
     },
     Decomposition {
         kanji: "氛",
-        radicals: &["刀", "ハ", "气", "乞"],
+        radicals: &["刀", "ハ", "气", "𠂉"],
     },
     Decomposition {
         kanji: "氤",
-        radicals: &["大", "囗", "气", "乞"],
+        radicals: &["大", "囗", "气", "𠂉"],
     },
     Decomposition {
         kanji: "氣",
-        radicals: &["米", "气", "乞"],
+        radicals: &["米", "气", "𠂉"],
     },
     Decomposition {
         kanji: "汞",
@@ -17166,7 +17166,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "洽",
-        radicals: &["口", "⺡", "ㅅ", "一"],
+        radicals: &["口", "⺡", "𠆢", "一"],
     },
     Decomposition {
         kanji: "洸",
@@ -17214,7 +17214,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "浙",
-        radicals: &["斤", "⺡", "心"],
+        radicals: &["斤", "⺡", "扌"],
     },
     Decomposition {
         kanji: "涎",
@@ -17298,7 +17298,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "淤",
-        radicals: &["⺡", "方", "ㅅ", "冫"],
+        radicals: &["⺡", "方", "𠆢", "冫"],
     },
     Decomposition {
         kanji: "淕",
@@ -17306,7 +17306,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "淪",
-        radicals: &["｜", "一", "⺡", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "⺡", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "淮",
@@ -17366,7 +17366,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "湃",
-        radicals: &["干", "⺡", "心"],
+        radicals: &["干", "⺡", "扌"],
     },
     Decomposition {
         kanji: "渺",
@@ -17386,11 +17386,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "渝",
-        radicals: &["⺉", "月", "⺡", "ㅅ", "一"],
+        radicals: &["⺉", "月", "⺡", "𠆢", "一"],
     },
     Decomposition {
         kanji: "游",
-        radicals: &["子", "⺡", "方", "乞"],
+        radicals: &["子", "⺡", "方", "𠂉"],
     },
     Decomposition {
         kanji: "溂",
@@ -17426,7 +17426,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "滄",
-        radicals: &["戸", "口", "⺡", "ㅅ", "一", "尸"],
+        radicals: &["戸", "口", "⺡", "𠆢", "一", "尸"],
     },
     Decomposition {
         kanji: "溲",
@@ -17474,7 +17474,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "滸",
-        radicals: &["干", "言", "⺡", "乞"],
+        radicals: &["干", "言", "⺡", "𠂉"],
     },
     Decomposition {
         kanji: "滾",
@@ -17502,7 +17502,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "滌",
-        radicals: &["⺅", "⺡", "木", "攵", "乞", "｜"],
+        radicals: &["⺅", "⺡", "木", "攵", "𠂉", "｜"],
     },
     Decomposition {
         kanji: "漾",
@@ -17554,7 +17554,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "澂",
-        radicals: &["王", "山", "⺡", "攵", "乞"],
+        radicals: &["王", "山", "⺡", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "潼",
@@ -17586,7 +17586,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "澣",
-        radicals: &["干", "十", "⺡", "日", "ㅅ"],
+        radicals: &["干", "十", "⺡", "日", "𠆢"],
     },
     Decomposition {
         kanji: "澡",
@@ -17606,7 +17606,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "澪",
-        radicals: &["雨", "⺡", "ㅅ", "卩", "一"],
+        radicals: &["雨", "⺡", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "濟",
@@ -17618,7 +17618,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "濬",
-        radicals: &["⺡", "ハ", "卜", "目", "ㅅ", "冖"],
+        radicals: &["⺡", "ハ", "卜", "目", "𠆢", "冖"],
     },
     Decomposition {
         kanji: "濔",
@@ -17674,7 +17674,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瀚",
-        radicals: &["羽", "十", "⺡", "日", "ㅅ", "冫"],
+        radicals: &["羽", "十", "⺡", "日", "𠆢", "冫"],
     },
     Decomposition {
         kanji: "潴",
@@ -17702,7 +17702,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瀲",
-        radicals: &["口", "⺡", "人", "ㅅ", "攵", "一", "乞"],
+        radicals: &["口", "⺡", "人", "𠆢", "攵", "一", "𠂉"],
     },
     Decomposition {
         kanji: "灑",
@@ -17830,7 +17830,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "熬",
-        radicals: &["土", "方", "攵", "⺣", "乞"],
+        radicals: &["土", "方", "攵", "⺣", "𠂉"],
     },
     Decomposition {
         kanji: "燗",
@@ -17850,7 +17850,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "燉",
-        radicals: &["火", "口", "子", "亠", "攵", "乞"],
+        radicals: &["火", "口", "子", "亠", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "燔",
@@ -18058,7 +18058,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "猴",
-        radicals: &["⺅", "⺨", "矢", "乞"],
+        radicals: &["⺅", "⺨", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "猯",
@@ -18094,7 +18094,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "獪",
-        radicals: &["日", "⺲", "⺨", "ㅅ", "一"],
+        radicals: &["日", "⺲", "⺨", "𠆢", "一"],
     },
     Decomposition {
         kanji: "獨",
@@ -18130,7 +18130,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "珎",
-        radicals: &["王", "小", "乞"],
+        radicals: &["王", "小", "𠂉"],
     },
     Decomposition {
         kanji: "玻",
@@ -18202,7 +18202,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瑜",
-        radicals: &["王", "⺉", "月", "ㅅ", "一"],
+        radicals: &["王", "⺉", "月", "𠆢", "一"],
     },
     Decomposition {
         kanji: "瑩",
@@ -18350,7 +18350,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "畍",
-        radicals: &["｜", "ノ", "田", "ㅅ"],
+        radicals: &["｜", "ノ", "田", "𠆢"],
     },
     Decomposition {
         kanji: "畊",
@@ -18362,7 +18362,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "畛",
-        radicals: &["田", "ㅅ", "彡"],
+        radicals: &["田", "𠆢", "彡"],
     },
     Decomposition {
         kanji: "畆",
@@ -18390,7 +18390,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "畭",
-        radicals: &["工", "小", "田", "ㅅ", "一"],
+        radicals: &["工", "小", "田", "𠆢", "一"],
     },
     Decomposition {
         kanji: "畸",
@@ -18438,7 +18438,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "疥",
-        radicals: &["｜", "ノ", "ㅅ", "⽧"],
+        radicals: &["｜", "ノ", "𠆢", "⽧"],
     },
     Decomposition {
         kanji: "疣",
@@ -18482,7 +18482,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "痊",
-        radicals: &["王", "ㅅ", "⽧"],
+        radicals: &["王", "𠆢", "⽧"],
     },
     Decomposition {
         kanji: "痒",
@@ -18542,7 +18542,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瘉",
-        radicals: &["⺉", "月", "ㅅ", "⽧", "一"],
+        radicals: &["⺉", "月", "𠆢", "⽧", "一"],
     },
     Decomposition {
         kanji: "瘟",
@@ -18558,7 +18558,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瘡",
-        radicals: &["口", "ㅅ", "尸", "⽧", "一"],
+        radicals: &["口", "𠆢", "尸", "⽧", "一"],
     },
     Decomposition {
         kanji: "瘢",
@@ -18602,7 +18602,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "癡",
-        radicals: &["疋", "矢", "匕", "⽧", "乞"],
+        radicals: &["疋", "矢", "匕", "⽧", "𠂉"],
     },
     Decomposition {
         kanji: "癢",
@@ -18718,7 +18718,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "盒",
-        radicals: &["口", "皿", "ㅅ", "一"],
+        radicals: &["口", "皿", "𠆢", "一"],
     },
     Decomposition {
         kanji: "盞",
@@ -18818,7 +18818,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "睿",
-        radicals: &["ハ", "卜", "目", "ㅅ", "冖"],
+        radicals: &["ハ", "卜", "目", "𠆢", "冖"],
     },
     Decomposition {
         kanji: "睾",
@@ -18850,7 +18850,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瞰",
-        radicals: &["耳", "目", "攵", "乞"],
+        radicals: &["耳", "目", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "瞶",
@@ -18866,7 +18866,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瞼",
-        radicals: &["口", "人", "目", "ㅅ", "一"],
+        radicals: &["口", "人", "目", "𠆢", "一"],
     },
     Decomposition {
         kanji: "瞽",
@@ -18894,15 +18894,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "矜",
-        radicals: &["矛", "ㅅ", "マ", "一"],
+        radicals: &["矛", "𠆢", "マ", "一"],
     },
     Decomposition {
         kanji: "矣",
-        radicals: &["矢", "厶", "乞"],
+        radicals: &["矢", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "矮",
-        radicals: &["禾", "女", "矢", "乞"],
+        radicals: &["禾", "女", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "矼",
@@ -19038,7 +19038,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "礙",
-        radicals: &["口", "石", "疋", "矢", "匕", "マ", "乞"],
+        radicals: &["口", "石", "疋", "矢", "匕", "マ", "𠂉"],
     },
     Decomposition {
         kanji: "礬",
@@ -19190,7 +19190,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "穃",
-        radicals: &["禾", "穴", "口", "ハ", "ㅅ", "宀", "谷"],
+        radicals: &["禾", "穴", "口", "ハ", "𠆢", "宀", "谷"],
     },
     Decomposition {
         kanji: "穗",
@@ -19266,7 +19266,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "竅",
-        radicals: &["穴", "白", "方", "儿", "宀", "攵", "乞"],
+        radicals: &["穴", "白", "方", "儿", "宀", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "竄",
@@ -19322,7 +19322,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "竢",
-        radicals: &["矢", "立", "厶", "乞"],
+        radicals: &["矢", "立", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "竦",
@@ -19338,311 +19338,311 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笂",
-        radicals: &["九", "竹", "丶", "乞"],
+        radicals: &["九", "竹", "丶", "𠂉"],
     },
     Decomposition {
         kanji: "笏",
-        radicals: &["ノ", "竹", "勹", "勿", "乞"],
+        radicals: &["ノ", "竹", "勹", "勿", "𠂉"],
     },
     Decomposition {
         kanji: "笊",
-        radicals: &["竹", "爪", "乞"],
+        radicals: &["竹", "爪", "𠂉"],
     },
     Decomposition {
         kanji: "笆",
-        radicals: &["竹", "巴", "乞"],
+        radicals: &["竹", "巴", "𠂉"],
     },
     Decomposition {
         kanji: "笳",
-        radicals: &["口", "竹", "力", "乞"],
+        radicals: &["口", "竹", "力", "𠂉"],
     },
     Decomposition {
         kanji: "笘",
-        radicals: &["口", "竹", "卜", "乞"],
+        radicals: &["口", "竹", "卜", "𠂉"],
     },
     Decomposition {
         kanji: "笙",
-        radicals: &["生", "竹", "乞"],
+        radicals: &["生", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "笞",
-        radicals: &["口", "竹", "厶", "乞"],
+        radicals: &["口", "竹", "厶", "𠂉"],
     },
     Decomposition {
         kanji: "笵",
-        radicals: &["⺡", "竹", "卩", "乞"],
+        radicals: &["⺡", "竹", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "笨",
-        radicals: &["一", "竹", "木", "乞"],
+        radicals: &["一", "竹", "木", "𠂉"],
     },
     Decomposition {
         kanji: "笶",
-        radicals: &["竹", "矢", "乞"],
+        radicals: &["竹", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "筐",
-        radicals: &["王", "竹", "匚", "乞"],
+        radicals: &["王", "竹", "匚", "𠂉"],
     },
     Decomposition {
         kanji: "筺",
-        radicals: &["王", "竹", "匚", "丶", "乞"],
+        radicals: &["王", "竹", "匚", "丶", "𠂉"],
     },
     Decomposition {
         kanji: "笄",
-        radicals: &["｜", "ノ", "竹", "二", "廾", "一", "乞"],
+        radicals: &["｜", "ノ", "竹", "二", "廾", "一", "𠂉"],
     },
     Decomposition {
         kanji: "筍",
-        radicals: &["竹", "日", "勹", "乞"],
+        radicals: &["竹", "日", "勹", "𠂉"],
     },
     Decomposition {
         kanji: "笋",
-        radicals: &["ノ", "ヨ", "竹", "乞"],
+        radicals: &["ノ", "ヨ", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "筌",
-        radicals: &["王", "竹", "ㅅ", "乞"],
+        radicals: &["王", "竹", "𠆢", "𠂉"],
     },
     Decomposition {
         kanji: "筅",
-        radicals: &["竹", "土", "儿", "乞"],
+        radicals: &["竹", "土", "儿", "𠂉"],
     },
     Decomposition {
         kanji: "筵",
-        radicals: &["止", "竹", "廴", "ノ", "乞"],
+        radicals: &["止", "竹", "廴", "ノ", "𠂉"],
     },
     Decomposition {
         kanji: "筥",
-        radicals: &["口", "竹", "ノ", "乞"],
+        radicals: &["口", "竹", "ノ", "𠂉"],
     },
     Decomposition {
         kanji: "筴",
-        radicals: &["人", "大", "竹", "乞"],
+        radicals: &["人", "大", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "筧",
-        radicals: &["見", "竹", "乞"],
+        radicals: &["見", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "筰",
-        radicals: &["｜", "ノ", "⺅", "竹", "乞"],
+        radicals: &["｜", "ノ", "⺅", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "筱",
-        radicals: &["⺅", "竹", "攵", "｜", "乞"],
+        radicals: &["⺅", "竹", "攵", "｜", "𠂉"],
     },
     Decomposition {
         kanji: "筬",
-        radicals: &["ノ", "竹", "戈", "乞"],
+        radicals: &["ノ", "竹", "戈", "𠂉"],
     },
     Decomposition {
         kanji: "筮",
-        radicals: &["工", "人", "竹", "乞"],
+        radicals: &["工", "人", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "箝",
-        radicals: &["甘", "竹", "心", "乞"],
+        radicals: &["甘", "竹", "扌", "𠂉"],
     },
     Decomposition {
         kanji: "箘",
-        radicals: &["禾", "竹", "囗", "乞"],
+        radicals: &["禾", "竹", "囗", "𠂉"],
     },
     Decomposition {
         kanji: "箟",
-        radicals: &["竹", "日", "比", "乞"],
+        radicals: &["竹", "日", "比", "𠂉"],
     },
     Decomposition {
         kanji: "箍",
-        radicals: &["巾", "竹", "匚", "心", "乞"],
+        radicals: &["巾", "竹", "匚", "扌", "𠂉"],
     },
     Decomposition {
         kanji: "箜",
-        radicals: &["穴", "工", "竹", "儿", "宀", "乞"],
+        radicals: &["穴", "工", "竹", "儿", "宀", "𠂉"],
     },
     Decomposition {
         kanji: "箚",
-        radicals: &["⺉", "口", "竹", "ㅅ", "一", "乞"],
+        radicals: &["⺉", "口", "竹", "𠆢", "一", "𠂉"],
     },
     Decomposition {
         kanji: "箋",
-        radicals: &["竹", "戈", "乞"],
+        radicals: &["竹", "戈", "𠂉"],
     },
     Decomposition {
         kanji: "箒",
-        radicals: &["ヨ", "巾", "竹", "冖", "乞"],
+        radicals: &["ヨ", "巾", "竹", "冖", "𠂉"],
     },
     Decomposition {
         kanji: "箏",
-        radicals: &["ヨ", "竹", "爪", "亅", "乞"],
+        radicals: &["ヨ", "竹", "爪", "亅", "𠂉"],
     },
     Decomposition {
         kanji: "筝",
-        radicals: &["ヨ", "竹", "亅", "勹", "乞"],
+        radicals: &["ヨ", "竹", "亅", "勹", "𠂉"],
     },
     Decomposition {
         kanji: "箙",
-        radicals: &["月", "竹", "又", "卩", "乞"],
+        radicals: &["月", "竹", "又", "卩", "𠂉"],
     },
     Decomposition {
         kanji: "篋",
-        radicals: &["人", "大", "竹", "匚", "乞"],
+        radicals: &["人", "大", "竹", "匚", "𠂉"],
     },
     Decomposition {
         kanji: "篁",
-        radicals: &["王", "竹", "白", "乞"],
+        radicals: &["王", "竹", "白", "𠂉"],
     },
     Decomposition {
         kanji: "篌",
-        radicals: &["⺅", "竹", "矢", "ユ", "乞"],
+        radicals: &["⺅", "竹", "矢", "ユ", "𠂉"],
     },
     Decomposition {
         kanji: "篏",
-        radicals: &["甘", "欠", "竹", "乞"],
+        radicals: &["甘", "欠", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "箴",
-        radicals: &["ノ", "口", "竹", "戈", "乞"],
+        radicals: &["ノ", "口", "竹", "戈", "𠂉"],
     },
     Decomposition {
         kanji: "篆",
-        radicals: &["彑", "竹", "豕", "乞"],
+        radicals: &["彑", "竹", "豕", "𠂉"],
     },
     Decomposition {
         kanji: "篝",
-        radicals: &["｜", "一", "竹", "二", "冂", "十", "乞"],
+        radicals: &["｜", "一", "竹", "二", "冂", "十", "𠂉"],
     },
     Decomposition {
         kanji: "篩",
-        radicals: &["巾", "口", "竹", "｜", "乞"],
+        radicals: &["巾", "口", "竹", "｜", "𠂉"],
     },
     Decomposition {
         kanji: "簑",
-        radicals: &["衣", "一", "竹", "亠", "口", "乞"],
+        radicals: &["衣", "一", "竹", "亠", "口", "𠂉"],
     },
     Decomposition {
         kanji: "簔",
-        radicals: &["衣", "一", "竹", "亠", "口", "乞"],
+        radicals: &["衣", "一", "竹", "亠", "口", "𠂉"],
     },
     Decomposition {
         kanji: "篦",
-        radicals: &["竹", "比", "囗", "乞"],
+        radicals: &["竹", "比", "囗", "𠂉"],
     },
     Decomposition {
         kanji: "篥",
-        radicals: &["西", "竹", "木", "乞"],
+        radicals: &["西", "竹", "木", "𠂉"],
     },
     Decomposition {
         kanji: "籠",
-        radicals: &["月", "竹", "立", "乞"],
+        radicals: &["月", "竹", "立", "𠂉"],
     },
     Decomposition {
         kanji: "簀",
-        radicals: &["貝", "目", "ハ", "竹", "土", "二", "亠", "乞"],
+        radicals: &["貝", "目", "ハ", "竹", "土", "二", "亠", "𠂉"],
     },
     Decomposition {
         kanji: "簇",
-        radicals: &["竹", "方", "矢", "乞"],
+        radicals: &["竹", "方", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "簓",
-        radicals: &["口", "十", "竹", "冂", "彡", "乞"],
+        radicals: &["口", "十", "竹", "冂", "彡", "𠂉"],
     },
     Decomposition {
         kanji: "篳",
-        radicals: &["｜", "一", "竹", "田", "日", "乞"],
+        radicals: &["｜", "一", "竹", "田", "日", "𠂉"],
     },
     Decomposition {
         kanji: "篷",
-        radicals: &["⻌", "竹", "夂", "乞"],
+        radicals: &["⻌", "竹", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "簗",
-        radicals: &["⺡", "竹", "刀", "木", "丶", "乞"],
+        radicals: &["⺡", "竹", "刀", "木", "丶", "𠂉"],
     },
     Decomposition {
         kanji: "簍",
-        radicals: &["｜", "一", "口", "女", "竹", "乞"],
+        radicals: &["｜", "一", "口", "女", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "篶",
-        radicals: &["一", "止", "竹", "鳥", "⺣", "乞"],
+        radicals: &["一", "止", "竹", "鳥", "⺣", "𠂉"],
     },
     Decomposition {
         kanji: "簣",
-        radicals: &["｜", "一", "貝", "目", "ハ", "口", "竹", "乞"],
+        radicals: &["｜", "一", "貝", "目", "ハ", "口", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "簧",
-        radicals: &["黄", "竹", "田", "ハ", "乞"],
+        radicals: &["黄", "竹", "田", "ハ", "𠂉"],
     },
     Decomposition {
         kanji: "簪",
-        radicals: &["竹", "日", "无", "乞"],
+        radicals: &["竹", "日", "无", "𠂉"],
     },
     Decomposition {
         kanji: "簟",
-        radicals: &["十", "西", "竹", "日", "曰", "乞"],
+        radicals: &["十", "西", "竹", "日", "曰", "𠂉"],
     },
     Decomposition {
         kanji: "簷",
-        radicals: &["言", "竹", "儿", "厂", "乞"],
+        radicals: &["言", "竹", "儿", "厂", "𠂉"],
     },
     Decomposition {
         kanji: "簫",
-        radicals: &["｜", "ノ", "ヨ", "水", "竹", "隶", "聿", "乞"],
+        radicals: &["｜", "ノ", "ヨ", "水", "竹", "隶", "聿", "𠂉"],
     },
     Decomposition {
         kanji: "簽",
-        radicals: &["口", "人", "竹", "ㅅ", "一", "乞"],
+        radicals: &["口", "人", "竹", "𠆢", "一", "𠂉"],
     },
     Decomposition {
         kanji: "籌",
-        radicals: &["口", "工", "士", "寸", "竹", "乞"],
+        radicals: &["口", "工", "士", "寸", "竹", "𠂉"],
     },
     Decomposition {
         kanji: "籃",
-        radicals: &["皿", "臣", "竹", "二", "乞"],
+        radicals: &["皿", "臣", "竹", "二", "𠂉"],
     },
     Decomposition {
         kanji: "籔",
-        radicals: &["女", "竹", "米", "攵", "乞"],
+        radicals: &["女", "竹", "米", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "籏",
-        radicals: &["甘", "竹", "ハ", "方", "乞"],
+        radicals: &["甘", "竹", "ハ", "方", "𠂉"],
     },
     Decomposition {
         kanji: "籀",
-        radicals: &["竹", "田", "刀", "厶", "心", "乞"],
+        radicals: &["竹", "田", "刀", "厶", "扌", "𠂉"],
     },
     Decomposition {
         kanji: "籐",
-        radicals: &["月", "人", "水", "大", "竹", "二", "丷", "乞"],
+        radicals: &["月", "人", "水", "大", "竹", "二", "丷", "𠂉"],
     },
     Decomposition {
         kanji: "籘",
-        radicals: &["月", "糸", "幺", "小", "人", "大", "竹", "二", "丷", "乞"],
+        radicals: &["月", "糸", "幺", "小", "人", "大", "竹", "二", "丷", "𠂉"],
     },
     Decomposition {
         kanji: "籟",
-        radicals: &["｜", "貝", "目", "口", "竹", "ハ", "頁", "木", "乞"],
+        radicals: &["｜", "貝", "目", "口", "竹", "ハ", "頁", "木", "𠂉"],
     },
     Decomposition {
         kanji: "籤",
-        radicals: &["竹", "戈", "韭", "人", "乞"],
+        radicals: &["竹", "戈", "韭", "人", "𠂉"],
     },
     Decomposition {
         kanji: "籖",
-        radicals: &["竹", "土", "戈", "韭", "乞"],
+        radicals: &["竹", "土", "戈", "韭", "𠂉"],
     },
     Decomposition {
         kanji: "籥",
-        radicals: &["｜", "一", "口", "竹", "ㅅ", "冊", "龠", "廾", "乞"],
+        radicals: &["｜", "一", "口", "竹", "𠆢", "冊", "龠", "廾", "𠂉"],
     },
     Decomposition {
         kanji: "籬",
-        radicals: &["竹", "亠", "凵", "⽱", "隹", "乞"],
+        radicals: &["竹", "亠", "凵", "⽱", "隹", "𠂉"],
     },
     Decomposition {
         kanji: "籵",
@@ -19662,7 +19662,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "粭",
-        radicals: &["口", "米", "ㅅ", "一"],
+        radicals: &["口", "米", "𠆢", "一"],
     },
     Decomposition {
         kanji: "粢",
@@ -19846,7 +19846,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "絛",
-        radicals: &["⺅", "糸", "幺", "小", "夂", "攵", "乞", "｜"],
+        radicals: &["⺅", "糸", "幺", "小", "夂", "攵", "𠂉", "｜"],
     },
     Decomposition {
         kanji: "綏",
@@ -19866,7 +19866,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "綮",
-        radicals: &["戸", "糸", "幺", "小", "攵", "一", "尸", "乞"],
+        radicals: &["戸", "糸", "幺", "小", "攵", "一", "尸", "𠂉"],
     },
     Decomposition {
         kanji: "綣",
@@ -19906,7 +19906,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "綸",
-        radicals: &["｜", "一", "糸", "幺", "小", "ㅅ", "冊", "廾"],
+        radicals: &["｜", "一", "糸", "幺", "小", "𠆢", "冊", "廾"],
     },
     Decomposition {
         kanji: "綟",
@@ -19934,7 +19934,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "緻",
-        radicals: &["糸", "幺", "小", "至", "土", "厶", "攵", "一", "乞"],
+        radicals: &["糸", "幺", "小", "至", "土", "厶", "攵", "一", "𠂉"],
     },
     Decomposition {
         kanji: "緲",
@@ -19986,7 +19986,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "繆",
-        radicals: &["羽", "糸", "幺", "小", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "糸", "幺", "小", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "繦",
@@ -20030,7 +20030,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "繖",
-        radicals: &["｜", "一", "月", "糸", "幺", "小", "二", "攵", "乞"],
+        radicals: &["｜", "一", "月", "糸", "幺", "小", "二", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "繞",
@@ -20050,7 +20050,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "繪",
-        radicals: &["糸", "幺", "小", "日", "⺲", "ㅅ", "一"],
+        radicals: &["糸", "幺", "小", "日", "⺲", "𠆢", "一"],
     },
     Decomposition {
         kanji: "繩",
@@ -20082,7 +20082,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "繿",
-        radicals: &["皿", "糸", "幺", "小", "臣", "二", "乞"],
+        radicals: &["皿", "糸", "幺", "小", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "纈",
@@ -20126,7 +20126,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "纜",
-        radicals: &["見", "糸", "幺", "小", "臣", "二", "乞"],
+        radicals: &["見", "糸", "幺", "小", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "缸",
@@ -20234,7 +20234,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "羚",
-        radicals: &["王", "丷", "羊", "ㅅ", "卩", "一"],
+        radicals: &["王", "丷", "羊", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "羣",
@@ -20282,7 +20282,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "翕",
-        radicals: &["羽", "口", "ㅅ", "冫", "一"],
+        radicals: &["羽", "口", "𠆢", "冫", "一"],
     },
     Decomposition {
         kanji: "翔",
@@ -20302,7 +20302,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "翳",
-        radicals: &["羽", "矢", "冫", "匚", "殳", "几", "又", "乞"],
+        radicals: &["羽", "矢", "冫", "匚", "殳", "几", "又", "𠂉"],
     },
     Decomposition {
         kanji: "翹",
@@ -20362,7 +20362,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "聆",
-        radicals: &["耳", "ㅅ", "卩", "一"],
+        radicals: &["耳", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "聒",
@@ -20378,7 +20378,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "聟",
-        radicals: &["口", "耳", "矢", "乞"],
+        radicals: &["口", "耳", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "聢",
@@ -20418,7 +20418,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "肄",
-        radicals: &["矢", "匕", "聿", "乞"],
+        radicals: &["矢", "匕", "聿", "𠂉"],
     },
     Decomposition {
         kanji: "肆",
@@ -20498,7 +20498,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "脩",
-        radicals: &["⺅", "月", "攵", "乞", "｜"],
+        radicals: &["⺅", "月", "攵", "𠂉", "｜"],
     },
     Decomposition {
         kanji: "脣",
@@ -20574,11 +20574,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "膂",
-        radicals: &["衣", "月", "方", "亠", "乞"],
+        radicals: &["衣", "月", "方", "亠", "𠂉"],
     },
     Decomposition {
         kanji: "膠",
-        radicals: &["羽", "月", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "月", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "膕",
@@ -20598,7 +20598,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "膓",
-        radicals: &["ノ", "月", "日", "勿", "一", "乞"],
+        radicals: &["ノ", "月", "日", "勿", "一", "𠂉"],
     },
     Decomposition {
         kanji: "膩",
@@ -20614,7 +20614,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "膾",
-        radicals: &["月", "日", "⺲", "ㅅ", "一"],
+        radicals: &["月", "日", "⺲", "𠆢", "一"],
     },
     Decomposition {
         kanji: "膸",
@@ -20638,7 +20638,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "臉",
-        radicals: &["口", "人", "月", "ㅅ", "一"],
+        radicals: &["口", "人", "月", "𠆢", "一"],
     },
     Decomposition {
         kanji: "臍",
@@ -20710,7 +20710,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舍",
-        radicals: &["口", "舌", "ㅅ"],
+        radicals: &["口", "舌", "𠆢"],
     },
     Decomposition {
         kanji: "舐",
@@ -20718,7 +20718,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "舖",
-        radicals: &["口", "十", "舌", "用", "ㅅ", "丶"],
+        radicals: &["口", "十", "舌", "用", "𠆢", "丶"],
     },
     Decomposition {
         kanji: "舩",
@@ -20742,7 +20742,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "艙",
-        radicals: &["口", "舟", "ㅅ", "尸", "一"],
+        radicals: &["口", "舟", "𠆢", "尸", "一"],
     },
     Decomposition {
         kanji: "艘",
@@ -20854,7 +20854,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "莓",
-        radicals: &["一", "母", "⺾", "毋", "乞"],
+        radicals: &["一", "母", "⺾", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "范",
@@ -20922,7 +20922,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "荅",
-        radicals: &["口", "ㅅ", "⺾", "一"],
+        radicals: &["口", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "茯",
@@ -20954,7 +20954,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "莟",
-        radicals: &["口", "ㅅ", "⺾", "一"],
+        radicals: &["口", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "莢",
@@ -20982,7 +20982,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "荼",
-        radicals: &["小", "二", "ハ", "ㅅ", "亅", "⺾", "一"],
+        radicals: &["小", "二", "ハ", "𠆢", "亅", "⺾", "一"],
     },
     Decomposition {
         kanji: "莵",
@@ -21146,7 +21146,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "葹",
-        radicals: &["也", "方", "匕", "⺾", "乞"],
+        radicals: &["也", "方", "匕", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "萵",
@@ -21186,7 +21186,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蓚",
-        radicals: &["⺅", "彡", "攵", "⺾", "乞", "｜"],
+        radicals: &["⺅", "彡", "攵", "⺾", "𠂉", "｜"],
     },
     Decomposition {
         kanji: "蓐",
@@ -21234,7 +21234,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蔟",
-        radicals: &["方", "矢", "⺾", "乞"],
+        radicals: &["方", "矢", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "蔕",
@@ -21246,7 +21246,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蓼",
-        radicals: &["羽", "ㅅ", "冫", "彡", "⺾"],
+        radicals: &["羽", "𠆢", "冫", "彡", "⺾"],
     },
     Decomposition {
         kanji: "蕀",
@@ -21290,7 +21290,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "薈",
-        radicals: &["日", "⺲", "ㅅ", "⺾", "一"],
+        radicals: &["日", "⺲", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "薑",
@@ -21318,11 +21318,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "藪",
-        radicals: &["｜", "一", "口", "女", "攵", "⺾", "乞"],
+        radicals: &["｜", "一", "口", "女", "攵", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "薇",
-        radicals: &["山", "几", "彳", "攵", "⺾", "乞"],
+        radicals: &["山", "几", "彳", "攵", "⺾", "𠂉"],
     },
     Decomposition {
         kanji: "薜",
@@ -21374,7 +21374,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "藜",
-        radicals: &["禾", "水", "ㅅ", "勹", "⺾", "黍"],
+        radicals: &["禾", "水", "𠆢", "勹", "⺾", "黍"],
     },
     Decomposition {
         kanji: "藹",
@@ -21490,7 +21490,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蛉",
-        radicals: &["虫", "ㅅ", "卩", "一"],
+        radicals: &["虫", "𠆢", "卩", "一"],
     },
     Decomposition {
         kanji: "蠣",
@@ -21562,7 +21562,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蜍",
-        radicals: &["小", "虫", "二", "ㅅ", "亅", "一"],
+        radicals: &["小", "虫", "二", "𠆢", "亅", "一"],
     },
     Decomposition {
         kanji: "蛹",
@@ -21634,7 +21634,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蝮",
-        radicals: &["虫", "日", "夂", "乞"],
+        radicals: &["虫", "日", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "蝙",
@@ -21642,11 +21642,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蝓",
-        radicals: &["⺉", "月", "虫", "ㅅ", "一"],
+        radicals: &["⺉", "月", "虫", "𠆢", "一"],
     },
     Decomposition {
         kanji: "蝣",
-        radicals: &["子", "虫", "方", "乞"],
+        radicals: &["子", "虫", "方", "𠂉"],
     },
     Decomposition {
         kanji: "蝪",
@@ -21670,7 +21670,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "螯",
-        radicals: &["虫", "土", "方", "攵", "乞"],
+        radicals: &["虫", "土", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "蟋",
@@ -21694,7 +21694,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "螫",
-        radicals: &["赤", "虫", "土", "攵", "乞"],
+        radicals: &["赤", "虫", "土", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "蟄",
@@ -21830,7 +21830,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "衾",
-        radicals: &["衣", "ㅅ", "亠", "一"],
+        radicals: &["衣", "𠆢", "亠", "一"],
     },
     Decomposition {
         kanji: "袞",
@@ -21858,7 +21858,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "袗",
-        radicals: &["⻂", "ㅅ", "彡"],
+        radicals: &["⻂", "𠆢", "彡"],
     },
     Decomposition {
         kanji: "袒",
@@ -21866,7 +21866,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "袮",
-        radicals: &["ノ", "⻂", "小", "乞"],
+        radicals: &["ノ", "⻂", "小", "𠂉"],
     },
     Decomposition {
         kanji: "袙",
@@ -22022,7 +22022,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "襤",
-        radicals: &["皿", "⻂", "臣", "二", "乞"],
+        radicals: &["皿", "⻂", "臣", "二", "𠂉"],
     },
     Decomposition {
         kanji: "襭",
@@ -22054,7 +22054,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "覈",
-        radicals: &["西", "白", "方", "攵", "乞"],
+        radicals: &["西", "白", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "覊",
@@ -22078,7 +22078,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "覦",
-        radicals: &["⺉", "月", "見", "ㅅ", "一"],
+        radicals: &["⺉", "月", "見", "𠆢", "一"],
     },
     Decomposition {
         kanji: "覬",
@@ -22098,7 +22098,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "覽",
-        radicals: &["見", "臣", "⺲", "乞"],
+        radicals: &["見", "臣", "⺲", "𠂉"],
     },
     Decomposition {
         kanji: "覿",
@@ -22126,7 +22126,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "觴",
-        radicals: &["ノ", "角", "日", "勿", "一", "勹", "乞"],
+        radicals: &["ノ", "角", "日", "勿", "一", "勹", "𠂉"],
     },
     Decomposition {
         kanji: "觸",
@@ -22138,7 +22138,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "訖",
-        radicals: &["乙", "言", "乞"],
+        radicals: &["乙", "言", "𠂉"],
     },
     Decomposition {
         kanji: "訐",
@@ -22214,7 +22214,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "誨",
-        radicals: &["言", "母", "毋", "乞"],
+        radicals: &["言", "母", "毋", "𠂉"],
     },
     Decomposition {
         kanji: "誡",
@@ -22446,15 +22446,15 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "谺",
-        radicals: &["牙", "口", "谷", "ハ", "ㅅ"],
+        radicals: &["牙", "口", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "豁",
-        radicals: &["口", "谷", "土", "ハ", "ㅅ", "亠", "宀", "二"],
+        radicals: &["口", "谷", "土", "ハ", "𠆢", "亠", "宀", "二"],
     },
     Decomposition {
         kanji: "谿",
-        radicals: &["口", "大", "谷", "爪", "丷", "ㅅ", "幺"],
+        radicals: &["口", "大", "谷", "爪", "丷", "𠆢", "幺"],
     },
     Decomposition {
         kanji: "豈",
@@ -22538,7 +22538,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "貪",
-        radicals: &["貝", "目", "ハ", "ㅅ", "一"],
+        radicals: &["貝", "目", "ハ", "𠆢", "一"],
     },
     Decomposition {
         kanji: "貽",
@@ -22598,7 +22598,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "贅",
-        radicals: &["貝", "目", "ハ", "土", "方", "攵", "乞"],
+        radicals: &["貝", "目", "ハ", "土", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "贊",
@@ -22658,7 +22658,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "趁",
-        radicals: &["走", "土", "ㅅ", "彡"],
+        radicals: &["走", "土", "𠆢", "彡"],
     },
     Decomposition {
         kanji: "趙",
@@ -22746,7 +22746,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "踟",
-        radicals: &["口", "足", "矢", "止", "乞"],
+        radicals: &["口", "足", "矢", "止", "𠂉"],
     },
     Decomposition {
         kanji: "蹂",
@@ -22758,7 +22758,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "踰",
-        radicals: &["⺉", "月", "口", "足", "ㅅ", "止", "一"],
+        radicals: &["⺉", "月", "口", "足", "𠆢", "止", "一"],
     },
     Decomposition {
         kanji: "踴",
@@ -22778,7 +22778,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蹌",
-        radicals: &["口", "足", "ㅅ", "尸", "止", "一"],
+        radicals: &["口", "足", "𠆢", "尸", "止", "一"],
     },
     Decomposition {
         kanji: "蹐",
@@ -22922,7 +22922,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "軫",
-        radicals: &["車", "ㅅ", "彡"],
+        radicals: &["車", "𠆢", "彡"],
     },
     Decomposition {
         kanji: "軾",
@@ -22982,7 +22982,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "輹",
-        radicals: &["車", "日", "夂", "乞"],
+        radicals: &["車", "日", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "轅",
@@ -23126,7 +23126,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "逧",
-        radicals: &["口", "⻌", "谷", "ハ", "ㅅ"],
+        radicals: &["口", "⻌", "谷", "ハ", "𠆢"],
     },
     Decomposition {
         kanji: "逶",
@@ -23170,7 +23170,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "逾",
-        radicals: &["⺉", "月", "⻌", "ㅅ", "一"],
+        radicals: &["⺉", "月", "⻌", "𠆢", "一"],
     },
     Decomposition {
         kanji: "遖",
@@ -23186,7 +23186,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "遨",
-        radicals: &["⻌", "土", "方", "攵", "乞"],
+        radicals: &["⻌", "土", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "遯",
@@ -23218,7 +23218,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "邀",
-        radicals: &["⻌", "白", "方", "攵", "乞"],
+        radicals: &["⻌", "白", "方", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "邊",
@@ -23254,7 +23254,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "郤",
-        radicals: &["口", "谷", "ハ", "⻏", "ㅅ"],
+        radicals: &["口", "谷", "ハ", "⻏", "𠆢"],
     },
     Decomposition {
         kanji: "扈",
@@ -23334,7 +23334,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "醫",
-        radicals: &["酉", "矢", "匚", "殳", "几", "又", "乞"],
+        radicals: &["酉", "矢", "匚", "殳", "几", "又", "𠂉"],
     },
     Decomposition {
         kanji: "醯",
@@ -23342,7 +23342,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "醪",
-        radicals: &["羽", "酉", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "酉", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "醵",
@@ -23374,7 +23374,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "釐",
-        radicals: &["｜", "二", "ハ", "木", "里", "厂", "攵", "乞"],
+        radicals: &["｜", "二", "ハ", "木", "里", "厂", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "釖",
@@ -23478,7 +23478,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "銓",
-        radicals: &["王", "金", "ㅅ"],
+        radicals: &["王", "金", "𠆢"],
     },
     Decomposition {
         kanji: "銛",
@@ -23490,7 +23490,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鋏",
-        radicals: &["金", "人", "大", "ㅅ"],
+        radicals: &["金", "人", "大", "𠆢"],
     },
     Decomposition {
         kanji: "銹",
@@ -23542,7 +23542,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "錵",
-        radicals: &["⺅", "金", "ㅅ", "匕", "⺾"],
+        radicals: &["⺅", "金", "𠆢", "匕", "⺾"],
     },
     Decomposition {
         kanji: "錻",
@@ -23562,7 +23562,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鍮",
-        radicals: &["⺉", "金", "月", "ㅅ", "一"],
+        radicals: &["⺉", "金", "月", "𠆢", "一"],
     },
     Decomposition {
         kanji: "鍖",
@@ -23582,7 +23582,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鎔",
-        radicals: &["金", "穴", "口", "谷", "丷", "ㅅ", "宀", "ハ"],
+        radicals: &["金", "穴", "口", "谷", "丷", "𠆢", "宀", "ハ"],
     },
     Decomposition {
         kanji: "鎹",
@@ -23602,7 +23602,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鏥",
-        radicals: &["⺅", "金", "白", "ㅅ", "宀"],
+        radicals: &["⺅", "金", "白", "𠆢", "宀"],
     },
     Decomposition {
         kanji: "鏘",
@@ -23610,7 +23610,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鏃",
-        radicals: &["金", "方", "矢", "乞"],
+        radicals: &["金", "方", "矢", "𠂉"],
     },
     Decomposition {
         kanji: "鏝",
@@ -23618,7 +23618,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鏐",
-        radicals: &["羽", "金", "ㅅ", "冫", "彡"],
+        radicals: &["羽", "金", "𠆢", "冫", "彡"],
     },
     Decomposition {
         kanji: "鏈",
@@ -23638,7 +23638,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鐓",
-        radicals: &["金", "子", "亠", "囗", "攵", "乞"],
+        radicals: &["金", "子", "亠", "囗", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "鐃",
@@ -23678,7 +23678,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鑒",
-        radicals: &["金", "臣", "二", "⺲", "乞"],
+        radicals: &["金", "臣", "二", "⺲", "𠂉"],
     },
     Decomposition {
         kanji: "鑄",
@@ -23710,7 +23710,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鑰",
-        radicals: &["｜", "一", "金", "口", "ㅅ", "冂", "冊", "龠", "廾"],
+        radicals: &["｜", "一", "金", "口", "𠆢", "冂", "冊", "龠", "廾"],
     },
     Decomposition {
         kanji: "鑵",
@@ -23790,7 +23790,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "閼",
-        radicals: &["方", "門", "ㅅ", "冫"],
+        radicals: &["方", "門", "𠆢", "冫"],
     },
     Decomposition {
         kanji: "閻",
@@ -23934,7 +23934,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "險",
-        radicals: &["口", "人", "ㅅ", "⻖", "一"],
+        radicals: &["口", "人", "𠆢", "⻖", "一"],
     },
     Decomposition {
         kanji: "隧",
@@ -23978,7 +23978,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "雉",
-        radicals: &["矢", "隹", "乞"],
+        radicals: &["矢", "隹", "𠂉"],
     },
     Decomposition {
         kanji: "雍",
@@ -24050,7 +24050,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "霰",
-        radicals: &["｜", "一", "雨", "月", "二", "攵", "乞"],
+        radicals: &["｜", "一", "雨", "月", "二", "攵", "𠂉"],
     },
     Decomposition {
         kanji: "霹",
@@ -24170,7 +24170,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鞳",
-        radicals: &["革", "口", "ㅅ", "⺾", "一"],
+        radicals: &["革", "口", "𠆢", "⺾", "一"],
     },
     Decomposition {
         kanji: "鞴",
@@ -24242,7 +24242,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "頷",
-        radicals: &["貝", "目", "ハ", "口", "頁", "ㅅ", "一"],
+        radicals: &["貝", "目", "ハ", "口", "頁", "𠆢", "一"],
     },
     Decomposition {
         kanji: "頽",
@@ -24338,7 +24338,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "餘",
-        radicals: &["干", "食", "二", "ハ", "ㅅ", "亅", "一"],
+        radicals: &["干", "食", "二", "ハ", "𠆢", "亅", "一"],
     },
     Decomposition {
         kanji: "餡",
@@ -24366,7 +24366,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "餮",
-        radicals: &["食", "ㅅ", "彡", "歹"],
+        radicals: &["食", "𠆢", "彡", "歹"],
     },
     Decomposition {
         kanji: "餽",
@@ -24422,7 +24422,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "馥",
-        radicals: &["禾", "香", "日", "夂", "乞"],
+        radicals: &["禾", "香", "日", "夂", "𠂉"],
     },
     Decomposition {
         kanji: "馭",
@@ -24514,7 +24514,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "驂",
-        radicals: &["大", "馬", "厶", "彡", "⺣", "ㅅ"],
+        radicals: &["大", "馬", "厶", "彡", "⺣", "𠆢"],
     },
     Decomposition {
         kanji: "驀",
@@ -24542,7 +24542,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "驗",
-        radicals: &["口", "人", "馬", "ㅅ", "⺣", "一"],
+        radicals: &["口", "人", "馬", "𠆢", "⺣", "一"],
     },
     Decomposition {
         kanji: "驟",
@@ -24826,11 +24826,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鰺",
-        radicals: &["魚", "田", "ㅅ", "厶", "彡", "⺣"],
+        radicals: &["魚", "田", "𠆢", "厶", "彡", "⺣"],
     },
     Decomposition {
         kanji: "鯲",
-        radicals: &["魚", "田", "方", "ㅅ", "冫", "⺣"],
+        radicals: &["魚", "田", "方", "𠆢", "冫", "⺣"],
     },
     Decomposition {
         kanji: "鯱",
@@ -24838,7 +24838,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鯰",
-        radicals: &["魚", "心", "田", "ㅅ", "⺣", "一"],
+        radicals: &["魚", "心", "田", "𠆢", "⺣", "一"],
     },
     Decomposition {
         kanji: "鰕",
@@ -24870,7 +24870,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鰒",
-        radicals: &["魚", "田", "日", "夂", "⺣", "乞"],
+        radicals: &["魚", "田", "日", "夂", "⺣", "𠂉"],
     },
     Decomposition {
         kanji: "鰊",
@@ -24910,7 +24910,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鰲",
-        radicals: &["魚", "田", "土", "方", "攵", "⺣", "亠", "二", "乞"],
+        radicals: &["魚", "田", "土", "方", "攵", "⺣", "亠", "二", "𠂉"],
     },
     Decomposition {
         kanji: "鱆",
@@ -24926,7 +24926,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鱠",
-        radicals: &["魚", "田", "日", "⺲", "ㅅ", "⺣", "一"],
+        radicals: &["魚", "田", "日", "⺲", "𠆢", "⺣", "一"],
     },
     Decomposition {
         kanji: "鱧",
@@ -25002,7 +25002,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鴒",
-        radicals: &["鳥", "ㅅ", "卩", "⺣", "一"],
+        radicals: &["鳥", "𠆢", "卩", "⺣", "一"],
     },
     Decomposition {
         kanji: "鵁",
@@ -25010,7 +25010,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鴿",
-        radicals: &["口", "鳥", "ㅅ", "⺣", "一"],
+        radicals: &["口", "鳥", "𠆢", "⺣", "一"],
     },
     Decomposition {
         kanji: "鴾",
@@ -25082,7 +25082,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鶩",
-        radicals: &["鳥", "矛", "攵", "⺣", "乞"],
+        radicals: &["鳥", "矛", "攵", "⺣", "𠂉"],
     },
     Decomposition {
         kanji: "鶲",
@@ -25170,7 +25170,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鹽",
-        radicals: &["皿", "十", "臣", "囗", "鹵", "乞"],
+        radicals: &["皿", "十", "臣", "囗", "鹵", "𠂉"],
     },
     Decomposition {
         kanji: "麁",
@@ -25246,7 +25246,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "黔",
-        radicals: &["黒", "里", "ㅅ", "⺣", "一"],
+        radicals: &["黒", "里", "𠆢", "⺣", "一"],
     },
     Decomposition {
         kanji: "黜",
@@ -25278,7 +25278,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "黴",
-        radicals: &["黒", "山", "里", "彳", "攵", "⺣", "乞"],
+        radicals: &["黒", "山", "里", "彳", "攵", "⺣", "𠂉"],
     },
     Decomposition {
         kanji: "黶",
@@ -25306,11 +25306,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鼇",
-        radicals: &["土", "方", "攵", "黽", "亠", "二", "乞"],
+        radicals: &["土", "方", "攵", "黽", "亠", "二", "𠂉"],
     },
     Decomposition {
         kanji: "鼈",
-        radicals: &["小", "⺌", "冂", "攵", "黽", "乞"],
+        radicals: &["小", "⺌", "冂", "攵", "黽", "𠂉"],
     },
     Decomposition {
         kanji: "皷",
@@ -25360,7 +25360,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "齡",
-        radicals: &["止", "歯", "人", "ㅅ", "凵", "卩", "米", "一"],
+        radicals: &["止", "歯", "人", "𠆢", "凵", "卩", "米", "一"],
     },
     Decomposition {
         kanji: "齦",
@@ -25392,7 +25392,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "龕",
-        radicals: &["月", "口", "立", "ㅅ", "一"],
+        radicals: &["月", "口", "立", "𠆢", "一"],
     },
     Decomposition {
         kanji: "龜",
@@ -25400,7 +25400,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "龠",
-        radicals: &["一", "口", "ㅅ", "龠", "冊", "廾"],
+        radicals: &["一", "口", "𠆢", "龠", "冊", "廾"],
     },
     Decomposition {
         kanji: "堯",
@@ -25568,11 +25568,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "仐",
-        radicals: &["ㅅ", "十"],
+        radicals: &["𠆢", "十"],
     },
     Decomposition {
         kanji: "仚",
-        radicals: &["ㅅ", "山"],
+        radicals: &["𠆢", "山"],
     },
     Decomposition {
         kanji: "仛",
@@ -25600,7 +25600,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "仱",
-        radicals: &["一", "丶", "⺅", "ㅅ"],
+        radicals: &["一", "丶", "⺅", "𠆢"],
     },
     Decomposition {
         kanji: "仳",
@@ -25660,7 +25660,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "众",
-        radicals: &["人", "ㅅ"],
+        radicals: &["人", "𠆢"],
     },
     Decomposition {
         kanji: "伙",
@@ -25672,7 +25672,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "伱",
-        radicals: &["⺅", "ㅅ", "小"],
+        radicals: &["⺅", "𠆢", "小"],
     },
     Decomposition {
         kanji: "你",
@@ -25740,7 +25740,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "佘",
-        radicals: &["二", "ㅅ", "小", "示"],
+        radicals: &["二", "𠆢", "小", "示"],
     },
     Decomposition {
         kanji: "佟",
@@ -25760,11 +25760,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "佮",
-        radicals: &["一", "⺅", "ㅅ", "口"],
+        radicals: &["一", "⺅", "𠆢", "口"],
     },
     Decomposition {
         kanji: "佱",
-        radicals: &["一", "ㅅ", "止"],
+        radicals: &["一", "𠆢", "止"],
     },
     Decomposition {
         kanji: "佷",
@@ -25780,7 +25780,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "佺",
-        radicals: &["⺅", "ㅅ", "王"],
+        radicals: &["⺅", "𠆢", "王"],
     },
     Decomposition {
         kanji: "佽",
@@ -25816,7 +25816,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "侌",
-        radicals: &["一", "丶", "ㅅ", "厶", "ユ"],
+        radicals: &["一", "丶", "𠆢", "厶", "ユ"],
     },
     Decomposition {
         kanji: "侎",
@@ -25900,7 +25900,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "俆",
-        radicals: &["亅", "二", "⺅", "ㅅ", "ハ", "小", "示"],
+        radicals: &["亅", "二", "⺅", "𠆢", "ハ", "小", "示"],
     },
     Decomposition {
         kanji: "俈",
@@ -26192,11 +26192,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "傖",
-        radicals: &["一", "丶", "⺅", "ㅅ", "口", "尸", "戸", "日"],
+        radicals: &["一", "丶", "⺅", "𠆢", "口", "尸", "戸", "日"],
     },
     Decomposition {
         kanji: "傛",
-        radicals: &["⺅", "ㅅ", "ハ", "口", "宀", "谷"],
+        radicals: &["⺅", "𠆢", "ハ", "口", "宀", "谷"],
     },
     Decomposition {
         kanji: "傜",
@@ -26224,7 +26224,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "傪",
-        radicals: &["⺅", "ㅅ", "厶", "彡"],
+        radicals: &["⺅", "𠆢", "厶", "彡"],
     },
     Decomposition {
         kanji: "傯",
@@ -26240,7 +26240,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "傺",
-        radicals: &["丶", "二", "⺅", "ㅅ", "夕", "小", "示"],
+        radicals: &["丶", "二", "⺅", "𠆢", "夕", "小", "示"],
     },
     Decomposition {
         kanji: "傽",
@@ -26260,7 +26260,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "僇",
-        radicals: &["⺅", "ㅅ", "冫", "彡", "羽"],
+        radicals: &["⺅", "𠆢", "冫", "彡", "羽"],
     },
     Decomposition {
         kanji: "僌",
@@ -26352,7 +26352,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "儈",
-        radicals: &["一", "丶", "ノ", "⺅", "ㅅ", "丷", "口", "日"],
+        radicals: &["一", "丶", "ノ", "⺅", "𠆢", "丷", "口", "日"],
     },
     Decomposition {
         kanji: "儋",
@@ -26548,7 +26548,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "冾",
-        radicals: &["一", "ㅅ", "冫", "口"],
+        radicals: &["一", "𠆢", "冫", "口"],
     },
     Decomposition {
         kanji: "冿",
@@ -26608,7 +26608,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "凳",
-        radicals: &["一", "ㅅ", "丷", "几", "口", "癶", "豆"],
+        radicals: &["一", "𠆢", "丷", "几", "口", "癶", "豆"],
     },
     Decomposition {
         kanji: "凴",
@@ -26652,7 +26652,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "刢",
-        radicals: &["丶", "ㅅ", "⺉", "マ"],
+        radicals: &["丶", "𠆢", "⺉", "マ"],
     },
     Decomposition {
         kanji: "刨",
@@ -26672,7 +26672,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "刼",
-        radicals: &["一", "丶", "ノ", "ㅅ", "刀", "厶"],
+        radicals: &["一", "丶", "ノ", "𠆢", "刀", "厶"],
     },
     Decomposition {
         kanji: "剅",
@@ -26732,7 +26732,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "剹",
-        radicals: &["ㅅ", "冫", "⺉", "彡", "羽"],
+        radicals: &["𠆢", "冫", "⺉", "彡", "羽"],
     },
     Decomposition {
         kanji: "劀",
@@ -26748,7 +26748,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "劊",
-        radicals: &["一", "｜", "丶", "ノ", "ㅅ", "丷", "⺉", "口", "日"],
+        radicals: &["一", "｜", "丶", "ノ", "𠆢", "丷", "⺉", "口", "日"],
     },
     Decomposition {
         kanji: "劌",
@@ -26938,7 +26938,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "匌",
-        radicals: &["一", "ㅅ", "勹", "口"],
+        radicals: &["一", "𠆢", "勹", "口"],
     },
     Decomposition {
         kanji: "匑",
@@ -26990,7 +26990,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "匬",
-        radicals: &["一", "ㅅ", "⺉", "匚", "月"],
+        radicals: &["一", "𠆢", "⺉", "匚", "月"],
     },
     Decomposition {
         kanji: "匭",
@@ -27010,7 +27010,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "匼",
-        radicals: &["一", "ㅅ", "匚", "口"],
+        radicals: &["一", "𠆢", "匚", "口"],
     },
     Decomposition {
         kanji: "匽",
@@ -27160,7 +27160,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "叅",
-        radicals: &["丶", "ノ", "亅", "ㅅ", "厶", "⺣"],
+        radicals: &["丶", "ノ", "亅", "𠆢", "厶", "⺣"],
     },
     Decomposition {
         kanji: "叏",
@@ -27280,7 +27280,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "呤",
-        radicals: &["丶", "ㅅ", "マ", "口"],
+        radicals: &["丶", "𠆢", "マ", "口"],
     },
     Decomposition {
         kanji: "呦",
@@ -27340,7 +27340,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "咑",
-        radicals: &["一", "亅", "口", "心"],
+        radicals: &["一", "亅", "口", "扌"],
     },
     Decomposition {
         kanji: "咕",
@@ -27468,7 +27468,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "唅",
-        radicals: &["一", "丶", "ㅅ", "口"],
+        radicals: &["一", "丶", "𠆢", "口"],
     },
     Decomposition {
         kanji: "唈",
@@ -27500,7 +27500,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "唫",
-        radicals: &["一", "ㅅ", "丷", "十", "口", "土", "干"],
+        radicals: &["一", "𠆢", "丷", "十", "口", "土", "干"],
     },
     Decomposition {
         kanji: "唲",
@@ -27584,7 +27584,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "啦",
-        radicals: &["口", "心", "立"],
+        radicals: &["口", "扌", "立"],
     },
     Decomposition {
         kanji: "啿",
@@ -27664,7 +27664,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嗆",
-        radicals: &["一", "丶", "ノ", "ㅅ", "口", "尸", "日"],
+        radicals: &["一", "丶", "ノ", "𠆢", "口", "尸", "日"],
     },
     Decomposition {
         kanji: "嗉",
@@ -27688,7 +27688,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嗒",
-        radicals: &["一", "ㅅ", "口", "⺾"],
+        radicals: &["一", "𠆢", "口", "⺾"],
     },
     Decomposition {
         kanji: "嗓",
@@ -27724,7 +27724,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嗿",
-        radicals: &["丶", "ㅅ", "ハ", "口", "目", "貝"],
+        radicals: &["丶", "𠆢", "ハ", "口", "目", "貝"],
     },
     Decomposition {
         kanji: "嘅",
@@ -27752,7 +27752,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嘐",
-        radicals: &["ㅅ", "冫", "口", "彡", "羽"],
+        radicals: &["𠆢", "冫", "口", "彡", "羽"],
     },
     Decomposition {
         kanji: "嘑",
@@ -27840,7 +27840,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "噏",
-        radicals: &["一", "ㅅ", "冫", "口", "羽"],
+        radicals: &["一", "𠆢", "冫", "口", "羽"],
     },
     Decomposition {
         kanji: "噔",
@@ -27848,7 +27848,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "噞",
-        radicals: &["一", "人", "ㅅ", "口"],
+        radicals: &["一", "人", "𠆢", "口"],
     },
     Decomposition {
         kanji: "噠",
@@ -27888,7 +27888,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "噲",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "日"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "日"],
     },
     Decomposition {
         kanji: "噵",
@@ -27936,7 +27936,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嚟",
-        radicals: &["ノ", "ㅅ", "勹", "口", "木", "水", "禾"],
+        radicals: &["ノ", "𠆢", "勹", "口", "木", "水", "禾"],
     },
     Decomposition {
         kanji: "嚦",
@@ -28086,7 +28086,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "圇",
-        radicals: &["一", "｜", "亅", "ㅅ", "冂", "囗", "冊", "廾"],
+        radicals: &["一", "｜", "亅", "𠆢", "冂", "囗", "冊", "廾"],
     },
     Decomposition {
         kanji: "圊",
@@ -28174,11 +28174,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "圿",
-        radicals: &["｜", "ノ", "ㅅ", "土"],
+        radicals: &["｜", "ノ", "𠆢", "土"],
     },
     Decomposition {
         kanji: "坅",
-        radicals: &["一", "丶", "ㅅ", "土"],
+        radicals: &["一", "丶", "𠆢", "土"],
     },
     Decomposition {
         kanji: "坆",
@@ -28370,7 +28370,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "埝",
-        radicals: &["丶", "ㅅ", "土", "心"],
+        radicals: &["丶", "𠆢", "土", "心"],
     },
     Decomposition {
         kanji: "埞",
@@ -28514,7 +28514,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "塕",
-        radicals: &["ㅅ", "ハ", "冫", "厶", "土", "羽"],
+        radicals: &["𠆢", "ハ", "冫", "厶", "土", "羽"],
     },
     Decomposition {
         kanji: "塟",
@@ -28594,7 +28594,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "墖",
-        radicals: &["一", "ㅅ", "口", "土", "田"],
+        radicals: &["一", "𠆢", "口", "土", "田"],
     },
     Decomposition {
         kanji: "墝",
@@ -28678,7 +28678,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "壡",
-        radicals: &["一", "ㅅ", "ハ", "冖", "卜", "又", "口", "土", "谷"],
+        radicals: &["一", "𠆢", "ハ", "冖", "卜", "又", "口", "土", "谷"],
     },
     Decomposition {
         kanji: "壢",
@@ -28864,7 +28864,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "妎",
-        radicals: &["｜", "ノ", "ㅅ", "女"],
+        radicals: &["｜", "ノ", "𠆢", "女"],
     },
     Decomposition {
         kanji: "妒",
@@ -28876,7 +28876,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "妗",
-        radicals: &["一", "丶", "ㅅ", "女"],
+        radicals: &["一", "丶", "𠆢", "女"],
     },
     Decomposition {
         kanji: "妟",
@@ -28936,7 +28936,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "姈",
-        radicals: &["一", "｜", "丶", "亅", "ㅅ", "マ", "女"],
+        radicals: &["一", "｜", "丶", "亅", "𠆢", "マ", "女"],
     },
     Decomposition {
         kanji: "姊",
@@ -29016,7 +29016,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "娎",
-        radicals: &["女", "心", "斤"],
+        radicals: &["女", "扌", "斤"],
     },
     Decomposition {
         kanji: "娒",
@@ -29208,7 +29208,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嫆",
-        radicals: &["ㅅ", "ハ", "口", "女", "宀", "谷"],
+        radicals: &["𠆢", "ハ", "口", "女", "宀", "谷"],
     },
     Decomposition {
         kanji: "嫈",
@@ -29236,7 +29236,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嫪",
-        radicals: &["ノ", "ㅅ", "冫", "女", "彡", "羽"],
+        radicals: &["ノ", "𠆢", "冫", "女", "彡", "羽"],
     },
     Decomposition {
         kanji: "嫮",
@@ -29524,7 +29524,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "尬",
-        radicals: &["一", "｜", "ノ", "乙", "ㅅ"],
+        radicals: &["一", "｜", "ノ", "乙", "𠆢"],
     },
     Decomposition {
         kanji: "尮",
@@ -29812,7 +29812,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嵢",
-        radicals: &["丶", "ノ", "ㅅ", "口", "山", "日"],
+        radicals: &["丶", "ノ", "𠆢", "口", "山", "日"],
     },
     Decomposition {
         kanji: "嵤",
@@ -29836,7 +29836,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嵺",
-        radicals: &["ㅅ", "冫", "山", "彡", "羽"],
+        radicals: &["𠆢", "冫", "山", "彡", "羽"],
     },
     Decomposition {
         kanji: "嵾",
@@ -29860,7 +29860,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "嶊",
-        radicals: &["山", "心", "隹"],
+        radicals: &["山", "扌", "隹"],
     },
     Decomposition {
         kanji: "嶒",
@@ -30100,7 +30100,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "庎",
-        radicals: &["｜", "ノ", "ㅅ", "广"],
+        radicals: &["｜", "ノ", "𠆢", "广"],
     },
     Decomposition {
         kanji: "庢",
@@ -30120,7 +30120,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "庪",
-        radicals: &["十", "又", "广", "心", "支"],
+        radicals: &["十", "又", "广", "扌", "支"],
     },
     Decomposition {
         kanji: "庬",
@@ -30176,7 +30176,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "廕",
-        radicals: &["一", "丶", "ㅅ", "厶", "ユ", "广", "⻖"],
+        radicals: &["一", "丶", "𠆢", "厶", "ユ", "广", "⻖"],
     },
     Decomposition {
         kanji: "廜",
@@ -30188,7 +30188,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "廥",
-        radicals: &["一", "｜", "丶", "ノ", "ㅅ", "丷", "口", "广", "日", "曰"],
+        radicals: &["一", "｜", "丶", "ノ", "𠆢", "丷", "口", "广", "日", "曰"],
     },
     Decomposition {
         kanji: "廫",
@@ -30204,7 +30204,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "弇",
-        radicals: &["一", "ㅅ", "口", "廾"],
+        radicals: &["一", "𠆢", "口", "廾"],
     },
     Decomposition {
         kanji: "弈",
@@ -30364,7 +30364,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "彾",
-        radicals: &["一", "｜", "丶", "亅", "ㅅ", "マ", "彳"],
+        radicals: &["一", "｜", "丶", "亅", "𠆢", "マ", "彳"],
     },
     Decomposition {
         kanji: "徉",
@@ -30644,7 +30644,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "悆",
-        radicals: &["二", "ㅅ", "小", "心", "示"],
+        radicals: &["二", "𠆢", "小", "心", "示"],
     },
     Decomposition {
         kanji: "悈",
@@ -30652,7 +30652,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "悊",
-        radicals: &["心", "心", "斤"],
+        radicals: &["扌", "心", "斤"],
     },
     Decomposition {
         kanji: "悎",
@@ -30892,7 +30892,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "愹",
-        radicals: &["ㅅ", "ハ", "口", "宀", "⺖", "谷"],
+        radicals: &["𠆢", "ハ", "口", "宀", "⺖", "谷"],
     },
     Decomposition {
         kanji: "慁",
@@ -30944,7 +30944,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "憀",
-        radicals: &["ㅅ", "冫", "彡", "⺖", "羽"],
+        radicals: &["𠆢", "冫", "彡", "⺖", "羽"],
     },
     Decomposition {
         kanji: "憁",
@@ -31016,7 +31016,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "憸",
-        radicals: &["一", "人", "ㅅ", "口", "⺖"],
+        radicals: &["一", "人", "𠆢", "口", "⺖"],
     },
     Decomposition {
         kanji: "憹",
@@ -31028,7 +31028,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "懀",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "⺖", "日"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "⺖", "日"],
     },
     Decomposition {
         kanji: "懁",
@@ -31140,7 +31140,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "戧",
-        radicals: &["丶", "ノ", "ㅅ", "口", "戈", "日"],
+        radicals: &["丶", "ノ", "𠆢", "口", "戈", "日"],
     },
     Decomposition {
         kanji: "戩",
@@ -31176,131 +31176,131 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "扌",
-        radicals: &["心"],
+        radicals: &["扌"],
     },
     Decomposition {
         kanji: "扐",
-        radicals: &["力", "心"],
+        radicals: &["力", "扌"],
     },
     Decomposition {
         kanji: "扑",
-        radicals: &["卜", "心"],
+        radicals: &["卜", "扌"],
     },
     Decomposition {
         kanji: "扒",
-        radicals: &["ハ", "心"],
+        radicals: &["ハ", "扌"],
     },
     Decomposition {
         kanji: "扔",
-        radicals: &["乃", "心"],
+        radicals: &["乃", "扌"],
     },
     Decomposition {
         kanji: "扖",
-        radicals: &["入", "心"],
+        radicals: &["入", "扌"],
     },
     Decomposition {
         kanji: "扚",
-        radicals: &["一", "丶", "勹", "心"],
+        radicals: &["一", "丶", "勹", "扌"],
     },
     Decomposition {
         kanji: "扜",
-        radicals: &["亅", "二", "心"],
+        radicals: &["亅", "二", "扌"],
     },
     Decomposition {
         kanji: "扤",
-        radicals: &["一", "儿", "心"],
+        radicals: &["一", "儿", "扌"],
     },
     Decomposition {
         kanji: "扭",
-        radicals: &["｜", "ヨ", "心"],
+        radicals: &["｜", "ヨ", "扌"],
     },
     Decomposition {
         kanji: "扯",
-        radicals: &["心", "止"],
+        radicals: &["扌", "止"],
     },
     Decomposition {
         kanji: "扳",
-        radicals: &["ノ", "厂", "又", "心"],
+        radicals: &["ノ", "厂", "又", "扌"],
     },
     Decomposition {
         kanji: "扺",
-        radicals: &["心", "氏"],
+        radicals: &["扌", "氏"],
     },
     Decomposition {
         kanji: "扽",
-        radicals: &["ノ", "乙", "凵", "心", "屯"],
+        radicals: &["ノ", "乙", "凵", "扌", "屯"],
     },
     Decomposition {
         kanji: "抍",
-        radicals: &["ノ", "廾", "心"],
+        radicals: &["ノ", "廾", "扌"],
     },
     Decomposition {
         kanji: "抎",
-        radicals: &["二", "厶", "心"],
+        radicals: &["二", "厶", "扌"],
     },
     Decomposition {
         kanji: "抏",
-        radicals: &["二", "儿", "心", "元"],
+        radicals: &["二", "儿", "扌", "元"],
     },
     Decomposition {
         kanji: "抐",
-        radicals: &["人", "入", "冂", "心"],
+        radicals: &["人", "入", "冂", "扌"],
     },
     Decomposition {
         kanji: "抦",
-        radicals: &["一", "人", "冂", "心"],
+        radicals: &["一", "人", "冂", "扌"],
     },
     Decomposition {
         kanji: "抨",
-        radicals: &["一", "ハ", "丷", "十", "干", "心"],
+        radicals: &["一", "ハ", "丷", "十", "干", "扌"],
     },
     Decomposition {
         kanji: "抳",
-        radicals: &["匕", "尸", "心"],
+        radicals: &["匕", "尸", "扌"],
     },
     Decomposition {
         kanji: "抶",
-        radicals: &["一", "ノ", "大", "心"],
+        radicals: &["一", "ノ", "大", "扌"],
     },
     Decomposition {
         kanji: "抷",
-        radicals: &["一", "｜", "丶", "ノ", "心"],
+        radicals: &["一", "｜", "丶", "ノ", "扌"],
     },
     Decomposition {
         kanji: "抺",
-        radicals: &["一", "心", "木"],
+        radicals: &["一", "扌", "木"],
     },
     Decomposition {
         kanji: "抾",
-        radicals: &["厶", "土", "心"],
+        radicals: &["厶", "土", "扌"],
     },
     Decomposition {
         kanji: "抿",
-        radicals: &["一", "乙", "尸", "心", "氏"],
+        radicals: &["一", "乙", "尸", "扌", "氏"],
     },
     Decomposition {
         kanji: "拄",
-        radicals: &["丶", "亠", "土", "心", "王"],
+        radicals: &["丶", "亠", "土", "扌", "王"],
     },
     Decomposition {
         kanji: "拎",
-        radicals: &["丶", "ㅅ", "マ", "心"],
+        radicals: &["丶", "𠆢", "マ", "扌"],
     },
     Decomposition {
         kanji: "拕",
-        radicals: &["匕", "宀", "心"],
+        radicals: &["匕", "宀", "扌"],
     },
     Decomposition {
         kanji: "拖",
-        radicals: &["一", "｜", "ノ", "乙", "匕", "心", "也"],
+        radicals: &["一", "｜", "ノ", "乙", "匕", "扌", "也"],
     },
     Decomposition {
         kanji: "拚",
-        radicals: &["厶", "廾", "心"],
+        radicals: &["厶", "廾", "扌"],
     },
     Decomposition {
         kanji: "拪",
-        radicals: &["心", "西"],
+        radicals: &["扌", "西"],
     },
     Decomposition {
         kanji: "拲",
@@ -31308,35 +31308,35 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "拴",
-        radicals: &["ㅅ", "心", "王"],
+        radicals: &["𠆢", "扌", "王"],
     },
     Decomposition {
         kanji: "拼",
-        radicals: &["一", "丷", "廾", "心"],
+        radicals: &["一", "丷", "廾", "扌"],
     },
     Decomposition {
         kanji: "拽",
-        radicals: &["ノ", "乙", "心", "日"],
+        radicals: &["ノ", "乙", "扌", "日"],
     },
     Decomposition {
         kanji: "挃",
-        radicals: &["一", "厶", "土", "心", "至"],
+        radicals: &["一", "厶", "土", "扌", "至"],
     },
     Decomposition {
         kanji: "挄",
-        radicals: &["一", "儿", "⺌", "心"],
+        radicals: &["一", "儿", "⺌", "扌"],
     },
     Decomposition {
         kanji: "挊",
-        radicals: &["一", "卜", "心"],
+        radicals: &["一", "卜", "扌"],
     },
     Decomposition {
         kanji: "挋",
-        radicals: &["匚", "心", "臣"],
+        radicals: &["匚", "扌", "臣"],
     },
     Decomposition {
         kanji: "挍",
-        radicals: &["亠", "心", "父"],
+        radicals: &["亠", "扌", "父"],
     },
     Decomposition {
         kanji: "挐",
@@ -31344,159 +31344,159 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "挓",
-        radicals: &["一", "ノ", "乙", "宀", "心"],
+        radicals: &["一", "ノ", "乙", "宀", "扌"],
     },
     Decomposition {
         kanji: "挖",
-        radicals: &["乙", "儿", "ハ", "宀", "心"],
+        radicals: &["乙", "儿", "ハ", "宀", "扌"],
     },
     Decomposition {
         kanji: "挘",
-        radicals: &["ノ", "力", "小", "心"],
+        radicals: &["ノ", "力", "小", "扌"],
     },
     Decomposition {
         kanji: "挩",
-        radicals: &["儿", "ハ", "口", "心"],
+        radicals: &["儿", "ハ", "口", "扌"],
     },
     Decomposition {
         kanji: "挪",
-        radicals: &["一", "刀", "ヨ", "心", "⻏"],
+        radicals: &["一", "刀", "ヨ", "扌", "⻏"],
     },
     Decomposition {
         kanji: "挭",
-        radicals: &["一", "丶", "ノ", "口", "心", "日"],
+        radicals: &["一", "丶", "ノ", "口", "扌", "日"],
     },
     Decomposition {
         kanji: "挵",
-        radicals: &["廾", "心", "王"],
+        radicals: &["廾", "扌", "王"],
     },
     Decomposition {
         kanji: "挶",
-        radicals: &["亅", "口", "尸", "心"],
+        radicals: &["亅", "口", "尸", "扌"],
     },
     Decomposition {
         kanji: "挹",
-        radicals: &["乙", "口", "已", "心", "⻏", "巴"],
+        radicals: &["乙", "口", "已", "扌", "⻏", "巴"],
     },
     Decomposition {
         kanji: "挼",
-        radicals: &["女", "心", "爪"],
+        radicals: &["女", "扌", "爪"],
     },
     Decomposition {
         kanji: "捁",
-        radicals: &["｜", "ノ", "二", "口", "土", "心"],
+        radicals: &["｜", "ノ", "二", "口", "土", "扌"],
     },
     Decomposition {
         kanji: "捂",
-        radicals: &["一", "二", "口", "心", "五"],
+        radicals: &["一", "二", "口", "扌", "五"],
     },
     Decomposition {
         kanji: "捃",
-        radicals: &["ノ", "口", "ヨ", "心"],
+        radicals: &["ノ", "口", "ヨ", "扌"],
     },
     Decomposition {
         kanji: "捄",
-        radicals: &["一", "丶", "心", "水"],
+        radicals: &["一", "丶", "扌", "水"],
     },
     Decomposition {
         kanji: "捆",
-        radicals: &["口", "囗", "心", "木"],
+        radicals: &["口", "囗", "扌", "木"],
     },
     Decomposition {
         kanji: "捊",
-        radicals: &["子", "心", "爪"],
+        radicals: &["子", "扌", "爪"],
     },
     Decomposition {
         kanji: "捋",
-        radicals: &["寸", "心", "爪"],
+        radicals: &["寸", "扌", "爪"],
     },
     Decomposition {
         kanji: "捎",
-        radicals: &["小", "⺌", "心", "月"],
+        radicals: &["小", "⺌", "扌", "月"],
     },
     Decomposition {
         kanji: "捒",
-        radicals: &["口", "心", "木"],
+        radicals: &["口", "扌", "木"],
     },
     Decomposition {
         kanji: "捓",
-        radicals: &["心", "⻏", "牙"],
+        radicals: &["扌", "⻏", "牙"],
     },
     Decomposition {
         kanji: "捔",
-        radicals: &["勹", "心", "用"],
+        radicals: &["勹", "扌", "用"],
     },
     Decomposition {
         kanji: "捘",
-        radicals: &["ハ", "厶", "夂", "心"],
+        radicals: &["ハ", "厶", "夂", "扌"],
     },
     Decomposition {
         kanji: "捛",
-        radicals: &["口", "心"],
+        radicals: &["口", "扌"],
     },
     Decomposition {
         kanji: "捥",
-        radicals: &["卩", "夕", "宀", "心"],
+        radicals: &["卩", "夕", "宀", "扌"],
     },
     Decomposition {
         kanji: "捦",
-        radicals: &["心", "金"],
+        radicals: &["扌", "金"],
     },
     Decomposition {
         kanji: "捬",
-        radicals: &["⺅", "寸", "广", "心"],
+        radicals: &["⺅", "寸", "广", "扌"],
     },
     Decomposition {
         kanji: "捭",
-        radicals: &["一", "ノ", "十", "口", "心", "日"],
+        radicals: &["一", "ノ", "十", "口", "扌", "日"],
     },
     Decomposition {
         kanji: "捱",
-        radicals: &["厂", "土", "心"],
+        radicals: &["厂", "土", "扌"],
     },
     Decomposition {
         kanji: "捴",
-        radicals: &["ハ", "厶", "心", "心"],
+        radicals: &["ハ", "厶", "扌", "心"],
     },
     Decomposition {
         kanji: "捵",
-        radicals: &["｜", "ハ", "心", "日"],
+        radicals: &["｜", "ハ", "扌", "日"],
     },
     Decomposition {
         kanji: "捸",
-        radicals: &["ヨ", "心", "水", "隶"],
+        radicals: &["ヨ", "扌", "水", "隶"],
     },
     Decomposition {
         kanji: "捼",
-        radicals: &["ノ", "女", "心", "木", "禾"],
+        radicals: &["ノ", "女", "扌", "木", "禾"],
     },
     Decomposition {
         kanji: "捽",
-        radicals: &["亠", "人", "十", "心"],
+        radicals: &["亠", "人", "十", "扌"],
     },
     Decomposition {
         kanji: "捿",
-        radicals: &["一", "｜", "女", "ヨ", "心"],
+        radicals: &["一", "｜", "女", "ヨ", "扌"],
     },
     Decomposition {
         kanji: "掂",
-        radicals: &["卜", "口", "广", "心"],
+        radicals: &["卜", "口", "广", "扌"],
     },
     Decomposition {
         kanji: "掄",
-        radicals: &["一", "｜", "亅", "ㅅ", "冂", "心", "冊", "廾"],
+        radicals: &["一", "｜", "亅", "𠆢", "冂", "扌", "冊", "廾"],
     },
     Decomposition {
         kanji: "掇",
-        radicals: &["又", "心"],
+        radicals: &["又", "扌"],
     },
     Decomposition {
         kanji: "掊",
-        radicals: &["口", "心", "立"],
+        radicals: &["口", "扌", "立"],
     },
     Decomposition {
         kanji: "掐",
-        radicals: &["勹", "心", "臼"],
+        radicals: &["勹", "扌", "臼"],
     },
     Decomposition {
         kanji: "掔",
@@ -31504,47 +31504,47 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "掕",
-        radicals: &["ハ", "土", "夂", "心"],
+        radicals: &["ハ", "土", "夂", "扌"],
     },
     Decomposition {
         kanji: "掙",
-        radicals: &["亅", "ヨ", "心", "爪"],
+        radicals: &["亅", "ヨ", "扌", "爪"],
     },
     Decomposition {
         kanji: "掚",
-        radicals: &["一", "｜", "入", "冂", "心"],
+        radicals: &["一", "｜", "入", "冂", "扌"],
     },
     Decomposition {
         kanji: "掞",
-        radicals: &["心", "火"],
+        radicals: &["扌", "火"],
     },
     Decomposition {
         kanji: "掤",
-        radicals: &["心", "月"],
+        radicals: &["扌", "月"],
     },
     Decomposition {
         kanji: "掦",
-        radicals: &["ノ", "勹", "心", "日", "勿"],
+        radicals: &["ノ", "勹", "扌", "日", "勿"],
     },
     Decomposition {
         kanji: "掭",
-        radicals: &["一", "丶", "亅", "大", "心", "⺣"],
+        radicals: &["一", "丶", "亅", "大", "扌", "⺣"],
     },
     Decomposition {
         kanji: "掮",
-        radicals: &["一", "丶", "尸", "心", "戸", "月"],
+        radicals: &["一", "丶", "尸", "扌", "戸", "月"],
     },
     Decomposition {
         kanji: "掯",
-        radicals: &["心", "月", "止"],
+        radicals: &["扌", "月", "止"],
     },
     Decomposition {
         kanji: "掽",
-        radicals: &["｜", "丶", "ノ", "二", "丷", "心"],
+        radicals: &["｜", "丶", "ノ", "二", "丷", "扌"],
     },
     Decomposition {
         kanji: "揁",
-        radicals: &["ハ", "卜", "心", "目", "貝"],
+        radicals: &["ハ", "卜", "扌", "目", "貝"],
     },
     Decomposition {
         kanji: "揅",
@@ -31552,299 +31552,299 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "揈",
-        radicals: &["勹", "心", "言"],
+        radicals: &["勹", "扌", "言"],
     },
     Decomposition {
         kanji: "揎",
-        radicals: &["一", "二", "宀", "心", "日", "曰"],
+        radicals: &["一", "二", "宀", "扌", "日", "曰"],
     },
     Decomposition {
         kanji: "揑",
-        radicals: &["工", "心", "臼"],
+        radicals: &["工", "扌", "臼"],
     },
     Decomposition {
         kanji: "揓",
-        radicals: &["一", "｜", "ノ", "乙", "匕", "心", "也", "方"],
+        radicals: &["一", "｜", "ノ", "乙", "匕", "扌", "也", "方"],
     },
     Decomposition {
         kanji: "揔",
-        radicals: &["丶", "ノ", "勹", "心", "心", "勿"],
+        radicals: &["丶", "ノ", "勹", "扌", "心", "勿"],
     },
     Decomposition {
         kanji: "揕",
-        radicals: &["儿", "ハ", "匚", "心", "甘"],
+        radicals: &["儿", "ハ", "匚", "扌", "甘"],
     },
     Decomposition {
         kanji: "揜",
-        radicals: &["一", "ㅅ", "口", "廾", "心"],
+        radicals: &["一", "𠆢", "口", "廾", "扌"],
     },
     Decomposition {
         kanji: "揠",
-        radicals: &["匚", "女", "心", "日"],
+        radicals: &["匚", "女", "扌", "日"],
     },
     Decomposition {
         kanji: "揥",
-        radicals: &["｜", "亠", "丷", "冂", "冖", "巾", "心", "立"],
+        radicals: &["｜", "亠", "丷", "冂", "冖", "巾", "扌", "立"],
     },
     Decomposition {
         kanji: "揪",
-        radicals: &["ノ", "心", "木", "火", "禾"],
+        radicals: &["ノ", "扌", "木", "火", "禾"],
     },
     Decomposition {
         kanji: "揬",
-        radicals: &["丶", "儿", "ハ", "大", "宀", "心", "犬"],
+        radicals: &["丶", "儿", "ハ", "大", "宀", "扌", "犬"],
     },
     Decomposition {
         kanji: "揲",
-        radicals: &["一", "｜", "心", "木", "世"],
+        radicals: &["一", "｜", "扌", "木", "世"],
     },
     Decomposition {
         kanji: "揳",
-        radicals: &["一", "｜", "二", "刀", "大", "心"],
+        radicals: &["一", "｜", "二", "刀", "大", "扌"],
     },
     Decomposition {
         kanji: "揵",
-        radicals: &["｜", "二", "廴", "ヨ", "心", "聿"],
+        radicals: &["｜", "二", "廴", "ヨ", "扌", "聿"],
     },
     Decomposition {
         kanji: "揸",
-        radicals: &["一", "心", "日", "木", "目"],
+        radicals: &["一", "扌", "日", "木", "目"],
     },
     Decomposition {
         kanji: "揹",
-        radicals: &["一", "｜", "匕", "心", "月"],
+        radicals: &["一", "｜", "匕", "扌", "月"],
     },
     Decomposition {
         kanji: "搉",
-        radicals: &["冖", "心", "隹"],
+        radicals: &["冖", "扌", "隹"],
     },
     Decomposition {
         kanji: "搊",
-        radicals: &["勹", "屮", "心"],
+        radicals: &["勹", "屮", "扌"],
     },
     Decomposition {
         kanji: "搐",
-        radicals: &["亠", "幺", "心", "玄", "田"],
+        radicals: &["亠", "幺", "扌", "玄", "田"],
     },
     Decomposition {
         kanji: "搒",
-        radicals: &["亠", "丷", "冖", "心", "方", "立"],
+        radicals: &["亠", "丷", "冖", "扌", "方", "立"],
     },
     Decomposition {
         kanji: "搔",
-        radicals: &["丶", "又", "心", "虫"],
+        radicals: &["丶", "又", "扌", "虫"],
     },
     Decomposition {
         kanji: "搘",
-        radicals: &["ノ", "匕", "土", "心", "⺹", "日"],
+        radicals: &["ノ", "匕", "土", "扌", "⺹", "日"],
     },
     Decomposition {
         kanji: "搞",
-        radicals: &["亠", "冂", "口", "心", "高"],
+        radicals: &["亠", "冂", "口", "扌", "高"],
     },
     Decomposition {
         kanji: "搠",
-        radicals: &["一", "丷", "屮", "心", "月"],
+        radicals: &["一", "丷", "屮", "扌", "月"],
     },
     Decomposition {
         kanji: "搢",
-        radicals: &["｜", "丶", "ノ", "二", "厶", "心", "日"],
+        radicals: &["｜", "丶", "ノ", "二", "厶", "扌", "日"],
     },
     Decomposition {
         kanji: "搤",
-        radicals: &["一", "丶", "ノ", "ハ", "丷", "心", "皿"],
+        radicals: &["一", "丶", "ノ", "ハ", "丷", "扌", "皿"],
     },
     Decomposition {
         kanji: "搥",
-        radicals: &["｜", "ノ", "⻌", "口", "心"],
+        radicals: &["｜", "ノ", "⻌", "口", "扌"],
     },
     Decomposition {
         kanji: "搩",
-        radicals: &["夕", "心", "木", "舛"],
+        radicals: &["夕", "扌", "木", "舛"],
     },
     Decomposition {
         kanji: "搪",
-        radicals: &["｜", "口", "广", "ヨ", "心"],
+        radicals: &["｜", "口", "广", "ヨ", "扌"],
     },
     Decomposition {
         kanji: "搯",
-        radicals: &["心", "爪", "臼"],
+        radicals: &["扌", "爪", "臼"],
     },
     Decomposition {
         kanji: "搰",
-        radicals: &["冂", "冖", "心", "月", "骨"],
+        radicals: &["冂", "冖", "扌", "月", "骨"],
     },
     Decomposition {
         kanji: "搵",
-        radicals: &["人", "口", "心", "皿"],
+        radicals: &["人", "口", "扌", "皿"],
     },
     Decomposition {
         kanji: "搽",
-        radicals: &["一", "ㅅ", "小", "心", "⺾", "木"],
+        radicals: &["一", "𠆢", "小", "扌", "⺾", "木"],
     },
     Decomposition {
         kanji: "搿",
-        radicals: &["一", "ㅅ", "口", "手"],
+        radicals: &["一", "𠆢", "口", "手"],
     },
     Decomposition {
         kanji: "摋",
-        radicals: &["一", "丶", "ノ", "几", "又", "小", "心", "殳"],
+        radicals: &["一", "丶", "ノ", "几", "又", "小", "扌", "殳"],
     },
     Decomposition {
         kanji: "摏",
-        radicals: &["一", "大", "心", "臼"],
+        radicals: &["一", "大", "扌", "臼"],
     },
     Decomposition {
         kanji: "摑",
-        radicals: &["口", "囗", "心", "戈"],
+        radicals: &["口", "囗", "扌", "戈"],
     },
     Decomposition {
         kanji: "摒",
-        radicals: &["一", "｜", "ノ", "丷", "尸", "廾", "心"],
+        radicals: &["一", "｜", "ノ", "丷", "尸", "廾", "扌"],
     },
     Decomposition {
         kanji: "摓",
-        radicals: &["一", "｜", "二", "⻌", "夂", "心"],
+        radicals: &["一", "｜", "二", "⻌", "夂", "扌"],
     },
     Decomposition {
         kanji: "摔",
-        radicals: &["丶", "ノ", "亠", "冫", "十", "幺", "心", "玄"],
+        radicals: &["丶", "ノ", "亠", "冫", "十", "幺", "扌", "玄"],
     },
     Decomposition {
         kanji: "摚",
-        radicals: &["冖", "口", "土", "⺌", "心"],
+        radicals: &["冖", "口", "土", "⺌", "扌"],
     },
     Decomposition {
         kanji: "摛",
-        radicals: &["丶", "ノ", "亠", "冂", "凵", "厶", "心", "⽱"],
+        radicals: &["丶", "ノ", "亠", "冂", "凵", "厶", "扌", "⽱"],
     },
     Decomposition {
         kanji: "摜",
-        radicals: &["一", "ハ", "心", "田", "目", "貝"],
+        radicals: &["一", "ハ", "扌", "田", "目", "貝"],
     },
     Decomposition {
         kanji: "摝",
-        radicals: &["匕", "广", "心", "比", "鹿"],
+        radicals: &["匕", "广", "扌", "比", "鹿"],
     },
     Decomposition {
         kanji: "摟",
-        radicals: &["一", "｜", "口", "女", "心", "日"],
+        radicals: &["一", "｜", "口", "女", "扌", "日"],
     },
     Decomposition {
         kanji: "摠",
-        radicals: &["ノ", "口", "夂", "心", "心"],
+        radicals: &["ノ", "口", "夂", "扌", "心"],
     },
     Decomposition {
         kanji: "摡",
-        radicals: &["厶", "心", "无", "日"],
+        radicals: &["厶", "扌", "无", "日"],
     },
     Decomposition {
         kanji: "摣",
-        radicals: &["一", "匕", "卜", "厂", "心", "目", "虍"],
+        radicals: &["一", "匕", "卜", "厂", "扌", "目", "虍"],
     },
     Decomposition {
         kanji: "摭",
-        radicals: &["一", "｜", "广", "心", "⺣"],
+        radicals: &["一", "｜", "广", "扌", "⺣"],
     },
     Decomposition {
         kanji: "摳",
-        radicals: &["匚", "口", "心"],
+        radicals: &["匚", "口", "扌"],
     },
     Decomposition {
         kanji: "摴",
-        radicals: &["一", "｜", "二", "冖", "勹", "心", "雨"],
+        radicals: &["一", "｜", "二", "冖", "勹", "扌", "雨"],
     },
     Decomposition {
         kanji: "摻",
-        radicals: &["ㅅ", "厶", "彡", "心"],
+        radicals: &["𠆢", "厶", "彡", "扌"],
     },
     Decomposition {
         kanji: "摽",
-        radicals: &["二", "小", "心", "示", "西"],
+        radicals: &["二", "小", "扌", "示", "西"],
     },
     Decomposition {
         kanji: "撅",
-        radicals: &["一", "人", "丷", "勹", "厂", "屮", "心", "欠"],
+        radicals: &["一", "人", "丷", "勹", "厂", "屮", "扌", "欠"],
     },
     Decomposition {
         kanji: "撇",
-        radicals: &["｜", "丶", "ノ", "ハ", "丷", "冂", "心", "攵"],
+        radicals: &["｜", "丶", "ノ", "ハ", "丷", "冂", "扌", "攵"],
     },
     Decomposition {
         kanji: "撏",
-        radicals: &["口", "寸", "工", "ヨ", "心"],
+        radicals: &["口", "寸", "工", "ヨ", "扌"],
     },
     Decomposition {
         kanji: "撐",
-        radicals: &["冖", "口", "⺌", "心", "牙"],
+        radicals: &["冖", "口", "⺌", "扌", "牙"],
     },
     Decomposition {
         kanji: "撑",
-        radicals: &["冖", "口", "⺌", "心", "手"],
+        radicals: &["冖", "口", "⺌", "扌", "手"],
     },
     Decomposition {
         kanji: "撘",
-        radicals: &["一", "ㅅ", "口", "心", "竹"],
+        radicals: &["一", "𠆢", "口", "扌", "竹"],
     },
     Decomposition {
         kanji: "撙",
-        radicals: &["ハ", "丷", "寸", "心", "酉"],
+        radicals: &["ハ", "丷", "寸", "扌", "酉"],
     },
     Decomposition {
         kanji: "撛",
-        radicals: &["夕", "心", "米", "舛"],
+        radicals: &["夕", "扌", "米", "舛"],
     },
     Decomposition {
         kanji: "撝",
-        radicals: &["一", "亅", "尸", "心", "戸", "⺣", "爪"],
+        radicals: &["一", "亅", "尸", "扌", "戸", "⺣", "爪"],
     },
     Decomposition {
         kanji: "撟",
-        radicals: &["ノ", "冂", "口", "大", "心"],
+        radicals: &["ノ", "冂", "口", "大", "扌"],
     },
     Decomposition {
         kanji: "撡",
-        radicals: &["丶", "亅", "ㅅ", "厶", "心", "⺣"],
+        radicals: &["丶", "亅", "𠆢", "厶", "扌", "⺣"],
     },
     Decomposition {
         kanji: "撣",
-        radicals: &["十", "口", "心", "日", "田"],
+        radicals: &["十", "口", "扌", "日", "田"],
     },
     Decomposition {
         kanji: "撦",
-        radicals: &["ノ", "土", "大", "心", "⺹", "日", "曰"],
+        radicals: &["ノ", "土", "大", "扌", "⺹", "日", "曰"],
     },
     Decomposition {
         kanji: "撨",
-        radicals: &["心", "⺣", "隹"],
+        radicals: &["扌", "⺣", "隹"],
     },
     Decomposition {
         kanji: "撬",
-        radicals: &["ノ", "乙", "二", "心"],
+        radicals: &["ノ", "乙", "二", "扌"],
     },
     Decomposition {
         kanji: "撳",
-        radicals: &["人", "勹", "心", "欠", "金"],
+        radicals: &["人", "勹", "扌", "欠", "金"],
     },
     Decomposition {
         kanji: "撽",
-        radicals: &["心", "攵", "方", "日", "白"],
+        radicals: &["扌", "攵", "方", "日", "白"],
     },
     Decomposition {
         kanji: "撾",
-        radicals: &["冂", "⻌", "口", "囗", "心"],
+        radicals: &["冂", "⻌", "口", "囗", "扌"],
     },
     Decomposition {
         kanji: "撿",
-        radicals: &["一", "人", "ㅅ", "口", "心"],
+        radicals: &["一", "人", "𠆢", "口", "扌"],
     },
     Decomposition {
         kanji: "擄",
-        radicals: &["一", "力", "匕", "卜", "厂", "心", "田", "虍"],
+        radicals: &["一", "力", "匕", "卜", "厂", "扌", "田", "虍"],
     },
     Decomposition {
         kanji: "擉",
-        radicals: &["勹", "心", "⺲", "虫"],
+        radicals: &["勹", "扌", "⺲", "虫"],
     },
     Decomposition {
         kanji: "擊",
@@ -31852,11 +31852,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擋",
-        radicals: &["冖", "口", "⺌", "心", "田"],
+        radicals: &["冖", "口", "⺌", "扌", "田"],
     },
     Decomposition {
         kanji: "擌",
-        radicals: &["人", "大", "心", "竹"],
+        radicals: &["人", "大", "扌", "竹"],
     },
     Decomposition {
         kanji: "擎",
@@ -31864,23 +31864,23 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擐",
-        radicals: &["一", "口", "心", "⺲", "衣"],
+        radicals: &["一", "口", "扌", "⺲", "衣"],
     },
     Decomposition {
         kanji: "擑",
-        radicals: &["口", "心", "戈", "耳"],
+        radicals: &["口", "扌", "戈", "耳"],
     },
     Decomposition {
         kanji: "擕",
-        radicals: &["｜", "亅", "心", "隹"],
+        radicals: &["｜", "亅", "扌", "隹"],
     },
     Decomposition {
         kanji: "擗",
-        radicals: &["十", "口", "尸", "心", "立", "辛"],
+        radicals: &["十", "口", "尸", "扌", "立", "辛"],
     },
     Decomposition {
         kanji: "擤",
-        radicals: &["廾", "心", "田", "目", "自", "鼻"],
+        radicals: &["廾", "扌", "田", "目", "自", "鼻"],
     },
     Decomposition {
         kanji: "擥",
@@ -31888,7 +31888,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擩",
-        radicals: &["冖", "心", "而", "雨"],
+        radicals: &["冖", "扌", "而", "雨"],
     },
     Decomposition {
         kanji: "擪",
@@ -31896,95 +31896,95 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "擭",
-        radicals: &["又", "心", "⺾", "隹"],
+        radicals: &["又", "扌", "⺾", "隹"],
     },
     Decomposition {
         kanji: "擰",
-        radicals: &["一", "亅", "宀", "心", "心", "皿"],
+        radicals: &["一", "亅", "宀", "扌", "心", "皿"],
     },
     Decomposition {
         kanji: "擵",
-        radicals: &["广", "心", "手", "木", "麻"],
+        radicals: &["广", "扌", "手", "木", "麻"],
     },
     Decomposition {
         kanji: "擷",
-        radicals: &["ハ", "口", "士", "心", "目", "貝", "頁"],
+        radicals: &["ハ", "口", "士", "扌", "目", "貝", "頁"],
     },
     Decomposition {
         kanji: "擻",
-        radicals: &["一", "｜", "口", "女", "心", "攵", "日", "田"],
+        radicals: &["一", "｜", "口", "女", "扌", "攵", "日", "田"],
     },
     Decomposition {
         kanji: "擿",
-        radicals: &["亠", "丷", "冂", "十", "⻌", "口", "心", "立", "啇"],
+        radicals: &["亠", "丷", "冂", "十", "⻌", "口", "扌", "立", "啇"],
     },
     Decomposition {
         kanji: "攁",
-        radicals: &["一", "丶", "二", "丷", "大", "心", "艮"],
+        radicals: &["一", "丶", "二", "丷", "大", "扌", "艮"],
     },
     Decomposition {
         kanji: "攄",
-        radicals: &["匕", "卜", "厂", "心", "心", "田", "虍"],
+        radicals: &["匕", "卜", "厂", "扌", "心", "田", "虍"],
     },
     Decomposition {
         kanji: "攈",
-        radicals: &["ノ", "匕", "广", "心", "木", "比", "禾", "鹿"],
+        radicals: &["ノ", "匕", "广", "扌", "木", "比", "禾", "鹿"],
     },
     Decomposition {
         kanji: "攉",
-        radicals: &["一", "｜", "丶", "⺅", "冖", "心", "隹", "雨"],
+        radicals: &["一", "｜", "丶", "⺅", "冖", "扌", "隹", "雨"],
     },
     Decomposition {
         kanji: "攊",
-        radicals: &["ノ", "厂", "心", "木", "止", "禾"],
+        radicals: &["ノ", "厂", "扌", "木", "止", "禾"],
     },
     Decomposition {
         kanji: "攏",
-        radicals: &["一", "｜", "乙", "心", "月", "立", "竜"],
+        radicals: &["一", "｜", "乙", "扌", "月", "立", "竜"],
     },
     Decomposition {
         kanji: "攓",
-        radicals: &["一", "｜", "二", "ハ", "口", "宀", "心", "足"],
+        radicals: &["一", "｜", "二", "ハ", "口", "宀", "扌", "足"],
     },
     Decomposition {
         kanji: "攔",
-        radicals: &["丷", "口", "心", "木", "門"],
+        radicals: &["丷", "口", "扌", "木", "門"],
     },
     Decomposition {
         kanji: "攖",
-        radicals: &["ハ", "女", "心", "目"],
+        radicals: &["ハ", "女", "扌", "目"],
     },
     Decomposition {
         kanji: "攙",
-        radicals: &["一", "｜", "丶", "儿", "勹", "匕", "口", "心", "比", "免"],
+        radicals: &["一", "｜", "丶", "儿", "勹", "匕", "口", "扌", "比", "免"],
     },
     Decomposition {
         kanji: "攛",
-        radicals: &["儿", "ハ", "宀", "心", "臼", "鼠"],
+        radicals: &["儿", "ハ", "宀", "扌", "臼", "鼠"],
     },
     Decomposition {
         kanji: "攞",
-        radicals: &["丶", "小", "幺", "心", "⺲", "糸", "隹"],
+        radicals: &["丶", "小", "幺", "扌", "⺲", "糸", "隹"],
     },
     Decomposition {
         kanji: "攟",
-        radicals: &["ノ", "匕", "口", "广", "心", "木", "比", "禾", "鹿"],
+        radicals: &["ノ", "匕", "口", "广", "扌", "木", "比", "禾", "鹿"],
     },
     Decomposition {
         kanji: "攢",
-        radicals: &["ノ", "儿", "ハ", "土", "心", "目", "貝"],
+        radicals: &["ノ", "儿", "ハ", "土", "扌", "目", "貝"],
     },
     Decomposition {
         kanji: "攦",
-        radicals: &["一", "丶", "冂", "匕", "广", "心", "比", "鹿"],
+        radicals: &["一", "丶", "冂", "匕", "广", "扌", "比", "鹿"],
     },
     Decomposition {
         kanji: "攩",
-        radicals: &["丷", "冖", "口", "⺌", "心", "⺣", "里", "黒"],
+        radicals: &["丷", "冖", "口", "⺌", "扌", "⺣", "里", "黒"],
     },
     Decomposition {
         kanji: "攮",
-        radicals: &["一", "｜", "二", "冖", "十", "口", "心", "衣"],
+        radicals: &["一", "｜", "二", "冖", "十", "口", "扌", "衣"],
     },
     Decomposition {
         kanji: "攱",
@@ -32196,7 +32196,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "昑",
-        radicals: &["丶", "ㅅ", "日"],
+        radicals: &["丶", "𠆢", "日"],
     },
     Decomposition {
         kanji: "昒",
@@ -32228,11 +32228,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "昣",
-        radicals: &["ㅅ", "彡", "日", "曰"],
+        radicals: &["𠆢", "彡", "日", "曰"],
     },
     Decomposition {
         kanji: "昤",
-        radicals: &["一", "｜", "丶", "亅", "ㅅ", "マ", "日"],
+        radicals: &["一", "｜", "丶", "亅", "𠆢", "マ", "日"],
     },
     Decomposition {
         kanji: "昦",
@@ -32308,7 +32308,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "晗",
-        radicals: &["一", "丶", "ㅅ", "口", "日"],
+        radicals: &["一", "丶", "𠆢", "口", "日"],
     },
     Decomposition {
         kanji: "晘",
@@ -32528,11 +32528,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "朇",
-        radicals: &["｜", "ノ", "ㅅ", "丷", "十", "口", "日", "曰", "白"],
+        radicals: &["｜", "ノ", "𠆢", "丷", "十", "口", "日", "曰", "白"],
     },
     Decomposition {
         kanji: "朎",
-        radicals: &["一", "｜", "丶", "亅", "ㅅ", "厶", "月"],
+        radicals: &["一", "｜", "丶", "亅", "𠆢", "厶", "月"],
     },
     Decomposition {
         kanji: "朓",
@@ -32696,7 +32696,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "柃",
-        radicals: &["一", "丶", "亅", "ㅅ", "マ", "木"],
+        radicals: &["一", "丶", "亅", "𠆢", "マ", "木"],
     },
     Decomposition {
         kanji: "柅",
@@ -32884,7 +32884,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "桼",
-        radicals: &["ㅅ", "木", "水"],
+        radicals: &["𠆢", "木", "水"],
     },
     Decomposition {
         kanji: "梂",
@@ -32924,7 +32924,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "梣",
-        radicals: &["一", "丶", "ㅅ", "山", "木"],
+        radicals: &["一", "丶", "𠆢", "山", "木"],
     },
     Decomposition {
         kanji: "梥",
@@ -32988,7 +32988,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "棜",
-        radicals: &["丶", "ㅅ", "方", "木"],
+        radicals: &["丶", "𠆢", "方", "木"],
     },
     Decomposition {
         kanji: "棝",
@@ -33044,7 +33044,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "棽",
-        radicals: &["丶", "ㅅ", "木"],
+        radicals: &["丶", "𠆢", "木"],
     },
     Decomposition {
         kanji: "椆",
@@ -33204,7 +33204,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "榦",
-        radicals: &["ㅅ", "十", "口", "日", "木"],
+        radicals: &["𠆢", "十", "口", "日", "木"],
     },
     Decomposition {
         kanji: "榨",
@@ -33268,7 +33268,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "槮",
-        radicals: &["ㅅ", "厶", "彡", "木"],
+        radicals: &["𠆢", "厶", "彡", "木"],
     },
     Decomposition {
         kanji: "槯",
@@ -33774,7 +33774,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "殮",
-        radicals: &["一", "人", "ㅅ", "口", "歹"],
+        radicals: &["一", "人", "𠆢", "口", "歹"],
     },
     Decomposition {
         kanji: "殰",
@@ -33838,7 +33838,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "毮",
-        radicals: &["ノ", "乙", "二", "小", "心"],
+        radicals: &["ノ", "乙", "二", "小", "扌"],
     },
     Decomposition {
         kanji: "毱",
@@ -33850,11 +33850,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "毹",
-        radicals: &["一", "ノ", "乙", "二", "ㅅ", "⺉", "月"],
+        radicals: &["一", "ノ", "乙", "二", "𠆢", "⺉", "月"],
     },
     Decomposition {
         kanji: "毿",
-        radicals: &["ノ", "乙", "二", "ㅅ", "厶", "彡"],
+        radicals: &["ノ", "乙", "二", "𠆢", "厶", "彡"],
     },
     Decomposition {
         kanji: "氂",
@@ -34058,7 +34058,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "沴",
-        radicals: &["ㅅ", "彡", "⺡"],
+        radicals: &["𠆢", "彡", "⺡"],
     },
     Decomposition {
         kanji: "泂",
@@ -34106,7 +34106,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "泠",
-        radicals: &["｜", "丶", "亅", "ㅅ", "マ", "⺡"],
+        radicals: &["｜", "丶", "亅", "𠆢", "マ", "⺡"],
     },
     Decomposition {
         kanji: "泧",
@@ -34246,7 +34246,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "涂",
-        radicals: &["二", "ㅅ", "小", "⺡", "示"],
+        radicals: &["二", "𠆢", "小", "⺡", "示"],
     },
     Decomposition {
         kanji: "涇",
@@ -34262,7 +34262,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "涔",
-        radicals: &["一", "丶", "ㅅ", "山", "⺡"],
+        radicals: &["一", "丶", "𠆢", "山", "⺡"],
     },
     Decomposition {
         kanji: "涖",
@@ -34362,7 +34362,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "淰",
-        radicals: &["一", "丶", "ㅅ", "⺡", "心"],
+        radicals: &["一", "丶", "𠆢", "⺡", "心"],
     },
     Decomposition {
         kanji: "淴",
@@ -34546,7 +34546,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "滁",
-        radicals: &["一", "ㅅ", "小", "⺡", "⻖"],
+        radicals: &["一", "𠆢", "小", "⺡", "⻖"],
     },
     Decomposition {
         kanji: "滃",
@@ -34666,7 +34666,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "漻",
-        radicals: &["ㅅ", "冫", "彡", "⺡", "羽"],
+        radicals: &["𠆢", "冫", "彡", "⺡", "羽"],
     },
     Decomposition {
         kanji: "漼",
@@ -34706,7 +34706,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "潝",
-        radicals: &["一", "ㅅ", "冫", "口", "⺡", "羽"],
+        radicals: &["一", "𠆢", "冫", "口", "⺡", "羽"],
     },
     Decomposition {
         kanji: "潞",
@@ -34810,7 +34810,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "澮",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "⺡", "日"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "⺡", "日"],
     },
     Decomposition {
         kanji: "澯",
@@ -34818,7 +34818,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "澰",
-        radicals: &["一", "人", "ㅅ", "口", "⺡"],
+        radicals: &["一", "人", "𠆢", "口", "⺡"],
     },
     Decomposition {
         kanji: "澵",
@@ -34930,7 +34930,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瀹",
-        radicals: &["一", "｜", "亅", "ㅅ", "冂", "口", "⺡", "冊", "龠", "廾"],
+        radicals: &["一", "｜", "亅", "𠆢", "冂", "口", "⺡", "冊", "龠", "廾"],
     },
     Decomposition {
         kanji: "瀼",
@@ -35370,7 +35370,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "爚",
-        radicals: &["一", "｜", "亅", "ㅅ", "冂", "口", "火", "冊", "龠", "廾"],
+        radicals: &["一", "｜", "亅", "𠆢", "冂", "口", "火", "冊", "龠", "廾"],
     },
     Decomposition {
         kanji: "爝",
@@ -35426,7 +35426,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "牏",
-        radicals: &["一", "丶", "ノ", "ㅅ", "冂", "⺉", "月", "片"],
+        radicals: &["一", "丶", "ノ", "𠆢", "冂", "⺉", "月", "片"],
     },
     Decomposition {
         kanji: "牐",
@@ -35486,7 +35486,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "牷",
-        radicals: &["ㅅ", "牛", "王"],
+        radicals: &["𠆢", "牛", "王"],
     },
     Decomposition {
         kanji: "牸",
@@ -35590,7 +35590,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "狳",
-        radicals: &["一", "丶", "ノ", "亅", "二", "ㅅ", "小", "⺨"],
+        radicals: &["一", "丶", "ノ", "亅", "二", "𠆢", "小", "⺨"],
     },
     Decomposition {
         kanji: "狴",
@@ -35606,7 +35606,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "狾",
-        radicals: &["心", "⺨", "斤"],
+        radicals: &["扌", "⺨", "斤"],
     },
     Decomposition {
         kanji: "猂",
@@ -35650,7 +35650,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "猞",
-        radicals: &["一", "ㅅ", "十", "口", "干", "⺨"],
+        radicals: &["一", "𠆢", "十", "口", "干", "⺨"],
     },
     Decomposition {
         kanji: "猢",
@@ -35750,7 +35750,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "獫",
-        radicals: &["一", "人", "ㅅ", "口", "⺨"],
+        radicals: &["一", "人", "𠆢", "口", "⺨"],
     },
     Decomposition {
         kanji: "獬",
@@ -35838,7 +35838,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "玠",
-        radicals: &["｜", "ノ", "ㅅ", "王"],
+        radicals: &["｜", "ノ", "𠆢", "王"],
     },
     Decomposition {
         kanji: "玢",
@@ -35854,7 +35854,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "玪",
-        radicals: &["丶", "ㅅ", "王"],
+        radicals: &["丶", "𠆢", "王"],
     },
     Decomposition {
         kanji: "玫",
@@ -35934,7 +35934,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "珡",
-        radicals: &["ㅅ", "王"],
+        radicals: &["𠆢", "王"],
     },
     Decomposition {
         kanji: "珣",
@@ -35986,7 +35986,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "琀",
-        radicals: &["丶", "ㅅ", "口", "王"],
+        radicals: &["丶", "𠆢", "口", "王"],
     },
     Decomposition {
         kanji: "琁",
@@ -36114,7 +36114,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瑢",
-        radicals: &["ㅅ", "ハ", "口", "宀", "王", "谷"],
+        radicals: &["𠆢", "ハ", "口", "宀", "王", "谷"],
     },
     Decomposition {
         kanji: "瑦",
@@ -36146,7 +36146,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瑲",
-        radicals: &["一", "丶", "ㅅ", "口", "尸", "王"],
+        radicals: &["一", "丶", "𠆢", "口", "尸", "王"],
     },
     Decomposition {
         kanji: "璀",
@@ -36162,7 +36162,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "璆",
-        radicals: &["ㅅ", "冫", "彡", "王", "羽"],
+        radicals: &["𠆢", "冫", "彡", "王", "羽"],
     },
     Decomposition {
         kanji: "璇",
@@ -36246,7 +36246,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "璯",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "日", "王"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "日", "王"],
     },
     Decomposition {
         kanji: "璱",
@@ -36270,11 +36270,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "璿",
-        radicals: &["一", "ㅅ", "ハ", "冖", "卜", "王", "目"],
+        radicals: &["一", "𠆢", "ハ", "冖", "卜", "王", "目"],
     },
     Decomposition {
         kanji: "瓈",
-        radicals: &["ノ", "ㅅ", "勹", "木", "水", "王", "禾"],
+        radicals: &["ノ", "𠆢", "勹", "木", "水", "王", "禾"],
     },
     Decomposition {
         kanji: "瓉",
@@ -36336,7 +36336,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瓴",
-        radicals: &["一", "｜", "丶", "乙", "亅", "ㅅ", "マ"],
+        radicals: &["一", "｜", "丶", "乙", "亅", "𠆢", "マ"],
     },
     Decomposition {
         kanji: "瓺",
@@ -36498,7 +36498,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "疁",
-        radicals: &["ㅅ", "冫", "彡", "田", "羽"],
+        radicals: &["𠆢", "冫", "彡", "田", "羽"],
     },
     Decomposition {
         kanji: "疅",
@@ -36626,7 +36626,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瘀",
-        radicals: &["丶", "ㅅ", "方", "⽧"],
+        radicals: &["丶", "𠆢", "方", "⽧"],
     },
     Decomposition {
         kanji: "瘂",
@@ -36710,7 +36710,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瘩",
-        radicals: &["一", "ㅅ", "口", "⺾", "⽧"],
+        radicals: &["一", "𠆢", "口", "⺾", "⽧"],
     },
     Decomposition {
         kanji: "瘭",
@@ -36722,7 +36722,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "瘳",
-        radicals: &["ノ", "ㅅ", "冫", "彡", "⽧", "羽"],
+        radicals: &["ノ", "𠆢", "冫", "彡", "⽧", "羽"],
     },
     Decomposition {
         kanji: "瘵",
@@ -36746,7 +36746,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "癊",
-        radicals: &["一", "丶", "ㅅ", "厶", "ユ", "⻖", "⽧"],
+        radicals: &["一", "丶", "𠆢", "厶", "ユ", "⻖", "⽧"],
     },
     Decomposition {
         kanji: "癀",
@@ -36786,7 +36786,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "癟",
-        radicals: &["一", "｜", "亅", "ㅅ", "冂", "⽧", "目", "冊", "自", "廾"],
+        radicals: &["一", "｜", "亅", "𠆢", "冂", "⽧", "目", "冊", "自", "廾"],
     },
     Decomposition {
         kanji: "癤",
@@ -36934,7 +36934,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "盦",
-        radicals: &["一", "丶", "ㅅ", "皿", "酉"],
+        radicals: &["一", "丶", "𠆢", "皿", "酉"],
     },
     Decomposition {
         kanji: "盨",
@@ -36990,7 +36990,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "眕",
-        radicals: &["ㅅ", "彡", "目"],
+        radicals: &["𠆢", "彡", "目"],
     },
     Decomposition {
         kanji: "眗",
@@ -37054,7 +37054,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "睂",
-        radicals: &["｜", "ㅅ", "厂", "目"],
+        radicals: &["｜", "𠆢", "厂", "目"],
     },
     Decomposition {
         kanji: "睅",
@@ -37310,7 +37310,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "砎",
-        radicals: &["｜", "ノ", "ㅅ", "口", "石"],
+        radicals: &["｜", "ノ", "𠆢", "口", "石"],
     },
     Decomposition {
         kanji: "砑",
@@ -37546,7 +37546,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "磟",
-        radicals: &["ㅅ", "冫", "口", "彡", "石", "羽"],
+        radicals: &["𠆢", "冫", "口", "彡", "石", "羽"],
     },
     Decomposition {
         kanji: "磠",
@@ -37598,7 +37598,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "礆",
-        radicals: &["一", "人", "ㅅ", "口", "石"],
+        radicals: &["一", "人", "𠆢", "口", "石"],
     },
     Decomposition {
         kanji: "礌",
@@ -37670,7 +37670,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "祄",
-        radicals: &["｜", "ノ", "ㅅ", "⺭"],
+        radicals: &["｜", "ノ", "𠆢", "⺭"],
     },
     Decomposition {
         kanji: "祅",
@@ -37722,7 +37722,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "祫",
-        radicals: &["一", "｜", "ノ", "二", "ㅅ", "口", "⺭"],
+        radicals: &["一", "｜", "ノ", "二", "𠆢", "口", "⺭"],
     },
     Decomposition {
         kanji: "祲",
@@ -37811,7 +37811,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "禴",
         radicals: &[
-            "一", "｜", "ノ", "亅", "二", "ㅅ", "冂", "口", "⺭", "冊", "龠", "廾",
+            "一", "｜", "ノ", "亅", "二", "𠆢", "冂", "口", "⺭", "冊", "龠", "廾",
         ],
     },
     Decomposition {
@@ -37872,7 +37872,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "秢",
-        radicals: &["丶", "ノ", "ㅅ", "マ", "木", "禾"],
+        radicals: &["丶", "ノ", "𠆢", "マ", "木", "禾"],
     },
     Decomposition {
         kanji: "秥",
@@ -37924,7 +37924,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "稌",
-        radicals: &["一", "ノ", "ㅅ", "小", "木", "禾"],
+        radicals: &["一", "ノ", "𠆢", "小", "木", "禾"],
     },
     Decomposition {
         kanji: "稑",
@@ -37996,7 +37996,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "穇",
-        radicals: &["ノ", "ㅅ", "厶", "彡", "木", "禾"],
+        radicals: &["ノ", "𠆢", "厶", "彡", "木", "禾"],
     },
     Decomposition {
         kanji: "穈",
@@ -38112,7 +38112,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "窬",
-        radicals: &["一", "丶", "ㅅ", "儿", "ハ", "冂", "⺉", "宀", "月"],
+        radicals: &["一", "丶", "𠆢", "儿", "ハ", "冂", "⺉", "宀", "月"],
     },
     Decomposition {
         kanji: "窳",
@@ -38156,7 +38156,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "竛",
-        radicals: &["丶", "ㅅ", "マ", "立"],
+        radicals: &["丶", "𠆢", "マ", "立"],
     },
     Decomposition {
         kanji: "竨",
@@ -38228,7 +38228,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "笭",
-        radicals: &["一", "｜", "丶", "亅", "ㅅ", "マ", "竹"],
+        radicals: &["一", "｜", "丶", "亅", "𠆢", "マ", "竹"],
     },
     Decomposition {
         kanji: "笮",
@@ -38324,7 +38324,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "箉",
-        radicals: &["力", "口", "心", "竹"],
+        radicals: &["力", "口", "扌", "竹"],
     },
     Decomposition {
         kanji: "箎",
@@ -38440,7 +38440,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篨",
-        radicals: &["二", "ㅅ", "小", "⻖", "竹"],
+        radicals: &["二", "𠆢", "小", "⻖", "竹"],
     },
     Decomposition {
         kanji: "篪",
@@ -38460,7 +38460,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篸",
-        radicals: &["ㅅ", "厶", "彡", "竹"],
+        radicals: &["𠆢", "厶", "彡", "竹"],
     },
     Decomposition {
         kanji: "篹",
@@ -38468,7 +38468,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "篺",
-        radicals: &["ノ", "十", "心", "日", "竹"],
+        radicals: &["ノ", "十", "扌", "日", "竹"],
     },
     Decomposition {
         kanji: "篼",
@@ -38512,7 +38512,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "簎",
-        radicals: &["｜", "二", "心", "日", "竹"],
+        radicals: &["｜", "二", "扌", "日", "竹"],
     },
     Decomposition {
         kanji: "簏",
@@ -38552,7 +38552,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "簳",
-        radicals: &["一", "ㅅ", "十", "干", "日", "竹"],
+        radicals: &["一", "𠆢", "十", "干", "日", "竹"],
     },
     Decomposition {
         kanji: "簴",
@@ -38588,7 +38588,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "籒",
-        radicals: &["一", "｜", "心", "田", "竹"],
+        radicals: &["一", "｜", "扌", "田", "竹"],
     },
     Decomposition {
         kanji: "籓",
@@ -38608,7 +38608,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "籜",
-        radicals: &["一", "丷", "十", "土", "干", "心", "⺲", "竹"],
+        radicals: &["一", "丷", "十", "土", "干", "扌", "⺲", "竹"],
     },
     Decomposition {
         kanji: "籝",
@@ -38620,7 +38620,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "籡",
-        radicals: &["一", "人", "ㅅ", "口", "心", "竹"],
+        radicals: &["一", "人", "𠆢", "口", "扌", "竹"],
     },
     Decomposition {
         kanji: "籣",
@@ -38649,7 +38649,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "籲",
         radicals: &[
-            "一", "｜", "亅", "ㅅ", "ハ", "冂", "口", "目", "冊", "竹", "貝", "頁", "龠", "廾",
+            "一", "｜", "亅", "𠆢", "ハ", "冂", "口", "目", "冊", "竹", "貝", "頁", "龠", "廾",
         ],
     },
     Decomposition {
@@ -38770,7 +38770,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "糝",
-        radicals: &["ㅅ", "厶", "彡", "米"],
+        radicals: &["𠆢", "厶", "彡", "米"],
     },
     Decomposition {
         kanji: "糦",
@@ -38778,7 +38778,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "糩",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "日", "米"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "日", "米"],
     },
     Decomposition {
         kanji: "糫",
@@ -38814,7 +38814,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "紒",
-        radicals: &["｜", "ノ", "ㅅ", "小", "幺", "糸"],
+        radicals: &["｜", "ノ", "𠆢", "小", "幺", "糸"],
     },
     Decomposition {
         kanji: "紓",
@@ -38862,7 +38862,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "紾",
-        radicals: &["ㅅ", "小", "幺", "彡", "糸"],
+        radicals: &["𠆢", "小", "幺", "彡", "糸"],
     },
     Decomposition {
         kanji: "絀",
@@ -38976,7 +38976,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "綌",
-        radicals: &["ㅅ", "ハ", "口", "小", "幺", "糸", "谷"],
+        radicals: &["𠆢", "ハ", "口", "小", "幺", "糸", "谷"],
     },
     Decomposition {
         kanji: "綍",
@@ -39180,7 +39180,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "縿",
-        radicals: &["ㅅ", "厶", "小", "幺", "彡", "糸"],
+        radicals: &["𠆢", "厶", "小", "幺", "彡", "糸"],
     },
     Decomposition {
         kanji: "繄",
@@ -39446,7 +39446,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "羭",
-        radicals: &["一", "ㅅ", "丷", "⺉", "月", "王", "羊"],
+        radicals: &["一", "𠆢", "丷", "⺉", "月", "王", "羊"],
     },
     Decomposition {
         kanji: "羴",
@@ -39474,11 +39474,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "翎",
-        radicals: &["一", "｜", "ノ", "亅", "ㅅ", "冫", "厶", "羽"],
+        radicals: &["一", "｜", "ノ", "亅", "𠆢", "冫", "厶", "羽"],
     },
     Decomposition {
         kanji: "翏",
-        radicals: &["ㅅ", "冫", "彡", "羽"],
+        radicals: &["𠆢", "冫", "彡", "羽"],
     },
     Decomposition {
         kanji: "翛",
@@ -39586,7 +39586,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "耠",
-        radicals: &["一", "ノ", "ㅅ", "口", "木", "耒"],
+        radicals: &["一", "ノ", "𠆢", "口", "木", "耒"],
     },
     Decomposition {
         kanji: "耤",
@@ -39622,7 +39622,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "耹",
-        radicals: &["一", "丶", "ㅅ", "耳"],
+        radicals: &["一", "丶", "𠆢", "耳"],
     },
     Decomposition {
         kanji: "耺",
@@ -39642,7 +39642,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "聄",
-        radicals: &["ㅅ", "彡", "耳"],
+        radicals: &["𠆢", "彡", "耳"],
     },
     Decomposition {
         kanji: "聠",
@@ -39734,7 +39734,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "胗",
-        radicals: &["ㅅ", "彡", "月"],
+        radicals: &["𠆢", "彡", "月"],
     },
     Decomposition {
         kanji: "胘",
@@ -39874,7 +39874,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "腧",
-        radicals: &["一", "ㅅ", "⺉", "月"],
+        radicals: &["一", "𠆢", "⺉", "月"],
     },
     Decomposition {
         kanji: "腨",
@@ -40122,7 +40122,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "艅",
-        radicals: &["一", "｜", "丶", "ㅅ", "冂", "小", "舟"],
+        radicals: &["一", "｜", "丶", "𠆢", "冂", "小", "舟"],
     },
     Decomposition {
         kanji: "艆",
@@ -40268,7 +40268,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "芩",
-        radicals: &["一", "丶", "ㅅ", "⺾"],
+        radicals: &["一", "丶", "𠆢", "⺾"],
     },
     Decomposition {
         kanji: "芪",
@@ -40284,7 +40284,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "芲",
-        radicals: &["ノ", "乙", "ㅅ", "匕", "⺾"],
+        radicals: &["ノ", "乙", "𠆢", "匕", "⺾"],
     },
     Decomposition {
         kanji: "芴",
@@ -40356,7 +40356,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "苶",
-        radicals: &["ㅅ", "小", "⺾"],
+        radicals: &["𠆢", "小", "⺾"],
     },
     Decomposition {
         kanji: "苷",
@@ -40464,7 +40464,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "荃",
-        radicals: &["ㅅ", "⺾", "王"],
+        radicals: &["𠆢", "⺾", "王"],
     },
     Decomposition {
         kanji: "荄",
@@ -40620,7 +40620,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "菝",
-        radicals: &["丶", "ノ", "又", "弋", "心", "⺾"],
+        radicals: &["丶", "ノ", "又", "弋", "扌", "⺾"],
     },
     Decomposition {
         kanji: "荓",
@@ -40640,7 +40640,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "菸",
-        radicals: &["丶", "ㅅ", "⺾", "方"],
+        radicals: &["丶", "𠆢", "⺾", "方"],
     },
     Decomposition {
         kanji: "菹",
@@ -40704,7 +40704,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "葊",
-        radicals: &["一", "ㅅ", "口", "廾", "⺾"],
+        radicals: &["一", "𠆢", "口", "廾", "⺾"],
     },
     Decomposition {
         kanji: "葍",
@@ -40836,7 +40836,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蒱",
-        radicals: &["丶", "十", "心", "⺾", "月"],
+        radicals: &["丶", "十", "扌", "⺾", "月"],
     },
     Decomposition {
         kanji: "蒴",
@@ -40912,7 +40912,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蓷",
-        radicals: &["心", "⺾", "隹"],
+        radicals: &["扌", "⺾", "隹"],
     },
     Decomposition {
         kanji: "蔲",
@@ -41120,7 +41120,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "薋",
-        radicals: &["ㅅ", "ハ", "冖", "冫", "勹", "⺾", "目", "貝"],
+        radicals: &["𠆢", "ハ", "冖", "冫", "勹", "⺾", "目", "貝"],
     },
     Decomposition {
         kanji: "薌",
@@ -41144,7 +41144,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "薟",
-        radicals: &["一", "人", "ㅅ", "口", "⺾"],
+        radicals: &["一", "人", "𠆢", "口", "⺾"],
     },
     Decomposition {
         kanji: "薠",
@@ -41266,7 +41266,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蘀",
-        radicals: &["一", "丷", "十", "土", "干", "心", "⺾", "⺲"],
+        radicals: &["一", "丷", "十", "土", "干", "扌", "⺾", "⺲"],
     },
     Decomposition {
         kanji: "蘄",
@@ -41312,7 +41312,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蘞",
-        radicals: &["一", "人", "ㅅ", "口", "⺾", "攵"],
+        radicals: &["一", "人", "𠆢", "口", "⺾", "攵"],
     },
     Decomposition {
         kanji: "蘡",
@@ -41468,7 +41468,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蚧",
-        radicals: &["｜", "ノ", "ㅅ", "虫"],
+        radicals: &["｜", "ノ", "𠆢", "虫"],
     },
     Decomposition {
         kanji: "蚨",
@@ -41592,7 +41592,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蜇",
-        radicals: &["心", "斤", "虫"],
+        radicals: &["扌", "斤", "虫"],
     },
     Decomposition {
         kanji: "蜋",
@@ -41844,7 +41844,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蟉",
-        radicals: &["ノ", "ㅅ", "冫", "彡", "羽", "虫"],
+        radicals: &["ノ", "𠆢", "冫", "彡", "羽", "虫"],
     },
     Decomposition {
         kanji: "蟊",
@@ -42246,7 +42246,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "褕",
-        radicals: &["一", "ㅅ", "⺉", "月", "⻂"],
+        radicals: &["一", "𠆢", "⺉", "月", "⻂"],
     },
     Decomposition {
         kanji: "褖",
@@ -42318,7 +42318,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "襂",
-        radicals: &["ㅅ", "厶", "彡", "⻂"],
+        radicals: &["𠆢", "厶", "彡", "⻂"],
     },
     Decomposition {
         kanji: "襅",
@@ -42620,7 +42620,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "詅",
-        radicals: &["一", "丶", "亅", "ㅅ", "マ", "言"],
+        radicals: &["一", "丶", "亅", "𠆢", "マ", "言"],
     },
     Decomposition {
         kanji: "詇",
@@ -42668,7 +42668,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "詥",
-        radicals: &["一", "ㅅ", "口", "言"],
+        radicals: &["一", "𠆢", "口", "言"],
     },
     Decomposition {
         kanji: "詧",
@@ -42824,7 +42824,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "諗",
-        radicals: &["一", "丶", "ㅅ", "心", "言"],
+        radicals: &["一", "丶", "𠆢", "心", "言"],
     },
     Decomposition {
         kanji: "諝",
@@ -42960,7 +42960,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "譣",
-        radicals: &["一", "人", "ㅅ", "口", "言"],
+        radicals: &["一", "人", "𠆢", "口", "言"],
     },
     Decomposition {
         kanji: "譭",
@@ -43034,23 +43034,23 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "谸",
-        radicals: &["一", "ノ", "ㅅ", "ハ", "口", "谷"],
+        radicals: &["一", "ノ", "𠆢", "ハ", "口", "谷"],
     },
     Decomposition {
         kanji: "谹",
-        radicals: &["一", "ノ", "ㅅ", "ハ", "厶", "口", "谷"],
+        radicals: &["一", "ノ", "𠆢", "ハ", "厶", "口", "谷"],
     },
     Decomposition {
         kanji: "谽",
-        radicals: &["一", "丶", "ㅅ", "ハ", "口", "谷"],
+        radicals: &["一", "丶", "𠆢", "ハ", "口", "谷"],
     },
     Decomposition {
         kanji: "谾",
-        radicals: &["ㅅ", "ハ", "口", "宀", "工", "谷"],
+        radicals: &["𠆢", "ハ", "口", "宀", "工", "谷"],
     },
     Decomposition {
         kanji: "豅",
-        radicals: &["乙", "ㅅ", "ハ", "口", "月", "立", "谷", "竜"],
+        radicals: &["乙", "𠆢", "ハ", "口", "月", "立", "谷", "竜"],
     },
     Decomposition {
         kanji: "豇",
@@ -43158,7 +43158,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "貐",
-        radicals: &["一", "ㅅ", "⺉", "月", "豸"],
+        radicals: &["一", "𠆢", "⺉", "月", "豸"],
     },
     Decomposition {
         kanji: "貒",
@@ -43214,7 +43214,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "賖",
-        radicals: &["二", "ㅅ", "ハ", "小", "目", "貝"],
+        radicals: &["二", "𠆢", "ハ", "小", "目", "貝"],
     },
     Decomposition {
         kanji: "賕",
@@ -43270,7 +43270,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "賿",
-        radicals: &["ㅅ", "ハ", "冫", "彡", "目", "羽", "貝"],
+        radicals: &["𠆢", "ハ", "冫", "彡", "目", "羽", "貝"],
     },
     Decomposition {
         kanji: "贁",
@@ -43390,7 +43390,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "趻",
-        radicals: &["丶", "ㅅ", "口", "止", "足"],
+        radicals: &["丶", "𠆢", "口", "止", "足"],
     },
     Decomposition {
         kanji: "跀",
@@ -43410,7 +43410,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "跈",
-        radicals: &["ㅅ", "口", "彡", "止", "足"],
+        radicals: &["𠆢", "口", "彡", "止", "足"],
     },
     Decomposition {
         kanji: "跊",
@@ -43450,7 +43450,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "跧",
-        radicals: &["ㅅ", "口", "止", "王", "足"],
+        radicals: &["𠆢", "口", "止", "王", "足"],
     },
     Decomposition {
         kanji: "跬",
@@ -43490,7 +43490,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "踅",
-        radicals: &["口", "心", "斤", "足"],
+        radicals: &["口", "扌", "斤", "足"],
     },
     Decomposition {
         kanji: "踆",
@@ -43646,7 +43646,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "蹹",
-        radicals: &["一", "ㅅ", "冫", "口", "止", "羽", "足"],
+        radicals: &["一", "𠆢", "冫", "口", "止", "羽", "足"],
     },
     Decomposition {
         kanji: "蹺",
@@ -43770,7 +43770,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "軨",
-        radicals: &["一", "｜", "丶", "亅", "ㅅ", "マ", "車"],
+        radicals: &["一", "｜", "丶", "亅", "𠆢", "マ", "車"],
     },
     Decomposition {
         kanji: "軮",
@@ -43810,7 +43810,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "輇",
-        radicals: &["ㅅ", "王", "車"],
+        radicals: &["𠆢", "王", "車"],
     },
     Decomposition {
         kanji: "輈",
@@ -43910,7 +43910,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "轇",
-        radicals: &["ノ", "ㅅ", "冫", "彡", "羽", "車"],
+        radicals: &["ノ", "𠆢", "冫", "彡", "羽", "車"],
     },
     Decomposition {
         kanji: "轏",
@@ -44198,7 +44198,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "邌",
-        radicals: &["ノ", "ㅅ", "勹", "⻌", "木", "水", "禾"],
+        radicals: &["ノ", "𠆢", "勹", "⻌", "木", "水", "禾"],
     },
     Decomposition {
         kanji: "邎",
@@ -44278,7 +44278,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "郃",
-        radicals: &["一", "ㅅ", "口", "⻏"],
+        radicals: &["一", "𠆢", "口", "⻏"],
     },
     Decomposition {
         kanji: "郄",
@@ -44458,7 +44458,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鄶",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "⻏", "日", "曰"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "⻏", "日", "曰"],
     },
     Decomposition {
         kanji: "鄷",
@@ -44498,7 +44498,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "酓",
-        radicals: &["丶", "ㅅ", "酉"],
+        radicals: &["丶", "𠆢", "酉"],
     },
     Decomposition {
         kanji: "酗",
@@ -44534,7 +44534,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "酴",
-        radicals: &["二", "ㅅ", "小", "酉"],
+        radicals: &["二", "𠆢", "小", "酉"],
     },
     Decomposition {
         kanji: "酹",
@@ -44602,7 +44602,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "醦",
-        radicals: &["ㅅ", "厶", "彡", "酉"],
+        radicals: &["𠆢", "厶", "彡", "酉"],
     },
     Decomposition {
         kanji: "醨",
@@ -44638,7 +44638,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "醶",
-        radicals: &["一", "人", "ㅅ", "口", "酉"],
+        radicals: &["一", "人", "𠆢", "口", "酉"],
     },
     Decomposition {
         kanji: "醻",
@@ -44786,7 +44786,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鈐",
-        radicals: &["一", "丶", "ㅅ", "金"],
+        radicals: &["一", "丶", "𠆢", "金"],
     },
     Decomposition {
         kanji: "鈒",
@@ -44954,7 +44954,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鉩",
-        radicals: &["ㅅ", "小", "金"],
+        radicals: &["𠆢", "小", "金"],
     },
     Decomposition {
         kanji: "鉮",
@@ -45002,7 +45002,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鉿",
-        radicals: &["一", "ㅅ", "口", "金"],
+        radicals: &["一", "𠆢", "口", "金"],
     },
     Decomposition {
         kanji: "銈",
@@ -45190,7 +45190,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鋡",
-        radicals: &["丶", "ㅅ", "口", "金"],
+        radicals: &["丶", "𠆢", "口", "金"],
     },
     Decomposition {
         kanji: "鋣",
@@ -45210,7 +45210,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鋬",
-        radicals: &["厂", "又", "心", "金"],
+        radicals: &["厂", "又", "扌", "金"],
     },
     Decomposition {
         kanji: "鋮",
@@ -45234,7 +45234,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "錀",
-        radicals: &["一", "｜", "亅", "ㅅ", "冂", "冊", "金", "廾"],
+        radicals: &["一", "｜", "亅", "𠆢", "冂", "冊", "金", "廾"],
     },
     Decomposition {
         kanji: "錂",
@@ -45262,7 +45262,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "錜",
-        radicals: &["丶", "ㅅ", "心", "金"],
+        radicals: &["丶", "𠆢", "心", "金"],
     },
     Decomposition {
         kanji: "錝",
@@ -45670,7 +45670,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鐱",
-        radicals: &["一", "人", "ㅅ", "口", "金"],
+        radicals: &["一", "人", "𠆢", "口", "金"],
     },
     Decomposition {
         kanji: "鐲",
@@ -45810,7 +45810,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "閝",
-        radicals: &["丶", "ㅅ", "マ", "門"],
+        radicals: &["丶", "𠆢", "マ", "門"],
     },
     Decomposition {
         kanji: "閞",
@@ -45826,7 +45826,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "閦",
-        radicals: &["人", "ㅅ", "門"],
+        radicals: &["人", "𠆢", "門"],
     },
     Decomposition {
         kanji: "閩",
@@ -45910,7 +45910,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "闟",
-        radicals: &["一", "ㅅ", "冫", "口", "羽", "門"],
+        radicals: &["一", "𠆢", "冫", "口", "羽", "門"],
     },
     Decomposition {
         kanji: "闠",
@@ -46042,11 +46042,11 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "隂",
-        radicals: &["一", "｜", "ㅅ", "厶", "⻖"],
+        radicals: &["一", "｜", "𠆢", "厶", "⻖"],
     },
     Decomposition {
         kanji: "隃",
-        radicals: &["一", "丶", "ㅅ", "冂", "⺉", "⻖", "月"],
+        radicals: &["一", "丶", "𠆢", "冂", "⺉", "⻖", "月"],
     },
     Decomposition {
         kanji: "隄",
@@ -46102,7 +46102,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "隳",
-        radicals: &["一", "ノ", "ㅅ", "工", "⻖", "月", "⺣"],
+        radicals: &["一", "ノ", "𠆢", "工", "⻖", "月", "⺣"],
     },
     Decomposition {
         kanji: "隺",
@@ -46420,7 +46420,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "韐",
-        radicals: &["一", "ㅅ", "口", "韋"],
+        radicals: &["一", "𠆢", "口", "韋"],
     },
     Decomposition {
         kanji: "韑",
@@ -46520,7 +46520,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "頜",
-        radicals: &["一", "ㅅ", "ハ", "口", "目", "貝", "頁"],
+        radicals: &["一", "𠆢", "ハ", "口", "目", "貝", "頁"],
     },
     Decomposition {
         kanji: "頞",
@@ -46680,7 +46680,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "飂",
-        radicals: &["ノ", "ㅅ", "冂", "冫", "彡", "羽", "虫", "風"],
+        radicals: &["ノ", "𠆢", "冂", "冫", "彡", "羽", "虫", "風"],
     },
     Decomposition {
         kanji: "飅",
@@ -46696,152 +46696,152 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "飡",
-        radicals: &["一", "丶", "ㅅ", "冫", "艮"],
+        radicals: &["一", "丶", "𠆢", "冫", "艮"],
     },
     Decomposition {
         kanji: "飣",
-        radicals: &["一", "丶", "亅", "ㅅ", "厶", "日"],
+        radicals: &["一", "丶", "亅", "𠆢", "厶", "日"],
     },
     Decomposition {
         kanji: "飥",
-        radicals: &["一", "丶", "ノ", "乙", "ㅅ", "厶", "日"],
+        radicals: &["一", "丶", "ノ", "乙", "𠆢", "厶", "日"],
     },
     Decomposition {
         kanji: "飦",
-        radicals: &["一", "丶", "ㅅ", "十", "厶", "干", "日", "曰"],
+        radicals: &["一", "丶", "𠆢", "十", "厶", "干", "日", "曰"],
     },
     Decomposition {
         kanji: "飧",
-        radicals: &["一", "丶", "ㅅ", "夕", "艮"],
+        radicals: &["一", "丶", "𠆢", "夕", "艮"],
     },
     Decomposition {
         kanji: "飪",
-        radicals: &["一", "丶", "ノ", "ㅅ", "卜", "士", "日"],
+        radicals: &["一", "丶", "ノ", "𠆢", "卜", "士", "日"],
     },
     Decomposition {
         kanji: "飳",
-        radicals: &["一", "丶", "亠", "ㅅ", "厶", "土", "日", "王"],
+        radicals: &["一", "丶", "亠", "𠆢", "厶", "土", "日", "王"],
     },
     Decomposition {
         kanji: "飶",
-        radicals: &["丶", "ノ", "ㅅ", "厶", "心", "日", "曰"],
+        radicals: &["丶", "ノ", "𠆢", "厶", "心", "日", "曰"],
     },
     Decomposition {
         kanji: "餂",
-        radicals: &["一", "丶", "ㅅ", "厶", "口", "日", "舌"],
+        radicals: &["一", "丶", "𠆢", "厶", "口", "日", "舌"],
     },
     Decomposition {
         kanji: "餇",
-        radicals: &["一", "丶", "ㅅ", "冂", "厶", "口", "日", "曰"],
+        radicals: &["一", "丶", "𠆢", "冂", "厶", "口", "日", "曰"],
     },
     Decomposition {
         kanji: "餈",
-        radicals: &["一", "丶", "人", "ㅅ", "冫", "勹", "欠", "艮"],
+        radicals: &["一", "丶", "人", "𠆢", "冫", "勹", "欠", "艮"],
     },
     Decomposition {
         kanji: "餑",
-        radicals: &["一", "丶", "ㅅ", "冖", "十", "厶", "子", "日"],
+        radicals: &["一", "丶", "𠆢", "冖", "十", "厶", "子", "日"],
     },
     Decomposition {
         kanji: "餕",
-        radicals: &["一", "丶", "ㅅ", "儿", "ハ", "厶", "夂", "日"],
+        radicals: &["一", "丶", "𠆢", "儿", "ハ", "厶", "夂", "日"],
     },
     Decomposition {
         kanji: "餖",
-        radicals: &["一", "丶", "ㅅ", "丷", "厶", "口", "日", "豆"],
+        radicals: &["一", "丶", "𠆢", "丷", "厶", "口", "日", "豆"],
     },
     Decomposition {
         kanji: "餗",
-        radicals: &["一", "丶", "ㅅ", "厶", "口", "日", "木"],
+        radicals: &["一", "丶", "𠆢", "厶", "口", "日", "木"],
     },
     Decomposition {
         kanji: "餚",
-        radicals: &["一", "丶", "ノ", "ㅅ", "厶", "日", "月"],
+        radicals: &["一", "丶", "ノ", "𠆢", "厶", "日", "月"],
     },
     Decomposition {
         kanji: "餛",
-        radicals: &["一", "丶", "ㅅ", "匕", "厶", "日", "比"],
+        radicals: &["一", "丶", "𠆢", "匕", "厶", "日", "比"],
     },
     Decomposition {
         kanji: "餜",
-        radicals: &["一", "丶", "ㅅ", "厶", "日", "木", "田"],
+        radicals: &["一", "丶", "𠆢", "厶", "日", "木", "田"],
     },
     Decomposition {
         kanji: "餟",
-        radicals: &["丶", "ㅅ", "厶", "又", "日", "曰"],
+        radicals: &["丶", "𠆢", "厶", "又", "日", "曰"],
     },
     Decomposition {
         kanji: "餢",
-        radicals: &["丶", "ㅅ", "厶", "口", "日", "立"],
+        radicals: &["丶", "𠆢", "厶", "口", "日", "立"],
     },
     Decomposition {
         kanji: "餦",
-        radicals: &["丶", "ㅅ", "厶", "日", "長"],
+        radicals: &["丶", "𠆢", "厶", "日", "長"],
     },
     Decomposition {
         kanji: "餧",
-        radicals: &["一", "丶", "ノ", "ㅅ", "厶", "女", "日", "木", "禾"],
+        radicals: &["一", "丶", "ノ", "𠆢", "厶", "女", "日", "木", "禾"],
     },
     Decomposition {
         kanji: "餫",
-        radicals: &["丶", "ㅅ", "冖", "厶", "日", "車"],
+        radicals: &["丶", "𠆢", "冖", "厶", "日", "車"],
     },
     Decomposition {
         kanji: "餱",
-        radicals: &["一", "丶", "ノ", "⺅", "ㅅ", "厶", "ユ", "大", "日", "矢"],
+        radicals: &["一", "丶", "ノ", "⺅", "𠆢", "厶", "ユ", "大", "日", "矢"],
     },
     Decomposition {
         kanji: "餲",
-        radicals: &["一", "丶", "人", "ㅅ", "勹", "厶", "日"],
+        radicals: &["一", "丶", "人", "𠆢", "勹", "厶", "日"],
     },
     Decomposition {
         kanji: "餳",
-        radicals: &["一", "丶", "ノ", "ㅅ", "勹", "厶", "日", "勿"],
+        radicals: &["一", "丶", "ノ", "𠆢", "勹", "厶", "日", "勿"],
     },
     Decomposition {
         kanji: "餴",
-        radicals: &["丶", "ㅅ", "十", "厶", "大", "廾", "日", "曰"],
+        radicals: &["丶", "𠆢", "十", "厶", "大", "廾", "日", "曰"],
     },
     Decomposition {
         kanji: "餵",
-        radicals: &["一", "丶", "ㅅ", "厶", "日", "田", "衣"],
+        radicals: &["一", "丶", "𠆢", "厶", "日", "田", "衣"],
     },
     Decomposition {
         kanji: "餹",
-        radicals: &["｜", "丶", "ㅅ", "厶", "口", "广", "ヨ", "日", "曰"],
+        radicals: &["｜", "丶", "𠆢", "厶", "口", "广", "ヨ", "日", "曰"],
     },
     Decomposition {
         kanji: "餺",
-        radicals: &["一", "丶", "ㅅ", "十", "厶", "寸", "日", "月"],
+        radicals: &["一", "丶", "𠆢", "十", "厶", "寸", "日", "月"],
     },
     Decomposition {
         kanji: "餻",
-        radicals: &["一", "丶", "ㅅ", "丷", "厶", "日", "⺣", "王"],
+        radicals: &["一", "丶", "𠆢", "丷", "厶", "日", "⺣", "王"],
     },
     Decomposition {
         kanji: "餼",
-        radicals: &["一", "丶", "ㅅ", "厶", "日", "气", "米"],
+        radicals: &["一", "丶", "𠆢", "厶", "日", "气", "米"],
     },
     Decomposition {
         kanji: "饀",
-        radicals: &["一", "丶", "ㅅ", "厶", "日", "爪", "臼"],
+        radicals: &["一", "丶", "𠆢", "厶", "日", "爪", "臼"],
     },
     Decomposition {
         kanji: "饁",
-        radicals: &["一", "丶", "ㅅ", "厶", "土", "日", "皿"],
+        radicals: &["一", "丶", "𠆢", "厶", "土", "日", "皿"],
     },
     Decomposition {
         kanji: "饆",
-        radicals: &["一", "｜", "丶", "ㅅ", "厶", "日", "田"],
+        radicals: &["一", "｜", "丶", "𠆢", "厶", "日", "田"],
     },
     Decomposition {
         kanji: "饇",
-        radicals: &["丶", "ㅅ", "匚", "厶", "口", "日", "曰"],
+        radicals: &["丶", "𠆢", "匚", "厶", "口", "日", "曰"],
     },
     Decomposition {
         kanji: "饈",
         radicals: &[
-            "一", "｜", "丶", "ノ", "ㅅ", "丷", "厶", "ヨ", "日", "王", "羊",
+            "一", "｜", "丶", "ノ", "𠆢", "丷", "厶", "ヨ", "日", "王", "羊",
         ],
     },
     Decomposition {
@@ -46850,41 +46850,41 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "饎",
-        radicals: &["一", "丶", "ㅅ", "丷", "十", "厶", "口", "士", "日", "豆"],
+        radicals: &["一", "丶", "𠆢", "丷", "十", "厶", "口", "士", "日", "豆"],
     },
     Decomposition {
         kanji: "饔",
-        radicals: &["一", "丶", "亠", "ㅅ", "幺", "艮", "隹"],
+        radicals: &["一", "丶", "亠", "𠆢", "幺", "艮", "隹"],
     },
     Decomposition {
         kanji: "饘",
-        radicals: &["一", "丶", "亠", "ㅅ", "厶", "口", "囗", "日"],
+        radicals: &["一", "丶", "亠", "𠆢", "厶", "口", "囗", "日"],
     },
     Decomposition {
         kanji: "饙",
-        radicals: &["丶", "ㅅ", "ハ", "十", "厶", "⺾", "日", "曰", "目", "貝"],
+        radicals: &["丶", "𠆢", "ハ", "十", "厶", "⺾", "日", "曰", "目", "貝"],
     },
     Decomposition {
         kanji: "饛",
-        radicals: &["一", "丶", "ㅅ", "冖", "厶", "⺾", "日", "曰", "豕"],
+        radicals: &["一", "丶", "𠆢", "冖", "厶", "⺾", "日", "曰", "豕"],
     },
     Decomposition {
         kanji: "饜",
-        radicals: &["一", "丶", "ㅅ", "厂", "大", "日", "月", "犬", "艮"],
+        radicals: &["一", "丶", "𠆢", "厂", "大", "日", "月", "犬", "艮"],
     },
     Decomposition {
         kanji: "饞",
         radicals: &[
-            "一", "丶", "乙", "ㅅ", "勹", "匕", "厶", "口", "已", "日", "比", "巴", "色",
+            "一", "丶", "乙", "𠆢", "勹", "匕", "厶", "口", "已", "日", "比", "巴", "色",
         ],
     },
     Decomposition {
         kanji: "饟",
-        radicals: &["一", "｜", "丶", "二", "亠", "ㅅ", "厶", "口", "日", "衣"],
+        radicals: &["一", "｜", "丶", "二", "亠", "𠆢", "厶", "口", "日", "衣"],
     },
     Decomposition {
         kanji: "饠",
-        radicals: &["一", "丶", "ㅅ", "厶", "小", "幺", "日", "⺲", "糸", "隹"],
+        radicals: &["一", "丶", "𠆢", "厶", "小", "幺", "日", "⺲", "糸", "隹"],
     },
     Decomposition {
         kanji: "馛",
@@ -47028,7 +47028,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "騐",
-        radicals: &["一", "丶", "ㅅ", "心", "馬"],
+        radicals: &["一", "丶", "𠆢", "心", "馬"],
     },
     Decomposition {
         kanji: "騑",
@@ -47196,7 +47196,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "髎",
-        radicals: &["ノ", "ㅅ", "冂", "冖", "冫", "彡", "月", "羽", "骨"],
+        radicals: &["ノ", "𠆢", "冂", "冖", "冫", "彡", "月", "羽", "骨"],
     },
     Decomposition {
         kanji: "髐",
@@ -47338,7 +47338,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鬖",
-        radicals: &["ㅅ", "厶", "彡", "長", "髟"],
+        radicals: &["𠆢", "厶", "彡", "長", "髟"],
     },
     Decomposition {
         kanji: "鬙",
@@ -47354,7 +47354,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鬠",
-        radicals: &["一", "｜", "ㅅ", "丷", "口", "彡", "日", "長", "髟"],
+        radicals: &["一", "｜", "𠆢", "丷", "口", "彡", "日", "長", "髟"],
     },
     Decomposition {
         kanji: "鬦",
@@ -47454,7 +47454,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "魪",
-        radicals: &["｜", "ノ", "ㅅ", "⺣", "田", "魚"],
+        radicals: &["｜", "ノ", "𠆢", "⺣", "田", "魚"],
     },
     Decomposition {
         kanji: "魫",
@@ -47494,7 +47494,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "魿",
-        radicals: &["丶", "ㅅ", "マ", "⺣", "田", "魚"],
+        radicals: &["丶", "𠆢", "マ", "⺣", "田", "魚"],
     },
     Decomposition {
         kanji: "鮀",
@@ -47918,7 +47918,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鳹",
-        radicals: &["丶", "ㅅ", "⺣", "鳥"],
+        radicals: &["丶", "𠆢", "⺣", "鳥"],
     },
     Decomposition {
         kanji: "鴋",
@@ -48122,7 +48122,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鶬",
-        radicals: &["一", "丶", "ノ", "ㅅ", "口", "日", "⺣", "鳥"],
+        radicals: &["一", "丶", "ノ", "𠆢", "口", "日", "⺣", "鳥"],
     },
     Decomposition {
         kanji: "鶮",
@@ -48182,7 +48182,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鷚",
-        radicals: &["ノ", "ㅅ", "冫", "彡", "⺣", "羽", "鳥"],
+        radicals: &["ノ", "𠆢", "冫", "彡", "⺣", "羽", "鳥"],
     },
     Decomposition {
         kanji: "鷞",
@@ -48271,7 +48271,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "鸙",
         radicals: &[
-            "一", "｜", "亅", "ㅅ", "冂", "口", "廾", "⺣", "冊", "鳥", "龠",
+            "一", "｜", "亅", "𠆢", "冂", "口", "廾", "⺣", "冊", "鳥", "龠",
         ],
     },
     Decomposition {
@@ -48292,7 +48292,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "鹼",
-        radicals: &["一", "人", "ㅅ", "十", "口", "囗", "鹵"],
+        radicals: &["一", "人", "𠆢", "十", "口", "囗", "鹵"],
     },
     Decomposition {
         kanji: "麀",
@@ -48412,7 +48412,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "黭",
-        radicals: &["一", "ㅅ", "丷", "口", "土", "廾", "⺣", "里", "黒"],
+        radicals: &["一", "𠆢", "丷", "口", "土", "廾", "⺣", "里", "黒"],
     },
     Decomposition {
         kanji: "黮",
@@ -48432,7 +48432,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "黲",
-        radicals: &["ㅅ", "丷", "厶", "口", "土", "彡", "⺣", "里", "黒"],
+        radicals: &["𠆢", "丷", "厶", "口", "土", "彡", "⺣", "里", "黒"],
     },
     Decomposition {
         kanji: "黵",
@@ -48608,7 +48608,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "齘",
-        radicals: &["一", "｜", "ノ", "人", "ㅅ", "凵", "止", "歯"],
+        radicals: &["一", "｜", "ノ", "人", "𠆢", "凵", "止", "歯"],
     },
     Decomposition {
         kanji: "齚",
@@ -48616,7 +48616,7 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     },
     Decomposition {
         kanji: "齝",
-        radicals: &["一", "ㅅ", "凵", "厶", "口", "止", "歯"],
+        radicals: &["一", "𠆢", "凵", "厶", "口", "止", "歯"],
     },
     Decomposition {
         kanji: "齞",
@@ -48703,25 +48703,25 @@ pub const DECOMPOSITIONS: &[Decomposition] = &[
     Decomposition {
         kanji: "龡",
         radicals: &[
-            "一", "｜", "亅", "人", "ㅅ", "冂", "勹", "口", "廾", "欠", "冊", "龠",
+            "一", "｜", "亅", "人", "𠆢", "冂", "勹", "口", "廾", "欠", "冊", "龠",
         ],
     },
     Decomposition {
         kanji: "龢",
         radicals: &[
-            "一", "｜", "ノ", "亅", "ㅅ", "冂", "口", "廾", "木", "禾", "冊", "龠",
+            "一", "｜", "ノ", "亅", "𠆢", "冂", "口", "廾", "木", "禾", "冊", "龠",
         ],
     },
     Decomposition {
         kanji: "龣",
         radicals: &[
-            "一", "｜", "亅", "ㅅ", "冂", "口", "廾", "ヨ", "水", "冊", "龠",
+            "一", "｜", "亅", "𠆢", "冂", "口", "廾", "ヨ", "水", "冊", "龠",
         ],
     },
     Decomposition {
         kanji: "龥",
         radicals: &[
-            "一", "｜", "亅", "ㅅ", "ハ", "冂", "口", "廾", "目", "冊", "貝", "頁", "龠",
+            "一", "｜", "亅", "𠆢", "ハ", "冂", "口", "廾", "目", "冊", "貝", "頁", "龠",
         ],
     },
 ];
