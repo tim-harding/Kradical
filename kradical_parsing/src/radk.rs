@@ -1,6 +1,6 @@
 //! Parser for `radkfile` and `radkfile2`.
 
-use crate::shared::{comments, decode_jis};
+use crate::shared::{comments, decode_jis_radical};
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
 use jis::jis212_to_utf8;
 use nom::{
@@ -190,7 +190,7 @@ fn ident_line_token(b: &[u8]) -> IResult<&[u8], ()> {
 }
 
 fn radical(b: &[u8]) -> IResult<&[u8], String> {
-    terminated(map_res(take(2u8), decode_jis), space0)(b)
+    terminated(map_res(take(2u8), decode_jis_radical), space0)(b)
 }
 
 fn strokes(b: &[u8]) -> IResult<&[u8], u8> {

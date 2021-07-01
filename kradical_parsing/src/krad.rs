@@ -1,6 +1,6 @@
 //! Parser for `kradfile` and `kradfile2`.
 
-use crate::shared::{comments, decode_jis};
+use crate::shared::{comments, decode_jis_kanji, decode_jis_radical};
 use nom::{
     bytes::{
         complete::{tag, take_until},
@@ -90,7 +90,7 @@ fn kanji_line(b: &[u8]) -> IResult<&[u8], Decomposition> {
 }
 
 fn kanji(b: &[u8]) -> IResult<&[u8], String> {
-    map_res(take_until(" "), decode_jis)(b)
+    map_res(take_until(" "), decode_jis_kanji)(b)
 }
 
 fn radicals(b: &[u8]) -> IResult<&[u8], Vec<String>> {
@@ -98,5 +98,5 @@ fn radicals(b: &[u8]) -> IResult<&[u8], Vec<String>> {
 }
 
 fn radical(b: &[u8]) -> IResult<&[u8], String> {
-    map_res(is_not(" \n"), decode_jis)(b)
+    map_res(is_not(" \n"), decode_jis_radical)(b)
 }

@@ -198,12 +198,27 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
     }
 }
 
-pub fn decode_jis(b: &[u8]) -> Result<String, SharedError> {
+pub fn decode_jis_radical(b: &[u8]) -> Result<String, SharedError> {
     match b.len() {
         2 => {
             let code = bytes_to_u32(b);
             remap_radical(code)
                 .or_else(|| jis213_to_utf8(code))
+                .map(|unicode| unicode.to_string())
+                .ok_or(SharedError::Jis)
+        }
+        3 => EUCJPEncoding
+            .decode(b, DecoderTrap::Strict)
+            .map_err(|_| SharedError::EucJp),
+        _ => Err(SharedError::Unknown),
+    }
+}
+
+pub fn decode_jis_kanji(b: &[u8]) -> Result<String, SharedError> {
+    match b.len() {
+        2 => {
+            let code = bytes_to_u32(b);
+            jis213_to_utf8(code)
                 .map(|unicode| unicode.to_string())
                 .ok_or(SharedError::Jis)
         }
