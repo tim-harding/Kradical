@@ -54,12 +54,12 @@ fn comment(b: &[u8]) -> IResult<&[u8], ()> {
 //
 // Kept the top part
 // https://www.wanikani.com/radicals/hat
-// Possible alternatives: ^ へ ヘ ㅅ
+// Possible alternatives: ^ へ ヘ ㅅ 𠆢
 // 个 -> http://nihongo.monash.edu/gif212/js02.png
 //
 // Kept the top part
 // https://www.wanikani.com/radicals/gun
-// Possible alternative: ⟝
+// Possible alternatives: ⟝ 𠂉
 // 乞 -> http://nihongo.monash.edu/gif212/js10.png
 //
 // Kept the horns
@@ -107,11 +107,9 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
         // Ignoring this one because it makes zero sense.
         // Maybe the authors had a typo.
         // 0xD0A4 => Some("\u{2F09}"),
-        // Below is my attempt at an alternative.
-        // Semantically this is a Hangul letter
-        // but it's the closest visual match I could find.
-        // 个 -> ㅅ
-        0xD0A4 => Some("\u{3145}"),
+        // This is the replacement used by Jisho.
+        // 个 -> 𠆢
+        0xD0A4 => Some("\u{201A2}"),
 
         // # D6 F5  none available - upside-down A5 CF
         // D6F5 -> 并
@@ -139,13 +137,12 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
         // 忙 -> ⺖
         0xCBBB => Some("\u{2E96}"),
 
-        // I guess the JIS X 0208 set didn't have
-        // anything even close.
+        // The suggested replacement is not correct.
         // 扎 -> ⺗
         // 0xD9A9 => Some("\u{2E97}"),
-        // Unless they actually meant 心?
-        // That's what appears on the WWWJDIC server.
-        0xD9A9 => Some("\u{5FC3}"),
+        // This is what appears on the WWWJDIC server
+        // 扎 -> 扌
+        0xD9A9 => Some("\u{624C}"),
 
         // 汁 -> ⺡
         0xBDC1 => Some("\u{2EA1}"),
@@ -189,6 +186,12 @@ pub fn remap_radical(code: u32) -> Option<&'static str> {
 
         // 滴 -> 啇
         0xC5A9 => Some("\u{5547}"),
+
+        // Adding another of my own not from the
+        // kradfile suggestions. This is the replacement
+        // used by Jisho.
+        // 乞 -> 𠂉
+        0xB8F0 => Some("\u{20089}"),
 
         _ => None,
     }
