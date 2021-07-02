@@ -1,0 +1,9 @@
+[package]
+name = "kradical_jis"
+version = "0.1.0"
+edition = "2018"
+license = "Unicode-TOU"
+description = "Conversions to Unicode from JIS X 0212 and JIS X 0213"
+repository = "https://github.com/tim-harding/Kradical"
+keywords = ["japanese"]
+categories = ["encoding"]

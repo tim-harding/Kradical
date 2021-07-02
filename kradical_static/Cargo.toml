@@ -2,3 +2,8 @@
 name = "kradical_static"
 version = "0.1.0"
 edition = "2018"
+license = "CC-BY-NC-SA-3.0"
+description = "Ready-to-use EDRDG radical decompositions"
+repository = "https://github.com/tim-harding/Kradical"
+keywords = ["japanese", "kanji", "radical"]
+categories = ["text-processing"]

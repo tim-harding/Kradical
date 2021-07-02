@@ -8,7 +8,7 @@ import re
 
 pattern = re.compile(r"<U([\dA-F]{4})> \\x([\dA-F]{2})\\x([\dA-F]{2})")
 with open("./assets/jis/jisx-212.ucm", "r") as input:
-    with open("./jis/src/jis212.rs", "w") as output:
+    with open("./kradical_jis/src/jis212.rs", "w") as output:
         output.write("pub fn jis212_to_utf8(code: u16) -> Option<char> {\n")
         output.write("\tmatch code {\n")
 

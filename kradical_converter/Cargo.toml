@@ -2,7 +2,11 @@
 name = "kradical_converter"
 version = "0.1.0"
 edition = "2018"
-categories = ["command-line-utilities"]
+license = "GPL-3.0-or-later"
+description = "Converter for EDRDG radical decomposition files"
+repository = "https://github.com/tim-harding/Kradical"
+keywords = ["japanese", "kanji", "radical"]
+categories = ["command-line-utilities", "encoding", "parsing"]
 
 [dependencies]
 clap = "3.0.0-beta.2"

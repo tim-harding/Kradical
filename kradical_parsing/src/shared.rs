@@ -1,5 +1,5 @@
 use encoding::{codec::japanese::EUCJPEncoding, DecoderTrap, Encoding};
-use jis::jis213_to_utf8;
+use kradical_jis::jis213_to_utf8;
 use nom::{
     bytes::complete::take_until,
     character::complete::{char, multispace0},
