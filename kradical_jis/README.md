@@ -1,6 +1,7 @@
 # JIS
 
-Lookup tables for converting JIS X 0212 and JIS X 0213 characters into UTF-8. These files are generated using the Python scripts in `assets/jis`.
+Lookup tables for converting JIS X 0212 and JIS X 0213 characters into UTF-8. These files are generated using the Python scripts in the repository under `assets/jis`.
+
 
 ## License
 
