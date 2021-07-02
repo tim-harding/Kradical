@@ -10,5 +10,5 @@ categories = ["command-line-utilities", "encoding", "parsing"]
 
 [dependencies]
 clap = "3.0.0-beta.2"
-kradical_parsing = { path = "../kradical_parsing" }
 thiserror = "1"
+kradical_parsing = "0.1.0"
