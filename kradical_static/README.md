@@ -1,5 +1,8 @@
 # kradical_static
 
+[![LICENSE](https://img.shields.io/crates/l/kradical_static)](https://crates.io/crates/kradical_converter)
+[![Crates.io Version](https://img.shields.io/crates/v/kradical_static)](https://crates.io/crates/kradical_converter)
+
 An adaptation of the radical decompositions provided by the [Electronic Dictionary Research and Development Group](https://www.edrdg.org/) (EDRDG). The full contents of the `kradfile`s and `radkfile`s is included, with the JIS X 0212 and JIS X 0213 encodings converted to UTF-8 and all recommended radical replacements applied.
 
 
