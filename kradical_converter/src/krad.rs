@@ -14,7 +14,33 @@ fn formatter(format: OutputFormat) -> fn(&[Decomposition]) -> String {
     match format {
         OutputFormat::Unicode => to_unicode,
         OutputFormat::Rust => to_rust,
+        OutputFormat::Json => to_json,
     }
+}
+
+fn to_json(decompositions: &[Decomposition]) -> String {
+    let mut lines = vec![];
+    lines.push("[".to_owned());
+    for (i, decomposition) in decompositions.iter().enumerate() {
+        lines.push("\t{".to_owned());
+        lines.push(format!("\t\t\"kanji\": \"{}\",", decomposition.kanji));
+        lines.push("\t\t\"radicals\": [".to_owned());
+        for (i, radical) in decomposition.radicals.iter().enumerate() {
+            if i == decomposition.radicals.len() - 1 {
+                lines.push(format!("\t\t\t\"{}\"", radical));
+            } else {
+                lines.push(format!("\t\t\t\"{}\",", radical));
+            }
+        }
+        lines.push("\t\t]".to_owned());
+        if i == decompositions.len() - 1 {
+            lines.push("\t}".to_owned());
+        } else {
+            lines.push("\t},".to_owned());
+        }
+    }
+    lines.push("]".to_owned());
+    lines.join("\n")
 }
 
 fn to_unicode(decompositions: &[Decomposition]) -> String {

@@ -17,7 +17,33 @@ fn formatter(format: OutputFormat) -> fn(&[Membership]) -> String {
     match format {
         OutputFormat::Unicode => to_unicode,
         OutputFormat::Rust => to_rust,
+        OutputFormat::Json => to_json,
     }
+}
+
+fn to_json(expansions: &[Membership]) -> String {
+    let mut lines = vec!["[".to_owned()];
+    for (i, expansion) in expansions.iter().enumerate() {
+        lines.push("\t{".to_owned());
+        lines.push(format!("\t\t\"radical\": \"{}\",", expansion.radical.glyph));
+        lines.push(format!("\t\t\"stroke\": {},", expansion.radical.strokes));
+        lines.push("\t\t\"kanji\": [".to_owned());
+        for (i, kanji) in expansion.kanji.iter().enumerate() {
+            if i == expansion.kanji.len() - 1 {
+                lines.push(format!("\t\t\t\"{}\"", kanji));
+            } else {
+                lines.push(format!("\t\t\t\"{}\",", kanji));
+            }
+        }
+        lines.push("\t\t]".to_owned());
+        if i == expansions.len() - 1 {
+            lines.push("\t}".to_owned());
+        } else {
+            lines.push("\t},".to_owned());
+        }
+    }
+    lines.push("]".to_owned());
+    lines.join("\n")
 }
 
 fn to_unicode(expansions: &[Membership]) -> String {

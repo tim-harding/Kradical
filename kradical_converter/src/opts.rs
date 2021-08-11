@@ -26,4 +26,5 @@ pub enum InputFormat {
 pub enum OutputFormat {
     Unicode,
     Rust,
+    Json,
 }
