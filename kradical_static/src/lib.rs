@@ -10,19 +10,19 @@ pub use memberships::*;
 /// The constituent radicals for a kanji
 pub struct Decomposition {
     /// The kanji
-    pub kanji: &'static str,
+    pub kanji: char,
 
     /// The radicals contained in the kanji
-    pub radicals: &'static [&'static str],
+    pub radicals: &'static [char],
 }
 
 /// The kanji that contain a radical
 pub struct Membership {
     /// The radical
-    pub radical: &'static str,
+    pub radical: char,
 
     /// The kanjis that contain the radical
-    pub kanji: &'static [&'static str],
+    pub kanji: &'static [char],
 
     /// The number of strokes to draw the radical
     pub strokes: u8,

@@ -63,10 +63,10 @@ fn to_rust(decompositions: &[Decomposition]) -> String {
     ];
     for decomposition in decompositions {
         lines.push("\t Decomposition {".to_string());
-        lines.push(format!("\t\tkanji: \"{}\",", decomposition.kanji));
+        lines.push(format!("\t\tkanji: \'{}\',", decomposition.kanji));
         lines.push("\t\tradicals: &[".to_string());
         for radical in decomposition.radicals.iter() {
-            lines.push(format!("\t\t\t\"{}\",", radical));
+            lines.push(format!("\t\t\t\'{}\',", radical));
         }
         lines.push("\t\t],".to_string());
         lines.push("\t},".to_string());

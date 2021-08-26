@@ -68,11 +68,11 @@ fn to_rust(expansions: &[Membership]) -> String {
     for expansion in expansions {
         lines.push("\tMembership {".to_string());
         let radical = &expansion.radical;
-        lines.push(format!("\t\tradical: \"{}\",", radical.glyph));
+        lines.push(format!("\t\tradical: \'{}\',", radical.glyph));
         lines.push(format!("\t\tstrokes: {},", radical.strokes));
         lines.push("\t\tkanji: &[".to_string());
         for glyph in &expansion.kanji {
-            lines.push(format!("\t\t\t\"{}\",", glyph));
+            lines.push(format!("\t\t\t\'{}\',", glyph));
         }
         lines.push("\t\t],".to_string());
         lines.push("\t},".to_string());
