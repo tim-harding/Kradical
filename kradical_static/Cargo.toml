@@ -1,6 +1,6 @@
 [package]
 name = "kradical_static"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2018"
 license = "CC-BY-NC-SA-3.0"
 description = "Ready-to-use EDRDG radical decompositions"
