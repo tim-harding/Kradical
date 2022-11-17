@@ -11,6 +11,6 @@ categories = ["parsing"]
 [dependencies]
 thiserror = "1"
 nom = "6"
-encoding = "0"
+encoding = "0.2"
 unicode-segmentation = "1"
 kradical_jis = "0.1.0"
