@@ -3,9 +3,10 @@
 [![LICENSE](https://img.shields.io/crates/l/kradical_converter)](https://crates.io/crates/kradical_converter)
 [![Crates.io Version](https://img.shields.io/crates/v/kradical_converter)](https://crates.io/crates/kradical_converter)
 
-A binary for converting the original JIS-encoded files to other formats. It is also able to combine multiple of these files. Below is an example invocation. For more information, use `cargo run -- --help`. 
+A binary for converting the original JIS-encoded files to other formats. It is also able to combine multiple of these files. Below is an example invocation. For more information, use `cargo run -- --help`.
 
-`kradical_converter radk unicode --inputs .\assets\edrdg_files\radkfile .\assets\edrdg_files\radkfile2 --output .\assets\outputs\radk_utf8.txt`
+Below command assumes Windows. Use `/` on Linux / WSL:
+`kradical_converter radk unicode --inputs .\assets\edrdg_files\radkfile --inputs .\assets\edrdg_files\radkfile2 --output .\assets\outputs\radk_utf8.txt`
 
 
 ## License

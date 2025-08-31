@@ -1,28 +1,30 @@
-use clap::{AppSettings, Clap};
+use clap::{Parser, ValueEnum};
 
-#[derive(Clap, Clone, PartialEq, Eq, Debug)]
-#[clap(setting = AppSettings::ColoredHelp)]
+#[derive(Parser, Clone, PartialEq, Eq, Debug)]
+#[command(about = "Convert EDRDG radical decomposition files to various formats")]
 pub struct Opts {
-    #[clap(arg_enum)]
+    /// Input format (krad or radk)
     pub input_format: InputFormat,
 
-    #[clap(arg_enum)]
+    /// Output format (unicode, rust, or json)
     pub output_format: OutputFormat,
 
-    #[clap(short, long, required = true)]
+    /// Input files to process
+    #[arg(short, long, required = true)]
     pub inputs: Vec<String>,
 
-    #[clap(short, long)]
+    /// Output file path
+    #[arg(short, long)]
     pub output: String,
 }
 
-#[derive(PartialEq, Eq, Clone, Copy, Clap, Debug)]
+#[derive(PartialEq, Eq, Clone, Copy, ValueEnum, Debug)]
 pub enum InputFormat {
     Radk,
     Krad,
 }
 
-#[derive(PartialEq, Eq, Clone, Copy, Clap, Debug)]
+#[derive(PartialEq, Eq, Clone, Copy, ValueEnum, Debug)]
 pub enum OutputFormat {
     Unicode,
     Rust,

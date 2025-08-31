@@ -1,4 +1,4 @@
-use clap::Clap;
+use clap::Parser;
 use error::ConvertError;
 use std::{fs::OpenOptions, io::Write};
 
